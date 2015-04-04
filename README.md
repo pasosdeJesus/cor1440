@@ -1,8 +1,9 @@
-# Cor440
-[![Estado Construcción](https://api.travis-ci.org/pasosdeJesus/cor440.svg?branch=master)](https://travis-ci.org/pasosdeJesus/cor440) [![Clima del Código](https://codeclimate.com/github/pasosdeJesus/cor440/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/cor440) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/cor440/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/cor440) [![security](https://hakiri.io/github/pasosdeJesus/cor440/master.svg)](https://hakiri.io/github/pasosdeJesus/cor440/master) [![Dependencias](https://gemnasium.com/pasosdeJesus/cor440.svg)](https://gemnasium.com/pasosdeJesus/cor440) 
+# Cor1440
+[![Estado Construcción](https://api.travis-ci.org/pasosdeJesus/cor1440.svg?branch=master)](https://travis-ci.org/pasosdeJesus/cor1440) [![Clima del Código](https://codeclimate.com/github/pasosdeJesus/cor1440/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/cor1440) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/cor1440/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/cor1440) [![security](https://hakiri.io/github/pasosdeJesus/cor1440/master.svg)](https://hakiri.io/github/pasosdeJesus/cor1440/master) [![Dependencias](https://gemnasium.com/pasosdeJesus/cor1440.svg)](https://gemnasium.com/pasosdeJesus/cor1440) 
 
 
-Actividades e Informes
+
+Sistema para planeación y seguimiento de actividades e informes en ONGs.
 
 
 ### Requerimientos
@@ -19,7 +20,7 @@ Ver https://github.com/pasosdeJesus/sip
 
 
 ### Configuración y uso de servidor de desarrollo
-* Ubique fuentes por ejemplo en ```/var/www/htdocs/cor440/```
+* Ubique fuentes por ejemplo en ```/var/www/htdocs/cor1440/```
 * Instale gemas requeridas (como Rails 4.2) con:
 ```sh
   NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle install
@@ -42,7 +43,7 @@ SINAC=1 bin/gc.sh
   ```config/database.yml``` e inicialice:
 ```sh
   sudo su - _postgresql
-  createuser -h/var/www/tmp -Upostgres -s cor440
+  createuser -h/var/www/tmp -Upostgres -s cor1440
   exit
   vim config/database.yml
   rake db:setup
@@ -67,7 +68,7 @@ rm -rf public/assets/*
 ### Pruebas
 
 Dado que se hacen pruebas a modelos, rutas, controladores y vistas en 
-```sip```, en ```cor440``` sólo se implementan algunas pruebas 
+```sip```, en ```cor1440``` sólo se implementan algunas pruebas 
 de regresión con capybara-webkit.  Ejecutelas con:
 
 ```sh
@@ -78,7 +79,7 @@ rspec
 
 ### Despliegue de prueba en Heroku
 
-[![heroku](https://www.herokucdn.com/deploy/button.svg)](http://cor440.herokuapp.com) http://cor440.herokuapp.com
+[![heroku](https://www.herokucdn.com/deploy/button.svg)](http://cor1440.herokuapp.com) http://cor1440.herokuapp.com
 
 Para tener menos de 10000 registros en base de datos se han eliminado ciudades 
 de Colombia y Venezuela. Podrá ver departamentos/estados y municipios.
@@ -108,7 +109,7 @@ Otras labores tipicas son:
 
 ### Despliegue en sitio de producción con unicorn:
 
-* Se recomienda que deje fuentes en ```/var/www/htdocs/cor440```
+* Se recomienda que deje fuentes en ```/var/www/htdocs/cor1440```
 * Siga los mismos pasos para configurar un servidor de desarrollo, pero
   preceda cada rake con ```RAILS_ENV=production```
 * Como servidor web recomendamos nginx, en la sección http agregue:
@@ -117,7 +118,7 @@ Otras labores tipicas son:
 	  server 127.0.0.1:2009 fail_timeout=0;
   }
 ```
-* Y agregue también un dominio virtual (digamos `cor440.pasosdeJesus.org`) con:
+* Y agregue también un dominio virtual (digamos `cor1440.pasosdeJesus.org`) con:
 ```
   server {
     listen 443;
@@ -127,15 +128,15 @@ Otras labores tipicas son:
     ssl_session_timeout  5m;
     ssl_protocols  SSLv3 TLSv1;
     ssl_ciphers  HIGH:!aNULL:!MD5;
-    root /var/www/htdocs/cor440/;
-    server_name cor440.pasosdeJesus.org
+    root /var/www/htdocs/cor1440/;
+    server_name cor1440.pasosdeJesus.org
     error_log logs/s2error.log;
 
     location ^~ /assets/ {
         gzip_static on;
         expires max;
         add_header Cache-Control public;
-        root /var/www/htdocs/cor440/public/;
+        root /var/www/htdocs/cor1440/public/;
     }
 
     try_files $uri/index.html $uri @unicorn;
@@ -160,15 +161,15 @@ rake assets:precompile
 ```sh 
 ./bin/u.sh
 ```
-* Para iniciar en cada arranque, por ejemplo en adJ cree /etc/rc.d/cor440
+* Para iniciar en cada arranque, por ejemplo en adJ cree /etc/rc.d/cor1440
 ```sh
-servicio="/var/www/htdocs/cor440/bin/u.sh"
+servicio="/var/www/htdocs/cor1440/bin/u.sh"
 
 . /etc/rc.d/rc.subr
 
 rc_cmd $1
 ```
-  E incluya ```cor440``` en la variable ```pkg_scripts``` de ```/etc/rc.conf.local```
+  E incluya ```cor1440``` en la variable ```pkg_scripts``` de ```/etc/rc.conf.local```
 
 ### Actualización de servidor de desarrollo
 
@@ -196,7 +197,7 @@ como se describió en Despliegue y que debe preceder cada rake con
 En el sitio de producción se recomienda agregar una tarea cron con:
 
 ``` sh
-cd /var/www/htdocs/cor440/; RAILS_ENV=production bin/rake sip:vuelca 
+cd /var/www/htdocs/cor1440/; RAILS_ENV=production bin/rake sip:vuelca 
 ```
 
 ### Convenciones

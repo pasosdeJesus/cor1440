@@ -12,8 +12,8 @@ if (test "$S2NOG" != "1") then {
 	} fi;
 } fi;
 if (test "$S2NO2" != "1") then {
-	echo "## cor440"
-	cd ../cor440/
+	echo "## cor1440"
+	cd ../cor1440/
 	sudo bundle update
 	sudo bundle install
 	bin/gc.sh

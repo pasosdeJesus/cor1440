@@ -8,7 +8,7 @@ if (test "${USUARIO_AP}" = "") then {
 	echo "Definir usuario con el que se ejecuta en USUARIO_AP"
 	exit 1;
 } fi;
-sudo su ${USUARIO_AP} -c "cd /var/www/htdocs/cor440; rake assets:precompile; echo \"Iniciando unicorn...\"; SECRET_KEY_BASE=${SECRET_KEY_BASE} bundle exec unicorn_rails -c ../cor440/config/unicorn.conf.minimal.rb  -E production -D"
+sudo su ${USUARIO_AP} -c "cd /var/www/htdocs/cor1440; rake assets:precompile; echo \"Iniciando unicorn...\"; SECRET_KEY_BASE=${SECRET_KEY_BASE} bundle exec unicorn_rails -c ../cor1440/config/unicorn.conf.minimal.rb  -E production -D"
 
 
   

@@ -1,9 +1,9 @@
 
 --
--- Name: cor440_gen_actividad; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: cor1440_gen_actividad; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE cor440_gen_actividad (
+CREATE TABLE cor1440_gen_actividad (
     id integer NOT NULL,
     minutos integer,
     nombre character varying(500),
@@ -20,10 +20,10 @@ CREATE TABLE cor440_gen_actividad (
 
 
 --
--- Name: cor440_gen_actividad_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE cor440_gen_actividad_id_seq
+CREATE SEQUENCE cor1440_gen_actividad_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -32,17 +32,17 @@ CREATE SEQUENCE cor440_gen_actividad_id_seq
 
 
 --
--- Name: cor440_gen_actividad_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE cor440_gen_actividad_id_seq OWNED BY cor440_gen_actividad.id;
+ALTER SEQUENCE cor1440_gen_actividad_id_seq OWNED BY cor1440_gen_actividad.id;
 
 
 --
--- Name: cor440_gen_actividad_rangoedadac; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: cor1440_gen_actividad_rangoedadac; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE cor440_gen_actividad_rangoedadac (
+CREATE TABLE cor1440_gen_actividad_rangoedadac (
     id integer NOT NULL,
     actividad_id integer,
     rangoedadac_id integer,
@@ -56,10 +56,10 @@ CREATE TABLE cor440_gen_actividad_rangoedadac (
 
 
 --
--- Name: cor440_gen_actividad_rangoedadac_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_rangoedadac_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE cor440_gen_actividad_rangoedadac_id_seq
+CREATE SEQUENCE cor1440_gen_actividad_rangoedadac_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -68,17 +68,17 @@ CREATE SEQUENCE cor440_gen_actividad_rangoedadac_id_seq
 
 
 --
--- Name: cor440_gen_actividad_rangoedadac_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_rangoedadac_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE cor440_gen_actividad_rangoedadac_id_seq OWNED BY cor440_gen_actividad_rangoedadac.id;
+ALTER SEQUENCE cor1440_gen_actividad_rangoedadac_id_seq OWNED BY cor1440_gen_actividad_rangoedadac.id;
 
 
 --
--- Name: cor440_gen_actividadarea; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: cor1440_gen_actividadarea; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE cor440_gen_actividadarea (
+CREATE TABLE cor1440_gen_actividadarea (
     id integer NOT NULL,
     nombre character varying(500),
     observaciones character varying(5000),
@@ -90,10 +90,10 @@ CREATE TABLE cor440_gen_actividadarea (
 
 
 --
--- Name: cor440_gen_actividadarea_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividadarea_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE cor440_gen_actividadarea_id_seq
+CREATE SEQUENCE cor1440_gen_actividadarea_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -102,17 +102,17 @@ CREATE SEQUENCE cor440_gen_actividadarea_id_seq
 
 
 --
--- Name: cor440_gen_actividadarea_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+-- Name: cor1440_gen_actividadarea_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE cor440_gen_actividadarea_id_seq OWNED BY cor440_gen_actividadarea.id;
+ALTER SEQUENCE cor1440_gen_actividadarea_id_seq OWNED BY cor1440_gen_actividadarea.id;
 
 
 --
--- Name: cor440_gen_actividadareas_actividad; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: cor1440_gen_actividadareas_actividad; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE cor440_gen_actividadareas_actividad (
+CREATE TABLE cor1440_gen_actividadareas_actividad (
     id integer NOT NULL,
     actividad_id integer,
     actividadarea_id integer,
@@ -122,10 +122,10 @@ CREATE TABLE cor440_gen_actividadareas_actividad (
 
 
 --
--- Name: cor440_gen_actividadareas_actividad_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividadareas_actividad_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE cor440_gen_actividadareas_actividad_id_seq
+CREATE SEQUENCE cor1440_gen_actividadareas_actividad_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -134,18 +134,18 @@ CREATE SEQUENCE cor440_gen_actividadareas_actividad_id_seq
 
 
 --
--- Name: cor440_gen_actividadareas_actividad_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+-- Name: cor1440_gen_actividadareas_actividad_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE cor440_gen_actividadareas_actividad_id_seq OWNED BY cor440_gen_actividadareas_actividad.id;
+ALTER SEQUENCE cor1440_gen_actividadareas_actividad_id_seq OWNED BY cor1440_gen_actividadareas_actividad.id;
 
 
 
 --
--- Name: cor440_gen_rangoedadac; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: cor1440_gen_rangoedadac; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE cor440_gen_rangoedadac (
+CREATE TABLE cor1440_gen_rangoedadac (
     id integer NOT NULL,
     nombre character varying(255),
     limiteinferior integer,
@@ -158,10 +158,10 @@ CREATE TABLE cor440_gen_rangoedadac (
 
 
 --
--- Name: cor440_gen_rangoedadac_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+-- Name: cor1440_gen_rangoedadac_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE cor440_gen_rangoedadac_id_seq
+CREATE SEQUENCE cor1440_gen_rangoedadac_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -170,52 +170,52 @@ CREATE SEQUENCE cor440_gen_rangoedadac_id_seq
 
 
 --
--- Name: cor440_gen_rangoedadac_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+-- Name: cor1440_gen_rangoedadac_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE cor440_gen_rangoedadac_id_seq OWNED BY cor440_gen_rangoedadac.id;
-
-
---
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY cor440_gen_actividad ALTER COLUMN id SET DEFAULT nextval('cor440_gen_actividad_id_seq'::regclass);
+ALTER SEQUENCE cor1440_gen_rangoedadac_id_seq OWNED BY cor1440_gen_rangoedadac.id;
 
 
 --
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY cor440_gen_actividad_rangoedadac ALTER COLUMN id SET DEFAULT nextval('cor440_gen_actividad_rangoedadac_id_seq'::regclass);
+ALTER TABLE ONLY cor1440_gen_actividad ALTER COLUMN id SET DEFAULT nextval('cor1440_gen_actividad_id_seq'::regclass);
 
 
 --
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY cor440_gen_actividadarea ALTER COLUMN id SET DEFAULT nextval('cor440_gen_actividadarea_id_seq'::regclass);
+ALTER TABLE ONLY cor1440_gen_actividad_rangoedadac ALTER COLUMN id SET DEFAULT nextval('cor1440_gen_actividad_rangoedadac_id_seq'::regclass);
 
 
 --
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY cor440_gen_actividadareas_actividad ALTER COLUMN id SET DEFAULT nextval('cor440_gen_actividadareas_actividad_id_seq'::regclass);
+ALTER TABLE ONLY cor1440_gen_actividadarea ALTER COLUMN id SET DEFAULT nextval('cor1440_gen_actividadarea_id_seq'::regclass);
 
 
 --
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY cor440_gen_rangoedadac ALTER COLUMN id SET DEFAULT nextval('cor440_gen_rangoedadac_id_seq'::regclass);
+ALTER TABLE ONLY cor1440_gen_actividadareas_actividad ALTER COLUMN id SET DEFAULT nextval('cor1440_gen_actividadareas_actividad_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY cor1440_gen_rangoedadac ALTER COLUMN id SET DEFAULT nextval('cor1440_gen_rangoedadac_id_seq'::regclass);
 
 
 --
 -- Name: actividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
-ALTER TABLE ONLY cor440_gen_actividad
+ALTER TABLE ONLY cor1440_gen_actividad
     ADD CONSTRAINT actividad_pkey PRIMARY KEY (id);
 
 
@@ -223,7 +223,7 @@ ALTER TABLE ONLY cor440_gen_actividad
 -- Name: actividad_rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
-ALTER TABLE ONLY cor440_gen_actividad_rangoedadac
+ALTER TABLE ONLY cor1440_gen_actividad_rangoedadac
     ADD CONSTRAINT actividad_rangoedadac_pkey PRIMARY KEY (id);
 
 
@@ -231,7 +231,7 @@ ALTER TABLE ONLY cor440_gen_actividad_rangoedadac
 -- Name: actividadarea_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
-ALTER TABLE ONLY cor440_gen_actividadarea
+ALTER TABLE ONLY cor1440_gen_actividadarea
     ADD CONSTRAINT actividadarea_pkey PRIMARY KEY (id);
 
 
@@ -239,7 +239,7 @@ ALTER TABLE ONLY cor440_gen_actividadarea
 -- Name: actividadareas_actividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
-ALTER TABLE ONLY cor440_gen_actividadareas_actividad
+ALTER TABLE ONLY cor1440_gen_actividadareas_actividad
     ADD CONSTRAINT actividadareas_actividad_pkey PRIMARY KEY (id);
 
 
@@ -248,37 +248,37 @@ ALTER TABLE ONLY cor440_gen_actividadareas_actividad
 -- Name: rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
-ALTER TABLE ONLY cor440_gen_rangoedadac
+ALTER TABLE ONLY cor1440_gen_rangoedadac
     ADD CONSTRAINT rangoedadac_pkey PRIMARY KEY (id);
 
 
 
 --
--- Name: index_cor440_gen_actividad_on_rangoedadac_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+-- Name: index_cor1440_gen_actividad_on_rangoedadac_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE INDEX index_cor440_gen_actividad_on_rangoedadac_id ON cor440_gen_actividad USING btree (rangoedadac_id);
-
-
---
--- Name: index_cor440_gen_actividad_rangoedadac_on_actividad_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX index_cor440_gen_actividad_rangoedadac_on_actividad_id ON cor440_gen_actividad_rangoedadac USING btree (actividad_id);
+CREATE INDEX index_cor1440_gen_actividad_on_rangoedadac_id ON cor1440_gen_actividad USING btree (rangoedadac_id);
 
 
 --
--- Name: index_cor440_gen_actividad_rangoedadac_on_rangoedadac_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+-- Name: index_cor1440_gen_actividad_rangoedadac_on_actividad_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE INDEX index_cor440_gen_actividad_rangoedadac_on_rangoedadac_id ON cor440_gen_actividad_rangoedadac USING btree (rangoedadac_id);
+CREATE INDEX index_cor1440_gen_actividad_rangoedadac_on_actividad_id ON cor1440_gen_actividad_rangoedadac USING btree (actividad_id);
 
 
 --
--- Name: index_cor440_gen_anexoactividad_on_actividad_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+-- Name: index_cor1440_gen_actividad_rangoedadac_on_rangoedadac_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE INDEX index_cor440_gen_anexoactividad_on_actividad_id ON cor440_gen_anexoactividad USING btree (actividad_id);
+CREATE INDEX index_cor1440_gen_actividad_rangoedadac_on_rangoedadac_id ON cor1440_gen_actividad_rangoedadac USING btree (rangoedadac_id);
+
+
+--
+-- Name: index_cor1440_gen_anexoactividad_on_actividad_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_cor1440_gen_anexoactividad_on_actividad_id ON cor1440_gen_anexoactividad USING btree (actividad_id);
 
 
 --
@@ -293,8 +293,8 @@ CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (v
 -- Name: actividad_regionsjr_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY cor440_gen_actividad
-    ADD CONSTRAINT actividad_regionsjr_id_fkey FOREIGN KEY (regionsjr_id) REFERENCES cor440_gen_regionsjr(id);
+ALTER TABLE ONLY cor1440_gen_actividad
+    ADD CONSTRAINT actividad_regionsjr_id_fkey FOREIGN KEY (regionsjr_id) REFERENCES cor1440_gen_regionsjr(id);
 
 
 --

@@ -13,7 +13,7 @@ before_install:
         - sudo apt-get update
         - sudo apt-get install libqt5webkit5-dev qtdeclarative5-dev qtlocation5-dev qtsensors5-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev qt4-default
         - sudo locale-gen --no-archive es_CO.UTF-8
-        - psql -c 'CREATE DATABASE cor440des_pru;' -U postgres
+        - psql -c 'CREATE DATABASE cor1440des_pru;' -U postgres
         - bundle install
         - cp db/structure.sql db/structure.sql.conlock
         - sed -e "s/SET lock_timeout = 0;//g" db/structure.sql.conlock >db/structure.sql

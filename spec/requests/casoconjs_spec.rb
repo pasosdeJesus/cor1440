@@ -5,8 +5,8 @@ require 'spec_helper'
 describe "Llenar caso con javascript", :js => true do
 
   before { 
-    usuario = Usuario.find_by(nusuario: 'cor440')
-    usuario.password = 'cor440'
+    usuario = Usuario.find_by(nusuario: 'cor1440')
+    usuario.password = 'cor1440'
     visit new_usuario_session_path 
     fill_in "Usuario", with: usuario.nusuario
     fill_in "Clave", with: usuario.password
