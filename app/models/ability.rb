@@ -1,5 +1,5 @@
 # encoding: UTF-8
-class Ability  < Sip::Ability
+class Ability  < Cor1440Gen::Ability
 
 end
 
