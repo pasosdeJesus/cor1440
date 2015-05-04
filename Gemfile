@@ -4,10 +4,10 @@ source 'https://rubygems.org'
 gem "rails", '~> 4.2.0'
 gem "rails-i18n"
 
-gem "cor1440_gen", path: '../cor1440_gen'
-
 # Postgresql
 gem "pg"
+
+gem "sass"
 
 # Maneja variables de ambiente (como claves y secretos) en .env
 #gem "foreman"
@@ -64,6 +64,10 @@ gem "tzinfo-data"
 gem 'sip', github: 'pasosdeJesus/sip'
 #gem 'sip', path: '../sip'
 
+# Motor Cor1440_gen
+gem 'cor1440_gen', github: 'pasosdeJesus/cor1440_gen'
+#gem "cor1440_gen", path: '../cor1440_gen'
+
 group :doc do
     # Genera documentación en doc/api con bundle exec rake doc:rails
     gem "sdoc", require: false
@@ -104,7 +108,7 @@ group :test do
   gem "capybara"
   
   # Pruebas de regresión que requieren javascript
-  gem "capybara-webkit"
+  gem "capybara-webkit", '1.4.1'
 
   # Envia resultados de pruebas desde travis a codeclimate
   gem "codeclimate-test-reporter", require: nil

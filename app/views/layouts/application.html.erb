@@ -5,8 +5,7 @@
 <% content_for :menu do %>
   <%= menu_group do %>
     <% if !current_usuario.nil? %>
-      <%= menu_item "Casos", sip.casos_path %>
-      <%= menu_item "Actividades", sip.actividades_path %>
+      <%= menu_item "Actividades", cor1440_gen.actividades_path %>
     <% end %>
   <% end %>
   <%= menu_group :pull => :right do %>
@@ -14,17 +13,11 @@
     <% if !current_usuario.nil? %>
       <%= drop_down "Administrar" do %>
         <%= menu_item "Clave", sip.editar_registro_usuario_path %>
-        <% if session[:capturacaso_acordeon] %>
-          <li><a id="fichacasovertical" href="/fichacasovertical">Ficha caso vertical ✓</a></li>
-        <% else %>
-          <li><a id="fichacasovertical" href="/fichacasovertical">Ficha caso vertical</a></li>
-        <% end %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
           <%= menu_item "Usuarios", sip.usuarios_path %>
         <% end %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
           <%= menu_item "Tablas Básicas", sip.tablasbasicas_path %>
-          <!-- %= #menu_item "Casos", admin_casos_path % -->
         <% end %>
       <% end %>
       <%= menu_item "Salir #{current_usuario.nusuario}", sip.sign_out_path %>
@@ -37,7 +30,7 @@
 
 <% content_for :footer do %>
   <p><span class='derechos'>Dominio Público de acuerdo a Legislación Colombiana<br/>
-    Desarrollado por <a href="http://www.pasosdeJesus.org" target="_blank">Pasos de Jesús</a>. 2014. 
+    Desarrollado para el <a href="http://www.nocheyniebla.org">Banco de Datos del CINEP/PPP</a> por <a href="http://www.pasosdeJesus.org" target="_blank">Pasos de Jesús</a>. 2015. 
   </span></p>
 <% end %>
 
