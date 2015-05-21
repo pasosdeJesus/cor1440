@@ -7,7 +7,13 @@ gem "rails-i18n"
 # Postgresql
 gem "pg"
 
+# CSS
 gem "sass"
+
+# Generación de PDF
+gem "prawn"
+gem "prawnto_2",  :require => "prawnto"
+gem "prawn-table"
 
 # Maneja variables de ambiente (como claves y secretos) en .env
 #gem "foreman"
@@ -65,8 +71,8 @@ gem 'sip', github: 'pasosdeJesus/sip'
 #gem 'sip', path: '../sip'
 
 # Motor Cor1440_gen
-gem 'cor1440_gen', github: 'pasosdeJesus/cor1440_gen'
-#gem "cor1440_gen", path: '../cor1440_gen'
+#gem 'cor1440_gen', github: 'pasosdeJesus/cor1440_gen'
+gem "cor1440_gen", path: '../cor1440_gen'
 
 group :doc do
     # Genera documentación en doc/api con bundle exec rake doc:rails
