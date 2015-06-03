@@ -67,8 +67,8 @@ gem "tzinfo"
 gem "tzinfo-data"
 
 # Motor de SIVeL 2
-gem 'sip', github: 'pasosdeJesus/sip'
-#gem 'sip', path: '../sip'
+#gem 'sip', github: 'pasosdeJesus/sip'
+gem 'sip', path: '../sip'
 
 # Motor Cor1440_gen
 #gem 'cor1440_gen', github: 'pasosdeJesus/cor1440_gen'

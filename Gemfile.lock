@@ -1,13 +1,4 @@
 GIT
-  remote: git://github.com/pasosdeJesus/sip.git
-  revision: 676d338d2d1e582e3f5d5f6b84cf514f007e583e
-  specs:
-    sip (2.0.a6)
-      devise
-      jquery-rails
-      rails
-
-GIT
   remote: git://github.com/vtamara/cocoon.git
   revision: 836a331276ea1452d63325a6662483b9f1cb28be
   specs:
@@ -27,6 +18,14 @@ PATH
       devise
       jquery-rails
       paperclip
+      rails
+
+PATH
+  remote: ../sip
+  specs:
+    sip (2.0.a6)
+      devise
+      jquery-rails
       rails
 
 GEM
