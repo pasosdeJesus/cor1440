@@ -10,6 +10,9 @@ gem "pg"
 # CSS
 gem "sass"
 
+# Color en terminal
+gem "colorize"
+
 # Generación de PDF
 gem "prawn"
 gem "prawnto_2",  :require => "prawnto"
