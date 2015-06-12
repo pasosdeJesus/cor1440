@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   end
   resources :usuarios, path_names: { new: 'nuevo', edit: 'edita' } 
 
-  root 'cor1440_gen/hogar#index'
   mount Sip::Engine, at: "/", as: "sip"
   mount Cor1440Gen::Engine, at: "/", as: "cor1440_gen"
 end

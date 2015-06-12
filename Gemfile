@@ -74,8 +74,8 @@ gem "tzinfo-data"
 gem 'sip', path: '../sip'
 
 # Motor Cor1440_gen
-#gem 'cor1440_gen', github: 'pasosdeJesus/cor1440_gen'
-gem "cor1440_gen", path: '../cor1440_gen'
+gem 'cor1440_gen', github: 'pasosdeJesus/cor1440_gen'
+#gem "cor1440_gen", path: '../cor1440_gen'
 
 group :doc do
     # Genera documentación en doc/api con bundle exec rake doc:rails
