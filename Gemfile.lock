@@ -320,7 +320,7 @@ DEPENDENCIES
   prawnto_2
   pry-rescue
   pry-stack_explorer
-  rails (~> 4.2.0)
+  rails (~> 4.2.3.rc1)
   rails-i18n
   rails_12factor
   rspec-rails
