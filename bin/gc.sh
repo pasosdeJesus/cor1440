@@ -1,9 +1,14 @@
 #!/bin/sh
 # Hace pruebas, pruebas de regresión, envia a github y sube a heroku
 
-grep "^ *gem *.sip*, *path:" Gemfile > /dev/null 2> /dev/null
+grep "^ *gem *.sip.*, *path:" Gemfile > /dev/null 2> /dev/null
 if (test "$?" = "0") then {
 	echo "Gemfile incluye un sip cableado al sistema de archivos"
+	exit 1;
+} fi;
+grep "^ *gem *.cor1440_gen.*, *path:" Gemfile > /dev/null 2> /dev/null
+if (test "$?" = "0") then {
+	echo "Gemfile incluye un cor1440_gen cableado al sistema de archivos"
 	exit 1;
 } fi;
 grep "^ *gem *.debugger*" Gemfile > /dev/null 2> /dev/null

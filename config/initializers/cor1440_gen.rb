@@ -1,4 +1,5 @@
 require 'cor1440_gen/version'
 
-Sip.setup do |config|
+Cor1440Gen.setup do |config|
+
 end

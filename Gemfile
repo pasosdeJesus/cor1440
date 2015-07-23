@@ -1,12 +1,22 @@
 source 'https://rubygems.org'
 
 # Rails (internacionalización)
-gem "rails", '~> 4.2.0'
+gem "rails", '~> 4.2.3.rc1'
 gem "rails-i18n"
-
 
 # Postgresql
 gem "pg"
+
+# CSS
+gem "sass"
+
+# Color en terminal
+gem "colorize"
+
+# Generación de PDF
+gem "prawn"
+gem "prawnto_2",  :require => "prawnto"
+gem "prawn-table"
 
 # Maneja variables de ambiente (como claves y secretos) en .env
 #gem "foreman"
@@ -63,7 +73,9 @@ gem "tzinfo-data"
 gem 'sip', github: 'pasosdeJesus/sip'
 #gem 'sip', path: '../sip'
 
-gem "cor1440_gen", path: '../cor1440_gen'
+# Motor Cor1440_gen
+gem 'cor1440_gen', github: 'pasosdeJesus/cor1440_gen'
+#gem "cor1440_gen", path: '../cor1440_gen'
 
 group :doc do
     # Genera documentación en doc/api con bundle exec rake doc:rails
@@ -90,7 +102,7 @@ group :development, :test do
   #gem 'byebug'
 
   # Consola irb en páginas con excepciones o usando <%= console %> en vistas
-  gem 'web-console', '~> 2.0.0.beta4'
+  gem 'web-console'
 
   # Para examinar errores, usar "rescue rspec" en lugar de "rspec"
   gem 'pry-rescue'
