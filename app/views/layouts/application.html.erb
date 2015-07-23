@@ -6,6 +6,7 @@
   <%= menu_group do %>
     <% if !current_usuario.nil? %>
       <%= menu_item "Actividades", cor1440_gen.actividades_path %>
+      <%= menu_item "Actividades", cor1440_gen.informes_path %>
     <% end %>
   <% end %>
   <%= menu_group :pull => :right do %>
