@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Rails (internacionalización)
-gem "rails", '~> 4.2.0'
+gem "rails", '~> 4.2.3.rc1'
 gem "rails-i18n"
 
 # Postgresql
@@ -102,7 +102,7 @@ group :development, :test do
   #gem 'byebug'
 
   # Consola irb en páginas con excepciones o usando <%= console %> en vistas
-  gem 'web-console', '~> 2.0.0.beta4'
+  gem 'web-console'
 
   # Para examinar errores, usar "rescue rspec" en lugar de "rspec"
   gem 'pry-rescue'
