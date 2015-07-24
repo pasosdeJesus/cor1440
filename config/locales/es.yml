@@ -1,0 +1,23 @@
+es:
+  attributes:
+    actividadarea: Área de Actividad
+    actividadareas: Áreas de Actividad
+    proyectos: Financiable
+    proyecto: Financiable
+    proyectosfinancieros: Convenios Financieros
+    proyectofinanciero: Convenio Financiero
+  activerecord:
+    attributes:
+      "cor1440_gen/actividadarea":
+        Actividadarea: Área de Actividad
+        Actividadareas: Áreas de Actividad
+      "cor1440_gen/proyecto":
+        Proyecto: Financiable
+        Proyectos: Financiables
+      "cor1440_gen/proyectofinanciero":
+        Proyectofinanciero: Convenio Financiero
+        Proyectosfinancieros: Convenios Financieros
+      "cor1440_gen/informe":
+        filtroproyecto: Financiable
+        filtroactividadarea: Área 
+
