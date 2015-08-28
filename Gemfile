@@ -25,7 +25,7 @@ gem "prawn-table"
 gem "jbuilder"
 
 # Uglifier comprime recursos Javascript
-gem "uglifier", '>= 1.3.0'
+gem "uglifier", '>= 2.7.2'
 
 # CoffeeScript para recuersos .js.coffee y vistas
 gem "coffee-rails", '~> 4.1.0'
