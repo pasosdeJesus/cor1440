@@ -301,7 +301,7 @@ DEPENDENCIES
   bootstrap-datepicker-rails
   cancancan
   capybara
-  capybara-webkit (= 1.4.1)
+  capybara-webkit
   cocoon!
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
