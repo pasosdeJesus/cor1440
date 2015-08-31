@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 5a9e02a89d0f9f1655bd5da5bb6ccb80dd804086
+  revision: 868a3c7cbf1858d6728de4b812783c29dc7038d7
   specs:
     cor1440_gen (1.0.a5)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/pasosdeJesus/sip.git
-  revision: bb915d81a525da46379e2060271c6891c532ba58
+  revision: 41a4025e4b3b4371be3227b9a55276751bfaac76
   specs:
     sip (2.0.a6)
       devise
@@ -235,7 +235,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    simple_form (3.1.0)
+    simple_form (3.1.1)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
     simplecov (0.10.0)
