@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 66fe95af4f57e53798e936340f3f24ac17f16307
+  revision: b68e97fd36a5b89b3531fc4b46d0cc1743d32948
   specs:
     cor1440_gen (1.0.a5)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/pasosdeJesus/sip.git
-  revision: 21ead3f24eaad52e476917cd1a687ba69664f26b
+  revision: c6f08f31704641708839b3dcb58d916e20e61c32
   specs:
     sip (2.0.a7)
       bootstrap-datepicker-rails
@@ -166,7 +166,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
-    nokogiri (1.6.7)
+    nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
     paperclip (4.3.2)
