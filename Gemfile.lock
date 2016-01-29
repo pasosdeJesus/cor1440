@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 9e190726c66d482bf9fc3962db8311deb5c93a17
+  revision: ce68e7901968fde360888441a8e11f071425f625
   specs:
     cor1440_gen (1.0.a5)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/pasosdeJesus/sip.git
-  revision: 702472312947443d329e970e35de89bef151797b
+  revision: 85efdffed450f6b5baeacfe977590e837a164ce5
   specs:
     sip (2.0.a7)
       bootstrap-datepicker-rails
@@ -90,7 +90,7 @@ GEM
     builder (3.2.2)
     camertron-eprun (1.1.0)
     cancancan (1.13.1)
-    capybara (2.6.0)
+    capybara (2.6.2)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -237,7 +237,7 @@ GEM
       json (~> 1.4)
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
-    rspec-core (3.4.1)
+    rspec-core (3.4.2)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -245,7 +245,7 @@ GEM
     rspec-mocks (3.4.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
-    rspec-rails (3.4.0)
+    rspec-rails (3.4.1)
       actionpack (>= 3.0, < 4.3)
       activesupport (>= 3.0, < 4.3)
       railties (>= 3.0, < 4.3)
@@ -273,7 +273,7 @@ GEM
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.0.0)
+    sprockets-rails (3.0.1)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
@@ -295,7 +295,7 @@ GEM
       tzinfo
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2015.7)
+    tzinfo-data (1.2016.1)
       tzinfo (>= 1.0.0)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
@@ -304,9 +304,9 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    warden (1.2.4)
+    warden (1.2.5)
       rack (>= 1.0)
-    web-console (3.0.0)
+    web-console (3.1.1)
       activemodel (>= 4.2)
       debug_inspector
       railties (>= 4.2)
