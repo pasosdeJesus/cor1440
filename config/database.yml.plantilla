@@ -6,7 +6,7 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   host: /var/www/var/run/postgresql/
-  username: cor1440
+  username: sipdes
   password: xyz
 
 development:

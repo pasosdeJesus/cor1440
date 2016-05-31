@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 7daacf1559df0facd5ebc8a576d76fb98134d362
+  revision: 4fd4dc63e9d9687d4211db17c26c7dfd5af7e3d7
   specs:
     cor1440_gen (1.0.a6)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/pasosdeJesus/sip.git
-  revision: 0c535c11a48298c5467b304eb1a80fee1e1e436e
+  revision: caecfc89473b2779561be12207456fcf0174f0e8
   specs:
     sip (2.0.a7)
       bootstrap-datepicker-rails
@@ -136,7 +136,7 @@ GEM
       activesupport (>= 4.1.0)
     i18n (0.7.0)
     interception (0.5)
-    jbuilder (2.4.1)
+    jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     jquery-rails (4.1.1)
@@ -362,4 +362,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   1.12.4
+   1.12.5
