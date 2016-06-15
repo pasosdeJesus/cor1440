@@ -690,9 +690,14 @@ CREATE TABLE sal7711_gen_articulo (
     pagina character varying(20),
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
-    anexo_id integer NOT NULL,
     texto text,
-    url character varying(5000)
+    url character varying(5000),
+    adjunto_file_name character varying,
+    adjunto_content_type character varying,
+    adjunto_file_size integer,
+    adjunto_updated_at timestamp without time zone,
+    anexo_id_antiguo integer,
+    adjunto_descripcion character varying(1500)
 );
 
 
@@ -2041,14 +2046,6 @@ ALTER TABLE ONLY cor1440_gen_actividad_proyectofinanciero
 
 
 --
--- Name: fk_rails_bdb4c828f9; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY sal7711_gen_articulo
-    ADD CONSTRAINT fk_rails_bdb4c828f9 FOREIGN KEY (anexo_id) REFERENCES sip_anexo(id);
-
-
---
 -- Name: fk_rails_c02831dd89; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -2499,6 +2496,8 @@ INSERT INTO schema_migrations (version) VALUES ('20151030181131');
 INSERT INTO schema_migrations (version) VALUES ('20151201161053');
 
 INSERT INTO schema_migrations (version) VALUES ('20160308213334');
+
+INSERT INTO schema_migrations (version) VALUES ('20160518025044');
 
 INSERT INTO schema_migrations (version) VALUES ('20160519195544');
 
