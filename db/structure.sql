@@ -498,7 +498,8 @@ CREATE TABLE cor1440_gen_informe (
     contextoexterno character varying(5000),
     filtropoa integer,
     filtroresponsable integer,
-    filtrooficina integer
+    filtrooficina integer,
+    columnapoa boolean
 );
 
 
@@ -2500,4 +2501,6 @@ INSERT INTO schema_migrations (version) VALUES ('20160308213334');
 INSERT INTO schema_migrations (version) VALUES ('20160518025044');
 
 INSERT INTO schema_migrations (version) VALUES ('20160519195544');
+
+INSERT INTO schema_migrations (version) VALUES ('20160630133629');
 
