@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 8053bad41c9f0b7bb748f9ebfb9cff552c269e1c
+  revision: 7535c92341dea88c6ee2c4972f984fa4ca8c3ec4
   specs:
     cor1440_gen (1.0.a6)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/pasosdeJesus/sip.git
-  revision: c3c9bb62ea75a6a4032baf585c3825a061999533
+  revision: 4c8f104f9ca428c897b61f0ee216efd7b238cf27
   specs:
     sip (2.0.a7)
       bootstrap-datepicker-rails
@@ -224,7 +224,7 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails-i18n (4.0.8)
+    rails-i18n (4.0.9)
       i18n (~> 0.7)
       railties (~> 4.0)
     rails_12factor (0.0.3)
@@ -268,9 +268,9 @@ GEM
     simple_form (3.2.1)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
-    simplecov (0.11.2)
+    simplecov (0.12.0)
       docile (~> 1.1.0)
-      json (~> 1.8)
+      json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
     slop (3.6.0)
@@ -302,7 +302,7 @@ GEM
       tzinfo
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2016.5)
+    tzinfo-data (1.2016.6)
       tzinfo (>= 1.0.0)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
