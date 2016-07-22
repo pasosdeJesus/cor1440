@@ -17,3 +17,12 @@ config/database.yml
 /tmp
 *~
 *swp
+
+app/views/hogar/_local.html.erb
+config/application.rb
+config/database.yml
+config/initializers/punto_montaje.rb
+config/initializers/sip.rb
+config/routes.rb
+config/unicorn.conf.minimal.rb
+

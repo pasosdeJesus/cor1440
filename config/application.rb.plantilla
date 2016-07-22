@@ -1,4 +1,6 @@
-require File.expand_path('../boot', __FILE__)
+# encoding: UTF-8
+
+require_relative 'boot'
 
 require 'rails/all'
 
