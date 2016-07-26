@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/pasosdeJesus/cor1440_gen.git
-  revision: a6c318f96e2cbc0c7d2dd45c7ec0999f3ac983bf
+  revision: 80b3dc4081034af89142a46c34cb43e013d8760c
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/pasosdeJesus/sip.git
-  revision: 467dbe04fb742089dab62722518902a3c2214deb
+  revision: 4819d445abf91b214ae922e012d3ba2aebe980d7
   specs:
     sip (2.0.b1)
       bootstrap-datepicker-rails
@@ -197,7 +197,7 @@ GEM
     pry-stack_explorer (0.4.9.2)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
-    puma (3.5.2)
+    puma (3.6.0)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
