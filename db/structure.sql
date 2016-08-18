@@ -2,16 +2,12 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.5.3
--- Dumped by pg_dump version 9.5.3
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
-SET row_security = off;
 
 --
 -- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: -
@@ -163,7 +159,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: actividad_poa; Type: TABLE; Schema: public; Owner: -
+-- Name: actividad_poa; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE actividad_poa (
@@ -173,7 +169,7 @@ CREATE TABLE actividad_poa (
 
 
 --
--- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: -
+-- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE ar_internal_metadata (
@@ -185,7 +181,7 @@ CREATE TABLE ar_internal_metadata (
 
 
 --
--- Name: cor1440_gen_actividad; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividad (
@@ -206,7 +202,7 @@ CREATE TABLE cor1440_gen_actividad (
 
 
 --
--- Name: cor1440_gen_actividad_actividadtipo; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_actividadtipo; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividad_actividadtipo (
@@ -235,7 +231,7 @@ ALTER SEQUENCE cor1440_gen_actividad_id_seq OWNED BY cor1440_gen_actividad.id;
 
 
 --
--- Name: cor1440_gen_actividad_proyecto; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_proyecto; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividad_proyecto (
@@ -265,7 +261,7 @@ ALTER SEQUENCE cor1440_gen_actividad_proyecto_id_seq OWNED BY cor1440_gen_activi
 
 
 --
--- Name: cor1440_gen_actividad_proyectofinanciero; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_proyectofinanciero; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividad_proyectofinanciero (
@@ -275,7 +271,7 @@ CREATE TABLE cor1440_gen_actividad_proyectofinanciero (
 
 
 --
--- Name: cor1440_gen_actividad_rangoedadac; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_rangoedadac; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividad_rangoedadac (
@@ -323,7 +319,7 @@ CREATE SEQUENCE cor1440_gen_actividad_sip_anexo_id_seq
 
 
 --
--- Name: cor1440_gen_actividad_sip_anexo; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_sip_anexo; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividad_sip_anexo (
@@ -334,7 +330,7 @@ CREATE TABLE cor1440_gen_actividad_sip_anexo (
 
 
 --
--- Name: cor1440_gen_actividad_usuario; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_usuario; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividad_usuario (
@@ -344,7 +340,7 @@ CREATE TABLE cor1440_gen_actividad_usuario (
 
 
 --
--- Name: cor1440_gen_actividadarea; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividadarea; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividadarea (
@@ -378,7 +374,7 @@ ALTER SEQUENCE cor1440_gen_actividadarea_id_seq OWNED BY cor1440_gen_actividadar
 
 
 --
--- Name: cor1440_gen_actividadareas_actividad; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividadareas_actividad; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividadareas_actividad (
@@ -410,7 +406,7 @@ ALTER SEQUENCE cor1440_gen_actividadareas_actividad_id_seq OWNED BY cor1440_gen_
 
 
 --
--- Name: cor1440_gen_actividadtipo; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_actividadtipo; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_actividadtipo (
@@ -444,7 +440,7 @@ ALTER SEQUENCE cor1440_gen_actividadtipo_id_seq OWNED BY cor1440_gen_actividadti
 
 
 --
--- Name: cor1440_gen_financiador; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_financiador; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_financiador (
@@ -478,7 +474,7 @@ ALTER SEQUENCE cor1440_gen_financiador_id_seq OWNED BY cor1440_gen_financiador.i
 
 
 --
--- Name: cor1440_gen_financiador_proyectofinanciero; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_financiador_proyectofinanciero; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_financiador_proyectofinanciero (
@@ -488,7 +484,7 @@ CREATE TABLE cor1440_gen_financiador_proyectofinanciero (
 
 
 --
--- Name: cor1440_gen_informe; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_informe; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_informe (
@@ -515,7 +511,6 @@ CREATE TABLE cor1440_gen_informe (
     filtropoa integer,
     filtroresponsable integer,
     filtrooficina integer,
-    columnapoa boolean,
     columnafecha boolean,
     columnaresponsable boolean
 );
@@ -541,7 +536,7 @@ ALTER SEQUENCE cor1440_gen_informe_id_seq OWNED BY cor1440_gen_informe.id;
 
 
 --
--- Name: cor1440_gen_proyecto; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_proyecto; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_proyecto (
@@ -578,7 +573,7 @@ ALTER SEQUENCE cor1440_gen_proyecto_id_seq OWNED BY cor1440_gen_proyecto.id;
 
 
 --
--- Name: cor1440_gen_proyecto_proyectofinanciero; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_proyecto_proyectofinanciero; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_proyecto_proyectofinanciero (
@@ -588,7 +583,7 @@ CREATE TABLE cor1440_gen_proyecto_proyectofinanciero (
 
 
 --
--- Name: cor1440_gen_proyectofinanciero; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_proyectofinanciero; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_proyectofinanciero (
@@ -627,7 +622,7 @@ ALTER SEQUENCE cor1440_gen_proyectofinanciero_id_seq OWNED BY cor1440_gen_proyec
 
 
 --
--- Name: cor1440_gen_rangoedadac; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_rangoedadac; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cor1440_gen_rangoedadac (
@@ -663,7 +658,7 @@ ALTER SEQUENCE cor1440_gen_rangoedadac_id_seq OWNED BY cor1440_gen_rangoedadac.i
 
 
 --
--- Name: poa; Type: TABLE; Schema: public; Owner: -
+-- Name: poa; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE poa (
@@ -697,7 +692,7 @@ ALTER SEQUENCE poa_id_seq OWNED BY poa.id;
 
 
 --
--- Name: sal7711_gen_articulo; Type: TABLE; Schema: public; Owner: -
+-- Name: sal7711_gen_articulo; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sal7711_gen_articulo (
@@ -709,19 +704,14 @@ CREATE TABLE sal7711_gen_articulo (
     pagina character varying(20),
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
+    anexo_id integer NOT NULL,
     texto text,
-    url character varying(5000),
-    adjunto_file_name character varying,
-    adjunto_content_type character varying,
-    adjunto_file_size integer,
-    adjunto_updated_at timestamp without time zone,
-    anexo_id_antiguo integer,
-    adjunto_descripcion character varying(1500)
+    url character varying(5000)
 );
 
 
 --
--- Name: sal7711_gen_articulo_categoriaprensa; Type: TABLE; Schema: public; Owner: -
+-- Name: sal7711_gen_articulo_categoriaprensa; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sal7711_gen_articulo_categoriaprensa (
@@ -750,7 +740,7 @@ ALTER SEQUENCE sal7711_gen_articulo_id_seq OWNED BY sal7711_gen_articulo.id;
 
 
 --
--- Name: sal7711_gen_bitacora; Type: TABLE; Schema: public; Owner: -
+-- Name: sal7711_gen_bitacora; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sal7711_gen_bitacora (
@@ -783,7 +773,7 @@ ALTER SEQUENCE sal7711_gen_bitacora_id_seq OWNED BY sal7711_gen_bitacora.id;
 
 
 --
--- Name: sal7711_gen_categoriaprensa; Type: TABLE; Schema: public; Owner: -
+-- Name: sal7711_gen_categoriaprensa; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sal7711_gen_categoriaprensa (
@@ -818,7 +808,7 @@ ALTER SEQUENCE sal7711_gen_categoriaprensa_id_seq OWNED BY sal7711_gen_categoria
 
 
 --
--- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE schema_migrations (
@@ -827,7 +817,7 @@ CREATE TABLE schema_migrations (
 
 
 --
--- Name: sip_anexo; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_anexo; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_anexo (
@@ -874,7 +864,7 @@ CREATE SEQUENCE sip_clase_id_seq
 
 
 --
--- Name: sip_clase; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_clase; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_clase (
@@ -907,7 +897,7 @@ CREATE SEQUENCE sip_departamento_id_seq
 
 
 --
--- Name: sip_departamento; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_departamento; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_departamento (
@@ -939,7 +929,7 @@ CREATE SEQUENCE sip_etiqueta_id_seq
 
 
 --
--- Name: sip_etiqueta; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_etiqueta; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_etiqueta (
@@ -955,7 +945,7 @@ CREATE TABLE sip_etiqueta (
 
 
 --
--- Name: sip_fuenteprensa; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_fuenteprensa; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_fuenteprensa (
@@ -1001,7 +991,7 @@ CREATE SEQUENCE sip_municipio_id_seq
 
 
 --
--- Name: sip_municipio; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_municipio; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_municipio (
@@ -1029,7 +1019,7 @@ CREATE VIEW sip_mundep_sinorden AS
     (((sip_municipio.nombre)::text || ' / '::text) || (sip_departamento.nombre)::text) AS nombre
    FROM (sip_municipio
      JOIN sip_departamento ON ((sip_municipio.id_departamento = sip_departamento.id)))
-  WHERE ((sip_departamento.id_pais = 170) AND (sip_municipio.fechadeshabilitacion IS NULL) AND (sip_departamento.fechadeshabilitacion IS NULL))
+  WHERE (((sip_departamento.id_pais = 170) AND (sip_municipio.fechadeshabilitacion IS NULL)) AND (sip_departamento.fechadeshabilitacion IS NULL))
 UNION
  SELECT sip_departamento.id_deplocal AS idlocal,
     sip_departamento.nombre
@@ -1038,7 +1028,7 @@ UNION
 
 
 --
--- Name: sip_mundep; Type: MATERIALIZED VIEW; Schema: public; Owner: -
+-- Name: sip_mundep; Type: MATERIALIZED VIEW; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE MATERIALIZED VIEW sip_mundep AS
@@ -1063,7 +1053,7 @@ CREATE SEQUENCE sip_oficina_id_seq
 
 
 --
--- Name: sip_oficina; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_oficina; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_oficina (
@@ -1079,7 +1069,7 @@ CREATE TABLE sip_oficina (
 
 
 --
--- Name: sip_pais; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_pais; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_pais (
@@ -1135,7 +1125,7 @@ CREATE SEQUENCE sip_persona_id_seq
 
 
 --
--- Name: sip_persona; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_persona; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_persona (
@@ -1155,9 +1145,9 @@ CREATE TABLE sip_persona (
     id_departamento integer,
     id_municipio integer,
     id_clase integer,
-    CONSTRAINT persona_check CHECK (((dianac IS NULL) OR (((dianac >= 1) AND (((mesnac = 1) OR (mesnac = 3) OR (mesnac = 5) OR (mesnac = 7) OR (mesnac = 8) OR (mesnac = 10) OR (mesnac = 12)) AND (dianac <= 31))) OR (((mesnac = 4) OR (mesnac = 6) OR (mesnac = 9) OR (mesnac = 11)) AND (dianac <= 30)) OR ((mesnac = 2) AND (dianac <= 29))))),
+    CONSTRAINT persona_check CHECK (((dianac IS NULL) OR ((((dianac >= 1) AND ((((((((mesnac = 1) OR (mesnac = 3)) OR (mesnac = 5)) OR (mesnac = 7)) OR (mesnac = 8)) OR (mesnac = 10)) OR (mesnac = 12)) AND (dianac <= 31))) OR (((((mesnac = 4) OR (mesnac = 6)) OR (mesnac = 9)) OR (mesnac = 11)) AND (dianac <= 30))) OR ((mesnac = 2) AND (dianac <= 29))))),
     CONSTRAINT persona_mesnac_check CHECK (((mesnac IS NULL) OR ((mesnac >= 1) AND (mesnac <= 12)))),
-    CONSTRAINT persona_sexo_check CHECK (((sexo = 'S'::bpchar) OR (sexo = 'F'::bpchar) OR (sexo = 'M'::bpchar)))
+    CONSTRAINT persona_sexo_check CHECK ((((sexo = 'S'::bpchar) OR (sexo = 'F'::bpchar)) OR (sexo = 'M'::bpchar)))
 );
 
 
@@ -1174,7 +1164,7 @@ CREATE SEQUENCE sip_persona_trelacion_id_seq
 
 
 --
--- Name: sip_persona_trelacion; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_persona_trelacion; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_persona_trelacion (
@@ -1189,7 +1179,7 @@ CREATE TABLE sip_persona_trelacion (
 
 
 --
--- Name: sip_tclase; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_tclase; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_tclase (
@@ -1205,7 +1195,7 @@ CREATE TABLE sip_tclase (
 
 
 --
--- Name: sip_tdocumento; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_tdocumento; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_tdocumento (
@@ -1241,7 +1231,7 @@ ALTER SEQUENCE sip_tdocumento_id_seq OWNED BY sip_tdocumento.id;
 
 
 --
--- Name: sip_trelacion; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_trelacion; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_trelacion (
@@ -1270,7 +1260,7 @@ CREATE SEQUENCE sip_tsitio_id_seq
 
 
 --
--- Name: sip_tsitio; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_tsitio; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_tsitio (
@@ -1298,7 +1288,7 @@ CREATE SEQUENCE sip_ubicacion_id_seq
 
 
 --
--- Name: sip_ubicacion; Type: TABLE; Schema: public; Owner: -
+-- Name: sip_ubicacion; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE sip_ubicacion (
@@ -1331,7 +1321,7 @@ CREATE SEQUENCE usuario_id_seq
 
 
 --
--- Name: usuario; Type: TABLE; Schema: public; Owner: -
+-- Name: usuario; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE usuario (
@@ -1500,7 +1490,7 @@ ALTER TABLE ONLY sip_tdocumento ALTER COLUMN id SET DEFAULT nextval('sip_tdocume
 
 
 --
--- Name: actividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: actividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_actividad
@@ -1508,7 +1498,7 @@ ALTER TABLE ONLY cor1440_gen_actividad
 
 
 --
--- Name: actividad_rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: actividad_rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_actividad_rangoedadac
@@ -1516,7 +1506,7 @@ ALTER TABLE ONLY cor1440_gen_actividad_rangoedadac
 
 
 --
--- Name: actividadarea_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: actividadarea_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_actividadarea
@@ -1524,7 +1514,7 @@ ALTER TABLE ONLY cor1440_gen_actividadarea
 
 
 --
--- Name: actividadareas_actividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: actividadareas_actividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_actividadareas_actividad
@@ -1532,7 +1522,7 @@ ALTER TABLE ONLY cor1440_gen_actividadareas_actividad
 
 
 --
--- Name: anexoactividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: anexoactividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_anexo
@@ -1540,7 +1530,7 @@ ALTER TABLE ONLY sip_anexo
 
 
 --
--- Name: ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY ar_internal_metadata
@@ -1548,7 +1538,7 @@ ALTER TABLE ONLY ar_internal_metadata
 
 
 --
--- Name: cor1440_gen_actividad_proyecto_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_proyecto_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_actividad_proyecto
@@ -1556,7 +1546,7 @@ ALTER TABLE ONLY cor1440_gen_actividad_proyecto
 
 
 --
--- Name: cor1440_gen_actividad_sip_anexo_id_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_sip_anexo_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_actividad_sip_anexo
@@ -1564,7 +1554,7 @@ ALTER TABLE ONLY cor1440_gen_actividad_sip_anexo
 
 
 --
--- Name: cor1440_gen_actividad_sip_anexo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_sip_anexo_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_actividad_sip_anexo
@@ -1572,7 +1562,7 @@ ALTER TABLE ONLY cor1440_gen_actividad_sip_anexo
 
 
 --
--- Name: cor1440_gen_actividadtipo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_actividadtipo_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_actividadtipo
@@ -1580,7 +1570,7 @@ ALTER TABLE ONLY cor1440_gen_actividadtipo
 
 
 --
--- Name: cor1440_gen_financiador_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_financiador_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_financiador
@@ -1588,7 +1578,7 @@ ALTER TABLE ONLY cor1440_gen_financiador
 
 
 --
--- Name: cor1440_gen_informe_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_informe_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_informe
@@ -1596,7 +1586,7 @@ ALTER TABLE ONLY cor1440_gen_informe
 
 
 --
--- Name: cor1440_gen_proyecto_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_proyecto_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_proyecto
@@ -1604,7 +1594,7 @@ ALTER TABLE ONLY cor1440_gen_proyecto
 
 
 --
--- Name: cor1440_gen_proyectofinanciero_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_proyectofinanciero_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_proyectofinanciero
@@ -1612,7 +1602,7 @@ ALTER TABLE ONLY cor1440_gen_proyectofinanciero
 
 
 --
--- Name: etiqueta_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: etiqueta_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_etiqueta
@@ -1620,7 +1610,7 @@ ALTER TABLE ONLY sip_etiqueta
 
 
 --
--- Name: pais_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pais_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_pais
@@ -1628,7 +1618,7 @@ ALTER TABLE ONLY sip_pais
 
 
 --
--- Name: persona_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: persona_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_persona
@@ -1636,7 +1626,7 @@ ALTER TABLE ONLY sip_persona
 
 
 --
--- Name: poa_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: poa_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY poa
@@ -1644,7 +1634,7 @@ ALTER TABLE ONLY poa
 
 
 --
--- Name: rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cor1440_gen_rangoedadac
@@ -1652,7 +1642,7 @@ ALTER TABLE ONLY cor1440_gen_rangoedadac
 
 
 --
--- Name: regionsjr_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: regionsjr_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_oficina
@@ -1660,7 +1650,7 @@ ALTER TABLE ONLY sip_oficina
 
 
 --
--- Name: sal7711_gen_articulo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sal7711_gen_articulo_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sal7711_gen_articulo
@@ -1668,7 +1658,7 @@ ALTER TABLE ONLY sal7711_gen_articulo
 
 
 --
--- Name: sal7711_gen_bitacora_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sal7711_gen_bitacora_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sal7711_gen_bitacora
@@ -1676,7 +1666,7 @@ ALTER TABLE ONLY sal7711_gen_bitacora
 
 
 --
--- Name: sal7711_gen_categoriaprensa_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sal7711_gen_categoriaprensa_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sal7711_gen_categoriaprensa
@@ -1684,7 +1674,7 @@ ALTER TABLE ONLY sal7711_gen_categoriaprensa
 
 
 --
--- Name: sip_clase_id_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_clase_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_clase
@@ -1692,7 +1682,7 @@ ALTER TABLE ONLY sip_clase
 
 
 --
--- Name: sip_clase_id_municipio_id_clalocal_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_clase_id_municipio_id_clalocal_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_clase
@@ -1700,7 +1690,7 @@ ALTER TABLE ONLY sip_clase
 
 
 --
--- Name: sip_clase_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_clase_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_clase
@@ -1708,7 +1698,7 @@ ALTER TABLE ONLY sip_clase
 
 
 --
--- Name: sip_departamento_id_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_departamento_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_departamento
@@ -1716,7 +1706,7 @@ ALTER TABLE ONLY sip_departamento
 
 
 --
--- Name: sip_departamento_id_pais_id_deplocal_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_departamento_id_pais_id_deplocal_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_departamento
@@ -1724,7 +1714,7 @@ ALTER TABLE ONLY sip_departamento
 
 
 --
--- Name: sip_departamento_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_departamento_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_departamento
@@ -1732,7 +1722,7 @@ ALTER TABLE ONLY sip_departamento
 
 
 --
--- Name: sip_fuenteprensa_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_fuenteprensa_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_fuenteprensa
@@ -1740,7 +1730,7 @@ ALTER TABLE ONLY sip_fuenteprensa
 
 
 --
--- Name: sip_municipio_id_departamento_id_munlocal_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_municipio_id_departamento_id_munlocal_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_municipio
@@ -1748,7 +1738,7 @@ ALTER TABLE ONLY sip_municipio
 
 
 --
--- Name: sip_municipio_id_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_municipio_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_municipio
@@ -1756,7 +1746,7 @@ ALTER TABLE ONLY sip_municipio
 
 
 --
--- Name: sip_municipio_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_municipio_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_municipio
@@ -1764,7 +1754,7 @@ ALTER TABLE ONLY sip_municipio
 
 
 --
--- Name: sip_persona_trelacion_id_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_persona_trelacion_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_persona_trelacion
@@ -1772,7 +1762,7 @@ ALTER TABLE ONLY sip_persona_trelacion
 
 
 --
--- Name: sip_persona_trelacion_persona1_persona2_id_trelacion_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_persona_trelacion_persona1_persona2_id_trelacion_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_persona_trelacion
@@ -1780,7 +1770,7 @@ ALTER TABLE ONLY sip_persona_trelacion
 
 
 --
--- Name: sip_persona_trelacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_persona_trelacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_persona_trelacion
@@ -1788,7 +1778,7 @@ ALTER TABLE ONLY sip_persona_trelacion
 
 
 --
--- Name: tclase_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: tclase_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_tclase
@@ -1796,7 +1786,7 @@ ALTER TABLE ONLY sip_tclase
 
 
 --
--- Name: tdocumento_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: tdocumento_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_tdocumento
@@ -1804,7 +1794,7 @@ ALTER TABLE ONLY sip_tdocumento
 
 
 --
--- Name: trelacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: trelacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_trelacion
@@ -1812,7 +1802,7 @@ ALTER TABLE ONLY sip_trelacion
 
 
 --
--- Name: tsitio_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: tsitio_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_tsitio
@@ -1820,7 +1810,7 @@ ALTER TABLE ONLY sip_tsitio
 
 
 --
--- Name: ubicacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: ubicacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY sip_ubicacion
@@ -1828,7 +1818,7 @@ ALTER TABLE ONLY sip_ubicacion
 
 
 --
--- Name: usuario_nusuario_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: usuario_nusuario_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY usuario
@@ -1836,7 +1826,7 @@ ALTER TABLE ONLY usuario
 
 
 --
--- Name: usuario_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: usuario_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY usuario
@@ -1844,77 +1834,77 @@ ALTER TABLE ONLY usuario
 
 
 --
--- Name: index_cor1440_gen_actividad_on_usuario_id; Type: INDEX; Schema: public; Owner: -
+-- Name: index_cor1440_gen_actividad_on_usuario_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX index_cor1440_gen_actividad_on_usuario_id ON cor1440_gen_actividad USING btree (usuario_id);
 
 
 --
--- Name: index_cor1440_gen_actividad_sip_anexo_on_sip_anexo_id; Type: INDEX; Schema: public; Owner: -
+-- Name: index_cor1440_gen_actividad_sip_anexo_on_sip_anexo_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX index_cor1440_gen_actividad_sip_anexo_on_sip_anexo_id ON cor1440_gen_actividad_sip_anexo USING btree (anexo_id);
 
 
 --
--- Name: index_sivel2_gen_actividad_on_rangoedadac_id; Type: INDEX; Schema: public; Owner: -
+-- Name: index_sivel2_gen_actividad_on_rangoedadac_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX index_sivel2_gen_actividad_on_rangoedadac_id ON cor1440_gen_actividad USING btree (rangoedadac_id);
 
 
 --
--- Name: index_sivel2_gen_actividad_rangoedadac_on_actividad_id; Type: INDEX; Schema: public; Owner: -
+-- Name: index_sivel2_gen_actividad_rangoedadac_on_actividad_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX index_sivel2_gen_actividad_rangoedadac_on_actividad_id ON cor1440_gen_actividad_rangoedadac USING btree (actividad_id);
 
 
 --
--- Name: index_sivel2_gen_actividad_rangoedadac_on_rangoedadac_id; Type: INDEX; Schema: public; Owner: -
+-- Name: index_sivel2_gen_actividad_rangoedadac_on_rangoedadac_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX index_sivel2_gen_actividad_rangoedadac_on_rangoedadac_id ON cor1440_gen_actividad_rangoedadac USING btree (rangoedadac_id);
 
 
 --
--- Name: index_usuario_on_email; Type: INDEX; Schema: public; Owner: -
+-- Name: index_usuario_on_email; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE UNIQUE INDEX index_usuario_on_email ON usuario USING btree (email);
 
 
 --
--- Name: index_usuario_on_regionsjr_id; Type: INDEX; Schema: public; Owner: -
+-- Name: index_usuario_on_regionsjr_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX index_usuario_on_regionsjr_id ON usuario USING btree (regionsjr_id);
 
 
 --
--- Name: index_usuario_on_reset_password_token; Type: INDEX; Schema: public; Owner: -
+-- Name: index_usuario_on_reset_password_token; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE UNIQUE INDEX index_usuario_on_reset_password_token ON usuario USING btree (reset_password_token);
 
 
 --
--- Name: sip_busca_mundep; Type: INDEX; Schema: public; Owner: -
+-- Name: sip_busca_mundep; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX sip_busca_mundep ON sip_mundep USING gin (mundep);
 
 
 --
--- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: -
+-- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (version);
 
 
 --
--- Name: usuario_nusuario; Type: INDEX; Schema: public; Owner: -
+-- Name: usuario_nusuario; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE UNIQUE INDEX usuario_nusuario ON usuario USING btree (nusuario);
@@ -2070,6 +2060,14 @@ ALTER TABLE ONLY sal7711_gen_articulo
 
 ALTER TABLE ONLY cor1440_gen_actividad_proyectofinanciero
     ADD CONSTRAINT fk_rails_a8489e0d62 FOREIGN KEY (actividad_id) REFERENCES cor1440_gen_actividad(id);
+
+
+--
+-- Name: fk_rails_bdb4c828f9; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY sal7711_gen_articulo
+    ADD CONSTRAINT fk_rails_bdb4c828f9 FOREIGN KEY (anexo_id) REFERENCES sip_anexo(id);
 
 
 --
@@ -2276,8 +2274,8 @@ ALTER TABLE ONLY usuario
 -- PostgreSQL database dump complete
 --
 
-SET search_path TO "$user", public;
+SET search_path TO "$user",public;
 
-INSERT INTO schema_migrations (version) VALUES ('20131128151014'), ('20131204135932'), ('20131204140000'), ('20131204143718'), ('20131204183530'), ('20131205233111'), ('20131206081531'), ('20131210221541'), ('20131220103409'), ('20131223175141'), ('20140117212555'), ('20140129151136'), ('20140207102709'), ('20140207102739'), ('20140211162355'), ('20140211164659'), ('20140211172443'), ('20140217100541'), ('20140313012209'), ('20140317121823'), ('20140514142421'), ('20140518120059'), ('20140527110223'), ('20140528043115'), ('20140611111020'), ('20140613044320'), ('20140613200951'), ('20140620112004'), ('20140704035033'), ('20140804194616'), ('20140804200235'), ('20140804202100'), ('20140804202101'), ('20140804202958'), ('20140804210000'), ('20140805030341'), ('20140814184537'), ('20140815111351'), ('20140815111352'), ('20140815121224'), ('20140815123542'), ('20140815124157'), ('20140815124606'), ('20140827142659'), ('20140901105741'), ('20140901106000'), ('20140902101425'), ('20140904033941'), ('20140904211823'), ('20140904213327'), ('20140905121420'), ('20140909141336'), ('20140909165233'), ('20140918115412'), ('20140922102737'), ('20140922110956'), ('20141002140242'), ('20141111102451'), ('20141111203313'), ('20141112111129'), ('20141126085907'), ('20141222174237'), ('20141222174247'), ('20141222174257'), ('20141222174267'), ('20141225174739'), ('20150213114933'), ('20150413000000'), ('20150413160156'), ('20150413160157'), ('20150413160158'), ('20150413160159'), ('20150416074423'), ('20150416090140'), ('20150416095646'), ('20150416101228'), ('20150417071153'), ('20150417180000'), ('20150417180314'), ('20150419000000'), ('20150420104520'), ('20150420110000'), ('20150420125522'), ('20150420153835'), ('20150420200255'), ('20150503120915'), ('20150510125926'), ('20150510130031'), ('20150513112126'), ('20150513130058'), ('20150513130510'), ('20150513160835'), ('20150520115257'), ('20150521092657'), ('20150521181918'), ('20150521191227'), ('20150528100944'), ('20150603181900'), ('20150604101858'), ('20150604102321'), ('20150604155923'), ('20150624200701'), ('20150702224217'), ('20150707164448'), ('20150709133244'), ('20150709135211'), ('20150709203137'), ('20150710012947'), ('20150710114451'), ('20150716085420'), ('20150717101243'), ('20150720115701'), ('20150720120236'), ('20150724003736'), ('20150803082520'), ('20150809032138'), ('20151015091923'), ('20151020203421'), ('20151030154449'), ('20151030154458'), ('20151030181131'), ('20151201161053'), ('20160308213334'), ('20160518025044'), ('20160519195544'), ('20160630133629'), ('20160805103310');
+INSERT INTO schema_migrations (version) VALUES ('20131128151014'), ('20131204135932'), ('20131204140000'), ('20131204143718'), ('20131204183530'), ('20131205233111'), ('20131206081531'), ('20131210221541'), ('20131220103409'), ('20131223175141'), ('20140117212555'), ('20140129151136'), ('20140207102709'), ('20140207102739'), ('20140211162355'), ('20140211164659'), ('20140211172443'), ('20140217100541'), ('20140313012209'), ('20140317121823'), ('20140514142421'), ('20140518120059'), ('20140527110223'), ('20140528043115'), ('20140611111020'), ('20140613044320'), ('20140613200951'), ('20140620112004'), ('20140704035033'), ('20140804194616'), ('20140804200235'), ('20140804202100'), ('20140804202101'), ('20140804202958'), ('20140804210000'), ('20140805030341'), ('20140814184537'), ('20140815111351'), ('20140815111352'), ('20140815121224'), ('20140815123542'), ('20140815124157'), ('20140815124606'), ('20140827142659'), ('20140901105741'), ('20140901106000'), ('20140902101425'), ('20140904033941'), ('20140904211823'), ('20140904213327'), ('20140905121420'), ('20140909141336'), ('20140909165233'), ('20140918115412'), ('20140922102737'), ('20140922110956'), ('20141002140242'), ('20141111102451'), ('20141111203313'), ('20141112111129'), ('20141126085907'), ('20141222174237'), ('20141222174247'), ('20141222174257'), ('20141222174267'), ('20141225174739'), ('20150213114933'), ('20150413000000'), ('20150413160156'), ('20150413160157'), ('20150413160158'), ('20150413160159'), ('20150416074423'), ('20150416090140'), ('20150416095646'), ('20150416101228'), ('20150417071153'), ('20150417180000'), ('20150417180314'), ('20150419000000'), ('20150420104520'), ('20150420110000'), ('20150420125522'), ('20150420153835'), ('20150420200255'), ('20150503120915'), ('20150510125926'), ('20150510130031'), ('20150513112126'), ('20150513130058'), ('20150513130510'), ('20150513160835'), ('20150520115257'), ('20150521092657'), ('20150521181918'), ('20150521191227'), ('20150528100944'), ('20150603181900'), ('20150604101858'), ('20150604102321'), ('20150604155923'), ('20150624200701'), ('20150702224217'), ('20150707164448'), ('20150709133244'), ('20150709135211'), ('20150709203137'), ('20150710012947'), ('20150710114451'), ('20150716085420'), ('20150717101243'), ('20150720115701'), ('20150720120236'), ('20150724003736'), ('20150803082520'), ('20150809032138'), ('20151015091923'), ('20151020203421'), ('20151030154449'), ('20151030154458'), ('20151030181131'), ('20151201161053'), ('20160308213334'), ('20160519195544'), ('20160805103310');
 
 
