@@ -50,7 +50,7 @@ gem "bootstrap-datepicker-rails"
 gem "simple_form"
 
 # Formularios anidados (algunos con ajax)
-gem "cocoon", github: "vtamara/cocoon"
+gem "cocoon", git: "https://github.com/vtamara/cocoon.git"
 
 # Autenticación y roles
 gem "devise"
@@ -72,11 +72,11 @@ gem "tzinfo"
 gem "tzinfo-data"
 
 # Motor de SIVeL 2
-gem 'sip', github: 'pasosdeJesus/sip'
+gem 'sip', git: "https://github.com/pasosdeJesus/sip.git"
 #gem 'sip', path: '../sip'
 
 # Motor Cor1440_gen
-gem 'cor1440_gen', github: 'pasosdeJesus/cor1440_gen'
+gem 'cor1440_gen', git: "https://github.com/pasosdeJesus/cor1440_gen.git"
 #gem "cor1440_gen", path: '../cor1440_gen'
 
 group :doc do
