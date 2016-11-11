@@ -97,8 +97,6 @@ GEM
       activesupport (>= 3.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
-    codeclimate-test-reporter (1.0.3)
-      simplecov
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -119,7 +117,6 @@ GEM
       warden (~> 1.2.3)
     devise-i18n (1.1.1)
     diff-lcs (1.2.5)
-    docile (1.1.5)
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.7.0)
@@ -266,11 +263,6 @@ GEM
     simple_form (3.3.1)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
-    simplecov (0.12.0)
-      docile (~> 1.1.0)
-      json (>= 1.8, < 3)
-      simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.0)
     slop (3.6.0)
     spring (2.0.0)
       activesupport (>= 4.2)
@@ -331,7 +323,6 @@ DEPENDENCIES
   cancancan
   capybara
   cocoon!
-  codeclimate-test-reporter
   coffee-rails
   colorize
   cor1440_gen!
