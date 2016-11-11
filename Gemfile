@@ -120,7 +120,7 @@ group :test do
   #gem "capybara-webkit"
 
   # Envia resultados de pruebas desde travis a codeclimate
-  gem "codeclimate-test-reporter", require: nil
+  #gem "codeclimate-test-reporter", require: nil
 
   # Para examinar errores, usar "rescue rspec" en lugar de "rspec"
   gem 'pry-rescue'
