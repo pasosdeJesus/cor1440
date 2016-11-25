@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 85ed6d25216cd8dba7c692f6dcac8203f9cfef1d
+  revision: 2cd85f861d9194f08abec4b0d4badbfdfb893c39
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 891aeadcfccf1eb3069c3493cc5fa48fde33d490
+  revision: 795d491dbf70f50cc35c3a9be4e6d39aa904fa30
   specs:
     sip (2.0.b1)
       bootstrap-datepicker-rails
@@ -104,7 +104,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.10.0)
+    coffee-script-source (1.11.1)
     colorize (0.8.1)
     commonjs (0.2.7)
     concurrent-ruby (1.0.2)
@@ -194,7 +194,7 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     public_suffix (2.0.4)
-    puma (3.6.0)
+    puma (3.6.2)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -287,13 +287,13 @@ GEM
       execjs (>= 2.2.2, >= 2.2)
       less-rails (>= 2.5.0)
       railties (>= 3.1)
-    twitter_cldr (4.0.0)
+    twitter_cldr (4.1.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2016.9)
+    tzinfo-data (1.2016.10)
       tzinfo (>= 1.0.0)
     uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
