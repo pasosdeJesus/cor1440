@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 7fcdbd10ae9a86a651f6061b5c4f851c9eefb7bc
+  revision: 4734b4ea351d12f739a3c9d1089fb2497b83ccca
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 46073d361682ee66eb4b85de240a32cf454ee307
+  revision: 9f961c730dd70aef8d0f233015667b498b97d5cf
   specs:
     sip (2.0.b1)
       bootstrap-datepicker-rails
@@ -107,7 +107,7 @@ GEM
     coffee-script-source (1.12.2)
     colorize (0.8.1)
     commonjs (0.2.7)
-    concurrent-ruby (1.0.3)
+    concurrent-ruby (1.0.4)
     debug_inspector (0.0.2)
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -131,13 +131,12 @@ GEM
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
-    jquery-rails (4.2.1)
+    jquery-rails (4.2.2)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
-    json (1.8.3)
     kgio (2.11.0)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -214,12 +213,12 @@ GEM
       actionpack (~> 5.x)
       actionview (~> 5.x)
       activesupport (~> 5.x)
-    rails-dom-testing (2.0.1)
+    rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
-      nokogiri (~> 1.6.0)
+      nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails-i18n (5.0.1)
+    rails-i18n (5.0.2)
       i18n (~> 0.7)
       railties (~> 5.0)
     rails_12factor (0.0.3)
@@ -235,7 +234,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.17.0)
     rake (12.0.0)
-    rdoc (4.3.0)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     rspec-core (3.5.4)
@@ -257,9 +255,6 @@ GEM
     rspec-support (3.5.0)
     rubyzip (1.1.7)
     sass (3.4.23)
-    sdoc (0.4.2)
-      json (~> 1.7, >= 1.7.7)
-      rdoc (~> 4.0)
     simple_form (3.3.1)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
@@ -333,6 +328,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   launchy
+  nokogiri (= 1.6.8.1)
   odf-report
   paperclip
   pg
@@ -348,7 +344,6 @@ DEPENDENCIES
   rails_12factor
   rspec-rails
   sass
-  sdoc
   simple_form
   sip!
   spring
@@ -364,4 +359,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   1.13.6
+   1.13.7
