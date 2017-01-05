@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: a56be7959fcd7d22c34be9dbae4d6cd9eb94d503
+  revision: 8ad69b48ec7de91ea827fcf635c642236de33f83
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 333937a24631a61e6ad94ad4121bb75c156f3391
+  revision: 667db057ee07ad374b81a848a8c650af941d14de
   specs:
     sip (2.0.b1)
       bootstrap-datepicker-rails
@@ -160,7 +160,7 @@ GEM
     minitest (5.10.1)
     multi_json (1.12.1)
     nio4r (1.2.1)
-    nokogiri (1.6.8.1)
+    nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     odf-report (0.5.1)
       nokogiri (>= 1.5.0)
@@ -328,7 +328,6 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   launchy
-  nokogiri (= 1.6.8.1)
   odf-report
   paperclip
   pg
