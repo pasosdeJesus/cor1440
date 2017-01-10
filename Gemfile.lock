@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 8ad69b48ec7de91ea827fcf635c642236de33f83
+  revision: e6437503f97b514b59bb5ed2e23a793c97eb9fba
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -10,9 +10,9 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 667db057ee07ad374b81a848a8c650af941d14de
+  revision: 8993b084f7b0a72cb15a9b6f276fb49f60b8dcb4
   specs:
-    sip (2.0.b1)
+    sip (2.0.b2)
       bootstrap-datepicker-rails
       cancancan
       colorize
@@ -93,8 +93,7 @@ GEM
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
     cldr-plurals-runtime-rb (1.0.1)
-    climate_control (0.0.3)
-      activesupport (>= 3.0)
+    climate_control (0.1.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.1)
@@ -255,7 +254,7 @@ GEM
     rspec-support (3.5.0)
     rubyzip (1.1.7)
     sass (3.4.23)
-    simple_form (3.3.1)
+    simple_form (3.4.0)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
     slop (3.6.0)
