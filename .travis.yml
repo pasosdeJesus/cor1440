@@ -1,23 +1,26 @@
 language: ruby
 rvm:
-        - 2.1.2
+        - 2.4.0
 notifications:
         email: false
-script: CODECLIMATE_REPO_TOKEN=5bd0455bc0a044a589398d4a2822192238509cf2d11058a28940017951b2a15f xvfb-run rspec
+script: bundle exec rails test -b
+after_success: 
+        - CODECLIMATE_REPO_TOKEN=5bd0455bc0a044a589398d4a2822192238509cf2d11058a28940017951b2a15f bundle exec codeclimate-test-reporter
 env:
         global:
                 - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-                - JRUBY_OPTS=-Xcext.enabled=true
 before_install: 
-        - sudo apt-add-repository -y ppa:ubuntu-sdk-team/ppa
-        - sudo apt-get update
-        - sudo apt-get install libqt5webkit5-dev qtdeclarative5-dev qtlocation5-dev qtsensors5-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev qt4-default
         - sudo locale-gen --no-archive es_CO.UTF-8
+        - sudo /etc/init.d/postgresql stop
+        - sudo /etc/init.d/postgresql start 9.3
         - psql -c 'CREATE DATABASE cor1440des_pru;' -U postgres
         - bundle install
         - cp db/structure.sql db/structure.sql.conlock
         - sed -e "s/SET lock_timeout = 0;//g" db/structure.sql.conlock >db/structure.sql
         - cp config/database.travis.yml config/database.yml
+        - cp config/application.rb.plantilla config/application.rb
+        - cp config/routes.rb.plantilla config/routes.rb
+        - cp config/initializers/sip.rb.plantilla config/initializers/sip.rb
         - rake db:setup
         - rake sip:indices
 
