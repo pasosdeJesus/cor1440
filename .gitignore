@@ -26,3 +26,4 @@ config/initializers/sip.rb
 config/routes.rb
 config/unicorn.conf.minimal.rb
 archivos/*
+coverage
