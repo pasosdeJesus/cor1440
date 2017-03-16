@@ -27,3 +27,4 @@ config/routes.rb
 config/unicorn.conf.minimal.rb
 archivos/*
 coverage
+.byebug_history
