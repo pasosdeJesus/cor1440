@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 640f26b2caafc6e2cf21dd0387ce5166126fbd28
+  revision: ffb924c7074bfd33b393114a2e97eb7f8b5b547f
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 18c03d9d245af3b1ad70aa8a3a59fe76676a6762
+  revision: 6efa709f297a8efc731e76d0b4cbe1a855562504
   specs:
     sip (2.0.b2)
       bootstrap-datepicker-rails
@@ -298,7 +298,7 @@ GEM
       execjs (~> 2.7)
       less-rails (~> 2.8, >= 2.8.0)
       railties (~> 5.0, >= 5.0.1)
-    twitter_cldr (4.3.0)
+    twitter_cldr (4.3.1)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
