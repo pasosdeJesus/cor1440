@@ -28,3 +28,4 @@ config/unicorn.conf.minimal.rb
 archivos/*
 coverage
 .byebug_history
+public/heb412/

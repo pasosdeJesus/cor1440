@@ -35,6 +35,7 @@ class Ability  < Cor1440Gen::Ability
       when Ability::ROLADMIN, Ability::ROLDIR
         can :manage, Cor1440Gen::Actividad
         can :manage, Cor1440Gen::Informe
+        can :manage, Heb412Gen::Doc 
         can :manage, Usuario
         can :manage, :tablasbasicas
         tablasbasicas.each do |t|

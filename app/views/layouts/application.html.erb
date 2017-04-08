@@ -10,8 +10,15 @@
     <% end %>
   <% end %>
   <%= menu_group :pull => :right do %>
-    <%= menu_item "Documentacion", sip.acercade_path %>
     <% if !current_usuario.nil? %>
+      <%= drop_down "Documentos y plantillas" do %>
+        <%= menu_item "Nube", heb412_gen.sisini_path %>
+        <% if current_usuario.rol == Ability::ROLADMIN || 
+             current_usuario.rol == Ability::ROLDIR %>
+           <%= menu_item "Definir plantilla hoja de calculo m.", 
+             heb412_gen.new_plantillahcm_path %>
+        <% end %>
+      <% end %>
       <%= drop_down "Administrar" do %>
         <%= menu_item "Clave", main_app.editar_registro_usuario_path %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
