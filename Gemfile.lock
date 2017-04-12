@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: eed39d1cdbb6d61401ec9f9a4a1f7b63931e4202
+  revision: c23499f1bd1dc62a4a71e4e03e480e79e68733c0
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 1ddddfcae3507ab5f009083c20554eeea43470eb
+  revision: 6e71d00860e13f94f5eca82fb2b02c4e901b90d8
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 3c52c0740701177b640780012f9efac8f88126b5
+  revision: 0c513925e6872c57543fd27ed66856064026d0a6
   specs:
     sip (2.0.b2)
       bootstrap-datepicker-rails
@@ -156,7 +156,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
-    json (2.0.3)
+    json (2.0.4)
     kgio (2.11.0)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -317,7 +317,7 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
-    ttfunk (1.5.0)
+    ttfunk (1.5.1)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
