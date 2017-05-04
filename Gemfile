@@ -89,6 +89,7 @@ gem 'cor1440_gen', git: "https://github.com/pasosdeJesus/cor1440_gen.git"
 
 gem 'chosen-rails'
 gem 'rspreadsheet'
+gem 'libxml-ruby'
 
 # Los siguientes son para desarrollo o para pruebas con generadores
 group :development do

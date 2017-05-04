@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 794a01986c782e35d3b7bae5b8f06c132fb18a09
+  revision: b850d95168b949d0b9f681c005cce4990016125a
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: e84ced0579827b3e8db3b44fbe00ff7d04595a05
+  revision: 57baedae3ca869115ef3c0968b03cf03b6c4ee1e
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 84da85e89fb2a346edd26df9e44a2184f5c927bf
+  revision: ea79ff2bbe5ca48c71ddca38b063f4559ace950f
   specs:
     sip (2.0.b3)
       bootstrap-datepicker-rails
@@ -101,7 +101,7 @@ GEM
     builder (3.2.3)
     camertron-eprun (1.1.1)
     cancancan (1.16.0)
-    capybara (2.13.0)
+    capybara (2.14.0)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -168,7 +168,7 @@ GEM
       less (~> 2.6.0)
       sprockets (> 2, < 4)
       tilt
-    libxml-ruby (2.8.0)
+    libxml-ruby (3.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.5)
@@ -218,7 +218,7 @@ GEM
       mimemagic (~> 0.3.0)
     pdf-core (0.7.0)
     pg (0.20.0)
-    poltergeist (1.14.0)
+    poltergeist (1.15.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
@@ -285,9 +285,8 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
-    rspreadsheet (0.4.4)
+    rspreadsheet (0.4.5)
       andand (~> 1.3)
-      libxml-ruby (= 2.8)
       rubyzip (~> 1.1)
     ruby-progressbar (1.8.1)
     rubyzip (1.1.7)
@@ -322,7 +321,7 @@ GEM
     ttfunk (1.5.1)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
-    turbolinks-source (5.0.0)
+    turbolinks-source (5.0.2)
     twitter-bootstrap-rails (4.0.0)
       actionpack (~> 5.0, >= 5.0.1)
       execjs (~> 2.7)
@@ -378,6 +377,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   launchy
+  libxml-ruby
   minitest-rails-capybara
   minitest-reporters
   mocha
