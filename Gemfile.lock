@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: b850d95168b949d0b9f681c005cce4990016125a
+  revision: bfd1d0ac1f9828c34810a79fa94f829dc2fa4b53
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 57baedae3ca869115ef3c0968b03cf03b6c4ee1e
+  revision: bfe3898d06bc3e23ad827a4ae0bf8c70b86f1dd7
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: ea79ff2bbe5ca48c71ddca38b063f4559ace950f
+  revision: 2108f1f43c4afb8c9e4d22762a915968d38864f0
   specs:
     sip (2.0.b3)
       bootstrap-datepicker-rails
@@ -33,6 +33,7 @@ GIT
       devise-i18n
       jquery-rails
       jquery-ui-rails
+      minitest (= 5.10.1)
       paperclip
       rails
       rails-i18n
@@ -131,7 +132,7 @@ GEM
     commonjs (0.2.7)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
-    debug_inspector (0.0.2)
+    debug_inspector (0.0.3)
     devise (4.2.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -148,9 +149,9 @@ GEM
       activesupport (>= 4.2.0)
     i18n (0.8.1)
     interception (0.5)
-    jbuilder (2.6.3)
-      activesupport (>= 3.0.0, < 5.2)
-      multi_json (~> 1.2)
+    jbuilder (2.6.4)
+      activesupport (>= 3.0.0)
+      multi_json (>= 1.2)
     jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -204,7 +205,7 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.12.1)
     nio4r (2.0.0)
-    nokogiri (1.7.1)
+    nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
     odf-report (0.5.1)
       nokogiri (>= 1.5.0)
@@ -242,7 +243,7 @@ GEM
       pry (>= 0.9.11)
     public_suffix (2.0.5)
     puma (3.8.2)
-    rack (2.0.1)
+    rack (2.0.2)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.1.0.rc1)
@@ -261,12 +262,12 @@ GEM
       actionpack (~> 5.x)
       actionview (~> 5.x)
       activesupport (~> 5.x)
-    rails-dom-testing (2.0.2)
-      activesupport (>= 4.2.0, < 6.0)
-      nokogiri (~> 1.6)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails-i18n (5.0.3)
+    rails-i18n (5.0.4)
       i18n (~> 0.7)
       railties (~> 5.0)
     rails_12factor (0.0.3)
@@ -321,7 +322,7 @@ GEM
     ttfunk (1.5.1)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
-    turbolinks-source (5.0.2)
+    turbolinks-source (5.0.3)
     twitter-bootstrap-rails (4.0.0)
       actionpack (~> 5.0, >= 5.0.1)
       execjs (~> 2.7)
