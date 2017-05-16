@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: bfd1d0ac1f9828c34810a79fa94f829dc2fa4b53
+  revision: e73be87e870109612e0076fc9cabe16c84038390
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: bfe3898d06bc3e23ad827a4ae0bf8c70b86f1dd7
+  revision: 6e6c03fc53b5dc85b0b004006eb234e022907872
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 2108f1f43c4afb8c9e4d22762a915968d38864f0
+  revision: a6e8fecca65cae9c0a6ba4872ea8b1d235f61a85
   specs:
     sip (2.0.b3)
       bootstrap-datepicker-rails
@@ -114,7 +114,7 @@ GEM
       railties (>= 3.0)
       sass-rails (>= 3.2)
     cldr-plurals-runtime-rb (1.0.1)
-    climate_control (0.1.0)
+    climate_control (0.2.0)
     cliver (0.3.2)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
@@ -133,10 +133,10 @@ GEM
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
     debug_inspector (0.0.3)
-    devise (4.2.1)
+    devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
-      railties (>= 4.1.0, < 5.1)
+      railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
     devise-i18n (1.1.2)
@@ -243,7 +243,7 @@ GEM
       pry (>= 0.9.11)
     public_suffix (2.0.5)
     puma (3.8.2)
-    rack (2.0.2)
+    rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.1.0.rc1)
@@ -343,7 +343,7 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.7)
       rack (>= 1.0)
-    web-console (3.5.0)
+    web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
