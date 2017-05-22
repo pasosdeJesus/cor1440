@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: e73be87e870109612e0076fc9cabe16c84038390
+  revision: 32c6e8143e7e455a2c5702a135f5700c7300fc09
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 6e6c03fc53b5dc85b0b004006eb234e022907872
+  revision: 391466eee6257bcdc96a78b1130e10a886e1b8fa
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: a6e8fecca65cae9c0a6ba4872ea8b1d235f61a85
+  revision: d3d4809bd30cd356351ac957b4482a40f1185123
   specs:
     sip (2.0.b3)
       bootstrap-datepicker-rails
@@ -101,7 +101,7 @@ GEM
       railties (>= 3.0)
     builder (3.2.3)
     camertron-eprun (1.1.1)
-    cancancan (1.16.0)
+    cancancan (2.0.0)
     capybara (2.14.0)
       addressable
       mime-types (>= 1.16)
@@ -258,9 +258,9 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.1.0.rc1)
       sprockets-rails (>= 2.0.0)
-    rails-controller-testing (1.0.1)
-      actionpack (~> 5.x)
-      actionview (~> 5.x)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
       activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
@@ -291,23 +291,23 @@ GEM
       rubyzip (~> 1.1)
     ruby-progressbar (1.8.1)
     rubyzip (1.1.7)
-    sass (3.4.23)
+    sass (3.4.24)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    simple_form (3.4.0)
-      actionpack (> 4, < 5.1)
-      activemodel (> 4, < 5.1)
+    simple_form (3.5.0)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     simplecov (0.13.0)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.0)
+    simplecov-html (0.10.1)
     slop (3.6.0)
-    spring (2.0.1)
+    spring (2.0.2)
       activesupport (>= 4.2)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
