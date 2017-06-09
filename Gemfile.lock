@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: cb4c037bc3f95cff7170b27a631f07ee6abdc965
+  revision: 708cf0bd557b6351e26861e16fa2aad805951431
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 935a4a1f77a048a0de3b11d0d5d5e5858d98ae1c
+  revision: 1d266dd4a25bf45cbc35c48497b6ad3ddde4160c
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 89216f90ce26f4249f13328d6146a89eeb2f75d9
+  revision: 3b730f2e9f6226b90ebbf18589de83e3fdf7ea63
   specs:
     sip (2.0.b3)
       bootstrap-datepicker-rails
@@ -102,7 +102,7 @@ GEM
     builder (3.2.3)
     camertron-eprun (1.1.1)
     cancancan (2.0.0)
-    capybara (2.14.0)
+    capybara (2.14.1)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -351,7 +351,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    will_paginate (3.1.5)
+    will_paginate (3.1.6)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
