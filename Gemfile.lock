@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 10aaeb59d837aa7ba686c42495b5add5bd50bc48
+  revision: ada668b84fcf5c7a6fbd1a63e5455d0f45f9164f
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -102,7 +102,7 @@ GEM
     builder (3.2.3)
     camertron-eprun (1.1.1)
     cancancan (2.0.0)
-    capybara (2.14.2)
+    capybara (2.14.3)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -411,9 +411,6 @@ DEPENDENCIES
   unicorn
   web-console
   will_paginate
-
-RUBY VERSION
-   ruby 2.4.1p111
 
 BUNDLED WITH
    1.14.6
