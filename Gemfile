@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 #ruby '2.4.1'
 
 # Rails (internacionalización)
-gem "rails", '5.1.0.rc1'
+gem "rails", '~>5.0.0'
 
 gem "rails-i18n"
 
