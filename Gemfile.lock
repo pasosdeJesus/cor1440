@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 95df7bdd772fafdc6fde04c8a6f94fb92a8358fa
+  revision: 211d0688738dcbcbabf7bc4dbf309360377d0e47
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 8df2b183f3d8afd3fd864b7acedf5fb700bdbc4d
+  revision: 53f625e65f8758cbbf5e9a4a446353cc8c9da4c6
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d1f6332e94765ceb13e058b147f7ca037dd7817f
+  revision: 81cfccf0d76315de4a63f961697ffa52c42fb745
   specs:
     sip (2.0.b3)
       bootstrap-datepicker-rails
@@ -141,6 +141,7 @@ GEM
     docile (1.1.5)
     erubi (1.6.1)
     execjs (2.7.0)
+    ffi (1.9.18)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
     globalid (0.4.0)
@@ -281,6 +282,9 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.18.0)
     rake (12.0.0)
+    rb-fsevent (0.10.2)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -289,7 +293,11 @@ GEM
       rubyzip (~> 1.1)
     ruby-progressbar (1.8.1)
     rubyzip (1.1.7)
-    sass (3.4.25)
+    sass (3.5.0)
+      sass-listen (~> 3.0.7)
+    sass-listen (3.0.7)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9.7)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
