@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 06a3ce731e6a5bcde005d68bcb13dc0ae1d0f0fd
+  revision: 812335d9c6273d606b41f60be35d29426c65e80d
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: e0a8f10b094507bfad4f59312cb2735681332745
+  revision: 03f2b1c6dc234e37fe9fa24f6fb47125cfabbf30
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 26cea6aa4d7272f336864d771f130eacd0a7807a
+  revision: a9c912fc40bbde92909172e816fdb0a8d379e2ae
   specs:
     sip (2.0.b4)
       bootstrap-datepicker-rails
@@ -196,7 +196,7 @@ GEM
       minitest-capybara (~> 0.8)
       minitest-metadata (~> 0.6)
       minitest-rails (~> 3.0)
-    minitest-reporters (1.1.15)
+    minitest-reporters (1.1.16)
       ansi
       builder
       minitest (>= 5.0)
