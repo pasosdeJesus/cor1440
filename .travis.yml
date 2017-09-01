@@ -12,7 +12,7 @@ env:
 before_install: 
         - sudo locale-gen --no-archive es_CO.UTF-8
         - sudo /etc/init.d/postgresql stop
-        - sudo /etc/init.d/postgresql start 9.3
+        - sudo /etc/init.d/postgresql start 9.6
         - psql -c 'CREATE DATABASE cor1440des_pru;' -U postgres
         - bundle install
         - cp config/database.travis.yml config/database.yml
