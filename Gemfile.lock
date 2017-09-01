@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: f4beafde03f60c2df19423e4f092f72e013f43c2
+  revision: 566c052359b7f4d0b89675953010e877e0f0e599
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 09f7186dd8adc614a593e8ed10ba8faf5e9472b9
+  revision: a1c792c4ee7ac4f06dcd66e8f7ba2820a52bf2a3
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: f71e4c8b7747b661f2494470b5f1a2b6e7fec8a4
+  revision: 716afd7e97d05809f092e4393d7183993d5bd01b
   specs:
     sip (2.0.b4)
       bootstrap-datepicker-rails
@@ -319,7 +319,7 @@ GEM
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.0)
+    sprockets-rails (3.2.1)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
