@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.4.1'
+ruby '~>2.4'
 
 # Rails (internacionalización)
-gem "rails", '5.1.0.rc1'
+gem "rails", '~>5.1.0'
 
 gem "rails-i18n"
 
@@ -122,8 +122,6 @@ group :test do
   gem 'minitest-rails-capybara'
 
   gem 'simplecov'
-  # Envia resultados de pruebas desde travis a codeclimate
-  gem "codeclimate-test-reporter", require: nil
 
   # Para examinar errores, usar "rescue rspec" en lugar de "rspec"
   gem 'pry-rescue'
