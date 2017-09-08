@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-require_relative 'boot'
+require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
@@ -24,6 +24,6 @@ module Cor1440
 
     config.active_record.schema_format = :sql
 
-    config.relative_url_root = "/"
+    #config.relative_url_root = "/cor1440"
   end
 end
