@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 739d9d027815cbb593bff81cd8b9fb9f539ed04d
+  revision: c878d3499870ed9fa5139514b22475499d4e323f
   branch: us_modelo
   specs:
     cor1440_gen (1.0.b1)
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 85dd2c1bfc81baf6a7345c87c4ee3e86ed6cf837
+  revision: 6d7bd993eda2725d4af4a90800bfc7617eef2bc8
   branch: us_modelo
   specs:
     heb412_gen (1.0.a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 3b4135a5ae893ada1033875bd3c54cd85f9ed053
+  revision: f211024647fbe3610ee32252156d756c4a9dd79f
   branch: us_modelo
   specs:
     sip (2.0.b4)
@@ -295,7 +295,7 @@ GEM
     rspreadsheet (0.4.5)
       andand (~> 1.3)
       rubyzip (~> 1.1)
-    ruby-progressbar (1.8.1)
+    ruby-progressbar (1.8.3)
     rubyzip (1.1.7)
     sass (3.5.1)
       sass-listen (~> 4.0.0)
