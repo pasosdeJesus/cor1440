@@ -76,15 +76,15 @@ gem "tzinfo"
 gem "tzinfo-data"
 
 # Motor de SIVeL 2
-gem 'sip', git: "https://github.com/pasosdeJesus/sip.git", branch: :us_modelo
+gem 'sip', git: "https://github.com/pasosdeJesus/sip.git"
 #gem 'sip', path: '../sip'
 
 # Motor heb412_gen para manejar archivos como nube y plantillas
-gem 'heb412_gen', git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :us_modelo
+gem 'heb412_gen', git: 'https://github.com/pasosdeJesus/heb412_gen.git'
 #gem 'heb412_gen', path: '../heb412_gen/'
 
 # Motor Cor1440_gen
-gem 'cor1440_gen', git: "https://github.com/pasosdeJesus/cor1440_gen.git", branch: :us_modelo
+gem 'cor1440_gen', git: "https://github.com/pasosdeJesus/cor1440_gen.git"
 #gem "cor1440_gen", path: '../cor1440_gen'
 
 gem 'chosen-rails'
