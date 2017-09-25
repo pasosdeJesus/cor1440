@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: aa03af288bffadbf5e796ec3fcee3000edcbb08d
+  revision: 3c62d04a6839a6c751e70cb61af4310a6571dea5
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f377004fbed32dcddb7eacae02512135acfbb547
+  revision: a646139af157ce1385b8f8be257bcc76f61aa8d9
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: b9fb1ef09f6c15a0220134cb85006edc53f8ab51
+  revision: bd814795025a0b0be2c6fa4167280458da06a8ce
   specs:
     sip (2.0.b4)
       bootstrap-datepicker-rails
@@ -130,6 +130,7 @@ GEM
     commonjs (0.2.7)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
+    crass (1.0.2)
     debug_inspector (0.0.3)
     devise (4.3.0)
       bcrypt (~> 3.0)
@@ -169,7 +170,8 @@ GEM
       sprockets (> 2, < 4)
       tilt
     libxml-ruby (3.0.0)
-    loofah (2.0.3)
+    loofah (2.1.1)
+      crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.6)
       mime-types (>= 1.16, < 4)
@@ -231,10 +233,9 @@ GEM
     prawnto_2 (0.2.6)
       prawn (>= 0.6.0)
       rails (>= 3.1)
-    pry (0.10.4)
+    pry (0.11.0)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
-      slop (~> 3.4)
     pry-rescue (1.4.5)
       interception (>= 0.5)
       pry
@@ -313,7 +314,6 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    slop (3.6.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     sprockets (3.7.1)
