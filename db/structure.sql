@@ -772,7 +772,6 @@ ALTER SEQUENCE heb412_gen_doc_id_seq OWNED BY heb412_gen_doc.id;
 CREATE TABLE heb412_gen_plantillahcm (
     id integer NOT NULL,
     ruta character varying(2047) NOT NULL,
-    descripcion character varying(2047),
     fuente character varying(1023),
     licencia character varying(1023),
     vista character varying(127) NOT NULL,
@@ -2721,6 +2720,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20161108102349'),
 ('20170405104322'),
 ('20170413185012'),
-('20170414035328');
+('20170414035328'),
+('20171019133203');
 
 
