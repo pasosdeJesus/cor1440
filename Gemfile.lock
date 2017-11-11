@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 660af0a03471f2668a769e60cc428b615c67f90a
+  revision: 0518b8dd28ba615c3004db6fc401f178cf260be3
   specs:
     cor1440_gen (1.0.b1)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 35f4a646cb813e09e0be1b39f0e2160370bb840e
+  revision: 3af430698c3501116bc5cc04723e61a74c4a720f
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -103,7 +103,7 @@ GEM
       railties (>= 3.0)
     builder (3.2.3)
     camertron-eprun (1.1.1)
-    cancancan (2.0.0)
+    cancancan (2.1.0)
     capybara (2.15.4)
       addressable
       mini_mime (>= 0.1.3)
@@ -185,7 +185,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mimemagic (0.3.2)
-    mini_mime (0.1.4)
+    mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     minitest-capybara (0.8.2)
@@ -246,7 +246,7 @@ GEM
     pry-stack_explorer (0.4.9.2)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
-    public_suffix (3.0.0)
+    public_suffix (3.0.1)
     puma (3.10.0)
     rack (2.0.3)
     rack-test (0.7.0)
@@ -362,7 +362,7 @@ GEM
       railties (>= 5.0)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.2)
+    websocket-extensions (0.1.3)
     will_paginate (3.1.6)
     xpath (2.1.0)
       nokogiri (~> 1.3)
