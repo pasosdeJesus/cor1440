@@ -7,7 +7,8 @@ gem "rails", '~>5.1.0'
 
 gem "rails-i18n"
 
-gem "odf-report", '~>0.5.1'
+gem "odf-report", git: 'https://github.com/vtamara/odf-report.git', branch: 'update-rubyzip'
+
 
 # Postgresql
 gem "pg"
