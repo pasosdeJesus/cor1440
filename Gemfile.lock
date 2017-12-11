@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 9afc3ea271cc003b09112aa72d0965c9e0a85df7
+  revision: 2bfa99c957d6bf80d584652741082ae210dc5807
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f5271fd7002422c3197035b4f6538a58e3135c1d
+  revision: 681b4e459060434517f2ce1bce2480e5cb48ac22
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -149,8 +149,8 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.4.0)
-      devise (>= 3.1)
+    devise-i18n (1.5.0)
+      devise (>= 3.4)
     docile (1.1.5)
     erubi (1.7.0)
     execjs (2.7.0)
@@ -354,7 +354,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2017.3)
       tzinfo (>= 1.0.0)
-    uglifier (4.0.1)
+    uglifier (4.0.2)
       execjs (>= 0.3.0, < 3)
     unicorn (5.3.1)
       kgio (~> 2.6)
