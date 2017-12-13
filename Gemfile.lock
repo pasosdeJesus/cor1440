@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 2bfa99c957d6bf80d584652741082ae210dc5807
+  revision: e2480019707d586d2e647826b49234a0929ed6d5
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 681b4e459060434517f2ce1bce2480e5cb48ac22
+  revision: f689d810923d85e0ee451cd3cfe780ded6cd2502
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -231,7 +231,7 @@ GEM
       mimemagic (~> 0.3.0)
     pdf-core (0.7.0)
     pg (0.21.0)
-    poltergeist (1.16.0)
+    poltergeist (1.17.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
