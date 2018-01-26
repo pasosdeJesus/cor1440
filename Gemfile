@@ -11,7 +11,7 @@ gem "odf-report", git: 'https://github.com/vtamara/odf-report.git', branch: 'upd
 
 
 # Postgresql
-gem "pg"
+gem "pg", '~> 0.21'
 
 gem 'puma'
 
