@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: b3c9076d31919a5165b0b8380d431ad3a70a9255
+  revision: 4b06e171764457a100ec14cb96cd90baa95289c5
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 4acc07a0f61a6210cd56ccd53d9b2c128f304228
+  revision: 0b7847b350bea0fec7202a9b439b153037a6c9a8
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -149,7 +149,7 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.5.0)
+    devise-i18n (1.5.1)
       devise (>= 3.4)
     docile (1.1.5)
     erubi (1.7.0)
@@ -172,7 +172,7 @@ GEM
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
     json (2.1.0)
-    kgio (2.11.1)
+    kgio (2.11.2)
     launchy (2.4.3)
       addressable (~> 2.3)
     less (2.6.0)
@@ -196,7 +196,7 @@ GEM
     mimemagic (0.3.2)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.2)
+    minitest (5.11.3)
     minitest-capybara (0.8.2)
       capybara (~> 2.2)
       minitest (~> 5.0)
@@ -220,7 +220,7 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.13.1)
     nio4r (2.2.0)
-    nokogiri (1.8.1)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     paperclip (5.2.1)
@@ -254,7 +254,7 @@ GEM
       pry (>= 0.9.11)
     public_suffix (3.0.1)
     puma (3.11.2)
-    rack (2.0.3)
+    rack (2.0.4)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rails (5.1.4)
@@ -354,7 +354,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2018.3)
       tzinfo (>= 1.0.0)
-    uglifier (4.1.4)
+    uglifier (4.1.5)
       execjs (>= 0.3.0, < 3)
     unicorn (5.4.0)
       kgio (~> 2.6)
