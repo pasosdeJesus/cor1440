@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4b4488d37eac4dec63cbe525216ac5987028b7cd
+  revision: 4dadd918d87cc79e3f1a614667af6ae30d41152c
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 93e28955edc970aa2fb40567bbfef2b9e7560c85
+  revision: 43f0f1746fc18c6f36bccbc386d7e8673847cbf7
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -181,7 +181,7 @@ GEM
       sprockets (> 2, < 4)
       tilt
     libxml-ruby (3.1.0)
-    loofah (2.2.0)
+    loofah (2.2.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.0)
