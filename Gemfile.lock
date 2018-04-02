@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 19744f29e765889c86d6a04b5b8acd6d37312ae8
+  revision: 11456b257cdd0e19e6adb0b1888d35ebbdd1cf4d
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 64b5ace515f8f13d774f3cd6e18a26d3f36303e3
+  revision: 2cfc870229996ea7cf840457d3324ef984a21dac
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -108,7 +108,7 @@ GEM
     bindex (0.5.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
-    bootstrap-datepicker-rails (1.7.1.1)
+    bootstrap-datepicker-rails (1.8.0.1)
       railties (>= 3.0)
     builder (3.2.3)
     camertron-eprun (1.1.1)
