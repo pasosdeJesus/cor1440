@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 8ae458753bbd3298043c9f09fa323d52d8b3804e
+  revision: 92c88e466b9b0dbee871c78a9cb57aae2583c5e4
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 59c7195e136778a82b65e1bb6da92042204133d2
+  revision: 2fa18367ab59639c25e86c8717c8afee7f44fce8
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -251,7 +251,7 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     public_suffix (3.0.2)
-    puma (3.11.3)
+    puma (3.11.4)
     rack (2.0.4)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
