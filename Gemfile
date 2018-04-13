@@ -78,7 +78,6 @@ gem "paperclip"
 
 # Zonas horarias
 gem "tzinfo"
-gem "tzinfo-data"
 
 # Motor de SIVeL 2
 gem 'sip', git: "https://github.com/pasosdeJesus/sip.git"
@@ -113,7 +112,7 @@ group :test do
   # Acelera ejecutando en fondo.  https://github.com/jonleighton/spring
   gem "spring"
 
-  gem 'rails-controller-testing'
+  #gem 'rails-controller-testing'
 
   # https://www.relishapp.com/womply/rails-style-guide/docs/developing-rails-applications/bundler
   # Lanza programas para examinar resultados
@@ -121,10 +120,10 @@ group :test do
 
   gem "connection_pool"
   gem "minitest-reporters"
-  gem "mocha"
+  #gem "mocha"
+  gem "minitest-rails-capybara"
+  #gem "capybara"
   gem "poltergeist"
-  gem 'capybara'
-  gem 'minitest-rails-capybara'
 
   gem 'simplecov'
 
