@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 92c88e466b9b0dbee871c78a9cb57aae2583c5e4
+  revision: 4deaff497454c12759d44c694635c7e240d44b32
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -111,9 +111,10 @@ GIT
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
-  revision: 20f8f3bab2fee21309c57b586f5fab9921ac0894
+  revision: f8fbad8d9d6bb087223221d70733b58a3d2efd8a
+  branch: new_id_with_ajax
   specs:
-    cocoon (1.2.6)
+    cocoon (1.2.11)
 
 GEM
   remote: https://rubygems.org/
