@@ -3,11 +3,15 @@ source 'https://rubygems.org'
 ruby '~>2.4'
 
 # Rails (internacionalización)
-gem "rails", '~>5.1.0'
+#gem "rails", '~> 5.2.0'
+# Resuelve problema con minitest y rails 5.2.0
+gem "rails", '~> 5.2.0', git: 'https://github.com/rails/rails.git', ref: '4887f97bd8a8859294ad02ccea20d83a94ec0812'
+
+gem 'bootsnap', '>=1.1.0', require: false
 
 gem "rails-i18n"
 
-gem "odf-report", git: 'https://github.com/vtamara/odf-report.git', branch: 'update-rubyzip'
+gem "odf-report"
 
 
 # Postgresql
@@ -77,7 +81,7 @@ gem "tzinfo"
 gem "tzinfo-data"
 
 # Motor de SIVeL 2
-gem 'sip', git: "https://github.com/pasosdeJesus/sip.git", branch: 'bas_modelo'
+gem 'sip', git: "https://github.com/pasosdeJesus/sip.git"
 #gem 'sip', path: '../sip'
 
 # Motor heb412_gen para manejar archivos como nube y plantillas
