@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: b3f3488ac66983aefeb086631d4c0fc8a2e62edc
+  revision: 602d738d107a71a99e373014377569835040fffe
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 76ab510a072fd2f6e81d4b9cef1ad6521b220c18
+  revision: 28438d1dfc5c9f7b1fc43e4487ecfaa6614db8f9
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 2bb534b1b602ccee482754007115b3f7e30feff8
+  revision: 26e52c7deeaf703bcabbeed8fc2baac5c9142ffb
   specs:
     sip (2.0.b4)
       bootstrap-datepicker-rails
@@ -111,7 +111,7 @@ GIT
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
-  revision: f8fbad8d9d6bb087223221d70733b58a3d2efd8a
+  revision: f710fc1759612895846adeb7a7753e4191ddeb10
   branch: new_id_with_ajax
   specs:
     cocoon (1.2.11)
@@ -239,7 +239,7 @@ GEM
       ruby-progressbar
     msgpack (1.2.4)
     multi_json (1.13.1)
-    nio4r (2.3.0)
+    nio4r (2.3.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     odf-report (0.5.2)
@@ -254,8 +254,8 @@ GEM
       terrapin (~> 0.6.0)
     pdf-core (0.7.0)
     pg (1.0.0)
-    poltergeist (1.17.0)
-      capybara (~> 2.1)
+    poltergeist (1.18.0)
+      capybara (>= 2.1, < 4)
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
     prawn (2.2.2)
@@ -362,7 +362,7 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.7)
       rack (>= 1.0)
-    web-console (3.6.1)
+    web-console (3.6.2)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
