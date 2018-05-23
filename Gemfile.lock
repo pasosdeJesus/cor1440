@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 28438d1dfc5c9f7b1fc43e4487ecfaa6614db8f9
+  revision: 852821c6872d5263df3580c7179cc730a4ef28e8
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -23,9 +23,9 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 26e52c7deeaf703bcabbeed8fc2baac5c9142ffb
+  revision: c19ee8014374a3dda518714a55506443f6993db9
   specs:
-    sip (2.0.b4)
+    sip (2.0.b5)
       bootstrap-datepicker-rails
       cancancan
       chosen-rails
@@ -124,7 +124,7 @@ GEM
     andand (1.3.3)
     ansi (1.5.0)
     arel (9.0.0)
-    bcrypt (3.1.11)
+    bcrypt (3.1.12)
     bindex (0.5.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
@@ -318,9 +318,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    simple_form (4.0.0)
-      actionpack (> 4)
-      activemodel (> 4)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
