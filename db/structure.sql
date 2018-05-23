@@ -627,7 +627,8 @@ CREATE TABLE cor1440_gen_indicadorpf (
     resultadopf_id integer,
     numero character varying(15) NOT NULL,
     indicador character varying(5000) NOT NULL,
-    tipoindicador_id integer
+    tipoindicador_id integer,
+    objetivopf_id integer
 );
 
 
@@ -2865,6 +2866,14 @@ ALTER TABLE ONLY cor1440_gen_actividad
 
 
 --
+-- Name: cor1440_gen_indicadorpf fk_rails_4a0bd96143; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY cor1440_gen_indicadorpf
+    ADD CONSTRAINT fk_rails_4a0bd96143 FOREIGN KEY (objetivopf_id) REFERENCES cor1440_gen_objetivopf(id);
+
+
+--
 -- Name: cor1440_gen_valorcampotind fk_rails_4f2fc96457; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -3402,12 +3411,14 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20171130133741'),
 ('20171212001011'),
 ('20171217135318'),
+('20180212223621'),
 ('20180219032546'),
 ('20180220103644'),
 ('20180220104234'),
 ('20180223091622'),
 ('20180320230847'),
 ('20180427194732'),
-('20180509111948');
+('20180509111948'),
+('20180519102415');
 
 
