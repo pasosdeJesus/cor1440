@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 9d20733fc98662b8d8a8a2eedd685cc05b4378a5
+  revision: 1eaa68228d7179c790a91ce9d256789aab3292e6
   branch: vista_actividad_sipmodelo
   specs:
     cor1440_gen (1.0b2)
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 852821c6872d5263df3580c7179cc730a4ef28e8
+  revision: 7061f17b11cd505786bb5730e6b661d25aa413e7
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: c19ee8014374a3dda518714a55506443f6993db9
+  revision: dffd15dc6fd68fb50bc7c958b120f8fcc1210c55
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -112,7 +112,7 @@ GIT
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
-  revision: f710fc1759612895846adeb7a7753e4191ddeb10
+  revision: 9d29a8abcc5b6ed9aefcad85ca54dd1364262583
   branch: new_id_with_ajax
   specs:
     cocoon (1.2.11)
@@ -161,7 +161,7 @@ GEM
     colorize (0.8.1)
     commonjs (0.2.7)
     concurrent-ruby (1.0.5)
-    connection_pool (2.2.1)
+    connection_pool (2.2.2)
     crass (1.0.4)
     debug_inspector (0.0.3)
     devise (4.4.3)
@@ -172,7 +172,7 @@ GEM
       warden (~> 1.2.3)
     devise-i18n (1.6.2)
       devise (>= 4.4)
-    docile (1.3.0)
+    docile (1.3.1)
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.23)
@@ -255,7 +255,7 @@ GEM
       terrapin (~> 0.6.0)
     pdf-core (0.7.0)
     pg (1.0.0)
-    poltergeist (1.18.0)
+    poltergeist (1.18.1)
       capybara (>= 2.1, < 4)
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
@@ -372,7 +372,7 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
     will_paginate (3.1.6)
-    xpath (3.0.0)
+    xpath (3.1.0)
       nokogiri (~> 1.8)
 
 PLATFORMS
