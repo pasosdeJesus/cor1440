@@ -89,8 +89,7 @@ gem 'heb412_gen', git: 'https://github.com/pasosdeJesus/heb412_gen.git'
 #gem 'heb412_gen', path: '../heb412_gen/'
 
 # Motor Cor1440_gen
-gem 'cor1440_gen', git: "https://github.com/pasosdeJesus/cor1440_gen.git",
-  branch: 'vista_actividad_sipmodelo'
+gem 'cor1440_gen', git: "https://github.com/pasosdeJesus/cor1440_gen.git"
 #gem "cor1440_gen", path: '../cor1440_gen'
 
 gem 'chosen-rails'
