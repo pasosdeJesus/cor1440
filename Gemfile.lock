@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 383d9c3811c23616a616b275a64f773201313b9c
+  revision: e1deae92ec15dcf975ec77f87dffc594d803e7c1
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 4df23bc3c64a3c9f20ceac58a348feff7928987c
+  revision: bd31783a542d0f043a97f133acb1936a79c7777b
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d1d5796ef8d719963ac45d388f081cf7e87e4b1f
+  revision: 5b760d415ff3de52a75fb75f45afeb2401f3e8f9
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -232,7 +232,7 @@ GEM
       minitest-capybara (~> 0.8)
       minitest-metadata (~> 0.6)
       minitest-rails (~> 3.0)
-    minitest-reporters (1.3.0)
+    minitest-reporters (1.3.1)
       ansi
       builder
       minitest (>= 5.0)
@@ -246,7 +246,7 @@ GEM
       nokogiri (>= 1.5.0)
       rubyzip (~> 1.2.0)
     orm_adapter (0.5.0)
-    paperclip (6.0.0)
+    paperclip (6.1.0)
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
       mime-types
@@ -278,7 +278,7 @@ GEM
     public_suffix (3.0.2)
     puma (3.12.0)
     rack (2.0.5)
-    rack-test (1.0.0)
+    rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
@@ -307,7 +307,7 @@ GEM
       rubyzip (~> 1.1)
     ruby-progressbar (1.9.0)
     rubyzip (1.2.1)
-    sass (3.5.6)
+    sass (3.5.7)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -355,9 +355,9 @@ GEM
       tzinfo
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.15)
+    uglifier (4.1.17)
       execjs (>= 0.3.0, < 3)
-    unicorn (5.4.0)
+    unicorn (5.4.1)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     warden (1.2.7)
@@ -431,4 +431,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   1.16.1
+   1.16.3
