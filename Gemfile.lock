@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: e1deae92ec15dcf975ec77f87dffc594d803e7c1
+  revision: faa1be781033e3229aab4ae2fb4a54e40d450226
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: bd31783a542d0f043a97f133acb1936a79c7777b
+  revision: 69d0e7ae853ffb7d0d88cbbefc87fdda06012603
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -179,7 +179,7 @@ GEM
       railties (>= 3.2, < 6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.0.1)
+    i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     interception (0.5)
     jbuilder (2.7.0)
@@ -305,7 +305,7 @@ GEM
     rspreadsheet (0.4.5)
       andand (~> 1.3)
       rubyzip (~> 1.1)
-    ruby-progressbar (1.9.0)
+    ruby-progressbar (1.10.0)
     rubyzip (1.2.1)
     sass (3.5.7)
       sass-listen (~> 4.0.0)
