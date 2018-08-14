@@ -487,7 +487,8 @@ CREATE TABLE public.cor1440_gen_actividadtipo (
     fechacreacion date NOT NULL,
     fechadeshabilitacion date,
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    listadoasistencia boolean
 );
 
 
@@ -511,32 +512,25 @@ ALTER SEQUENCE public.cor1440_gen_actividadtipo_id_seq OWNED BY public.cor1440_g
 
 
 --
--- Name: cor1440_gen_actorsocial; Type: TABLE; Schema: public; Owner: -
+-- Name: cor1440_gen_asistencia; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.cor1440_gen_actorsocial (
+CREATE TABLE public.cor1440_gen_asistencia (
     id bigint NOT NULL,
-    nombre character varying(500) NOT NULL,
-    cargo character varying(500),
-    correo character varying(500),
-    telefono character varying(500),
-    fax character varying(500),
-    direccion character varying(500),
-    pais_id integer,
-    web character varying(500),
-    observaciones character varying(5000),
-    fechacreacion date NOT NULL,
-    fechadeshabilitacion date,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    actividad_id integer NOT NULL,
+    persona_id integer NOT NULL,
+    rangoedadac_id integer,
+    externo boolean,
+    actorsocial_id integer,
+    perfilactorsocial_id integer
 );
 
 
 --
--- Name: cor1440_gen_actorsocial_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+-- Name: cor1440_gen_asistencia_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.cor1440_gen_actorsocial_id_seq
+CREATE SEQUENCE public.cor1440_gen_asistencia_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -545,10 +539,10 @@ CREATE SEQUENCE public.cor1440_gen_actorsocial_id_seq
 
 
 --
--- Name: cor1440_gen_actorsocial_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+-- Name: cor1440_gen_asistencia_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.cor1440_gen_actorsocial_id_seq OWNED BY public.cor1440_gen_actorsocial.id;
+ALTER SEQUENCE public.cor1440_gen_asistencia_id_seq OWNED BY public.cor1440_gen_asistencia.id;
 
 
 --
@@ -928,40 +922,6 @@ CREATE SEQUENCE public.cor1440_gen_resultadopf_id_seq
 --
 
 ALTER SEQUENCE public.cor1440_gen_resultadopf_id_seq OWNED BY public.cor1440_gen_resultadopf.id;
-
-
---
--- Name: cor1440_gen_sectoractor; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.cor1440_gen_sectoractor (
-    id bigint NOT NULL,
-    nombre character varying(500) NOT NULL,
-    observaciones character varying(5000),
-    fechacreacion date NOT NULL,
-    fechadeshabilitacion date,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
-);
-
-
---
--- Name: cor1440_gen_sectoractor_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.cor1440_gen_sectoractor_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: cor1440_gen_sectoractor_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.cor1440_gen_sectoractor_id_seq OWNED BY public.cor1440_gen_sectoractor.id;
 
 
 --
@@ -2037,10 +1997,10 @@ ALTER TABLE ONLY public.cor1440_gen_actividadtipo ALTER COLUMN id SET DEFAULT ne
 
 
 --
--- Name: cor1440_gen_actorsocial id; Type: DEFAULT; Schema: public; Owner: -
+-- Name: cor1440_gen_asistencia id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.cor1440_gen_actorsocial ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_actorsocial_id_seq'::regclass);
+ALTER TABLE ONLY public.cor1440_gen_asistencia ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_asistencia_id_seq'::regclass);
 
 
 --
@@ -2111,13 +2071,6 @@ ALTER TABLE ONLY public.cor1440_gen_rangoedadac ALTER COLUMN id SET DEFAULT next
 --
 
 ALTER TABLE ONLY public.cor1440_gen_resultadopf ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_resultadopf_id_seq'::regclass);
-
-
---
--- Name: cor1440_gen_sectoractor id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.cor1440_gen_sectoractor ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_sectoractor_id_seq'::regclass);
 
 
 --
@@ -2336,11 +2289,11 @@ ALTER TABLE ONLY public.cor1440_gen_actividadtipo
 
 
 --
--- Name: cor1440_gen_actorsocial cor1440_gen_actorsocial_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_asistencia cor1440_gen_asistencia_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.cor1440_gen_actorsocial
-    ADD CONSTRAINT cor1440_gen_actorsocial_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.cor1440_gen_asistencia
+    ADD CONSTRAINT cor1440_gen_asistencia_pkey PRIMARY KEY (id);
 
 
 --
@@ -2413,14 +2366,6 @@ ALTER TABLE ONLY public.cor1440_gen_proyectofinanciero
 
 ALTER TABLE ONLY public.cor1440_gen_resultadopf
     ADD CONSTRAINT cor1440_gen_resultadopf_pkey PRIMARY KEY (id);
-
-
---
--- Name: cor1440_gen_sectoractor cor1440_gen_sectoractor_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.cor1440_gen_sectoractor
-    ADD CONSTRAINT cor1440_gen_sectoractor_pkey PRIMARY KEY (id);
 
 
 --
@@ -2742,13 +2687,6 @@ CREATE INDEX index_cor1440_gen_actividad_sip_anexo_on_sip_anexo_id ON public.cor
 
 
 --
--- Name: index_cor1440_gen_actorsocial_on_pais_id; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_cor1440_gen_actorsocial_on_pais_id ON public.cor1440_gen_actorsocial USING btree (pais_id);
-
-
---
 -- Name: index_heb412_gen_doc_on_tdoc_type_and_tdoc_id; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -2928,14 +2866,6 @@ ALTER TABLE ONLY public.cor1440_gen_campotind
 
 ALTER TABLE ONLY public.cor1440_gen_informe
     ADD CONSTRAINT fk_rails_294895347e FOREIGN KEY (filtroproyecto) REFERENCES public.cor1440_gen_proyecto(id);
-
-
---
--- Name: cor1440_gen_actorsocial fk_rails_2b19e780b5; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.cor1440_gen_actorsocial
-    ADD CONSTRAINT fk_rails_2b19e780b5 FOREIGN KEY (pais_id) REFERENCES public.sip_pais(id);
 
 
 --
@@ -3545,6 +3475,9 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20180612024009'),
 ('20180612030340'),
 ('20180626123640'),
-('20180627031905');
+('20180627031905'),
+('20180810220807'),
+('20180812220011'),
+('20180813110808');
 
 
