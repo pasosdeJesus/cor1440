@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 642ad1e6948f82b3fe183b9cf86afff5e2c4ca04
+  revision: 960505ef3528edc24a9dbf4b9b8ca888b309868c
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: d931824e10891d20236c18152e594f8a523413c5
+  revision: a340a706049b6d29ec1eca8170565e75a62aceb9
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 5b760d415ff3de52a75fb75f45afeb2401f3e8f9
+  revision: e1f7a0b76990d89f05be940f13b735e11dabaa80
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -253,7 +253,7 @@ GEM
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
     pdf-core (0.7.0)
-    pg (1.0.0)
+    pg (1.1.0)
     poltergeist (1.18.1)
       capybara (>= 2.1, < 4)
       cliver (~> 0.3.1)
@@ -431,4 +431,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   1.16.3
+   1.16.4
