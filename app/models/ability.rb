@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class Ability  < Cor1440Gen::Ability
 
-  # Ver documentacion de este metodo en app/models/ability de sip
+  # Autorizacion con CanCanCan
   def initialize(usuario = nil)
     # Sin autenticación puede consultarse información geográfica 
     can :read, [Sip::Pais, Sip::Departamento, Sip::Municipio, Sip::Clase]
@@ -22,6 +22,9 @@ class Ability  < Cor1440Gen::Ability
         can :new, Cor1440Gen::Actividad
         can [:update, :create, :destroy], Cor1440Gen::Actividad, 
           oficina: { id: usuario.oficina_id}
+        can :read, Cor1440Gen::Proyectofinanciero
+        can [:new, :create, :read, :index, :edit, :update],
+          Sip::Actorsocial
       when Ability::ROLCOOR
         can :manage, Cor1440Gen::Actividad
         can :manage, Cor1440Gen::Informe
@@ -29,13 +32,24 @@ class Ability  < Cor1440Gen::Ability
           oficina: { id: usuario.oficina_id}
         can :new, Usuario
         can [:read, :manage], Usuario, oficina: { id: usuario.oficina_id}
+        can :read, Cor1440Gen::Proyectofinanciero
+        can [:new, :create, :read, :index, :edit, :update],
+          Sip::Actorsocial
       when Ability::ROLINV
         cannot :buscar, Sip::Actividad
         can :read, Sip::Actividad
       when Ability::ROLADMIN, Ability::ROLDIR
         can :manage, Cor1440Gen::Actividad
+        can :manage, Cor1440Gen::Financiador
+        can :manage, Cor1440Gen::Indicadorpf
+        can :manage, Cor1440Gen::Tipoindicador
+        can :manage, Cor1440Gen::Campotind
         can :manage, Cor1440Gen::Informe
-        can :manage, Heb412Gen::Doc 
+        can :manage, Cor1440Gen::Proyectofinanciero
+        can :manage, Cor1440Gen::Sectoractor
+        can :manage, Heb412Gen::Doc
+        can :manage, Heb412Gen::Plantillahcm
+        can :manage, Sip::Actorsocial
         can :manage, Usuario
         can :manage, :tablasbasicas
         tablasbasicas.each do |t|

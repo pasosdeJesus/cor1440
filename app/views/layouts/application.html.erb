@@ -5,8 +5,13 @@
 <% content_for :menu do %>
   <%= menu_group do %>
     <% if !current_usuario.nil? %>
+      <%= drop_down "Convenios Financiados" do %>
+        <%= menu_item "Listado", cor1440_gen.proyectosfinancieros_path %>
+        <%= menu_item "Validar", cor1440_gen.validar_proyectosfinancieros_path %>
+      <% end %>
       <%= menu_item "Actividades", cor1440_gen.actividades_path %>
       <%= menu_item "Informes", cor1440_gen.informes_path %>
+      <%= menu_item "Actores sociales", sip.actoressociales_path %>
     <% end %>
   <% end %>
   <%= menu_group :pull => :right do %>
