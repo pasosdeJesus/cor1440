@@ -1084,6 +1084,38 @@ ALTER SEQUENCE public.heb412_gen_campoplantillahcm_id_seq OWNED BY public.heb412
 
 
 --
+-- Name: heb412_gen_campoplantillahcr; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.heb412_gen_campoplantillahcr (
+    id bigint NOT NULL,
+    plantillahcr_id integer,
+    nombrecampo character varying(127),
+    columna character varying(5),
+    fila integer
+);
+
+
+--
+-- Name: heb412_gen_campoplantillahcr_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.heb412_gen_campoplantillahcr_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: heb412_gen_campoplantillahcr_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.heb412_gen_campoplantillahcr_id_seq OWNED BY public.heb412_gen_campoplantillahcr.id;
+
+
+--
 -- Name: heb412_gen_doc; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -1195,6 +1227,39 @@ CREATE SEQUENCE public.heb412_gen_plantillahcm_id_seq
 --
 
 ALTER SEQUENCE public.heb412_gen_plantillahcm_id_seq OWNED BY public.heb412_gen_plantillahcm.id;
+
+
+--
+-- Name: heb412_gen_plantillahcr; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.heb412_gen_plantillahcr (
+    id bigint NOT NULL,
+    ruta character varying(2047),
+    fuente character varying(1023),
+    licencia character varying(1023),
+    vista character varying(127),
+    nombremenu character varying(127)
+);
+
+
+--
+-- Name: heb412_gen_plantillahcr_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.heb412_gen_plantillahcr_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: heb412_gen_plantillahcr_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.heb412_gen_plantillahcr_id_seq OWNED BY public.heb412_gen_plantillahcr.id;
 
 
 --
@@ -1368,7 +1433,6 @@ CREATE TABLE public.sip_actorsocial (
     direccion character varying(500),
     pais_id integer,
     web character varying(500),
-    observaciones character varying(5000),
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL
 );
@@ -2294,6 +2358,13 @@ ALTER TABLE ONLY public.heb412_gen_campoplantillahcm ALTER COLUMN id SET DEFAULT
 
 
 --
+-- Name: heb412_gen_campoplantillahcr id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.heb412_gen_campoplantillahcr ALTER COLUMN id SET DEFAULT nextval('public.heb412_gen_campoplantillahcr_id_seq'::regclass);
+
+
+--
 -- Name: heb412_gen_doc id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -2312,6 +2383,13 @@ ALTER TABLE ONLY public.heb412_gen_plantilladoc ALTER COLUMN id SET DEFAULT next
 --
 
 ALTER TABLE ONLY public.heb412_gen_plantillahcm ALTER COLUMN id SET DEFAULT nextval('public.heb412_gen_plantillahcm_id_seq'::regclass);
+
+
+--
+-- Name: heb412_gen_plantillahcr id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.heb412_gen_plantillahcr ALTER COLUMN id SET DEFAULT nextval('public.heb412_gen_plantillahcr_id_seq'::regclass);
 
 
 --
@@ -2637,6 +2715,14 @@ ALTER TABLE ONLY public.heb412_gen_campoplantillahcm
 
 
 --
+-- Name: heb412_gen_campoplantillahcr heb412_gen_campoplantillahcr_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.heb412_gen_campoplantillahcr
+    ADD CONSTRAINT heb412_gen_campoplantillahcr_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: heb412_gen_doc heb412_gen_doc_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -2658,6 +2744,14 @@ ALTER TABLE ONLY public.heb412_gen_plantilladoc
 
 ALTER TABLE ONLY public.heb412_gen_plantillahcm
     ADD CONSTRAINT heb412_gen_plantillahcm_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: heb412_gen_plantillahcr heb412_gen_plantillahcr_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.heb412_gen_plantillahcr
+    ADD CONSTRAINT heb412_gen_plantillahcr_pkey PRIMARY KEY (id);
 
 
 --
@@ -3807,6 +3901,17 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20180810221619'),
 ('20180812220011'),
 ('20180813110808'),
-('20180914170936');
+('20180905031342'),
+('20180905031617'),
+('20180912114413'),
+('20180914153010'),
+('20180914170936'),
+('20180917072914'),
+('20180918195008'),
+('20180918195821'),
+('20180920031351'),
+('20180921120954'),
+('20181011104537'),
+('20181012110629');
 
 

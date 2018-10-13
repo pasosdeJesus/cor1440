@@ -3,9 +3,7 @@ source 'https://rubygems.org'
 ruby '~>2.4'
 
 # Rails (internacionalización)
-#gem "rails", '~> 5.2.0'
-# Resuelve problema con minitest y rails 5.2.0
-gem "rails", '~> 5.2.0', git: 'https://github.com/rails/rails.git', ref: '4887f97bd8a8859294ad02ccea20d83a94ec0812'
+gem "rails", '~> 5.2.1'
 
 gem 'bootsnap', '>=1.1.0', require: false
 
