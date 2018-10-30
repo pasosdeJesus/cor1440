@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 78cedc8ea634ab7b6978da176fe136347b01e04b
+  revision: 3545f22d1b2ece90e7c399fc6bb3cf14d0a7a62d
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: b7443ad52430499bd4550b93bb0bbd1f963f75da
+  revision: 07a73fad8be08cf52409ee1e13b8e8b55c68f984
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 19fab46e5cd96fb85a10a97c78aab63f14d7812c
+  revision: ea56b39c7c4a95186595693eeffaf4524f2446ef
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -178,7 +178,7 @@ GEM
       sprockets (> 2, < 4)
       tilt
     libxml-ruby (3.1.0)
-    loofah (2.2.2)
+    loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -273,7 +273,7 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-    rails-i18n (5.1.1)
+    rails-i18n (5.1.2)
       i18n (>= 0.7, < 2)
       railties (>= 5.0, < 6)
     rails_12factor (0.0.3)
@@ -425,4 +425,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   1.16.6
+   1.17.1
