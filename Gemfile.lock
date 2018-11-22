@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: ad1f8177e14bf4fcb70c47e9a6b1535d3bae5ae0
+  revision: ebe81c4e05bcb054d0baa3a7effaa279c5f4d08c
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 7a394ccafb43c69ae2bbabca36de4e4576349e61
+  revision: 93ebbb0d8ba49d79ba20c61b11df8fda2865ba50
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 0ac17e344bbdc2b090fef0c9b10983e652a9ea55
+  revision: cd297d9f744f12bb4c5f7a08054d3fdaef08e927
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -241,12 +241,12 @@ GEM
     prawnto_2 (0.3.0)
       prawn (>= 1.0.0)
       rails (>= 3.2)
-    pry (0.12.0)
+    pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    pry-rescue (1.4.5)
+    pry-rescue (1.5.0)
       interception (>= 0.5)
-      pry
+      pry (>= 0.12.0)
     pry-stack_explorer (0.4.9.3)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
@@ -349,13 +349,13 @@ GEM
       tzinfo
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.19)
+    uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
     unicorn (5.4.1)
       kgio (~> 2.6)
       raindrops (~> 0.7)
-    warden (1.2.7)
-      rack (>= 1.0)
+    warden (1.2.8)
+      rack (>= 2.0.6)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
