@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: a1c732425a89090702a0eb001ab75536853d0eb3
+  revision: 5cba680d075beebe706575c7190abe7d3f968c9c
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 7b8e910515b468b5af4ca329d0d802a851b6db32
+  revision: c976a06614d7d9acd3255ac05de605b26758a5cf
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 2f24afc6195e6bbb05cf24a7a7075113a452d507
+  revision: 40a9bf5f347a1c61a62f726f5d32eba2fd064960
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -155,7 +155,7 @@ GEM
       railties (>= 3.2, < 6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.3.0)
+    i18n (1.4.0)
       concurrent-ruby (~> 1.0)
     interception (0.5)
     jbuilder (2.8.0)
@@ -216,7 +216,7 @@ GEM
     msgpack (1.2.4)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.9.1)
+    nokogiri (1.10.0)
       mini_portile2 (~> 2.4.0)
     odf-report (0.5.2)
       nokogiri (>= 1.5.0)
@@ -427,4 +427,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
