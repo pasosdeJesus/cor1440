@@ -1,18 +1,19 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 12ff78cd61b5a452526623e03a082908d49a5970
+  revision: 1b32da21128d500e29d3d4cdc5f09015aa22a81e
   specs:
     cor1440_gen (1.0b2)
       devise
       heb412_gen
       jquery-rails
+      mr519_gen
       paperclip
       rails
       sip
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 18019a6f4b9b115b8e701b3cf37063950f6d6e63
+  revision: deb28b467ba16eb97c3ebd981f147280ad687578
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -22,8 +23,16 @@ GIT
       sip
 
 GIT
+  remote: https://github.com/pasosdeJesus/mr519_gen.git
+  revision: de47acb80428b0e38488f6c6919c6e7e987bd32a
+  specs:
+    mr519_gen (0.1.0)
+      rails (~> 5.2.2, >= 5.2.2)
+      sip
+
+GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: b580b19677793bd6b62ea5ec5755d9756058d162
+  revision: 9756f1e6725f645c0d5b549428997b0ce760372d
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -100,7 +109,7 @@ GEM
     ansi (1.5.0)
     arel (9.0.0)
     bcrypt (3.1.12)
-    bigdecimal (1.4.2)
+    bigdecimal (1.4.3)
     bindex (0.5.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
@@ -153,7 +162,7 @@ GEM
     ffi (1.10.0)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
-    globalid (0.4.1)
+    globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.5.1)
       concurrent-ruby (~> 1.0)
@@ -395,6 +404,7 @@ DEPENDENCIES
   libxml-ruby
   minitest-rails-capybara
   minitest-reporters
+  mr519_gen!
   odf-report
   paperclip
   pg
