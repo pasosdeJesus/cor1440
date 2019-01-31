@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4a22744f0503c25047ff2ba320e209826939190f
+  revision: 41c078a6725493615df4cc4f92422f304dad9ea8
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 32ad007739faef5299f4a081dc5efc830e188d6b
+  revision: 36a9cbd3b406a6fcbb69aed295ffa021c5f26a29
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 3b537f456ef3e1fa1bb251144cc77d5091f7eb17
+  revision: ea265e0a6cfc9cbce076e851405a8a699e3cf244
   specs:
     mr519_gen (0.1.0)
       rails (~> 5.2.2, >= 5.2.2)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: c9cf7ad02ec6bf5875a9648f7b81acdff7224f2e
+  revision: 492eac6ea3d1a7739ff5b77374a4cf9c254c6543
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -227,7 +227,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
-    odf-report (0.5.2)
+    odf-report (0.6.0)
       nokogiri (>= 1.5.0)
       rubyzip (~> 1.2.0)
     orm_adapter (0.5.0)
@@ -283,7 +283,7 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-    rails-i18n (5.1.2)
+    rails-i18n (5.1.3)
       i18n (>= 0.7, < 2)
       railties (>= 5.0, < 6)
     rails_12factor (0.0.3)
