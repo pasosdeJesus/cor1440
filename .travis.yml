@@ -1,7 +1,7 @@
 language: ruby
 
 rvm:
-        - 2.4.0
+        - 2.6.1
 
 addons:
         postgresql: "9.6"
@@ -22,6 +22,9 @@ before_install:
         - sudo /etc/init.d/postgresql stop
         - sudo /etc/init.d/postgresql start 9.6
         - psql -c 'CREATE DATABASE cor1440des_pru;' -U postgres
+        - gem install bundler
+        - gem update --system
+        - bundle update --bundler
         - bundle install
         - cp config/database.travis.yml config/database.yml
         - cp config/application.rb.plantilla config/application.rb
