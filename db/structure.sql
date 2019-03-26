@@ -1595,7 +1595,8 @@ CREATE TABLE public.mr519_gen_valorcampo (
     id bigint NOT NULL,
     campo_id integer NOT NULL,
     valor character varying(5000),
-    respuestafor_id integer NOT NULL
+    respuestafor_id integer NOT NULL,
+    valorjson json
 );
 
 
@@ -4648,6 +4649,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20190205203619'),
 ('20190206005635'),
 ('20190208103518'),
-('20190322102311');
+('20190322102311'),
+('20190326150948');
 
 
