@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 7c289695becc6e8e1eac308d100bc495ed24d228
+  revision: 0bc6e64aef4c1c5e4de129f1bb15aec28909df94
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 6aa05a6304d7faa57185ce40229db159c7f7585e
+  revision: 60acfd84d8d291eb0ae65726b191e0942c75ba34
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 8e78df218ab951d33ae89ebd056610211bac17af
+  revision: 808735dc67af50d7b9ae4ff5fd9311d098e809ca
   specs:
     mr519_gen (0.1.0)
       rails (~> 5.2.2, >= 5.2.2)
@@ -54,7 +54,7 @@ GIT
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
-  revision: f1c8458db49f388d0f1f02e98d04e8c23c131bb9
+  revision: 088c8d9dcce7f51cf3a968398047eaac7a37718b
   branch: new_id_with_ajax
   specs:
     cocoon (1.2.11)
