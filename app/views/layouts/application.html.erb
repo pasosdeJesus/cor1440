@@ -8,20 +8,35 @@
       <%= drop_down "Convenios Financiados" do %>
         <%= menu_item "Listado", cor1440_gen.proyectosfinancieros_path %>
         <%= menu_item "Validar", cor1440_gen.validar_proyectosfinancieros_path %>
+        <% if can? :manage, Cor1440Gen::Mindicadorpf %>
+          <%= menu_item "Medir Indicadores", cor1440_gen.mindicadorespf_path %>
+        <% end %>
       <% end %>
       <%= menu_item "Actividades", cor1440_gen.actividades_path %>
       <%= menu_item "Informes", cor1440_gen.informes_path %>
-      <%= menu_item "Actores sociales", sip.actoressociales_path %>
+      <% if can? :manage, ::Sip::Actorsocial %>
+        <%= menu_item "Actores sociales", sip.actoressociales_path %>
+      <% end %>
+      <% if can? :manage, ::Sip::Persona %>
+        <%= menu_item "Beneficiarios", sip.personas_path %>
+      <% end %>
     <% end %>
   <% end %>
   <%= menu_group :pull => :right do %>
     <% if !current_usuario.nil? %>
       <%= drop_down "Documentos y plantillas" do %>
         <%= menu_item "Nube", heb412_gen.sisini_path %>
-        <% if current_usuario.rol == Ability::ROLADMIN || 
-             current_usuario.rol == Ability::ROLDIR %>
-           <%= menu_item "Definir plantilla hoja de calculo m.", 
-             heb412_gen.new_plantillahcm_path %>
+        <% if can? :manage, ::Heb412Gen::Plantillahcm %>
+          <%= menu_item "Plantillas para listados en hojas de calculo",
+            heb412_gen.plantillashcm_path %>
+        <% end %>
+        <% if can? :manage, ::Heb412Gen::Plantillahcr %>
+          <%= menu_item "Plantillas para un registro en hoja de calculo",
+            heb412_gen.plantillashcr_path %>
+        <% end %>
+        <% if can? :manage, ::Heb412Gen::Plantilladoc %>
+          <%= menu_item "Plantillas para un registro en documento",
+            heb412_gen.plantillasdoc_path %>
         <% end %>
       <% end %>
       <%= drop_down "Administrar" do %>
@@ -29,8 +44,12 @@
         <% if current_usuario.rol == Ability::ROLADMIN %>
           <%= menu_item "Usuarios", main_app.usuarios_path %>
         <% end %>
+        <% if can? :manage, Mr519Gen::Formulario %>
+          <%= menu_item "Formularios", mr519_gen.formularios_path %>
+        <% end %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
-          <%= menu_item "Tablas Básicas", sip.tablasbasicas_path %>
+          <%= menu_item "Tablas básicas", sip.tablasbasicas_path %>
+          <%= menu_item "Tipos de indicador", cor1440_gen.tiposindicador_path %>
         <% end %>
       <% end %>
       <%= menu_item "Salir #{current_usuario.nusuario}", main_app.sign_out_path %>

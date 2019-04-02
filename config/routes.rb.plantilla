@@ -22,9 +22,11 @@ Rails.application.routes.draw do
     end
     resources :usuarios, path_names: { new: 'nuevo', edit: 'edita' } 
 
+    root 'cor1440_gen/hogar#index'
   end  
 
   mount Sip::Engine, at: 'cor1440/', as: 'sip'
   mount Cor1440Gen::Engine, at: "cor1440/", as: 'cor1440_gen'
+  mount Heb412Gen::Engine, at: "cor1440/", as: 'heb412_gen'
   mount Mr519Gen::Engine, at: "cor1440/", as: 'mr519_gen'
 end
