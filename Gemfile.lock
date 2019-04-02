@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 6b995dfbc52ee1d18b9ecdeaa0c49098b168a800
+  revision: 82338d80e684ecf85a11f445c0b7f84471582d6f
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 8da37dabd759bc833f219b6767af0646c2b7111d
+  revision: 408db7d0841995eb51f218dafed4f15ff55d22c0
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 7034ae370d2aed2c3787867ac5f15c0b7678e2a1
+  revision: 7b3c991197c1f119e3fa0f2cf0c8b5b49c7ec896
   specs:
     mr519_gen (0.1.0)
       rails (~> 5.2.2, >= 5.2.2)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d4572335b736d70c28b26fda2ff27d5bc01e8049
+  revision: 5bf55a4073069dd39187046cad8bd550cdb7c504
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -198,7 +198,7 @@ GEM
     method_source (0.9.2)
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2018.0812)
+    mime-types-data (3.2019.0331)
     mimemagic (0.3.3)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
@@ -353,7 +353,7 @@ GEM
       execjs (~> 2.7)
       less-rails (~> 2.8, >= 2.8.0)
       railties (~> 5.0, >= 5.0.1)
-    twitter_cldr (4.4.3)
+    twitter_cldr (4.4.4)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
@@ -361,7 +361,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
-    unicorn (5.5.0)
+    unicorn (5.5.0.1.g6836)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     warden (1.2.8)
@@ -429,7 +429,7 @@ DEPENDENCIES
   twitter_cldr
   tzinfo
   uglifier
-  unicorn
+  unicorn (~> 5.5.0.1.g6836)
   web-console
   will_paginate
 
