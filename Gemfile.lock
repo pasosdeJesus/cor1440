@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 44ee0e5d692dfef860302894481a7dcf7631792c
+  revision: dcbd00c88a42466f6d5e1ed421ed2deeff878484
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: af9434b91e0564424205c643cbe9cecf32c873f2
+  revision: a05f7b145cf4f609ba7c77f917eb7a2f8936537e
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 5a3b3ebaff5d8fafe4d22300bf6614daee31cc95
+  revision: 6f934cb0d15c5761a53077955b50b764680c2de9
   specs:
     mr519_gen (0.1.0)
       rails (~> 5.2.2, >= 5.2.2)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: aefa79fe2c3ef25d2df358231d0a2f024b744c0c
+  revision: c62a32e6143f134a7cb829677559ef097948b1fa
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -119,7 +119,7 @@ GEM
       railties (>= 3.0)
     builder (3.2.3)
     camertron-eprun (1.1.1)
-    cancancan (2.3.0)
+    cancancan (3.0.0)
     capybara (2.18.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -311,7 +311,7 @@ GEM
       rubyzip (~> 1.1)
     ruby-progressbar (1.10.0)
     rubyzip (1.2.2)
-    sass (3.7.3)
+    sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
