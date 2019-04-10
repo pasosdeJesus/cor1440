@@ -1469,7 +1469,8 @@ CREATE TABLE public.mr519_gen_campo (
     ayudauso character varying(1024),
     tipo integer DEFAULT 1 NOT NULL,
     obligatorio boolean,
-    formulario_id integer NOT NULL
+    formulario_id integer NOT NULL,
+    nombreinterno character varying(60)
 );
 
 
@@ -1532,7 +1533,8 @@ ALTER SEQUENCE public.mr519_gen_encuestausuario_id_seq OWNED BY public.mr519_gen
 
 CREATE TABLE public.mr519_gen_formulario (
     id bigint NOT NULL,
-    nombre character varying(500) NOT NULL
+    nombre character varying(500) NOT NULL,
+    nombreinterno character varying(60)
 );
 
 
@@ -4706,6 +4708,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20190326150948'),
 ('20190331111015'),
 ('20190401175521'),
-('20190403202049');
+('20190403202049'),
+('20190406141156'),
+('20190406164301');
 
 
