@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 5950fb751000bbe9b285d55283fafe842c1b61ce
+  revision: 0aaede1eecc8ee2c9dc1106734e30957f859d713
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: c5a9aba28f1798088fa818e3784a6ee97195774b
+  revision: e7f6cf906bad29477179642c0a8af966b46cdba5
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 6c47132f90622e9c6e0f7b4d2731354a1db62b1b
+  revision: 235cc8416a4b3b2e0ac661d5cd8992ae585c717a
   specs:
     mr519_gen (0.1.0)
       rails (~> 5.2.2, >= 5.2.2)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 15042e90379674bc6dc89d36fabb28ba1335c1df
+  revision: a36227834f6f7a814b53ebd258105001e07cf79b
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -119,7 +119,7 @@ GEM
       railties (>= 3.0)
     builder (3.2.3)
     camertron-eprun (1.1.1)
-    cancancan (3.0.0)
+    cancancan (3.0.1)
     capybara (2.18.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -160,8 +160,8 @@ GEM
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.10.0)
-    font-awesome-rails (4.7.0.4)
-      railties (>= 3.2, < 6.0)
+    font-awesome-rails (4.7.0.5)
+      railties (>= 3.2, < 6.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.6.0)
