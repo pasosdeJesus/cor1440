@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 64a1d4ab8c6c5a29b36ad13f6b1fb33afc374ccc
+  revision: b36cbd7336faf8c450b1094e5a513703e1bfbafa
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 3bae7d056566b9a9a273abbdcace3c745bf43350
+  revision: 33191649dab9ff035743c9e9444e39cde089b349
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 6ab0a3dde64e2b90bf58d21b4e228b261c294f94
+  revision: b351fff8c758b3dfe5d46a2131d406e60517fd9e
   specs:
     mr519_gen (0.1.0)
       rails (~> 5.2.2, >= 5.2.2)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: c82f8ef17a5eea79dca3570147f1698519c94382
+  revision: cb287d1afd2aa195cd3f80a8d587dea6f7a30d4e
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -225,7 +225,7 @@ GEM
     msgpack (1.2.10)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.10.2)
+    nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
     odf-report (0.6.0)
       nokogiri (>= 1.5.0)
