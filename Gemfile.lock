@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 0b4cb17b4ef4235c301a7878cd227b757c294fcc
+  revision: 6c11c5055aeb1c8491ad4fffac56b104e76267fe
   specs:
     cor1440_gen (1.0b2)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 296514c2c9e927186e647c1a6baeff3d08e930c0
+  revision: 153cf6426afb9d77a7fde26c24aa160e008d73ab
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: c0d8c9110f6af9a33bc20c16b7688243cd39664c
+  revision: 73cd0fa5e6fe7065f95c6f39de4f6d28e37b1bf5
   specs:
     mr519_gen (0.1.0)
       rails (~> 5.2.2, >= 5.2.2)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 304153278fc178ea3f3985361d858e9e1c0c3281
+  revision: 4837f12c9c20c7e2e0076b237af53df8e19f1713
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -109,7 +109,7 @@ GEM
     ansi (1.5.0)
     arel (9.0.0)
     bcrypt (3.1.12)
-    bigdecimal (1.4.3)
+    bigdecimal (1.4.4)
     bindex (0.7.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
@@ -167,9 +167,8 @@ GEM
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     interception (0.5)
-    jbuilder (2.8.0)
+    jbuilder (2.9.1)
       activesupport (>= 4.2.0)
-      multi_json (>= 1.2)
     jquery-rails (4.3.3)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -223,7 +222,6 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     msgpack (1.2.10)
-    multi_json (1.13.1)
     nio4r (2.3.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
