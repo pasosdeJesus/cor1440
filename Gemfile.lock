@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: aa6cb41bea7bad5631233cb74d8e8f9721b065db
+  revision: a6fa31bd61831dc8f4be02f1f4783c595a7563f6
   branch: rails6
   specs:
     cor1440_gen (1.0b2)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 589cf35b209dd60213406009929f33868eb3e6af
+  revision: 037985948c3cba4539e7df98e5fdf93313fdc10d
   branch: rails6
   specs:
     heb412_gen (1.0.a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 7697ccd348beb2827076d427b52f0304fc0d71a8
+  revision: 4cc04f789f0a19939b812210e33b8e5ed6363cb2
   branch: rails6
   specs:
     sip (2.0.b5)
