@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: a6fa31bd61831dc8f4be02f1f4783c595a7563f6
+  revision: 0e85ad555724bb11334f0c427ac59150fe653380
   branch: rails6
   specs:
     cor1440_gen (1.0b2)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 037985948c3cba4539e7df98e5fdf93313fdc10d
+  revision: 50458f1775d4c29c3fd709a3e52fc6dd7fe38222
   branch: rails6
   specs:
     heb412_gen (1.0.a1)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 88449284303404078a106c8ed13f5547b36bd378
+  revision: fa4288db1eb70f60697d048a74101616e4344adb
   branch: rails6
   specs:
     mr519_gen (0.1.0)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 4cc04f789f0a19939b812210e33b8e5ed6363cb2
+  revision: c0f502a0235fbca573649b5565e0c15b97529e32
   branch: rails6
   specs:
     sip (2.0.b5)
@@ -308,14 +308,14 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     redcarpet (3.4.0)
-    regexp_parser (1.5.0)
+    regexp_parser (1.5.1)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
     rspreadsheet (0.4.5)
       andand (~> 1.3)
       rubyzip (~> 1.1)
-    rubyzip (1.2.2)
+    rubyzip (1.2.3)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
