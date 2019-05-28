@@ -7,7 +7,7 @@ class AccesoTest <  ApplicationSystemTestCase
   test "no autentica con clave errada a usuario existente" do
     @usuario = Usuario.find_by(nusuario: 'cor1440')
     @usuario.password = 'cor1440'
-    byebug
+    #byebug
     visit new_usuario_session_path 
     fill_in "Usuario", with: @usuario.nusuario
     fill_in "Clave", with: 'ERRADA'
