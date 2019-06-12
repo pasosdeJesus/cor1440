@@ -1,9 +1,8 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 0e85ad555724bb11334f0c427ac59150fe653380
-  branch: rails6
+  revision: ccde4f214ab6b5aad1988182971b951cd278c63f
   specs:
-    cor1440_gen (1.0b2)
+    cor1440_gen (1.0b3)
       devise
       heb412_gen
       jquery-rails
@@ -14,10 +13,9 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: cc4551a5a70ee6824b0bfc448e2f0fc393ce9700
-  branch: rails6
+  revision: 3e3eef0a342024f670c1b94a53a971af1db98ccb
   specs:
-    heb412_gen (1.0.a1)
+    heb412_gen (1.0.b6)
       chosen-rails
       font-awesome-rails
       redcarpet
@@ -26,19 +24,17 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: fa4288db1eb70f60697d048a74101616e4344adb
-  branch: rails6
+  revision: 48801c87f8ee6841d3e5c49dc8807b6705cbd56e
   specs:
-    mr519_gen (0.1.0)
+    mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
       sip
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 7b85376b26e3cfaffd9ffd6825695b057f05de38
-  branch: rails6
+  revision: 139dacadd99c645c62c643680369c3eb0c347728
   specs:
-    sip (2.0.b5)
+    sip (2.0.b6)
       bootstrap-datepicker-rails
       cancancan
       chosen-rails
