@@ -49,7 +49,6 @@
         <% end %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
           <%= menu_item "Tablas básicas", sip.tablasbasicas_path %>
-          <%= menu_item "Tipos de indicador", cor1440_gen.tiposindicador_path %>
         <% end %>
       <% end %>
       <%= menu_item "Salir #{current_usuario.nusuario}", main_app.sign_out_path %>

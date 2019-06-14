@@ -24,24 +24,30 @@ class Ability  < Cor1440Gen::Ability
     if !usuario.nil? && !usuario.rol.nil? then
       case usuario.rol 
       when Ability::ROLSISTACT
-        can :read, Cor1440Gen::Informe
+
         can :read, Cor1440Gen::Actividad
         can :new, Cor1440Gen::Actividad
         can [:update, :create, :destroy], Cor1440Gen::Actividad, 
           oficina: { id: usuario.oficina_id}
+        can :read, Cor1440Gen::FormularioTipoindicador
+        can :read, Cor1440Gen::Informe
         can :read, Cor1440Gen::Proyectofinanciero
 
         can [:new, :create, :read, :index, :edit, :update],
           Sip::Actorsocial
         can :manage, Sip::Persona
+
       when Ability::ROLCOOR
-        can :manage, Cor1440Gen::Actividad
-        can :manage, Cor1440Gen::Informe
-        can [:update, :create, :destroy], Cor1440Gen::Actividad, 
-          oficina: { id: usuario.oficina_id}
         can :new, Usuario
         can [:read, :manage], Usuario, oficina: { id: usuario.oficina_id}
+
+        can :manage, Cor1440Gen::Actividad
+        can [:update, :create, :destroy], Cor1440Gen::Actividad, 
+          oficina: { id: usuario.oficina_id}
+        can :read, Cor1440Gen::FormularioTipoindicador
+        can :manage, Cor1440Gen::Informe
         can :read, Cor1440Gen::Proyectofinanciero
+
         can [:new, :create, :read, :index, :edit, :update],
           Sip::Actorsocial
         can :manage, Sip::Persona
@@ -52,6 +58,7 @@ class Ability  < Cor1440Gen::Ability
         can :manage, Cor1440Gen::Actividad
         can :manage, Cor1440Gen::Campotind
         can :manage, Cor1440Gen::Financiador
+        can :manage, Cor1440Gen::FormularioTipoindicador
         can :manage, Cor1440Gen::Indicadorpf
         can :manage, Cor1440Gen::Informe
         can :manage, Cor1440Gen::Mindicadorpf
