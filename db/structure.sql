@@ -2584,6 +2584,44 @@ ALTER SEQUENCE public.sip_tdocumento_id_seq OWNED BY public.sip_tdocumento.id;
 
 
 --
+-- Name: sip_tema; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sip_tema (
+    id bigint NOT NULL,
+    nombre character varying(500) NOT NULL,
+    observaciones character varying(5000),
+    nav_ini character varying(8),
+    nav_fin character varying(8),
+    nav_fuente character varying(8),
+    fondo_lista character varying(8),
+    fechacreacion date NOT NULL,
+    fechadeshabilitacion date,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
+-- Name: sip_tema_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sip_tema_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sip_tema_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.sip_tema_id_seq OWNED BY public.sip_tema.id;
+
+
+--
 -- Name: sip_trelacion; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -2704,6 +2742,7 @@ CREATE TABLE public.usuario (
     unlock_token character varying(255),
     locked_at timestamp without time zone,
     oficina_id integer,
+    tema_id integer,
     CONSTRAINT usuario_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion))),
     CONSTRAINT usuario_rol_check CHECK ((rol >= 1))
 );
@@ -3099,6 +3138,13 @@ ALTER TABLE ONLY public.sip_sectoractor ALTER COLUMN id SET DEFAULT nextval('pub
 --
 
 ALTER TABLE ONLY public.sip_tdocumento ALTER COLUMN id SET DEFAULT nextval('public.sip_tdocumento_id_seq'::regclass);
+
+
+--
+-- Name: sip_tema id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sip_tema ALTER COLUMN id SET DEFAULT nextval('public.sip_tema_id_seq'::regclass);
 
 
 --
@@ -3683,6 +3729,14 @@ ALTER TABLE ONLY public.sip_persona_trelacion
 
 ALTER TABLE ONLY public.sip_sectoractor
     ADD CONSTRAINT sip_sectoractor_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: sip_tema sip_tema_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sip_tema
+    ADD CONSTRAINT sip_tema_pkey PRIMARY KEY (id);
 
 
 --
@@ -4464,6 +4518,14 @@ ALTER TABLE ONLY public.cor1440_gen_financiador_proyectofinanciero
 
 
 --
+-- Name: usuario fk_rails_cc636858ad; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.usuario
+    ADD CONSTRAINT fk_rails_cc636858ad FOREIGN KEY (tema_id) REFERENCES public.sip_tema(id);
+
+
+--
 -- Name: cor1440_gen_campoact fk_rails_ceb6f1a7f0; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5008,7 +5070,10 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20190612200000'),
 ('20190613155738'),
 ('20190613155843'),
+('20190618135559'),
 ('20190625140232'),
-('20190703044126');
+('20190703044126'),
+('20190715083916'),
+('20190715182611');
 
 
