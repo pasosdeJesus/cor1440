@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 0bf4c2b8a833ad8e3209144c608a2db0d6c0f013
+  revision: 5e426a62b1f499ecb0d4c8ef40291608146ac2be
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 780adfa379cda800bee0dee8827ff32e69316b80
+  revision: b94e8d4df8b725dbb96d468df12c36b885a54ebb
   specs:
     heb412_gen (1.0.b6)
       chosen-rails
@@ -315,7 +315,7 @@ GEM
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
-    rspreadsheet (0.5.0)
+    rspreadsheet (0.5.1)
       andand (~> 1.3)
       rubyzip (~> 1.1)
     rubyzip (1.2.3)
