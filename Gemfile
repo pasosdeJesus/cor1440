@@ -143,7 +143,7 @@ end
 
 group :production do
   # Para despliegue
-  gem "unicorn",  '~> 5.5.0.1.g6836'
+  gem "unicorn"
 
 
   # Requerido por heroku para usar stdout como bitacora

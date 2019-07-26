@@ -45,6 +45,10 @@ if (test "$SININS" != "1") then {
 	if (test "$?" != "0") then {
 		exit 1;
 	} fi;
+	CXX=c++ yarn upgrade
+	if (test "$?" != "0") then {
+		exit 1;
+	} fi;
 } fi;
 if (test "$SINMIG" != "1") then {
 	(bin/rails db:migrate sip:indices db:structure:dump)
