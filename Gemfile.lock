@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 75c5487f5d18a0ef52b667db88766e9b9b9d27a5
+  revision: 2e7bd8e0a7d8599ce5c24f3cbcb1de8772041c3d
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: c353848ed62d9fab122e6ec4d66cda2a2940a9ab
+  revision: 785a5df75b8b5821903723ebbf9bc06c54333f3b
   specs:
     heb412_gen (1.0.b6)
       chosen-rails
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 4f7288ad0a95267fe11b3abad06ef053f054c452
+  revision: 7fa7d76ffbde682180c8fa4ef586a57aa23b508e
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 0c581406a721807cc57267967509dfe031135f88
+  revision: 736af1b02a21e2f242e1b76bb18be89999d52497
   specs:
     sip (2.0.b6)
       bootstrap-datepicker-rails
@@ -143,7 +143,7 @@ GEM
     builder (3.2.3)
     camertron-eprun (1.1.1)
     cancancan (3.0.1)
-    capybara (3.26.0)
+    capybara (3.27.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
