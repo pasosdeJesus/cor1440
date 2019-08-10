@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 57c10f8d19f7dd2f2d4eb6ef619e4b9c8743fccd
+  revision: 1aaf8f432424e92564f710ec1fc98429e728659f
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 82ba6a2f9a829cf03d85e1b784d4abd4cbf80a80
+  revision: 6d57fcb5876d95a3957a3cc1610836c25683fc10
   specs:
     heb412_gen (1.0.b6)
       chosen-rails
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: a247f6404dae09cf8e41b48ae9b2ee6dccc12adb
+  revision: 209a81a7f0db6cf6f922f1a4dda601d7280acc04
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 72d5507db91ca1e700a8459a18cf10658642751d
+  revision: bb398fc7e6dcc91b2bb067409793a4d4a8862743
   specs:
     sip (2.0.b6)
       bootstrap-datepicker-rails
@@ -259,7 +259,7 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     public_suffix (3.1.1)
-    puma (4.0.1)
+    puma (4.1.0)
       nio4r (~> 2.0)
     rack (2.0.7)
     rack-proxy (0.6.5)
@@ -284,7 +284,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.1.0)
+    rails-html-sanitizer (1.2.0)
       loofah (~> 2.2, >= 2.2.2)
     rails-i18n (5.1.3)
       i18n (>= 0.7, < 2)
