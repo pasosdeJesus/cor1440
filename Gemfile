@@ -9,7 +9,7 @@ gem 'bootsnap', '>=1.1.0', require: false
 
 gem "rails-i18n"
 
-gem "odf-report"
+gem "odf-report", ">= 0.6.0"
 
 gem 'bigdecimal'
 
@@ -43,7 +43,7 @@ gem "uglifier"
 gem "coffee-rails"
 
 # jquery como librería JavaScript
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.3.5"
 
 gem "jquery-ui-rails"
 
@@ -56,7 +56,7 @@ gem "font-awesome-rails"
 gem "bootstrap-datepicker-rails"
 
 # Facilita elegir colores en tema
-gem 'pick-a-color-rails'
+gem 'pick-a-color-rails', '>= 0.0.1'
 gem 'tiny-color-rails'
 
 # Formularios simples 
@@ -129,7 +129,7 @@ group :test do
   # Lanza programas para examinar resultados
   gem "launchy"
 
-  gem 'capybara'
+  gem 'capybara', '>= 3.28.0'
 
   gem 'selenium-webdriver'
 
