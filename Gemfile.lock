@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: c88c111da047f8b1c22f5fccbe8da67d1f16e463
+  revision: 0a4d9ba6939d2316f31a78b8222d5814e5b4d611
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: d4d6c732fc48d4e45d7daadbb4769ca50c6205f0
+  revision: 66b5234d73e3c472df87fffceb9d42cdcbd4c36b
   specs:
     heb412_gen (1.0.b6)
       chosen-rails
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: ca38d3e2a647d1b367503758dd28d5d9162bd03e
+  revision: fbff7fdc2d2ae1d1fd5c843b0f7df701c2a7a463
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: b1fb0bda53d6cc591066a8cfd4215c50caec93e0
+  revision: 8c6dd2d3981c392c0c6a21e43fb60bff5dbce1a1
   specs:
     sip (2.0.b6)
       bootstrap-datepicker-rails
@@ -364,7 +364,7 @@ GEM
       execjs (>= 2.2.2, >= 2.2)
       less-rails (>= 2.5.0)
       railties (>= 3.1)
-    twitter_cldr (4.4.4)
+    twitter_cldr (4.4.5)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
