@@ -45,7 +45,7 @@ if (test "$SININS" != "1") then {
 	if (test "$?" != "0") then {
 		exit 1;
 	} fi;
-	CXX=c++ yarn upgrade
+	CXX=c++ yarn install
 	if (test "$?" != "0") then {
 		exit 1;
 	} fi;
