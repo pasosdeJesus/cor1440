@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 9c728a712f77314be555395f8aff15d55bc0b07d
+  revision: 1e33452688a0804eb7c1b4b4e4ca390784ae2017
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 52d4f2b1e542b974a60df2c2bbe4bde0a848bebb
+  revision: 6a62b17ca30c8363704fb53c1ddadf7928f88c39
   specs:
     heb412_gen (1.0.b6)
       chosen-rails
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: a43cc2fd97fc31091c1c3443a067233ca3d2e6c1
+  revision: cf64512a1f249904d56b85503705485edfbdbdae
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 5807f21306e5203ed48acd76089d7f7e2ce6b9de
+  revision: 770a3ff35f86dc94943f3a86834cdb56d6fe368e
   specs:
     sip (2.0.b6)
       bootstrap-datepicker-rails
@@ -335,7 +335,7 @@ GEM
     simple_form (4.1.0)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
-    simplecov (0.17.0)
+    simplecov (0.17.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
