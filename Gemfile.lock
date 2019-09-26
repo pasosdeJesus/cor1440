@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: b0a29d1474dc1678c2fe02e4caade0c7baa647e1
+  revision: 22ad21e950af926844b952fd19871a63a471fbf8
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: e9e3d1f70409f55ea72e02d2ff26c9703c1dc354
+  revision: 69fe0fced591e9d8a140907a2f96c6b62c8bec11
   specs:
     heb412_gen (1.0.b6)
       chosen-rails
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: fbddf75067fcbdabb92ae5ec834c821bd5dda37e
+  revision: 17ee518e59dbc5e2979c64ba87cce98dc9080a3c
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: b13d46332450b91e48725a6ee85fcb296f33f20e
+  revision: fff621177cc34589f0b6eba352c3c5a42b8a70c5
   specs:
     sip (2.0.b6)
       bootstrap-datepicker-rails
@@ -177,7 +177,7 @@ GEM
     devise-i18n (1.8.2)
       devise (>= 4.6)
     docile (1.3.2)
-    erubi (1.8.0)
+    erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.11.1)
     font-awesome-rails (4.7.0.5)
@@ -370,7 +370,7 @@ GEM
       tzinfo
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.20)
+    uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicorn (5.5.1)
       kgio (~> 2.6)
