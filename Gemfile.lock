@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 86f1a47060b59ca6bb6879534eb5235e581e9336
+  revision: 6dfe55d6c7788a0aa26ac201cfa0f0fe35ff933a
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 96464689628551b6669d882953fa149865f2f5e4
+  revision: 69a2c2e87df61f22fee4397dc6b037a3ac973be7
   specs:
     heb412_gen (1.0.b6)
       chosen-rails
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 9c881ee9eaab3a2e9fe2f4b0845efff195e4f4d7
+  revision: f2f8f1872466ec7c82c590cf6ad78baa23d27fc6
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 9e1c56e1e1937372bb39346e0c3403339b9a56db
+  revision: 86f0d3732f6aff32eb5fe80063ae8d7dfa463523
   specs:
     sip (2.0.b6)
       bootstrap-datepicker-rails
@@ -329,9 +329,9 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium-webdriver (3.142.4)
+    selenium-webdriver (3.142.5)
       childprocess (>= 0.5, < 3.0)
-      rubyzip (~> 1.2, >= 1.2.2)
+      rubyzip (>= 1.2.2)
     simple_form (5.0.0)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
