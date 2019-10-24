@@ -198,7 +198,7 @@ GEM
       less (~> 2.6.0)
       sprockets (>= 2)
     libxml-ruby (3.1.0)
-    loofah (2.3.0)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -379,54 +379,54 @@ DEPENDENCIES
   bcrypt
   bigdecimal
   bootsnap (>= 1.1.0)
-  bootstrap-datepicker-rails
+  bootstrap-datepicker-rails (>= 1.8.0.1)
   cancancan
   capybara
   chosen-rails!
   cocoon!
-  coffee-rails
+  coffee-rails (>= 5.0.0)
   colorize
   cor1440_gen!
-  devise
-  devise-i18n
-  font-awesome-rails
+  devise (>= 4.7.1)
+  devise-i18n (>= 1.8.2)
+  font-awesome-rails (>= 4.7.0.5)
   heb412_gen!
   jbuilder
-  jquery-rails
-  jquery-ui-rails
+  jquery-rails (>= 4.3.5)
+  jquery-ui-rails (>= 6.0.1)
   libxml-ruby
   mr519_gen!
   odf-report
   paperclip
   pg
-  pick-a-color-rails
+  pick-a-color-rails (>= 0.0.1)
   prawn
   prawn-table
-  prawnto_2
+  prawnto_2 (>= 0.3.0)
   puma
-  rails (~> 6.0.0.rc1)
-  rails-i18n
+  rails (~> 6.0.0.0)
+  rails-i18n (>= 6.0.0)
   rspreadsheet
   rubyzip (>= 2.0.0)
   sass
   selenium-webdriver
-  simple_form
+  simple_form (>= 5.0.1)
   simplecov
   sip!
   spring
-  tiny-color-rails
+  tiny-color-rails (>= 0.0.2)
   turbolinks
-  twitter-bootstrap-rails
+  twitter-bootstrap-rails (>= 3.2.2)
   twitter_cldr
   tzinfo
   uglifier
   unicorn
-  web-console
-  webpacker
+  web-console (>= 4.0.1)
+  webpacker (>= 4.0.7)
   will_paginate
 
 RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   2.0.2
+   1.17.3
