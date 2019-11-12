@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: cdec8fcd9e3120566d26da89cfb10ca62ffcd4d0
+  revision: 842731cd682e5e21ac0e75b04c026cb1d3581dbf
   branch: bs4
   specs:
     heb412_gen (1.0.b6)
@@ -123,7 +123,6 @@ GEM
     bootsnap (1.4.5)
       msgpack (~> 1.0)
     builder (3.2.3)
-    byebug (11.0.1)
     camertron-eprun (1.1.1)
     cancancan (3.0.1)
     capybara (3.29.0)
@@ -333,7 +332,6 @@ DEPENDENCIES
   bcrypt
   bigdecimal
   bootsnap (>= 1.1.0)
-  byebug
   cancancan
   capybara
   cocoon!
