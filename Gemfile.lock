@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4002b72e1b76a987146449418ee0f4627998bf02
+  revision: 181c1bfc33a7706cf17b5208bccefb3d9ab0b861
   branch: bs4
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 48611954c0b8c8820d102652ee7ef58630f4c8f0
+  revision: aa1071244fd4d077c1afdd67a2754bbf45ee2931
   branch: bs4
   specs:
     heb412_gen (1.0.b6)
