@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: cf85292fca6516835edf2d83b8b746e1e922505d
-  branch: bs4
+  revision: b05dcb2c90eb65e0b665d558a349caca8e26ea95
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -14,8 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 13a76ec75be01bf4485b34f77185e930dea086af
-  branch: bs4
+  revision: a9db9071b45c6077a56030d7225ebbb1aec7835e
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -25,22 +23,15 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 2f71e19fddf66a3dcc7797604a018a028a524dc1
-  branch: bs4
+  revision: edf83c22a608a4b850ce7833db7d167e9bf55570
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
       sip
 
 GIT
-  remote: https://github.com/vtamara/cocoon.git
-  revision: 088c8d9dcce7f51cf3a968398047eaac7a37718b
-  branch: new_id_with_ajax
-  specs:
-    cocoon (1.2.11)
-
-PATH
-  remote: ../sip
+  remote: https://github.com/pasosdeJesus/sip.git
+  revision: 5d018c7206397bb19d0a361af04e45254911c9b5
   specs:
     sip (2.0.b7)
       cancancan
@@ -55,6 +46,13 @@ PATH
       simple_form
       twitter_cldr
       will_paginate
+
+GIT
+  remote: https://github.com/vtamara/cocoon.git
+  revision: 088c8d9dcce7f51cf3a968398047eaac7a37718b
+  branch: new_id_with_ajax
+  specs:
+    cocoon (1.2.11)
 
 GEM
   remote: https://rubygems.org/
