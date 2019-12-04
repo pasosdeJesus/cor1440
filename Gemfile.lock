@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 7e9b64278142a0b2d00407334cfb47ea5e8a7307
+  revision: 560ac4f7b30b8a16adb70dc055cc03d803d7a8a3
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 0cb52b69f3572f6dc341996b255541fed791dd81
+  revision: 19fa19460fe0c1fd9ff05006dd7504b518fddec2
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 30784c9b05eb134639d52a6c61f0f9b46dae0c09
+  revision: 88239750e4de0d39e2699c5f0102510094acc9b4
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 642012091dd5675c54042d027d8ee824a36adb5e
+  revision: 206b81d672d6c286e1164b3f36c17bc4a03f342e
   specs:
     sip (2.0.b7)
       cancancan
@@ -192,7 +192,7 @@ GEM
     minitest (5.13.0)
     msgpack (1.3.1)
     nio4r (2.5.2)
-    nokogiri (1.10.6)
+    nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     odf-report (0.6.1)
       nokogiri (>= 1.5.0)
