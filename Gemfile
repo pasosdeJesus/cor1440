@@ -35,7 +35,7 @@ gem 'prawnto_2',  :require => 'prawnto'
 
 gem 'prawn-table'
 
-gem 'puma'
+gem 'puma', '>= 4.3.1'
 
 gem 'rails', '~> 6.0.0.rc1' # Rails (internacionalización)
 
