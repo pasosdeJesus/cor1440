@@ -55,7 +55,7 @@
         <% end %>
       <% end %>
       <%= despliega_abajo "Administrar" do %>
-        <%= opcion_menu "Clave", main_app.editar_registro_usuario_path,
+        <%= opcion_menu "Clave y tema", main_app.editar_registro_usuario_path,
             desplegable: true %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
           <%= opcion_menu "Usuarios", main_app.usuarios_path,
