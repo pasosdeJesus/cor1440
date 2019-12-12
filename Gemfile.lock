@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 1693117d948f414d295c74055aab1bcfbee8f0ca
+  revision: 219cd5d3b2b8c7c3d825bf1525de09d25e4eee90
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 20aebe6e717fc1982f0fbea8d27142e6cf50079e
+  revision: 5b4b263f28fc41064f5a7b1641b522a331a39eb0
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 0969784c422a84499c12bc64c856f73210c25774
+  revision: fc50bb0155b2946eae87c9e8f8a4ffda3eb76aca
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 09539d5a295ad987ce2717c2297b59b1682724ee
+  revision: 29243da56463193b21f9fc5d7d8ba24f07a30ae4
   specs:
     sip (2.0.b7)
       cancancan
@@ -120,7 +120,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
-    builder (3.2.3)
+    builder (3.2.4)
     camertron-eprun (1.1.1)
     cancancan (3.0.1)
     capybara (3.29.0)
@@ -172,7 +172,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
-    json (2.2.0)
+    json (2.3.0)
     kgio (2.11.2)
     libxml-ruby (3.1.0)
     loofah (2.4.0)
