@@ -2650,7 +2650,9 @@ CREATE TABLE public.sip_tema (
     alerta_problema_fondo character varying(127),
     alerta_problema_fuente character varying(127),
     fondo character varying(127),
-    color_fuente character varying(127)
+    color_fuente character varying(127),
+    color_flota_subitem_fuente character varying,
+    color_flota_subitem_fondo character varying
 );
 
 
@@ -5288,6 +5290,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20190926104116'),
 ('20191205200007'),
 ('20191205202150'),
-('20191205204511');
+('20191205204511'),
+('20191219011910');
 
 
