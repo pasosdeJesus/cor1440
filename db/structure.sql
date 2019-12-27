@@ -190,8 +190,8 @@ CREATE TABLE public.cor1440_gen_actividad (
 --
 
 CREATE TABLE public.cor1440_gen_actividad_actividadpf (
-    actividad_id bigint NOT NULL,
-    actividadpf_id bigint NOT NULL
+    actividad_id integer NOT NULL,
+    actividadpf_id integer NOT NULL
 );
 
 
@@ -469,6 +469,7 @@ CREATE TABLE public.cor1440_gen_actividadpf (
 --
 
 CREATE SEQUENCE public.cor1440_gen_actividadpf_id_seq
+    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -1333,6 +1334,7 @@ CREATE TABLE public.heb412_gen_campohc (
 --
 
 CREATE SEQUENCE public.heb412_gen_campohc_id_seq
+    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -1364,6 +1366,7 @@ CREATE TABLE public.heb412_gen_campoplantillahcm (
 --
 
 CREATE SEQUENCE public.heb412_gen_campoplantillahcm_id_seq
+    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -1426,7 +1429,7 @@ CREATE TABLE public.heb412_gen_doc (
     updated_at timestamp without time zone NOT NULL,
     adjunto_file_name character varying,
     adjunto_content_type character varying,
-    adjunto_file_size integer,
+    adjunto_file_size bigint,
     adjunto_updated_at timestamp without time zone,
     nombremenu character varying(127),
     vista character varying(255),
@@ -1443,6 +1446,7 @@ CREATE TABLE public.heb412_gen_doc (
 --
 
 CREATE SEQUENCE public.heb412_gen_doc_id_seq
+    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -1540,6 +1544,7 @@ CREATE TABLE public.heb412_gen_plantillahcm (
 --
 
 CREATE SEQUENCE public.heb412_gen_plantillahcm_id_seq
+    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2239,6 +2244,7 @@ CREATE TABLE public.sip_grupo (
 --
 
 CREATE SEQUENCE public.sip_grupo_id_seq
+    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
