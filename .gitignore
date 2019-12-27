@@ -38,3 +38,5 @@ public/cor1440*
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+/config/master.key
