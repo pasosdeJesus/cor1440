@@ -24,6 +24,12 @@ module Cor1440
 
     config.active_record.schema_format = :sql
 
+    config.x.url_colchon = 'colchon-articulos'
+
+    config.x.formato_fecha = 'dd/M/yyyy'
+
+    config.relative_url_root = "/cor1440"
+
     config.hosts << ENV['CONFIG_HOSTS'] || '127.0.0.1'
   end
 end
