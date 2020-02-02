@@ -287,7 +287,8 @@ CREATE TABLE public.cor1440_gen_actividad_rangoedadac (
     fl integer,
     fr integer,
     created_at timestamp without time zone,
-    updated_at timestamp without time zone
+    updated_at timestamp without time zone,
+    s integer
 );
 
 
@@ -5318,6 +5319,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20191205202150'),
 ('20191205204511'),
 ('20191219011910'),
-('20191231102721');
+('20191231102721'),
+('20200116003807');
 
 
