@@ -174,13 +174,13 @@ CREATE TABLE public.cor1440_gen_actividad (
     nombre character varying(500),
     objetivo character varying(5000),
     resultado character varying(5000),
-    fecha date,
+    fecha date NOT NULL,
     observaciones character varying(5000),
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
     oficina_id integer NOT NULL,
     rangoedadac_id integer,
-    usuario_id integer,
+    usuario_id integer NOT NULL,
     lugar character varying(500)
 );
 
@@ -2035,7 +2035,8 @@ CREATE TABLE public.sip_actorsocial_persona (
     actorsocial_id integer,
     perfilactorsocial_id integer,
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    correo character varying(100)
 );
 
 
@@ -5343,6 +5344,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20191231102721'),
 ('20200116003807'),
 ('20200211112230'),
-('20200212103617');
+('20200212103617'),
+('20200228235200'),
+('20200229005951');
 
 
