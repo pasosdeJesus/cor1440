@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 2b86ad943716738ce4572b4479a4cef2558b5a3d
+  revision: f4a6d69470fed94b79f7f2c01f9972d19283f855
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 5e0c967396c49640b276b2374a212e100c214725
+  revision: 94e77f9e601e1e38efbb3ff535b23eab8e58f008
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 3c36c247c32c0e7007237fb229a0caa8bb78eb0e
+  revision: a68526bcef5860e4e40e9c6d0783ba72650ee153
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: db3df953355b4472b41ab376d8e4ea19182e01ca
+  revision: 577d502c1dc7c821eb81ec2b2631e0047f1aea51
   specs:
     sip (2.0.b10)
       cancancan
@@ -320,7 +320,7 @@ GEM
     will_paginate (3.3.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.2.2)
+    zeitwerk (2.3.0)
 
 PLATFORMS
   ruby
@@ -369,4 +369,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
