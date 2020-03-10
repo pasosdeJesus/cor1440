@@ -265,12 +265,25 @@ ALTER SEQUENCE public.cor1440_gen_actividad_proyecto_id_seq OWNED BY public.cor1
 
 
 --
+-- Name: cor1440_gen_actividad_proyectofinanciero_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.cor1440_gen_actividad_proyectofinanciero_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
 -- Name: cor1440_gen_actividad_proyectofinanciero; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.cor1440_gen_actividad_proyectofinanciero (
     actividad_id integer NOT NULL,
-    proyectofinanciero_id integer NOT NULL
+    proyectofinanciero_id integer NOT NULL,
+    id integer DEFAULT nextval('public.cor1440_gen_actividad_proyectofinanciero_id_seq'::regclass) NOT NULL
 );
 
 
@@ -3318,6 +3331,22 @@ ALTER TABLE ONLY public.cor1440_gen_actividad_proyecto
 
 
 --
+-- Name: cor1440_gen_actividad_proyectofinanciero cor1440_gen_actividad_proyectofinanciero_id_key; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_actividad_proyectofinanciero
+    ADD CONSTRAINT cor1440_gen_actividad_proyectofinanciero_id_key UNIQUE (id);
+
+
+--
+-- Name: cor1440_gen_actividad_proyectofinanciero cor1440_gen_actividad_proyectofinanciero_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_actividad_proyectofinanciero
+    ADD CONSTRAINT cor1440_gen_actividad_proyectofinanciero_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: cor1440_gen_actividad_sip_anexo cor1440_gen_actividad_sip_anexo_id_key; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5346,6 +5375,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200211112230'),
 ('20200212103617'),
 ('20200228235200'),
-('20200229005951');
+('20200229005951'),
+('20200302194744');
 
 
