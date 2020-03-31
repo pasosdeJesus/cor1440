@@ -498,6 +498,16 @@ ALTER SEQUENCE public.cor1440_gen_actividadpf_id_seq OWNED BY public.cor1440_gen
 
 
 --
+-- Name: cor1440_gen_actividadpf_mindicadorpf; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cor1440_gen_actividadpf_mindicadorpf (
+    actividadpf_id integer,
+    mindicadorpf_id integer
+);
+
+
+--
 -- Name: cor1440_gen_actividadtipo; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -1245,7 +1255,11 @@ CREATE TABLE public.cor1440_gen_tipoindicador (
     fechacreacion date NOT NULL,
     fechadeshabilitacion date,
     created_at date,
-    updated_at date
+    updated_at date,
+    descd1 character varying(32),
+    descd2 character varying(32),
+    descd3 character varying(32),
+    descd4 character varying(32)
 );
 
 
@@ -4044,6 +4058,20 @@ CREATE INDEX index_cor1440_gen_actividad_sip_anexo_on_sip_anexo_id ON public.cor
 
 
 --
+-- Name: index_cor1440_gen_actividadpf_mindicadorpf_on_actividadpf_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_cor1440_gen_actividadpf_mindicadorpf_on_actividadpf_id ON public.cor1440_gen_actividadpf_mindicadorpf USING btree (actividadpf_id);
+
+
+--
+-- Name: index_cor1440_gen_actividadpf_mindicadorpf_on_mindicadorpf_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_cor1440_gen_actividadpf_mindicadorpf_on_mindicadorpf_id ON public.cor1440_gen_actividadpf_mindicadorpf USING btree (mindicadorpf_id);
+
+
+--
 -- Name: index_heb412_gen_doc_on_tdoc_type_and_tdoc_id; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -4595,6 +4623,14 @@ ALTER TABLE ONLY public.heb412_gen_formulario_plantillahcm
 
 
 --
+-- Name: cor1440_gen_actividadpf_mindicadorpf fk_rails_6e9cbecf02; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_actividadpf_mindicadorpf
+    ADD CONSTRAINT fk_rails_6e9cbecf02 FOREIGN KEY (mindicadorpf_id) REFERENCES public.cor1440_gen_mindicadorpf(id);
+
+
+--
 -- Name: sip_ubicacion fk_rails_6ed05ed576; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -4888,6 +4924,14 @@ ALTER TABLE ONLY public.cor1440_gen_actividad_proyecto
 
 ALTER TABLE ONLY public.cor1440_gen_indicadorpf
     ADD CONSTRAINT fk_rails_cf888d1b56 FOREIGN KEY (tipoindicador_id) REFERENCES public.cor1440_gen_tipoindicador(id);
+
+
+--
+-- Name: cor1440_gen_actividadpf_mindicadorpf fk_rails_cfff77ad98; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_actividadpf_mindicadorpf
+    ADD CONSTRAINT fk_rails_cfff77ad98 FOREIGN KEY (actividadpf_id) REFERENCES public.cor1440_gen_actividadpf(id);
 
 
 --
@@ -5439,6 +5483,10 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200228235200'),
 ('20200229005951'),
 ('20200302194744'),
-('20200319183515');
+('20200314033958'),
+('20200319183515'),
+('20200326212919'),
+('20200327004702'),
+('20200330174434');
 
 
