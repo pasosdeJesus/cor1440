@@ -38,5 +38,6 @@ before_install:
 script: bundle exec rails test -b
 
 after_script:
+        - ls
         - ./cc-test-reporter after-build -t simplecov --exit-code $TRAVIS_TEST_RESULT
 
