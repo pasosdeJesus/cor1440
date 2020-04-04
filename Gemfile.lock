@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 04ecab4b2d5cc77e6aafbd0210c40a8cd5a8357f
+  revision: 610253e6cfc3effd1e0fb5e86bba262f95f5dc17
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 5222187aa9d47a0ed36872325c7b70e35a26a389
+  revision: 638f5c6ce0e399d33b49ae20bc5fc8dd1ebe057b
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: fbd24f3eefc7676a48a8988c94c0255c3a9bb797
+  revision: 484dc9c2a521cf36d77df187189baebd5e29076d
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
