@@ -15,6 +15,7 @@ env:
                 - CC_TEST_REPORTER_ID=5bd0455bc0a044a589398d4a2822192238509cf2d11058a28940017951b2a15f
 
 before_install: 
+        - nvm install node
         - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         - chmod +x ./cc-test-reporter
         - ./cc-test-reporter before-build
@@ -26,17 +27,19 @@ before_install:
         - gem update --system
         - bundle update --bundler
         - bundle install
+        - yarn install
         - cp config/database.travis.yml config/database.yml
         - cp config/application.rb.plantilla config/application.rb
         - cp config/routes.rb.plantilla config/routes.rb
         - cp config/initializers/sip.rb.plantilla config/initializers/sip.rb
         - cp db/structure.sql db/structure.sql.copia # travis no soporta PostreSQL 10
-        - sed -e 's/provider = libc,//g' db/structure.sql.copia > db/structure.sql 
+        - sed -e 's/provider = libc,//g;s/SET default_table_access_method.*/-- &/g' db/structure.sql.copia > db/structure.sql 
         - bundle exec rake db:setup
         - bundle exec rake sip:indices
 
 script: bundle exec rails test -b
 
 after_script:
+        - ls
         - ./cc-test-reporter after-build -t simplecov --exit-code $TRAVIS_TEST_RESULT
 
