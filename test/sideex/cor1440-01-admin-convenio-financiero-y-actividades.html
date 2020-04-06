@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>cor1440-01-admin-convenios-financieros</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Tabla-financiadores</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/admin/financiadores<datalist><option>https://defensor.info/cor1440/admin/financiadores/nueva</option><option>/cor1440/admin/financiadores/nueva</option><option>/cor1440/admin/financiadores</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Administrar<datalist><option>id=navbarDropdownAdministrar</option><option>link=Administrar</option><option>css=#navbarDropdownAdministrar</option><option>//a[contains(text(),'Administrar')]</option><option>//a[@id='navbarDropdownAdministrar']</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//ul[2]/li[2]/a</option></datalist></td><td>92,24</td>
+</tr>
+<tr><td>clickAt</td><td>link=Tablas básicas<datalist><option>link=Tablas básicas</option><option>//a[contains(text(),'Tablas básicas')]</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/div/a[4]</option><option>//a[contains(@href, '/cor1440/tablasbasicas')]</option><option>//ul[2]/li[2]/div/a[4]</option></datalist></td><td>73,18</td>
+</tr>
+<tr><td>clickAt</td><td>link=Financiadores<datalist><option>link=Financiadores</option><option>//a[contains(text(),'Financiadores')]</option><option>//a[contains(@href, 'admin/financiadores')]</option><option>//li[6]/a</option></datalist></td><td>79,11</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Financiadores</td>
+</tr>
+<tr><td>clickAt</td><td>link=Nuevo<datalist><option>link=Nuevo</option><option>css=a.btn.btn-primary</option><option>//a[contains(text(),'Nuevo')]</option><option>//a[contains(@href, '/cor1440/admin/financiadores/nueva')]</option><option>//div[2]/a</option></datalist></td><td>45,30</td>
+</tr>
+<tr><td>clickAt</td><td>id=financiador_nombre<datalist><option>id=financiador_nombre</option><option>name=financiador[nombre]</option><option>css=#financiador_nombre</option><option>//input[@id='financiador_nombre']</option><option>//form[@id='new_financiador']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>32,18</td>
+</tr>
+<tr><td>type</td><td>id=financiador_nombre<datalist><option>id=financiador_nombre</option><option>name=financiador[nombre]</option><option>css=#financiador_nombre</option><option>//input[@id='financiador_nombre']</option><option>//form[@id='new_financiador']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>Asamblea general/fundación Tobé</td>
+</tr>
+<tr><td>clickAt</td><td>id=financiador_observaciones<datalist><option>id=financiador_observaciones</option><option>name=financiador[observaciones]</option><option>css=#financiador_observaciones</option><option>//textarea[@id='financiador_observaciones']</option><option>//form[@id='new_financiador']/div[3]/textarea</option><option>//textarea</option></datalist></td><td>826,38</td>
+</tr>
+<tr><td>clickAt</td><td>css=div.container.master-container<datalist><option>css=div.container.master-container</option><option>//body/div</option></datalist></td><td>5,198</td>
+</tr>
+<tr><td>type</td><td>id=financiador_observaciones<datalist><option>id=financiador_observaciones</option><option>name=financiador[observaciones]</option><option>css=#financiador_observaciones</option><option>//textarea[@id='financiador_observaciones']</option><option>//form[@id='new_financiador']/div[3]/textarea</option><option>//textarea</option></datalist></td><td>La directora Aidee Montero propone utilizar los recursos existentes a la fecha para actividades durante el año 2020</td>
+</tr>
+<tr><td>clickAt</td><td>id=financiador_fechacreacion_localizada<datalist><option>id=financiador_fechacreacion_localizada</option><option>name=financiador[fechacreacion_localizada]</option><option>css=#financiador_fechacreacion_localizada</option><option>//input[@id='financiador_fechacreacion_localizada']</option><option>//form[@id='new_financiador']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>126,22</td>
+</tr>
+<tr><td>clickAt</td><td>css=th.prev<datalist><option>css=th.prev</option><option>//tr[2]/th</option></datalist></td><td>3,14</td>
+</tr>
+<tr><td>clickAt</td><td>//tr[4]/td[6]<datalist><option>//tr[4]/td[6]</option></datalist></td><td>15,15</td>
+</tr>
+<tr><td>clickAt</td><td>name=commit<datalist><option>name=commit</option><option>css=input[name="commit"]</option><option>//input[@name='commit']</option><option>//form[@id='new_financiador']/div[6]/input</option><option>//div[6]/input</option></datalist></td><td>52,16</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Tabla-financiables</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/admin/proyectos<datalist><option>https://defensor.info/cor1440/admin/proyectos/nueva</option><option>/cor1440/admin/proyectos/nueva</option><option>/cor1440/admin/proyectos</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Administrar<datalist><option>id=navbarDropdownAdministrar</option><option>link=Administrar</option><option>css=#navbarDropdownAdministrar</option><option>//a[contains(text(),'Administrar')]</option><option>//a[@id='navbarDropdownAdministrar']</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//ul[2]/li[2]/a</option></datalist></td><td>101,15</td>
+</tr>
+<tr><td>clickAt</td><td>link=Tablas básicas<datalist><option>link=Tablas básicas</option><option>//a[contains(text(),'Tablas básicas')]</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/div/a[4]</option><option>//a[contains(@href, '/cor1440/tablasbasicas')]</option><option>//ul[2]/li[2]/div/a[4]</option></datalist></td><td>110,13</td>
+</tr>
+<tr><td>clickAt</td><td>link=Financiables<datalist><option>link=Financiables</option><option>//a[contains(text(),'Financiables')]</option><option>//a[contains(@href, 'admin/proyectos')]</option><option>//li[5]/a</option></datalist></td><td>38,9</td>
+</tr>
+<tr><td>clickAt</td><td>link=Nueva<datalist><option>link=Nueva</option><option>css=a.btn.btn-primary</option><option>//a[contains(text(),'Nueva')]</option><option>//a[contains(@href, '/cor1440/admin/proyectos/nueva')]</option><option>//div[3]/div/a</option></datalist></td><td>54,27</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Nueva Financiable</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyecto_nombre<datalist><option>id=proyecto_nombre</option><option>name=proyecto[nombre]</option><option>css=#proyecto_nombre</option><option>//input[@id='proyecto_nombre']</option><option>//form[@id='new_proyecto']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>30,10</td>
+</tr>
+<tr><td>type</td><td>id=proyecto_nombre<datalist><option>id=proyecto_nombre</option><option>name=proyecto[nombre]</option><option>css=#proyecto_nombre</option><option>//input[@id='proyecto_nombre']</option><option>//form[@id='new_proyecto']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>Proyectos de asignación de excedentes generados en el ejercicio del año 2019</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyecto_fechainicio_localizada<datalist><option>id=proyecto_fechainicio_localizada</option><option>name=proyecto[fechainicio_localizada]</option><option>css=#proyecto_fechainicio_localizada</option><option>//input[@id='proyecto_fechainicio_localizada']</option><option>//form[@id='new_proyecto']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>40,19</td>
+</tr>
+<tr><td>clickAt</td><td>//tr[4]/td[6]<datalist><option>//tr[4]/td[6]</option></datalist></td><td>16,10</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyecto_fechacierre_localizada<datalist><option>id=proyecto_fechacierre_localizada</option><option>name=proyecto[fechacierre_localizada]</option><option>css=#proyecto_fechacierre_localizada</option><option>//input[@id='proyecto_fechacierre_localizada']</option><option>//form[@id='new_proyecto']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>15,6</td>
+</tr>
+<tr><td>type</td><td>id=proyecto_fechacierre_localizada<datalist><option>id=proyecto_fechacierre_localizada</option><option>name=proyecto[fechacierre_localizada]</option><option>css=#proyecto_fechacierre_localizada</option><option>//input[@id='proyecto_fechacierre_localizada']</option><option>//form[@id='new_proyecto']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>18/Dic/2020</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyecto_fechacreacion_localizada<datalist><option>id=proyecto_fechacreacion_localizada</option><option>name=proyecto[fechacreacion_localizada]</option><option>css=#proyecto_fechacreacion_localizada</option><option>//input[@id='proyecto_fechacreacion_localizada']</option><option>//form[@id='new_proyecto']/div[7]/input</option><option>//div[7]/input</option></datalist></td><td>116,28</td>
+</tr>
+<tr><td>clickAt</td><td>css=td.today.active.day<datalist><option>css=td.today.active.day</option><option>//tr[4]/td</option></datalist></td><td>22,4</td>
+</tr>
+<tr><td>clickAt</td><td>name=commit<datalist><option>name=commit</option><option>css=input[name="commit"]</option><option>//input[@name='commit']</option><option>//form[@id='new_proyecto']/div[9]/input</option><option>//div[9]/input</option></datalist></td><td>46,20</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Financiables</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Tabla-tipo-de-actividad</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/<datalist><option>https://defensor.info/cor1440/proyectosfinancieros/595/edita</option><option>https://defensor.info/cor1440/</option><option>/cor1440/</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Administrar<datalist><option>id=navbarDropdownAdministrar</option><option>link=Administrar</option><option>css=#navbarDropdownAdministrar</option><option>//a[contains(text(),'Administrar')]</option><option>//a[@id='navbarDropdownAdministrar']</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//ul[2]/li[2]/a</option></datalist></td><td>100,22</td>
+</tr>
+<tr><td>clickAt</td><td>link=Tablas básicas<datalist><option>link=Tablas básicas</option><option>//a[contains(text(),'Tablas básicas')]</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/div/a[4]</option><option>//a[contains(@href, '/cor1440/tablasbasicas')]</option><option>//ul[2]/li[2]/div/a[4]</option></datalist></td><td>84,15</td>
+</tr>
+<tr><td>clickAt</td><td>link=Tipos de actividad de convenio financiado<datalist><option>link=Tipos de indicador</option><option>//a[contains(text(),'Tipos de indicador')]</option><option>//a[contains(@href, 'admin/tiposindicador')]</option><option>//li[16]/a</option><option>link=Tipos de actividad de convenio financiado</option></datalist></td><td>94,11</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Tipos de actividad de convenio financiado</td>
+</tr>
+<tr><td>clickAt</td><td>link=Nuevo<datalist><option>link=Nuevo</option><option>css=a.btn.btn-primary</option><option>//a[contains(text(),'Nuevo')]</option><option>//a[contains(@href, '/cor1440/admin/tiposindicador/nueva')]</option><option>//div/div/a</option></datalist></td><td>41,35</td>
+</tr>
+<tr><td>type</td><td>id=actividadtipo_nombre<datalist><option>id=tipoindicador_nombre</option><option>name=tipoindicador[nombre]</option><option>css=#tipoindicador_nombre</option><option>//input[@id='tipoindicador_nombre']</option><option>//form[@id='edit_tipoindicador_130']/div[2]/input</option><option>//div[2]/input</option><option>id=actividadtipo_nombre</option></datalist></td><td>taller para afiliados</td>
+</tr>
+<tr><td>type</td><td>id=actividadtipo_observaciones<datalist><option>id=actividadtipo_observaciones</option><option>name=actividadtipo[observaciones]</option><option>css=#actividadtipo_observaciones</option><option>//input[@id='actividadtipo_observaciones']</option><option>//form[@id='edit_actividadtipo_113']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>Empoderar afiliadas para llevar vida independiente</td>
+</tr>
+<tr><td>clickAt</td><td>name=commit<datalist><option>name=commit</option><option>css=input[name="commit"]</option><option>//input[@name='commit']</option><option>//form[@id='edit_tipoindicador_130']/div[9]/input</option><option>//div[9]/input</option></datalist></td><td>58,20</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Convenio-financiado</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/proyectosfinancieros<datalist><option>https://defensor.info/cor1440/proyectosfinancieros/232/edita</option><option>/cor1440/proyectosfinancieros/232/edita</option><option>/cor1440/proyectosfinancieros</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Convenios Financiados<datalist><option>id=navbarDropdownConvenios_Financiados</option><option>link=Convenios Financiados</option><option>css=#navbarDropdownConvenios_Financiados</option><option>//a[contains(text(),'Convenios Financiados')]</option><option>//a[@id='navbarDropdownConvenios_Financiados']</option><option>//div[@id='navbarSupportedContent']/ul/li/a</option><option>//a[contains(@href, '#')]</option><option>//li/a</option></datalist></td><td>186,14</td>
+</tr>
+<tr><td>clickAt</td><td>link=Listado<datalist><option>link=Listado</option><option>css=a.dropdown-item</option><option>//a[contains(text(),'Listado')]</option><option>//div[@id='navbarSupportedContent']/ul/li/div/a</option><option>//a[contains(@href, '/cor1440/proyectosfinancieros')]</option><option>//div/a</option></datalist></td><td>56,15</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Convenios Financieros</td>
+</tr>
+<tr><td>clickAt</td><td>link=Nuevo<datalist><option>link=Nuevo</option><option>css=a.btn.btn-primary</option><option>//a[contains(text(),'Nuevo')]</option><option>//a[contains(@href, '/cor1440/proyectosfinancieros/nuevo')]</option><option>//div/div/a</option></datalist></td><td>45,25</td>
+</tr>
+<tr><td>type</td><td>id=proyectofinanciero_nombre<datalist><option>id=proyectofinanciero_nombre</option><option>name=proyectofinanciero[nombre]</option><option>css=#proyectofinanciero_nombre</option><option>//input[@id='proyectofinanciero_nombre']</option><option>//form[@id='edit_proyectofinanciero_233']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>Fundación Tobé--- 2020</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyectofinanciero_fechainicio_localizada<datalist><option>id=proyectofinanciero_fechainicio_localizada</option><option>name=proyectofinanciero[fechainicio_localizada]</option><option>css=#proyectofinanciero_fechainicio_localizada</option><option>//input[@id='proyectofinanciero_fechainicio_localizada']</option><option>//form[@id='edit_proyectofinanciero_531']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>33,25</td>
+</tr>
+<tr><td>runScript</td><td>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')<datalist><option>$('.chosen-select').removeAttr('style');</option><option>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')</option></datalist></td><td></td>
+</tr>
+<tr><td>addSelection</td><td>id=proyectofinanciero_financiador_ids<datalist><option>id=proyectofinanciero_financiador_ids</option><option>css=#proyectofinanciero_financiador_ids</option><option>//select[@id='proyectofinanciero_financiador_ids']</option><option>//form[@id='edit_proyectofinanciero_498']/div[3]/select</option><option>//select</option></datalist></td><td>label=ASAMBLEA GENERAL/FUNDACIÓN TOBÉ</td>
+</tr>
+<tr><td>type</td><td>id=proyectofinanciero_fechainicio_localizada<datalist><option>id=proyectofinanciero_fechainicio_localizada</option><option>name=proyectofinanciero[fechainicio_localizada]</option><option>css=#proyectofinanciero_fechainicio_localizada</option><option>//input[@id='proyectofinanciero_fechainicio_localizada']</option><option>//form[@id='edit_proyectofinanciero_613']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>01/Ene/2020</td>
+</tr>
+<tr><td>type</td><td>id=proyectofinanciero_fechacierre_localizada<datalist><option>id=proyectofinanciero_fechacierre_localizada</option><option>name=proyectofinanciero[fechacierre_localizada]</option><option>css=#proyectofinanciero_fechacierre_localizada</option><option>//input[@id='proyectofinanciero_fechacierre_localizada']</option><option>//form[@id='edit_proyectofinanciero_615']/div[5]/input</option><option>//div[5]/input</option></datalist></td><td>31/Dic/2020</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyectofinanciero_responsable_id<datalist><option>id=proyectofinanciero_responsable_id</option><option>name=proyectofinanciero[responsable_id]</option><option>css=#proyectofinanciero_responsable_id</option><option>//select[@id='proyectofinanciero_responsable_id']</option><option>//form[@id='edit_proyectofinanciero_532']/div[6]/select</option><option>//div[6]/select</option></datalist></td><td>138,11</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyectofinanciero_responsable_id<datalist><option>id=proyectofinanciero_responsable_id</option><option>name=proyectofinanciero[responsable_id]</option><option>css=#proyectofinanciero_responsable_id</option><option>//select[@id='proyectofinanciero_responsable_id']</option><option>//form[@id='edit_proyectofinanciero_532']/div[6]/select</option><option>//div[6]/select</option></datalist></td><td>-202,-484</td>
+</tr>
+<tr><td>select</td><td>id=proyectofinanciero_responsable_id<datalist><option>id=proyectofinanciero_responsable_id</option><option>name=proyectofinanciero[responsable_id]</option><option>css=#proyectofinanciero_responsable_id</option><option>//select[@id='proyectofinanciero_responsable_id']</option><option>//form[@id='edit_proyectofinanciero_532']/div[6]/select</option><option>//div[6]/select</option></datalist></td><td>label=cor1440</td>
+</tr>
+<tr><td>addSelection</td><td>id=proyectofinanciero_proyecto_ids<datalist><option>id=proyectofinanciero_proyecto_ids</option><option>css=#proyectofinanciero_proyecto_ids</option><option>//select[@id='proyectofinanciero_proyecto_ids']</option><option>//form[@id='edit_proyectofinanciero_522']/div[7]/select</option><option>//div[7]/select</option></datalist></td><td>label=PROYECTO DE ASIGNACIÓN DE EXCEDENTES GENERADOS EN EL EJERCICIO DEL AÑO 2019</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyectofinanciero_compromisos<datalist><option>id=proyectofinanciero_compromisos</option><option>name=proyectofinanciero[compromisos]</option><option>css=#proyectofinanciero_compromisos</option><option>//input[@id='proyectofinanciero_compromisos']</option><option>//form[@id='edit_proyectofinanciero_561']/div[8]/input</option><option>//div[8]/input</option></datalist></td><td>64,19</td>
+</tr>
+<tr><td>type</td><td>id=proyectofinanciero_compromisos<datalist><option>id=proyectofinanciero_compromisos</option><option>name=proyectofinanciero[compromisos]</option><option>css=#proyectofinanciero_compromisos</option><option>//input[@id='proyectofinanciero_compromisos']</option><option>//form[@id='edit_proyectofinanciero_561']/div[8]/input</option><option>//div[8]/input</option></datalist></td><td>Promover la filosofía de vida independiente a través de la creación de un Centro y la formación de asistentes personales que acompañen la reivindicación y el fortalecimiento en derechos desde una perspectiva de independencia y autonomía, para que las personas en condición de discapacidad y/o dependencia gocen de una vida digna.</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyectofinanciero_monto<datalist><option>id=proyectofinanciero_monto</option><option>name=proyectofinanciero[monto]</option><option>css=#proyectofinanciero_monto</option><option>//input[@id='proyectofinanciero_monto']</option><option>//form[@id='edit_proyectofinanciero_561']/div[9]/input</option><option>//div[9]/input</option></datalist></td><td>73,23</td>
+</tr>
+<tr><td>clickAt</td><td>css=div.container.master-container<datalist><option>css=div.container.master-container</option><option>//body/div</option></datalist></td><td>1,684</td>
+</tr>
+<tr><td>clickAt</td><td>id=proyectofinanciero_observaciones<datalist><option>id=proyectofinanciero_observaciones</option><option>name=proyectofinanciero[observaciones]</option><option>css=#proyectofinanciero_observaciones</option><option>//input[@id='proyectofinanciero_observaciones']</option><option>//form[@id='edit_proyectofinanciero_561']/div[10]/input</option><option>//div[10]/input</option></datalist></td><td>38,22</td>
+</tr>
+<tr><td>type</td><td>id=proyectofinanciero_observaciones<datalist><option>id=proyectofinanciero_observaciones</option><option>name=proyectofinanciero[observaciones]</option><option>css=#proyectofinanciero_observaciones</option><option>//input[@id='proyectofinanciero_observaciones']</option><option>//form[@id='edit_proyectofinanciero_561']/div[10]/input</option><option>//div[10]/input</option></datalist></td><td>se realizaran varias actividades con el fin de recaudar fondos para autosostenimiento de la fundación</td>
+</tr>
+<tr><td>clickAt</td><td>link=Agregar objetivo / efecto<datalist><option>link=Agregar objetivo / efecto</option><option>css=a.btn-primary.add_fields</option><option>//a[contains(text(),'Agregar objetivo / efecto')]</option><option>//form[@id='edit_proyectofinanciero_562']/div[12]/div[2]/div/div/a</option><option>xpath=(//a[contains(@href, '#')])[5]</option><option>//div/div/a</option></datalist></td><td>118,10</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='objetivospf']/tr/td/div/input<datalist><option>id=proyectofinanciero_objetivopf_attributes_151_numero</option><option>name=proyectofinanciero[objetivopf_attributes][151][numero]</option><option>css=#proyectofinanciero_objetivopf_attributes_151_numero</option><option>//input[@id='proyectofinanciero_objetivopf_attributes_151_numero']</option><option>//tbody[@id='objetivospf']/tr/td/div/input</option><option>//td/div/input</option></datalist></td><td>220,18</td>
+</tr>
+<tr><td>type</td><td>//tbody[@id='objetivospf']/tr/td/div/input<datalist><option>id=proyectofinanciero_objetivopf_attributes_151_numero</option><option>name=proyectofinanciero[objetivopf_attributes][151][numero]</option><option>css=#proyectofinanciero_objetivopf_attributes_151_numero</option><option>//input[@id='proyectofinanciero_objetivopf_attributes_151_numero']</option><option>//tbody[@id='objetivospf']/tr/td/div/input</option><option>//td/div/input</option></datalist></td><td>OG</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='objetivospf']/tr/td[2]/div/textarea<datalist><option>id=proyectofinanciero_objetivopf_attributes_151_objetivo</option><option>name=proyectofinanciero[objetivopf_attributes][151][objetivo]</option><option>css=#proyectofinanciero_objetivopf_attributes_151_objetivo</option><option>//textarea[@id='proyectofinanciero_objetivopf_attributes_151_objetivo']</option><option>//tbody[@id='objetivospf']/tr/td[2]/div/textarea</option><option>//textarea</option></datalist></td><td>45,32</td>
+</tr>
+<tr><td>type</td><td>//tbody[@id='objetivospf']/tr/td[2]/div/textarea<datalist><option>id=proyectofinanciero_objetivopf_attributes_151_objetivo</option><option>name=proyectofinanciero[objetivopf_attributes][151][objetivo]</option><option>css=#proyectofinanciero_objetivopf_attributes_151_objetivo</option><option>//textarea[@id='proyectofinanciero_objetivopf_attributes_151_objetivo']</option><option>//tbody[@id='objetivospf']/tr/td[2]/div/textarea</option><option>//textarea</option></datalist></td><td>Posicionar la filosofía de Vida Independiente para personas en condición de discapacidad y/o dependencia, por medio de la prestación de servicios innovadores enmarcados en principios de justicia, dignidad, igualdad, libertad y diversidad a nivel Nacional e Internacional, aportando a la construcción de una sociedad diseñada para todos y todas, siendo modelo para nuevas organizaciones que quieran trabajar en la independencia y autonomía de esta población.</td>
+</tr>
+<tr><td>clickAt</td><td>link=Agregar resultado<datalist><option>link=Agregar resultado</option><option>css=div.div-resultadospf &gt; div.links &gt; a.btn-primary.add_fields</option><option>//a[contains(text(),'Agregar resultado')]</option><option>//form[@id='edit_proyectofinanciero_563']/div[14]/div[2]/div/div/a</option><option>xpath=(//a[contains(@href, '#')])[8]</option><option>//div[14]/div[2]/div/div/a</option></datalist></td><td>105,8</td>
+</tr>
+<tr><td>select</td><td>//tbody[@id='resultadospf']/tr/td/div/select<datalist><option>id=proyectofinanciero_resultadopf_attributes_524_objetivopf_id</option><option>name=proyectofinanciero[resultadopf_attributes][524][objetivopf_id]</option><option>css=#proyectofinanciero_resultadopf_attributes_524_objetivopf_id</option><option>//select[@id='proyectofinanciero_resultadopf_attributes_524_objetivopf_id']</option><option>//tbody[@id='resultadospf']/tr/td/div/select</option><option>//td/div/select</option></datalist></td><td>label=OG</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='resultadospf']/tr/td/div/select<datalist><option>id=proyectofinanciero_resultadopf_attributes_524_objetivopf_id</option><option>name=proyectofinanciero[resultadopf_attributes][524][objetivopf_id]</option><option>css=#proyectofinanciero_resultadopf_attributes_524_objetivopf_id</option><option>//select[@id='proyectofinanciero_resultadopf_attributes_524_objetivopf_id']</option><option>//tbody[@id='resultadospf']/tr/td/div/select</option><option>//td/div/select</option></datalist></td><td>-204,-374</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='resultadospf']/tr/td[2]/div/input<datalist><option>id=proyectofinanciero_resultadopf_attributes_524_numero</option><option>name=proyectofinanciero[resultadopf_attributes][524][numero]</option><option>css=#proyectofinanciero_resultadopf_attributes_524_numero</option><option>//input[@id='proyectofinanciero_resultadopf_attributes_524_numero']</option><option>//tbody[@id='resultadospf']/tr/td[2]/div/input</option><option>//td[2]/div/input</option></datalist></td><td>19,20</td>
+</tr>
+<tr><td>type</td><td>//tbody[@id='resultadospf']/tr/td[2]/div/input<datalist><option>id=proyectofinanciero_resultadopf_attributes_524_numero</option><option>name=proyectofinanciero[resultadopf_attributes][524][numero]</option><option>css=#proyectofinanciero_resultadopf_attributes_524_numero</option><option>//input[@id='proyectofinanciero_resultadopf_attributes_524_numero']</option><option>//tbody[@id='resultadospf']/tr/td[2]/div/input</option><option>//td[2]/div/input</option></datalist></td><td>R1</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='resultadospf']/tr/td[3]/div/textarea<datalist><option>id=proyectofinanciero_resultadopf_attributes_524_resultado</option><option>name=proyectofinanciero[resultadopf_attributes][524][resultado]</option><option>css=#proyectofinanciero_resultadopf_attributes_524_resultado</option><option>//textarea[@id='proyectofinanciero_resultadopf_attributes_524_resultado']</option><option>//tbody[@id='resultadospf']/tr/td[3]/div/textarea</option><option>//td[3]/div/textarea</option></datalist></td><td>46,44</td>
+</tr>
+<tr><td>type</td><td>//tbody[@id='resultadospf']/tr/td[3]/div/textarea<datalist><option>id=proyectofinanciero_resultadopf_attributes_524_resultado</option><option>name=proyectofinanciero[resultadopf_attributes][524][resultado]</option><option>css=#proyectofinanciero_resultadopf_attributes_524_resultado</option><option>//textarea[@id='proyectofinanciero_resultadopf_attributes_524_resultado']</option><option>//tbody[@id='resultadospf']/tr/td[3]/div/textarea</option><option>//td[3]/div/textarea</option></datalist></td><td>Los  afiliados de la fundación Tobé vivan de forma independiente y puedan elegir como hacerlo por medio del apoyo de la fundación</td>
+</tr>
+<tr><td>clickAt</td><td>link=Agregar indicador<datalist><option>link=Agregar indicador</option><option>css=div.div-indicadorespf &gt; div.links &gt; a.btn-primary.add_fields</option><option>xpath=(//a[contains(text(),'Agregar indicador')])[2]</option><option>//form[@id='edit_proyectofinanciero_564']/div[15]/div[2]/div/div/a</option><option>xpath=(//a[contains(@href, '#')])[10]</option><option>//div[15]/div[2]/div/div/a</option></datalist></td><td>76,3</td>
+</tr>
+<tr><td>select</td><td>//div[15]/div[2]/div/table/tbody/tr/td/div/select<datalist><option>id=proyectofinanciero_indicadorpf_attributes_782_resultadopf_id</option><option>name=proyectofinanciero[indicadorpf_attributes][782][resultadopf_id]</option><option>css=#proyectofinanciero_indicadorpf_attributes_782_resultadopf_id</option><option>//select[@id='proyectofinanciero_indicadorpf_attributes_782_resultadopf_id']</option><option>//tbody[@id='indicadorespf']/tr/td/div/select</option><option>//div[15]/div[2]/div/table/tbody/tr/td/div/select</option></datalist></td><td>label=R1</td>
+</tr>
+<tr><td>clickAt</td><td>//div[15]/div[2]/div/table/tbody/tr/td/div/select<datalist><option>id=proyectofinanciero_indicadorpf_attributes_782_resultadopf_id</option><option>name=proyectofinanciero[indicadorpf_attributes][782][resultadopf_id]</option><option>css=#proyectofinanciero_indicadorpf_attributes_782_resultadopf_id</option><option>//select[@id='proyectofinanciero_indicadorpf_attributes_782_resultadopf_id']</option><option>//tbody[@id='indicadorespf']/tr/td/div/select</option><option>//div[15]/div[2]/div/table/tbody/tr/td/div/select</option></datalist></td><td>-204,-461</td>
+</tr>
+<tr><td>clickAt</td><td>//div[15]/div[2]/div/table/tbody/tr/td[2]/div/input<datalist><option>id=proyectofinanciero_indicadorpf_attributes_782_numero</option><option>name=proyectofinanciero[indicadorpf_attributes][782][numero]</option><option>css=#proyectofinanciero_indicadorpf_attributes_782_numero</option><option>//input[@id='proyectofinanciero_indicadorpf_attributes_782_numero']</option><option>//tbody[@id='indicadorespf']/tr/td[2]/div/input</option><option>//div[15]/div[2]/div/table/tbody/tr/td[2]/div/input</option></datalist></td><td>13,18</td>
+</tr>
+<tr><td>type</td><td>//div[15]/div[2]/div/table/tbody/tr/td[2]/div/input<datalist><option>id=proyectofinanciero_indicadorpf_attributes_782_numero</option><option>name=proyectofinanciero[indicadorpf_attributes][782][numero]</option><option>css=#proyectofinanciero_indicadorpf_attributes_782_numero</option><option>//input[@id='proyectofinanciero_indicadorpf_attributes_782_numero']</option><option>//tbody[@id='indicadorespf']/tr/td[2]/div/input</option><option>//div[15]/div[2]/div/table/tbody/tr/td[2]/div/input</option></datalist></td><td>R1 I1</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='indicadorespf']/tr/td[3]/div/select<datalist><option>id=proyectofinanciero_indicadorpf_attributes_808_tipoindicador_id</option><option>name=proyectofinanciero[indicadorpf_attributes][808][tipoindicador_id]</option><option>css=#proyectofinanciero_indicadorpf_attributes_808_tipoindicador_id</option><option>//select[@id='proyectofinanciero_indicadorpf_attributes_808_tipoindicador_id']</option><option>//tbody[@id='indicadorespf']/tr/td[3]/div/select</option><option>//td[3]/div/select</option></datalist></td><td>-480,-579</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='indicadorespf']/tr/td[3]/div/select<datalist><option>id=proyectofinanciero_indicadorpf_attributes_808_tipoindicador_id</option><option>name=proyectofinanciero[indicadorpf_attributes][808][tipoindicador_id]</option><option>css=#proyectofinanciero_indicadorpf_attributes_808_tipoindicador_id</option><option>//select[@id='proyectofinanciero_indicadorpf_attributes_808_tipoindicador_id']</option><option>//tbody[@id='indicadorespf']/tr/td[3]/div/select</option><option>//td[3]/div/select</option></datalist></td><td>-480,-579</td>
+</tr>
+<tr><td>select</td><td>//tbody[@id='indicadorespf']/tr/td[3]/div/select<datalist><option>id=proyectofinanciero_indicadorpf_attributes_809_tipoindicador_id</option><option>name=proyectofinanciero[indicadorpf_attributes][809][tipoindicador_id]</option><option>css=#proyectofinanciero_indicadorpf_attributes_809_tipoindicador_id</option><option>//select[@id='proyectofinanciero_indicadorpf_attributes_809_tipoindicador_id']</option><option>//tbody[@id='indicadorespf']/tr/td[3]/div/select</option><option>//td[3]/div/select</option></datalist></td><td>label=TALLERES PARA AFILIADOS</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='indicadorespf']/tr/td[3]/div/select<datalist><option>id=proyectofinanciero_indicadorpf_attributes_809_tipoindicador_id</option><option>name=proyectofinanciero[indicadorpf_attributes][809][tipoindicador_id]</option><option>css=#proyectofinanciero_indicadorpf_attributes_809_tipoindicador_id</option><option>//select[@id='proyectofinanciero_indicadorpf_attributes_809_tipoindicador_id']</option><option>//tbody[@id='indicadorespf']/tr/td[3]/div/select</option><option>//td[3]/div/select</option></datalist></td><td>-480,-579</td>
+</tr>
+<tr><td>type</td><td>//tbody[@id='indicadorespf']/tr/td[4]/div/textarea<datalist><option>id=proyectofinanciero_indicadorpf_attributes_801_indicador</option><option>name=proyectofinanciero[indicadorpf_attributes][801][indicador]</option><option>css=#proyectofinanciero_indicadorpf_attributes_801_indicador</option><option>//textarea[@id='proyectofinanciero_indicadorpf_attributes_801_indicador']</option><option>//tbody[@id='indicadorespf']/tr/td[4]/div/textarea</option><option>//td[4]/div/textarea</option></datalist></td><td>En el año se realizaran 12 reuniones con los afiliados de la fundación</td>
+</tr>
+<tr><td>clickAt</td><td>link=Agregar actividad<datalist><option>link=Agregar actividad</option><option>css=div.div-actividadespf &gt; div.links &gt; a.btn-primary.add_fields</option><option>//a[contains(text(),'Agregar actividad')]</option><option>//form[@id='edit_proyectofinanciero_565']/div[16]/div[2]/div/div/a</option><option>xpath=(//a[contains(@href, '#')])[12]</option><option>//div[16]/div[2]/div/div/a</option></datalist></td><td>68,9</td>
+</tr>
+<tr><td>select</td><td>//div[16]/div[2]/div/table/tbody/tr/td/div/select<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_resultadopf_id</option><option>name=proyectofinanciero[actividadpf_attributes][447][resultadopf_id]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_resultadopf_id</option><option>//select[@id='proyectofinanciero_actividadpf_attributes_447_resultadopf_id']</option><option>//tbody[@id='actividadespf']/tr/td/div/select</option><option>//div[16]/div[2]/div/table/tbody/tr/td/div/select</option></datalist></td><td>label=R1</td>
+</tr>
+<tr><td>clickAt</td><td>//div[16]/div[2]/div/table/tbody/tr/td/div/select<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_resultadopf_id</option><option>name=proyectofinanciero[actividadpf_attributes][447][resultadopf_id]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_resultadopf_id</option><option>//select[@id='proyectofinanciero_actividadpf_attributes_447_resultadopf_id']</option><option>//tbody[@id='actividadespf']/tr/td/div/select</option><option>//div[16]/div[2]/div/table/tbody/tr/td/div/select</option></datalist></td><td>-204,-639</td>
+</tr>
+<tr><td>clickAt</td><td>//div[16]/div[2]/div/table/tbody/tr/td[2]/div/input<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_nombrecorto</option><option>name=proyectofinanciero[actividadpf_attributes][447][nombrecorto]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_nombrecorto</option><option>//input[@id='proyectofinanciero_actividadpf_attributes_447_nombrecorto']</option><option>//tbody[@id='actividadespf']/tr/td[2]/div/input</option><option>//div[16]/div[2]/div/table/tbody/tr/td[2]/div/input</option></datalist></td><td>28,19</td>
+</tr>
+<tr><td>type</td><td>//div[16]/div[2]/div/table/tbody/tr/td[2]/div/input<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_nombrecorto</option><option>name=proyectofinanciero[actividadpf_attributes][447][nombrecorto]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_nombrecorto</option><option>//input[@id='proyectofinanciero_actividadpf_attributes_447_nombrecorto']</option><option>//tbody[@id='actividadespf']/tr/td[2]/div/input</option><option>//div[16]/div[2]/div/table/tbody/tr/td[2]/div/input</option></datalist></td><td>R1 A1 I1</td>
+</tr>
+<tr><td>clickAt</td><td>css=div.input.select.optional.proyectofinanciero_actividadpf_actividadtipo<datalist><option>css=div.input.select.optional.proyectofinanciero_actividadpf_actividadtipo</option><option>//tbody[@id='actividadespf']/tr/td[3]/div</option><option>//div[16]/div[2]/div/table/tbody/tr/td[3]/div</option></datalist></td><td>160,22</td>
+</tr>
+<tr><td>select</td><td>//tbody[@id='actividadespf']/tr/td[3]/div/select<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_actividadtipo_id</option><option>name=proyectofinanciero[actividadpf_attributes][447][actividadtipo_id]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_actividadtipo_id</option><option>//select[@id='proyectofinanciero_actividadpf_attributes_447_actividadtipo_id']</option><option>//tbody[@id='actividadespf']/tr/td[3]/div/select</option><option>//td[3]/div/select</option></datalist></td><td>label=TALLER PARA AFILIADOS</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='actividadespf']/tr/td[3]/div/select<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_actividadtipo_id</option><option>name=proyectofinanciero[actividadpf_attributes][447][actividadtipo_id]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_actividadtipo_id</option><option>//select[@id='proyectofinanciero_actividadpf_attributes_447_actividadtipo_id']</option><option>//tbody[@id='actividadespf']/tr/td[3]/div/select</option><option>//td[3]/div/select</option></datalist></td><td>-455,-639</td>
+</tr>
+<tr><td>clickAt</td><td>//div[16]/div[2]/div/table/tbody/tr/td[4]/div/input<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_titulo</option><option>name=proyectofinanciero[actividadpf_attributes][447][titulo]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_titulo</option><option>//input[@id='proyectofinanciero_actividadpf_attributes_447_titulo']</option><option>//tbody[@id='actividadespf']/tr/td[4]/div/input</option><option>//div[16]/div[2]/div/table/tbody/tr/td[4]/div/input</option></datalist></td><td>36,26</td>
+</tr>
+<tr><td>type</td><td>//div[16]/div[2]/div/table/tbody/tr/td[4]/div/input<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_titulo</option><option>name=proyectofinanciero[actividadpf_attributes][447][titulo]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_titulo</option><option>//input[@id='proyectofinanciero_actividadpf_attributes_447_titulo']</option><option>//tbody[@id='actividadespf']/tr/td[4]/div/input</option><option>//div[16]/div[2]/div/table/tbody/tr/td[4]/div/input</option></datalist></td><td>Taller para afiliados</td>
+</tr>
+<tr><td>clickAt</td><td>//tbody[@id='actividadespf']/tr/td[5]/div/textarea<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_descripcion</option><option>name=proyectofinanciero[actividadpf_attributes][447][descripcion]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_descripcion</option><option>//textarea[@id='proyectofinanciero_actividadpf_attributes_447_descripcion']</option><option>//tbody[@id='actividadespf']/tr/td[5]/div/textarea</option><option>//td[5]/div/textarea</option></datalist></td><td>22,40</td>
+</tr>
+<tr><td>type</td><td>//tbody[@id='actividadespf']/tr/td[5]/div/textarea<datalist><option>id=proyectofinanciero_actividadpf_attributes_447_descripcion</option><option>name=proyectofinanciero[actividadpf_attributes][447][descripcion]</option><option>css=#proyectofinanciero_actividadpf_attributes_447_descripcion</option><option>//textarea[@id='proyectofinanciero_actividadpf_attributes_447_descripcion']</option><option>//tbody[@id='actividadespf']/tr/td[5]/div/textarea</option><option>//td[5]/div/textarea</option></datalist></td><td>Para empoderar a los afiliados en situación de discapacidad, en llevar una vida independiente, autónoma y con inclusión social.</td>
+</tr>
+<tr><td>clickAt</td><td>link=Agregar actividad<datalist><option>link=Agregar actividad</option><option>css=div.div-actividadespf &gt; div.links &gt; a.btn-primary.add_fields</option><option>//a[contains(text(),'Agregar actividad')]</option><option>//form[@id='edit_proyectofinanciero_604']/div[16]/div[2]/div/div/a</option><option>xpath=(//a[contains(@href, '#')])[13]</option><option>//div[16]/div[2]/div/div/a</option></datalist></td><td>116,3</td>
+</tr>
+<tr><td>select</td><td>//tr[2]/td/div/select<datalist><option>id=proyectofinanciero_actividadpf_attributes_464_resultadopf_id</option><option>name=proyectofinanciero[actividadpf_attributes][464][resultadopf_id]</option><option>css=#proyectofinanciero_actividadpf_attributes_464_resultadopf_id</option><option>//select[@id='proyectofinanciero_actividadpf_attributes_464_resultadopf_id']</option><option>//tbody[@id='actividadespf']/tr[2]/td/div/select</option><option>//tr[2]/td/div/select</option></datalist></td><td>label=R1</td>
+</tr>
+<tr><td>clickAt</td><td>//tr[2]/td/div/select<datalist><option>id=proyectofinanciero_actividadpf_attributes_464_resultadopf_id</option><option>name=proyectofinanciero[actividadpf_attributes][464][resultadopf_id]</option><option>css=#proyectofinanciero_actividadpf_attributes_464_resultadopf_id</option><option>//select[@id='proyectofinanciero_actividadpf_attributes_464_resultadopf_id']</option><option>//tbody[@id='actividadespf']/tr[2]/td/div/select</option><option>//tr[2]/td/div/select</option></datalist></td><td>-204,-731</td>
+</tr>
+<tr><td>clickAt</td><td>//tr[2]/td[2]/div/input<datalist><option>id=proyectofinanciero_actividadpf_attributes_464_nombrecorto</option><option>name=proyectofinanciero[actividadpf_attributes][464][nombrecorto]</option><option>css=#proyectofinanciero_actividadpf_attributes_464_nombrecorto</option><option>//input[@id='proyectofinanciero_actividadpf_attributes_464_nombrecorto']</option><option>//tbody[@id='actividadespf']/tr[2]/td[2]/div/input</option><option>//tr[2]/td[2]/div/input</option></datalist></td><td>30,17</td>
+</tr>
+<tr><td>type</td><td>//tr[2]/td[2]/div/input<datalist><option>id=proyectofinanciero_actividadpf_attributes_464_nombrecorto</option><option>name=proyectofinanciero[actividadpf_attributes][464][nombrecorto]</option><option>css=#proyectofinanciero_actividadpf_attributes_464_nombrecorto</option><option>//input[@id='proyectofinanciero_actividadpf_attributes_464_nombrecorto']</option><option>//tbody[@id='actividadespf']/tr[2]/td[2]/div/input</option><option>//tr[2]/td[2]/div/input</option></datalist></td><td>R1 A2 I1</td>
+</tr>
+<tr><td>clickAt</td><td>//tr[2]/td[3]/div/select<datalist><option>id=proyectofinanciero_actividadpf_attributes_464_actividadtipo_id</option><option>name=proyectofinanciero[actividadpf_attributes][464][actividadtipo_id]</option><option>css=#proyectofinanciero_actividadpf_attributes_464_actividadtipo_id</option><option>//select[@id='proyectofinanciero_actividadpf_attributes_464_actividadtipo_id']</option><option>//tbody[@id='actividadespf']/tr[2]/td[3]/div/select</option><option>//tr[2]/td[3]/div/select</option></datalist></td><td>-455,-731</td>
+</tr>
+<tr><td>clickAt</td><td>//tr[2]/td[4]/div/input<datalist><option>id=proyectofinanciero_actividadpf_attributes_464_titulo</option><option>name=proyectofinanciero[actividadpf_attributes][464][titulo]</option><option>css=#proyectofinanciero_actividadpf_attributes_464_titulo</option><option>//input[@id='proyectofinanciero_actividadpf_attributes_464_titulo']</option><option>//tbody[@id='actividadespf']/tr[2]/td[4]/div/input</option><option>//tr[2]/td[4]/div/input</option></datalist></td><td>54,32</td>
+</tr>
+<tr><td>type</td><td>//tr[2]/td[4]/div/input<datalist><option>id=proyectofinanciero_actividadpf_attributes_464_titulo</option><option>name=proyectofinanciero[actividadpf_attributes][464][titulo]</option><option>css=#proyectofinanciero_actividadpf_attributes_464_titulo</option><option>//input[@id='proyectofinanciero_actividadpf_attributes_464_titulo']</option><option>//tbody[@id='actividadespf']/tr[2]/td[4]/div/input</option><option>//tr[2]/td[4]/div/input</option></datalist></td><td>Seminario</td>
+</tr>
+<tr><td>clickAt</td><td>//tr[2]/td[5]/div/textarea<datalist><option>id=proyectofinanciero_actividadpf_attributes_464_descripcion</option><option>name=proyectofinanciero[actividadpf_attributes][464][descripcion]</option><option>css=#proyectofinanciero_actividadpf_attributes_464_descripcion</option><option>//textarea[@id='proyectofinanciero_actividadpf_attributes_464_descripcion']</option><option>//tbody[@id='actividadespf']/tr[2]/td[5]/div/textarea</option><option>//tr[2]/td[5]/div/textarea</option></datalist></td><td>35,33</td>
+</tr>
+<tr><td>clickAt</td><td>//tr[2]/td[5]/div/textarea<datalist><option>id=proyectofinanciero_actividadpf_attributes_1_descripcion</option><option>name=proyectofinanciero[actividadpf_attributes][1][descripcion]</option><option>css=#proyectofinanciero_actividadpf_attributes_1_descripcion</option><option>//textarea[@id='proyectofinanciero_actividadpf_attributes_1_descripcion']</option><option>//tbody[@id='actividadespf']/tr[2]/td[5]/div/textarea</option><option>//tr[2]/td[5]/div/textarea</option></datalist></td><td>51,69</td>
+</tr>
+<tr><td>type</td><td>//tr[2]/td[5]/div/textarea<datalist><option>id=proyectofinanciero_actividadpf_attributes_1_descripcion</option><option>name=proyectofinanciero[actividadpf_attributes][1][descripcion]</option><option>css=#proyectofinanciero_actividadpf_attributes_1_descripcion</option><option>//textarea[@id='proyectofinanciero_actividadpf_attributes_1_descripcion']</option><option>//tbody[@id='actividadespf']/tr[2]/td[5]/div/textarea</option><option>//tr[2]/td[5]/div/textarea</option></datalist></td><td>Para empoderar a los afiliados en situación de discapacidad para llevar una vida independiente, autónoma y con inclusión social.</td>
+</tr>
+<tr><td>clickAt</td><td>name=commit<datalist><option>name=commit</option><option>css=input[name="commit"]</option><option>//input[@name='commit']</option><option>//form[@id='edit_proyectofinanciero_570']/div[21]/input</option><option>//div[21]/input</option></datalist></td><td>50,28</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Convenio Financiero</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Actividad-1</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/actividades<datalist><option>https://defensor.info/cor1440/actividades</option><option>/cor1440/actividades</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Nueva<datalist><option>link=Nueva</option><option>css=a.btn.btn-primary</option><option>//a[contains(text(),'Nueva')]</option><option>//a[contains(@href, '/cor1440/actividades/nueva')]</option><option>//div/div/a</option></datalist></td><td>40,21</td>
+</tr>
+<tr><td>clickAt</td><td>id=actividad_nombre<datalist><option>id=actividad_nombre</option><option>name=actividad[nombre]</option><option>css=#actividad_nombre</option><option>//input[@id='actividad_nombre']</option><option>//form[@id='edit_actividad_228']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>26,15</td>
+</tr>
+<tr><td>runScript</td><td>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')<datalist><option>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=actividad_nombre<datalist><option>id=actividad_nombre</option><option>name=actividad[nombre]</option><option>css=#actividad_nombre</option><option>//input[@id='actividad_nombre']</option><option>//form[@id='edit_actividad_228']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>Primer taller "Supera tus limites"</td>
+</tr>
+<tr><td>type</td><td>id=actividad_lugar<datalist><option>id=actividad_lugar</option><option>name=actividad[lugar]</option><option>css=#actividad_lugar</option><option>//input[@id='actividad_lugar']</option><option>//form[@id='edit_actividad_267']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>Sede de la fundación Tobe</td>
+</tr>
+<tr><td>type</td><td>id=actividad_fecha_localizada<datalist><option>id=actividad_fecha_localizada</option><option>name=actividad[fecha_localizada]</option><option>css=#actividad_fecha_localizada</option><option>//input[@id='actividad_fecha_localizada']</option><option>//form[@id='edit_actividad_228']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>21/Abr/2020</td>
+</tr>
+<tr><td>clickAt</td><td>link=Añadir Convenio financiado<datalist><option>link=Añadir Convenio financiado</option><option>css=a.btn-primary.add_fields</option><option>//a[contains(text(),'Añadir Convenio financiado')]</option><option>//form[@id='edit_actividad_229']/div[6]/div/a</option><option>xpath=(//a[contains(@href, '#')])[5]</option><option>//div[6]/div/a</option></datalist></td><td>54,13</td>
+</tr>
+<tr><td>runScript</td><td>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')<datalist><option>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')</option></datalist></td><td></td>
+</tr>
+<tr><td>select</td><td>//tbody[@id='actividad_proyectofinanciero']/tr/td/div[2]/select<datalist><option>id=actividad_actividad_proyectofinanciero_attributes_1586162358780_proyectofinanciero_id</option><option>name=actividad[actividad_proyectofinanciero_attributes][1586162358780][proyectofinanciero_id]</option><option>css=#actividad_actividad_proyectofinanciero_attributes_1586162358780_proyectofinanciero_id</option><option>//select[@id='actividad_actividad_proyectofinanciero_attributes_1586162358780_proyectofinanciero_id']</option><option>//tbody[@id='actividad_proyectofinanciero']/tr/td/div[2]/select</option><option>//div[2]/select</option></datalist></td><td>label=Fundación Tobé--- 2020</td>
+</tr>
+<tr><td>clickAt</td><td>name=commit<datalist><option>name=commit</option><option>css=input[name="commit"]</option><option>//input[@name='commit']</option><option>//form[@id='edit_actividad_234']/div[18]/input</option><option>//div[18]/input</option></datalist></td><td>45,23</td>
+</tr>
+<tr><td>clickAt</td><td>link=Editar<datalist><option>link=Editar</option><option>//a[contains(text(),'Editar')]</option><option>//a[contains(@href, '/cor1440/actividades/279/edita')]</option><option>//div/div/a[2]</option></datalist></td><td>36,27</td>
+</tr>
+<tr><td>runScript</td><td>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')<datalist><option>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')</option></datalist></td><td></td>
+</tr>
+<tr><td>addSelection</td><td>id=actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids<datalist><option>id=actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids</option><option>css=#actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids</option><option>//select[@id='actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids']</option><option>//tbody[@id='actividad_proyectofinanciero']/tr/td[2]/div/select</option><option>//td[2]/div/select</option></datalist></td><td>label=R1R1 A1 I1:Taller para afiliados</td>
+</tr>
+<tr><td>addSelection</td><td>id=actividad_proyecto_ids<datalist><option>id=actividad_proyecto_ids</option><option>css=#actividad_proyecto_ids</option><option>//select[@id='actividad_proyecto_ids']</option><option>//form[@id='edit_actividad_232']/div[7]/select</option><option>//div[7]/select</option></datalist></td><td>label=PROYECTOS DE ASIGNACIÓN DE EXCEDENTES GENERADOS EN EL EJERCICIO DEL AÑO 2019</td>
+</tr>
+<tr><td>addSelection</td><td>id=actividad_actividadarea_ids<datalist><option>id=actividad_actividadarea_ids</option><option>css=#actividad_actividadarea_ids</option><option>//select[@id='actividad_actividadarea_ids']</option><option>//form[@id='edit_actividad_232']/div[8]/select</option><option>//div[8]/select</option></datalist></td><td>label=TALLERES DE FORMACIÓN</td>
+</tr>
+<tr><td>addSelection</td><td>id=actividad_actividadarea_ids<datalist><option>id=actividad_actividadarea_ids</option><option>css=#actividad_actividadarea_ids</option><option>//select[@id='actividad_actividadarea_ids']</option><option>//form[@id='edit_actividad_232']/div[8]/select</option><option>//div[8]/select</option></datalist></td><td>label=TALLERES DE FORMACIÓN PARA AFILIADOS</td>
+</tr>
+<tr><td>clickAt</td><td>id=actividad_usuario_id<datalist><option>id=actividad_usuario_id</option><option>name=actividad[usuario_id]</option><option>css=#actividad_usuario_id</option><option>//select[@id='actividad_usuario_id']</option><option>//form[@id='edit_actividad_234']/div[9]/select</option><option>//div[9]/select</option></datalist></td><td>-202,-445</td>
+</tr>
+<tr><td>addSelection</td><td>id=actividad_usuario_ids<datalist><option>id=actividad_usuario_ids</option><option>css=#actividad_usuario_ids</option><option>//select[@id='actividad_usuario_ids']</option><option>//form[@id='edit_actividad_234']/div[10]/select</option><option>//div[10]/select</option></datalist></td><td>label=cor1440</td>
+</tr>
+<tr><td>clickAt</td><td>css=#actividad_usuario_ids &gt; option[value="1"]<datalist><option>css=#actividad_usuario_ids &gt; option[value="1"]</option><option>xpath=(//option[@value='1'])[3]</option><option>//select[@id='actividad_usuario_ids']/option[2]</option><option>//div[10]/select/option[2]</option></datalist></td><td>65,9</td>
+</tr>
+<tr><td>addSelection</td><td>id=actividad_usuario_ids<datalist><option>id=actividad_usuario_ids</option><option>css=#actividad_usuario_ids</option><option>//select[@id='actividad_usuario_ids']</option><option>//form[@id='edit_actividad_234']/div[10]/select</option><option>//div[10]/select</option></datalist></td><td>label=paolam - Paola Martinez</td>
+</tr>
+<tr><td>clickAt</td><td>css=#actividad_usuario_ids &gt; option[value="101"]<datalist><option>css=#actividad_usuario_ids &gt; option[value="101"]</option><option>xpath=(//option[@value='101'])[2]</option><option>//select[@id='actividad_usuario_ids']/option</option><option>//div[10]/select/option</option></datalist></td><td>66,13</td>
+</tr>
+<tr><td>clickAt</td><td>id=actividad_objetivo<datalist><option>id=actividad_objetivo</option><option>name=actividad[objetivo]</option><option>css=#actividad_objetivo</option><option>//input[@id='actividad_objetivo']</option><option>//form[@id='edit_actividad_234']/div[12]/input</option><option>//div[12]/input</option></datalist></td><td>60,12</td>
+</tr>
+<tr><td>type</td><td>id=actividad_objetivo<datalist><option>id=actividad_objetivo</option><option>name=actividad[objetivo]</option><option>css=#actividad_objetivo</option><option>//input[@id='actividad_objetivo']</option><option>//form[@id='edit_actividad_234']/div[12]/input</option><option>//div[12]/input</option></datalist></td><td>formación para personas en condición de discapacidad</td>
+</tr>
+<tr><td>clickAt</td><td>id=actividad_resultado<datalist><option>id=actividad_resultado</option><option>name=actividad[resultado]</option><option>css=#actividad_resultado</option><option>//input[@id='actividad_resultado']</option><option>//form[@id='edit_actividad_234']/div[13]/input</option><option>//div[13]/input</option></datalist></td><td>41,8</td>
+</tr>
+<tr><td>type</td><td>id=actividad_resultado<datalist><option>id=actividad_resultado</option><option>name=actividad[resultado]</option><option>css=#actividad_resultado</option><option>//input[@id='actividad_resultado']</option><option>//form[@id='edit_actividad_234']/div[13]/input</option><option>//div[13]/input</option></datalist></td><td>vida independiente</td>
+</tr>
+<tr><td>addSelection</td><td>id=actividad_actorsocial_ids<datalist><option>id=actividad_actorsocial_ids</option><option>css=#actividad_actorsocial_ids</option><option>//select[@id='actividad_actorsocial_ids']</option><option>//form[@id='edit_actividad_234']/div[14]/select</option><option>//div[14]/select</option></datalist></td><td>label=Fundación Tobé</td>
+</tr>
+<tr><td>clickAt</td><td>name=commit<datalist><option>name=commit</option><option>css=input[name="commit"]</option><option>//input[@name='commit']</option><option>//form[@id='edit_actividad_234']/div[18]/input</option><option>//div[18]/input</option></datalist></td><td>45,23</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Actividad</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Elimina-Convenio-Financiado</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/proyectosfinancieros<datalist><option>https://defensor.info/cor1440/proyectosfinancieros?utf8=%E2%9C%93&amp;filtro%5Bbusid%5D=&amp;filtro%5Bbusnombre%5D=---&amp;filtro%5Bbusfinanciador_ids%5D=&amp;filtro%5Bbusfechainicioini%5D=&amp;filtro%5Bbusfechainiciofin%5D=&amp;filtro%5Bbusfechacierreini%5D=&amp;filtro%5Bbusfechacierrefin%5D=&amp;filtro%5Bbusproyecto_ids%5D=&amp;filtro%5Bbuscompromisos%5D=&amp;filtro%5Bbusobservaciones%5D=&amp;filtrar=Filtrar</option><option>/cor1440/proyectosfinancieros</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>id=filtro_busnombre<datalist><option>id=filtro_busnombre</option><option>name=filtro[busnombre]</option><option>css=#filtro_busnombre</option><option>//input[@id='filtro_busnombre']</option><option>//td[2]/div/input</option></datalist></td><td>65,27</td>
+</tr>
+<tr><td>type</td><td>id=filtro_busnombre<datalist><option>id=filtro_busnombre</option><option>name=filtro[busnombre]</option><option>css=#filtro_busnombre</option><option>//input[@id='filtro_busnombre']</option><option>//td[2]/div/input</option></datalist></td><td>---</td>
+</tr>
+<tr><td>sendKeys</td><td>id=filtro_busnombre<datalist><option>id=filtro_busnombre</option><option>name=filtro[busnombre]</option><option>css=#filtro_busnombre</option><option>//input[@id='filtro_busnombre']</option><option>//td[2]/div/input</option></datalist></td><td>${KEY_ENTER}</td>
+</tr>
+<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Eliminar<datalist><option>link=Eliminar</option><option>css=a.btn.btn-sm.btn-danger</option><option>//a[contains(text(),'Eliminar')]</option><option>xpath=(//a[contains(@href, '/cor1440/proyectosfinancieros/617')])[3]</option><option>//td[16]/a[2]</option></datalist></td><td>24,16</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Convenios Financieros</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Elimina-tipo-de-actividad</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/admin/actividadtipos<datalist><option>https://defensor.info/cor1440/admin/tiposindicador</option><option>/cor1440/admin/actividadtipos</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>id=filtro_busnombre<datalist><option>id=filtro_busnombre</option><option>name=filtro[busnombre]</option><option>css=#filtro_busnombre</option><option>//input[@id='filtro_busnombre']</option><option>//td[2]/div/input</option></datalist></td><td>20,32</td>
+</tr>
+<tr><td>type</td><td>id=filtro_busnombre<datalist><option>id=filtro_busnombre</option><option>name=filtro[busnombre]</option><option>css=#filtro_busnombre</option><option>//input[@id='filtro_busnombre']</option><option>//td[2]/div/input</option></datalist></td><td>taller para afiliados</td>
+</tr>
+<tr><td>runScript</td><td>$('#filtro_busnombre').val('Taller para afiliados')<datalist><option>$('#filtro_busnombre').val('Proyecto de')</option><option>$('#filtro_busnombre').val('Taller para afiliados')</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>name=filtrar<datalist><option>name=filtrar</option><option>css=input[name="filtrar"]</option><option>//input[@name='filtrar']</option><option>//td[6]/input</option></datalist></td><td>21,23</td>
+</tr>
+<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Eliminar<datalist><option>link=Eliminar</option><option>css=a.btn.btn-sm.btn-danger</option><option>//a[contains(text(),'Eliminar')]</option><option>xpath=(//a[contains(@href, '/cor1440/admin/tiposindicador/135')])[3]</option><option>//td[9]/a[2]</option></datalist></td><td>23,21</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Tipos de actividad de convenio financiado</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Elimina-financiable</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/<datalist><option>/cor1440/admin/actividadtipos</option><option>https://defensor.info/cor1440/admin/tiposindicador</option><option>/cor1440/</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Administrar<datalist><option>id=navbarDropdownAdministrar</option><option>link=Administrar</option><option>css=#navbarDropdownAdministrar</option><option>//a[contains(text(),'Administrar')]</option><option>//a[@id='navbarDropdownAdministrar']</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//ul[2]/li[2]/a</option></datalist></td><td>98,20</td>
+</tr>
+<tr><td>clickAt</td><td>link=Tablas básicas<datalist><option>link=Tablas básicas</option><option>//a[contains(text(),'Tablas básicas')]</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/div/a[4]</option><option>//a[contains(@href, '/cor1440/tablasbasicas')]</option><option>//ul[2]/li[2]/div/a[4]</option></datalist></td><td>54,21</td>
+</tr>
+<tr><td>clickAt</td><td>link=Financiables<datalist><option>link=Financiables</option><option>//a[contains(text(),'Financiables')]</option><option>//a[contains(@href, 'admin/proyectos')]</option><option>//li[5]/a</option></datalist></td><td>64,9</td>
+</tr>
+<tr><td>runScript</td><td>$('#filtro_busnombre').val('Proyecto de')<datalist><option>$('#filtro_busnombre').val('Proyecto de')</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>name=filtrar<datalist><option>name=filtrar</option><option>css=input[name="filtrar"]</option><option>//input[@name='filtrar']</option><option>//td[6]/input</option></datalist></td><td>21,23</td>
+</tr>
+<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Eliminar<datalist><option>link=Eliminar</option><option>css=a.btn.btn-sm.btn-danger</option><option>//a[contains(text(),'Eliminar')]</option><option>xpath=(//a[contains(@href, '/cor1440/admin/proyectos/144')])[3]</option><option>//td[8]/a[2]</option></datalist></td><td>26,18</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Financiables</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Elimina-financiador</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>/cor1440/admin/actividadtipos<datalist><option>/cor1440/admin/actividadtipos</option><option>https://defensor.info/cor1440/admin/tiposindicador</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Administrar<datalist><option>id=navbarDropdownAdministrar</option><option>link=Administrar</option><option>css=#navbarDropdownAdministrar</option><option>//a[contains(text(),'Administrar')]</option><option>//a[@id='navbarDropdownAdministrar']</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//ul[2]/li[2]/a</option></datalist></td><td>96,22</td>
+</tr>
+<tr><td>clickAt</td><td>link=Tablas básicas<datalist><option>link=Tablas básicas</option><option>//a[contains(text(),'Tablas básicas')]</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/div/a[4]</option><option>//a[contains(@href, '/cor1440/tablasbasicas')]</option><option>//ul[2]/li[2]/div/a[4]</option></datalist></td><td>61,11</td>
+</tr>
+<tr><td>clickAt</td><td>link=Financiadores<datalist><option>link=Financiadores</option><option>//a[contains(text(),'Financiadores')]</option><option>//a[contains(@href, 'admin/financiadores')]</option><option>//li[6]/a</option></datalist></td><td>66,12</td>
+</tr>
+<tr><td>clickAt</td><td>id=filtro_busnombre<datalist><option>id=filtro_busnombre</option><option>name=filtro[busnombre]</option><option>css=#filtro_busnombre</option><option>//input[@id='filtro_busnombre']</option><option>//td[2]/div/input</option></datalist></td><td>28,16</td>
+</tr>
+<tr><td>type</td><td>id=filtro_busnombre<datalist><option>id=filtro_busnombre</option><option>name=filtro[busnombre]</option><option>css=#filtro_busnombre</option><option>//input[@id='filtro_busnombre']</option><option>//td[2]/div/input</option></datalist></td><td>ASAMBLEA</td>
+</tr>
+<tr><td>clickAt</td><td>name=filtrar<datalist><option>name=filtrar</option><option>css=input[name="filtrar"]</option><option>//input[@name='filtrar']</option><option>//td[6]/input</option></datalist></td><td>21,23</td>
+</tr>
+<tr><td>pause</td><td><datalist><option></option></datalist></td><td>500</td>
+</tr>
+<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>link=Eliminar<datalist><option>link=Eliminar</option><option>css=a.btn.btn-sm.btn-danger</option><option>//a[contains(text(),'Eliminar')]</option><option>xpath=(//a[contains(@href, '/cor1440/admin/financiadores/106')])[3]</option><option>//td[6]/a[2]</option></datalist></td><td>43,16</td>
+</tr>
+<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Financiadores</td>
+</tr>
+</tbody></table>
+</body>
+</html>
