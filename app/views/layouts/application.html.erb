@@ -5,7 +5,7 @@
 <% content_for :menu do %>
   <%= grupo_menus do %>
     <% if !current_usuario.nil? %>
-      <%= despliega_abajo "Convenios Financiados" do %>
+      <%= despliega_abajo "Proyectos" do %>
         <%= opcion_menu "Listado", cor1440_gen.proyectosfinancieros_path,
           desplegable: true %>
         <%= opcion_menu "Validar", 

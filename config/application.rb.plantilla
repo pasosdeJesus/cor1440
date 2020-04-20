@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-require File.expand_path('../boot', __FILE__)
+require_relative 'boot'
 
 require 'rails/all'
 
@@ -28,8 +28,11 @@ module Cor1440
 
     config.x.formato_fecha = 'dd/M/yyyy'
 
-    config.relative_url_root = "/cor1440"
+    #config.relative_url_root = "/cor1440"
+
+    config.x.heb412_ruta = Rails.root.join('public', 'heb412')
 
     config.hosts << ENV['CONFIG_HOSTS'] || '127.0.0.1'
+
   end
 end
