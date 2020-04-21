@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 95fe5cf1a22a2104121e14acd35e6321fba90892
+  revision: d00038416d3e4055807c2bb001fca8ff4852f562
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 30bc99f2a67e6588ca6609a855dcd3401937f4ef
+  revision: bc63c3744cd64343a5265ecdc8a49d6ba171a3c8
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 9bc34019fdabdf5d25f16f8e464e15df97bf6364
+  revision: 4a6daa4f8d0affbb4699794f56bd212001665123
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 54cdc46079d761dfbaa3b779e35885aa3c0796b9
+  revision: 89280a2f26c18ef2385fad5e6cf9944a0b0187bf
   specs:
     sip (2.0.b10)
       cancancan
@@ -311,7 +311,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (5.1.0)
+    webpacker (5.1.1)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
