@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 7ecd4fd039a40c12675c745912af227afa134848
+  revision: 48fb8a34bda97611b08dd009dc1f152fe48df63f
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: feb242319683f69b8af0cb363b73de0c2d65ff97
+  revision: 65596b011897f9c32e183da943c76274f2a3f27b
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: c4547e467734dc19726ec49d115d962a2ac01526
+  revision: 2d96b5bcfcb422982fcea7d95661319c0283322e
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 35e8bd657487b209c4f272e08194338817f3820a
+  revision: 60a53709cee5185d7b8b0e4fec8b3dcf429d6530
   specs:
     sip (2.0.b10)
       cancancan
@@ -185,7 +185,7 @@ GEM
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2020.0425)
-    mimemagic (0.3.4)
+    mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.0)
@@ -306,7 +306,7 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.8)
       rack (>= 2.0.6)
-    web-console (4.0.1)
+    web-console (4.0.2)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
