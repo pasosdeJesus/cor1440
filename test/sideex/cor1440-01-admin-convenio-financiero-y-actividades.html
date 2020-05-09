@@ -46,40 +46,6 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Tabla-financiables</td></tr>
-</thead>
-<tbody>
-<tr><td>open</td><td>/cor1440/admin/proyectos<datalist><option>https://defensor.info/cor1440/admin/proyectos/nueva</option><option>/cor1440/admin/proyectos/nueva</option><option>/cor1440/admin/proyectos</option></datalist></td><td></td>
-</tr>
-<tr><td>clickAt</td><td>link=Administrar<datalist><option>id=navbarDropdownAdministrar</option><option>link=Administrar</option><option>css=#navbarDropdownAdministrar</option><option>//a[contains(text(),'Administrar')]</option><option>//a[@id='navbarDropdownAdministrar']</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//ul[2]/li[2]/a</option></datalist></td><td>101,15</td>
-</tr>
-<tr><td>clickAt</td><td>link=Tablas básicas<datalist><option>link=Tablas básicas</option><option>//a[contains(text(),'Tablas básicas')]</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/div/a[4]</option><option>//a[contains(@href, '/cor1440/tablasbasicas')]</option><option>//ul[2]/li[2]/div/a[4]</option></datalist></td><td>110,13</td>
-</tr>
-<tr><td>clickAt</td><td>link=Financiables<datalist><option>link=Financiables</option><option>//a[contains(text(),'Financiables')]</option><option>//a[contains(@href, 'admin/proyectos')]</option><option>//li[5]/a</option><option>link=Áreas</option></datalist></td><td>38,9</td>
-</tr>
-<tr><td>clickAt</td><td>link=Nueva<datalist><option>link=Nueva</option><option>css=a.btn.btn-primary</option><option>//a[contains(text(),'Nueva')]</option><option>//a[contains(@href, '/cor1440/admin/proyectos/nueva')]</option><option>//div[3]/div/a</option></datalist></td><td>54,27</td>
-</tr>
-<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Nueva Financiable</td>
-</tr>
-<tr><td>clickAt</td><td>id=proyecto_nombre<datalist><option>id=proyecto_nombre</option><option>name=proyecto[nombre]</option><option>css=#proyecto_nombre</option><option>//input[@id='proyecto_nombre']</option><option>//form[@id='new_proyecto']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>30,10</td>
-</tr>
-<tr><td>type</td><td>id=proyecto_nombre<datalist><option>id=proyecto_nombre</option><option>name=proyecto[nombre]</option><option>css=#proyecto_nombre</option><option>//input[@id='proyecto_nombre']</option><option>//form[@id='new_proyecto']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>Proyectos de asignación de excedentes generados en el ejercicio del año 2019</td>
-</tr>
-<tr><td>clickAt</td><td>id=proyecto_fechainicio_localizada<datalist><option>id=proyecto_fechainicio_localizada</option><option>name=proyecto[fechainicio_localizada]</option><option>css=#proyecto_fechainicio_localizada</option><option>//input[@id='proyecto_fechainicio_localizada']</option><option>//form[@id='new_proyecto']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>40,19</td>
-</tr>
-<tr><td>type</td><td>id=proyecto_fechainicio_localizada<datalist><option>id=proyecto_fechacierre_localizada</option><option>name=proyecto[fechacierre_localizada]</option><option>css=#proyecto_fechacierre_localizada</option><option>//input[@id='proyecto_fechacierre_localizada']</option><option>//form[@id='new_proyecto']/div[4]/input</option><option>//div[4]/input</option><option>id=proyecto_fechainicio_localizada</option></datalist></td><td>01/Ene/2020</td>
-</tr>
-<tr><td>clickAt</td><td>id=proyecto_fechacierre_localizada<datalist><option>id=proyecto_fechacierre_localizada</option><option>name=proyecto[fechacierre_localizada]</option><option>css=#proyecto_fechacierre_localizada</option><option>//input[@id='proyecto_fechacierre_localizada']</option><option>//form[@id='new_proyecto']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>15,6</td>
-</tr>
-<tr><td>type</td><td>id=proyecto_fechacierre_localizada<datalist><option>id=proyecto_fechacierre_localizada</option><option>name=proyecto[fechacierre_localizada]</option><option>css=#proyecto_fechacierre_localizada</option><option>//input[@id='proyecto_fechacierre_localizada']</option><option>//form[@id='new_proyecto']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>31/Dic/2020</td>
-</tr>
-<tr><td>clickAt</td><td>name=commit<datalist><option>name=commit</option><option>css=input[name="commit"]</option><option>//input[@name='commit']</option><option>//form[@id='new_proyecto']/div[9]/input</option><option>//div[9]/input</option></datalist></td><td>46,20</td>
-</tr>
-<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Financiable</td>
-</tr>
-</tbody></table>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
 <tr><td rowspan="1" colspan="3">Tabla-tipo-de-actividad</td></tr>
 </thead>
 <tbody>
@@ -138,8 +104,6 @@
 <tr><td>clickAt</td><td>id=proyectofinanciero_responsable_id<datalist><option>id=proyectofinanciero_responsable_id</option><option>name=proyectofinanciero[responsable_id]</option><option>css=#proyectofinanciero_responsable_id</option><option>//select[@id='proyectofinanciero_responsable_id']</option><option>//form[@id='edit_proyectofinanciero_532']/div[6]/select</option><option>//div[6]/select</option></datalist></td><td>-202,-484</td>
 </tr>
 <tr><td>select</td><td>id=proyectofinanciero_responsable_id<datalist><option>id=proyectofinanciero_responsable_id</option><option>name=proyectofinanciero[responsable_id]</option><option>css=#proyectofinanciero_responsable_id</option><option>//select[@id='proyectofinanciero_responsable_id']</option><option>//form[@id='edit_proyectofinanciero_532']/div[6]/select</option><option>//div[6]/select</option></datalist></td><td>label=cor1440 - cor1440</td>
-</tr>
-<tr><td>addSelection</td><td>id=proyectofinanciero_proyecto_ids<datalist><option>id=proyectofinanciero_proyecto_ids</option><option>css=#proyectofinanciero_proyecto_ids</option><option>//select[@id='proyectofinanciero_proyecto_ids']</option><option>//form[@id='edit_proyectofinanciero_129']/div[7]/select</option><option>//div[7]/select</option></datalist></td><td>label=PROYECTOS DE ASIGNACIÓN DE EXCEDENTES GENERADOS EN EL EJERCICIO DEL AÑO 2019</td>
 </tr>
 <tr><td>clickAt</td><td>id=proyectofinanciero_compromisos<datalist><option>id=proyectofinanciero_compromisos</option><option>name=proyectofinanciero[compromisos]</option><option>css=#proyectofinanciero_compromisos</option><option>//input[@id='proyectofinanciero_compromisos']</option><option>//form[@id='edit_proyectofinanciero_561']/div[8]/input</option><option>//div[8]/input</option></datalist></td><td>64,19</td>
 </tr>
@@ -255,7 +219,7 @@
 </tr>
 <tr><td>type</td><td>id=actividad_lugar<datalist><option>id=actividad_lugar</option><option>name=actividad[lugar]</option><option>css=#actividad_lugar</option><option>//input[@id='actividad_lugar']</option><option>//form[@id='edit_actividad_267']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>Sede de la fundación XYZ</td>
 </tr>
-<tr><td>type</td><td>id=actividad_fecha_localizada<datalist><option>id=actividad_fecha_localizada</option><option>name=actividad[fecha_localizada]</option><option>css=#actividad_fecha_localizada</option><option>//input[@id='actividad_fecha_localizada']</option><option>//form[@id='edit_actividad_228']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>21/Abr/2020</td>
+<tr><td>type</td><td>id=actividad_fecha_localizada<datalist><option>id=actividad_fecha_localizada</option><option>name=actividad[fecha_localizada]</option><option>css=#actividad_fecha_localizada</option><option>//input[@id='actividad_fecha_localizada']</option><option>//form[@id='edit_actividad_228']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>9/May/2020</td>
 </tr>
 <tr><td>clickAt</td><td>link=Añadir Proyecto<datalist><option>link=Añadir Convenio financiado</option><option>css=a.btn-primary.add_fields</option><option>//a[contains(text(),'Añadir Convenio financiado')]</option><option>//form[@id='edit_actividad_229']/div[6]/div/a</option><option>xpath=(//a[contains(@href, '#')])[5]</option><option>//div[6]/div/a</option><option>link=Añadir Proyecto</option></datalist></td><td>54,13</td>
 </tr>
@@ -268,8 +232,6 @@
 <tr><td>clickAt</td><td>link=Editar<datalist><option>link=Editar</option><option>//a[contains(text(),'Editar')]</option><option>//a[contains(@href, '/cor1440/actividades/279/edita')]</option><option>//div/div/a[2]</option></datalist></td><td>36,27</td>
 </tr>
 <tr><td>runScript</td><td>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')<datalist><option>$('.chosen-select').removeAttr('style'); $('.chosen-container').remove(); $('.chosen-select').removeClass('chosen-select')</option></datalist></td><td></td>
-</tr>
-<tr><td>addSelection</td><td>id=actividad_proyecto_ids<datalist><option>id=actividad_proyecto_ids</option><option>css=#actividad_proyecto_ids</option><option>//select[@id='actividad_proyecto_ids']</option><option>//form[@id='edit_actividad_232']/div[7]/select</option><option>//div[7]/select</option></datalist></td><td>label=PROYECTOS DE ASIGNACIÓN DE EXCEDENTES GENERADOS EN EL EJERCICIO DEL AÑO 2019</td>
 </tr>
 <tr><td>addSelection</td><td>id=actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids<datalist><option>id=actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids</option><option>css=#actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids</option><option>//select[@id='actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids']</option><option>//tbody[@id='actividad_proyectofinanciero']/tr/td[2]/div/select</option><option>//td[2]/div/select</option></datalist></td><td>label=R1R1 A1 I1 Taller para afiliados</td>
 </tr>
@@ -290,10 +252,6 @@
 <tr><td>clickAt</td><td>css=a.search-choice-close<datalist><option>css=a.search-choice-close</option><option>//div[@id='actividad_actividad_proyectofinanciero_attributes_0_actividadpf_ids_chosen']/ul/li/a</option><option>//div/div/ul/li/a</option></datalist></td><td>6,11</td>
 </tr>
 <tr><td>clickAt</td><td>link=Eliminar<datalist><option>link=Eliminar</option><option>css=a.btn-danger.remove_fields.existing</option><option>//a[contains(text(),'Eliminar')]</option><option>//tbody[@id='actividad_proyectofinanciero']/tr/td[3]/a</option><option>xpath=(//a[contains(@href, '#')])[5]</option><option>//td[3]/a</option></datalist></td><td>38,13</td>
-</tr>
-<tr><td>clickAt</td><td>css=a.search-choice-close<datalist><option>css=a.search-choice-close</option><option>//div[@id='actividad_proyecto_ids_chosen']/ul/li/a</option><option>//div[7]/div/ul/li/a</option></datalist></td><td>6,8</td>
-</tr>
-<tr><td>clickAt</td><td>css=a.search-choice-close<datalist><option>css=a.search-choice-close</option><option>//div[@id='actividad_usuario_ids_chosen']/ul/li/a</option><option>//div[10]/div/ul/li/a</option></datalist></td><td>3,10</td>
 </tr>
 <tr><td>clickAt</td><td>name=commit<datalist><option>name=commit</option><option>css=input[name="commit"]</option><option>//input[@name='commit']</option><option>//form[@id='edit_actividad_50']/div[18]/input</option><option>//div[18]/input</option></datalist></td><td>63,15</td>
 </tr>
@@ -321,6 +279,8 @@
 </tr>
 <tr><td>sendKeys</td><td>id=filtro_busnombre<datalist><option>id=filtro_busnombre</option><option>name=filtro[busnombre]</option><option>css=#filtro_busnombre</option><option>//input[@id='filtro_busnombre']</option><option>//td[2]/div/input</option></datalist></td><td>${KEY_ENTER}</td>
 </tr>
+<tr><td>clickAt</td><td>css=td &gt; a<datalist><option>link=879</option><option>css=td &gt; a</option><option>//a[contains(text(),'879')]</option><option>//a[contains(@href, '/cor1440/proyectosfinancieros/879')]</option><option>//td/a</option></datalist></td><td>1,10</td>
+</tr>
 <tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
 </tr>
 <tr><td>clickAt</td><td>link=Eliminar<datalist><option>link=Eliminar</option><option>css=a.btn.btn-sm.btn-danger</option><option>//a[contains(text(),'Eliminar')]</option><option>xpath=(//a[contains(@href, '/cor1440/proyectosfinancieros/617')])[3]</option><option>//td[16]/a[2]</option></datalist></td><td>24,16</td>
@@ -341,41 +301,13 @@
 </tr>
 <tr><td>clickAt</td><td>name=filtrar<datalist><option>name=filtrar</option><option>css=input[name="filtrar"]</option><option>//input[@name='filtrar']</option><option>//td[6]/input</option></datalist></td><td>21,23</td>
 </tr>
+<tr><td>clickAt</td><td>css=td &gt; a<datalist><option>link=235</option><option>css=td &gt; a</option><option>//a[contains(text(),'235')]</option><option>//a[contains(@href, '/cor1440/admin/actividadtipos/235')]</option><option>//td/a</option></datalist></td><td>18,3</td>
+</tr>
 <tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
 </tr>
 <tr><td>clickAt</td><td>link=Eliminar<datalist><option>link=Eliminar</option><option>css=a.btn.btn-sm.btn-danger</option><option>//a[contains(text(),'Eliminar')]</option><option>xpath=(//a[contains(@href, '/cor1440/admin/tiposindicador/135')])[3]</option><option>//td[9]/a[2]</option></datalist></td><td>23,21</td>
 </tr>
 <tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Tipos de actividad de marco lógico</td>
-</tr>
-</tbody></table>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr><td rowspan="1" colspan="3">Elimina-financiable</td></tr>
-</thead>
-<tbody>
-<tr><td>open</td><td>/cor1440/<datalist><option>/cor1440/admin/actividadtipos</option><option>https://defensor.info/cor1440/admin/tiposindicador</option><option>/cor1440/</option></datalist></td><td></td>
-</tr>
-<tr><td>clickAt</td><td>link=Administrar<datalist><option>id=navbarDropdownAdministrar</option><option>link=Administrar</option><option>css=#navbarDropdownAdministrar</option><option>//a[contains(text(),'Administrar')]</option><option>//a[@id='navbarDropdownAdministrar']</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//ul[2]/li[2]/a</option></datalist></td><td>98,20</td>
-</tr>
-<tr><td>clickAt</td><td>link=Tablas básicas<datalist><option>link=Tablas básicas</option><option>//a[contains(text(),'Tablas básicas')]</option><option>//div[@id='navbarSupportedContent']/ul[2]/li[2]/div/a[4]</option><option>//a[contains(@href, '/cor1440/tablasbasicas')]</option><option>//ul[2]/li[2]/div/a[4]</option></datalist></td><td>54,21</td>
-</tr>
-<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option></datalist></td><td>Tablas Básicas</td>
-</tr>
-<tr><td>clickAt</td><td>link=Financiables<datalist><option>link=Financiables</option><option>//a[contains(text(),'Financiables')]</option><option>//a[contains(@href, 'admin/proyectos')]</option><option>//li[5]/a</option><option>link=Áreas</option></datalist></td><td></td>
-</tr>
-<tr><td>pause</td><td><datalist><option></option></datalist></td><td>500</td>
-</tr>
-<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option></datalist></td><td>Financiables</td>
-</tr>
-<tr><td>runScript</td><td>$('#filtro_busnombre').val('Proyectos de')<datalist><option>$('#filtro_busnombre').val('Proyecto de')</option><option>$('#filtro_busnombre').val('Proyectos de')</option></datalist></td><td></td>
-</tr>
-<tr><td>clickAt</td><td>name=filtrar<datalist><option>name=filtrar</option><option>css=input[name="filtrar"]</option><option>//input[@name='filtrar']</option><option>//td[6]/input</option></datalist></td><td>21,23</td>
-</tr>
-<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
-</tr>
-<tr><td>clickAt</td><td>link=Eliminar<datalist><option>link=Eliminar</option><option>css=a.btn.btn-sm.btn-danger</option><option>//a[contains(text(),'Eliminar')]</option><option>xpath=(//a[contains(@href, '/cor1440/admin/proyectos/144')])[3]</option><option>//td[8]/a[2]</option></datalist></td><td>26,18</td>
-</tr>
-<tr><td>assertText</td><td>css=h1<datalist><option>css=h1</option><option>//h1</option></datalist></td><td>Financiables</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -398,6 +330,8 @@
 <tr><td>clickAt</td><td>name=filtrar<datalist><option>name=filtrar</option><option>css=input[name="filtrar"]</option><option>//input[@name='filtrar']</option><option>//td[6]/input</option></datalist></td><td>21,23</td>
 </tr>
 <tr><td>pause</td><td><datalist><option></option></datalist></td><td>500</td>
+</tr>
+<tr><td>clickAt</td><td>css=td &gt; a<datalist><option>link=156</option><option>css=td &gt; a</option><option>//a[contains(text(),'156')]</option><option>//a[contains(@href, '/cor1440/admin/financiadores/156')]</option><option>//td/a</option></datalist></td><td>16,10</td>
 </tr>
 <tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
 </tr>
