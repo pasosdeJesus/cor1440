@@ -1,6 +1,16 @@
 # encoding: UTF-8
 class Ability  < Cor1440Gen::Ability
 
+  def tablasbasicas 
+    Sip::Ability::BASICAS_PROPIAS + BASICAS_PROPIAS - [
+      ['Sip', 'fuenteprensa'], 
+      ['Cor1440Gen', 'proyecto'], 
+      ['Sip', 'tdocumento'], 
+      ['Sip', 'trelacion'], 
+      ['Sip', 'tsitio']
+    ]
+  end
+
   # Autorizacion con CanCanCan
   def initialize(usuario = nil)
     # Sin autenticación puede consultarse información geográfica 
