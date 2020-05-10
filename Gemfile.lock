@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 7bfe58f1f4e2b3ac460c482930e9db99cb084e9d
+  revision: b6fe928b6074f66fb4c652a58dcadc8a57a38db7
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 2c03fe96dfd4c0bdedd25090b0e49dced40ca72b
+  revision: 1d1b5fecc9804c004d4d3aba4298b53f8e7dea0b
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
