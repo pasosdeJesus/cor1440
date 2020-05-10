@@ -30,7 +30,7 @@ class UsuariosController < Sip::ModelosController
     if can?(:create, ::Usuario)
       r += [
         "email",
-        "tema"
+        "tema",
         "sip_grupo",
         "fechacreacion_localizada",
         "fechadeshabilitacion_localizada",
