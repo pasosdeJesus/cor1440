@@ -14,3 +14,7 @@
  *= require cor1440_gen/application.css
  *= require_tree .
  */
+
+.panel-heading {
+  text-align: center;
+}

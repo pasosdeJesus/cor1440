@@ -1,19 +1,6 @@
 GIT
-  remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 2bdf8329348dd3a21588e3a89b3785e9eeb4bd4e
-  specs:
-    cor1440_gen (1.0b3)
-      devise
-      heb412_gen
-      jquery-rails
-      mr519_gen
-      paperclip
-      rails
-      sip
-
-GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 1d1b5fecc9804c004d4d3aba4298b53f8e7dea0b
+  revision: 72198b9f3f35404f25a774cb39778d03ac75fbb2
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: d96cee4a0c7a85309191076c17660a84e15a1ec4
+  revision: f9bc4b368c164ac2c378183f27e2fae24fb1bb9d
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 2343363acd1ed0ac0b57c4cbff2177a8edf055cd
+  revision: 44f2692e6e2df4f865646042c6b2b0c7a6eab881
   specs:
     sip (2.0.b10)
       cancancan
@@ -53,6 +40,18 @@ GIT
   branch: new_id_with_ajax
   specs:
     cocoon (1.2.11)
+
+PATH
+  remote: ../cor1440_gen
+  specs:
+    cor1440_gen (1.0b3)
+      devise
+      heb412_gen
+      jquery-rails
+      mr519_gen
+      paperclip
+      rails
+      sip
 
 GEM
   remote: https://rubygems.org/
@@ -184,7 +183,7 @@ GEM
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2020.0425)
+    mime-types-data (3.2020.0512)
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
