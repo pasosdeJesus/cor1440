@@ -76,8 +76,8 @@ gem 'heb412_gen',  # Motor de nube y llenado de plantillas
   #path: '../heb412_gen'
 
 gem 'cor1440_gen', # Motor Cor1440_gen
-  #git: 'https://github.com/pasosdeJesus/cor1440_gen.git'
-  path: '../cor1440_gen'
+  git: 'https://github.com/pasosdeJesus/cor1440_gen.git'
+  #path: '../cor1440_gen'
 
 
 
