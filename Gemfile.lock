@@ -318,7 +318,7 @@ GEM
       semantic_range (>= 2.3.0)
     websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     will_paginate (3.3.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
@@ -348,9 +348,9 @@ DEPENDENCIES
   pg
   prawn
   prawn-table
-  prawnto_2
+  prawnto_2 (>= 0.3.0)
   puma
-  rails (~> 6.0.0.rc1)
+  rails (~> 6.0.3.1)
   rails-i18n
   rspreadsheet
   rubyzip (>= 2.0.0)
@@ -371,4 +371,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   2.1.4
+   1.17.3
