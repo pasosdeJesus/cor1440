@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 7ff1d773b46368313043d24dcc5b47a479e953a4
+  revision: aad5ebfdfb3e9a84f642f438f5690158c0845131
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -254,7 +254,7 @@ GEM
     raindrops (0.19.1)
     rake (13.0.1)
     redcarpet (3.5.0)
-    regexp_parser (1.7.0)
+    regexp_parser (1.7.1)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
