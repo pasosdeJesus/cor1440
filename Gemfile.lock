@@ -174,7 +174,7 @@ GEM
       railties (>= 3.2.16)
     kgio (2.11.3)
     libxml-ruby (3.2.0)
-    loofah (2.5.0)
+    loofah (2.6.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -217,7 +217,7 @@ GEM
     public_suffix (4.0.5)
     puma (4.3.5)
       nio4r (~> 2.0)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -332,13 +332,13 @@ DEPENDENCIES
   bigdecimal
   bootsnap (>= 1.1.0)
   cancancan
-  capybara
+  capybara (>= 3.32.2)
   cocoon!
-  coffee-rails
+  coffee-rails (>= 5.0.0)
   colorize
   cor1440_gen!
-  devise
-  devise-i18n
+  devise (>= 4.7.2)
+  devise-i18n (>= 1.9.1)
   heb412_gen!
   jbuilder
   libxml-ruby
@@ -348,27 +348,27 @@ DEPENDENCIES
   pg
   prawn
   prawn-table
-  prawnto_2
+  prawnto_2 (>= 0.3.0)
   puma
-  rails (~> 6.0.0.rc1)
-  rails-i18n
+  rails (~> 6.0.3.1)
+  rails-i18n (>= 6.0.0)
   rspreadsheet
   rubyzip (>= 2.0.0)
-  sassc-rails
+  sassc-rails (>= 2.1.2)
   selenium-webdriver
-  simple_form
+  simple_form (>= 5.0.2)
   simplecov
   sip!
   spring
   twitter_cldr
   tzinfo
   unicorn
-  web-console
-  webpacker
+  web-console (>= 4.0.2)
+  webpacker (>= 5.1.1)
   will_paginate
 
 RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   2.1.4
+   1.17.3
