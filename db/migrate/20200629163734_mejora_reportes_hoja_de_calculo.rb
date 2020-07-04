@@ -18,23 +18,28 @@ class MejoraReportesHojaDeCalculo < ActiveRecord::Migration[6.0]
       c.save!
       idp += 1
     end
+    execute <<-SQL
+      UPDATE heb412_gen_campoplantillahcm SET nombrecampo='proyecto' WHERE id=6;
+      UPDATE heb412_gen_campoplantillahcm SET nombrecampo='actividad_de_marco_lógico' WHERE id=7;
+      UPDATE heb412_gen_plantillahcm SET ruta='plantillas/listado_de_actividades.ods' WHERE id=1;
+    SQL
   end
 
 
   def down
-    idp = 10
-    ('J'..'Q').each do |col|
+    idp = 17
+    ('Q'..'J').each do |col|
       c = Heb412Gen::Campoplantillahcm.find(idp)
       c.columna = col
       c.save!
-      idp += 1
+      idp -= 1
     end
-    idp = 6
-    ('F'..'G').each do |col|
+    idp = 7
+    ('G'..'F').each do |col|
       c = Heb412Gen::Campoplantillahcm.find(idp)
       c.columna = col
       c.save!
-      idp += 1
+      idp -= 1
     end
 
     execute <<-SQL
