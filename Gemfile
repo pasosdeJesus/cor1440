@@ -41,6 +41,8 @@ gem 'rails', '~> 6.0.0.rc1' # Rails (internacionalización)
 
 gem 'rails-i18n'
 
+gem 'redcarpet'
+
 gem 'rspreadsheet'
 
 gem 'rubyzip', '>= 2.0.0'
