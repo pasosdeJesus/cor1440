@@ -352,6 +352,7 @@ DEPENDENCIES
   puma
   rails (~> 6.0.0.rc1)
   rails-i18n
+  redcarpet
   rspreadsheet
   rubyzip (>= 2.0.0)
   sassc-rails
