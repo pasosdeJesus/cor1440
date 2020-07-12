@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: c73d0cad75f5cd8db0629088dd42b9fe54e50403
+  revision: d4e815058c2077d70920326bc5381a80cc3b14e7
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: c614288de359f8429ef6ab9a0e574e92ef5ab216
+  revision: fa54c4da39d5dce1ef9360c92a67766743de3e23
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 8dcd983dd8febbbb0f00ba43f9f7dde447036fbd
+  revision: a6665a2582551a5648c5c081584d6523a9fbe847
   specs:
     sip (2.0.b10)
       cancancan
@@ -191,7 +191,7 @@ GEM
     minitest (5.14.1)
     msgpack (1.3.3)
     nio4r (2.5.2)
-    nokogiri (1.10.9)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     odf-report (0.7.2)
       mime-types
@@ -316,7 +316,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    websocket-driver (0.7.2)
+    websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     will_paginate (3.3.0)
