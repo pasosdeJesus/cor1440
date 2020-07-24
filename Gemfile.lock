@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 5722c66e60dafe05aa225753c75acdcbd741b452
+  revision: ce3633ff7bf2dc459d00b61b4f625a3bcf1036af
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 2725afa932b770fae26ff68dd7338f0ce2d99abb
+  revision: 0763b01f3329f343f6cb98170f18cf202202ccdf
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 0e0d9019864362ac928ead4815732dc50737d6b7
+  revision: 7829153ce240da49dedc78b4a5c06a8a682a1c60
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: fe647549e4754cfde4fe2513225dc5e7361b0709
+  revision: 1501f4828cc04773ad9df52297534369675ef53b
   specs:
     sip (2.0.b10)
       cancancan
@@ -118,7 +118,7 @@ GEM
     bcrypt (3.1.15)
     bigdecimal (2.0.0)
     bindex (0.8.1)
-    bootsnap (1.4.6)
+    bootsnap (1.4.7)
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -162,7 +162,7 @@ GEM
     ffi (1.13.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (1.8.4)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)

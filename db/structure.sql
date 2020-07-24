@@ -31,6 +31,22 @@ COMMENT ON EXTENSION unaccent IS 'text search dictionary that removes accents';
 
 
 --
+-- Name: completa_obs(character varying, character varying); Type: FUNCTION; Schema: public; Owner: -
+--
+
+CREATE FUNCTION public.completa_obs(obs character varying, nuevaobs character varying) RETURNS character varying
+    LANGUAGE plpgsql
+    AS $$
+      BEGIN
+        RETURN CASE WHEN obs IS NULL THEN nuevaobs
+          WHEN obs='' THEN nuevaobs
+          WHEN RIGHT(obs, 1)='.' THEN obs || ' ' || nuevaobs
+          ELSE obs || '. ' || nuevaobs
+        END;
+      END; $$;
+
+
+--
 -- Name: soundexesp(text); Type: FUNCTION; Schema: public; Owner: -
 --
 
@@ -5679,6 +5695,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200415021859'),
 ('20200415102103'),
 ('20200629163734'),
-('20200706113547');
+('20200706113547'),
+('20200722210144'),
+('20200723133542');
 
 
