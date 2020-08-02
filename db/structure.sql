@@ -1815,7 +1815,6 @@ ALTER SEQUENCE public.mr519_gen_encuestapersona_id_seq OWNED BY public.mr519_gen
 CREATE TABLE public.mr519_gen_encuestausuario (
     id bigint NOT NULL,
     usuario_id integer NOT NULL,
-    formulario_id integer,
     fecha date,
     fechainicio date NOT NULL,
     fechafin date,
@@ -5193,14 +5192,6 @@ ALTER TABLE ONLY public.cor1440_gen_actividad_valorcampotind
 
 
 --
--- Name: mr519_gen_encuestausuario fk_rails_eccb6f9972; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.mr519_gen_encuestausuario
-    ADD CONSTRAINT fk_rails_eccb6f9972 FOREIGN KEY (formulario_id) REFERENCES public.mr519_gen_formulario(id);
-
-
---
 -- Name: cor1440_gen_actividad_actorsocial fk_rails_ecdad5c731; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5697,6 +5688,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200629163734'),
 ('20200706113547'),
 ('20200722210144'),
-('20200723133542');
+('20200723133542'),
+('20200727021707');
 
 
