@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 6f192e0fcc4a7f1c54601ffb66892da663f09424
+  revision: 07ad7ab028b286dccaf47c47230d86469c1ae555
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 84eeebe38ebfd3c53bc9f130803beb0d3f44df81
+  revision: dcd75f3e08525e7ecfba10c15d79e6759abc11db
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 1aa77ec9d34e46a32087c567ee4693c885ba0068
+  revision: a70a7313aff37b819e617e660979b87ca4a23b86
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 56d2309d8f04c4667097303a2260570c129b4d28
+  revision: f7cf3731632a57884e645b2e544c683790d066e1
   specs:
     sip (2.0.b10)
       cancancan
@@ -146,7 +146,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     colorize (0.8.1)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     crass (1.0.6)
     devise (4.7.2)
       bcrypt (~> 3.0)
