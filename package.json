@@ -12,7 +12,7 @@
     "jquery": "^3.5.1",
     "jquery-ui": "^1.12.1",
     "popper.js": "^1.16.0",
-    "serialize-javascript": "2.1.1",
+    "serialize-javascript": "3.1.0",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
