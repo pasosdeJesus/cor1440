@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: aede2776b16abdafbb29e113e553eaa519b44f49
+  revision: f0ab860b38c6771338595586315a5d898a15fa1e
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 71357753cd0b0a903959d41754843397fd35c286
+  revision: 805ab265b59906bed4fff6405a2881ad172cf439
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: b506006012e484f1fbe24c66cd755fb2d117e3e7
+  revision: 926f46860115fbea9b26f3766d6e79331d2dcc0e
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 26047ecf238d45a9389f356cc94c77ac80674b27
+  revision: c329f4ed3eeacec01f50d81f5123b9bdf27a0eba
   specs:
     sip (2.0.b10)
       cancancan
@@ -277,7 +277,7 @@ GEM
     simple_form (5.0.2)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
-    simplecov (0.18.5)
+    simplecov (0.19.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
     simplecov-html (0.12.2)
@@ -311,7 +311,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (5.1.1)
+    webpacker (5.2.1)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
