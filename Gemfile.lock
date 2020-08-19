@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: f0ab860b38c6771338595586315a5d898a15fa1e
+  revision: b21577a90f05aa5632e4b5493d9df193bfdd9405
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 805ab265b59906bed4fff6405a2881ad172cf439
+  revision: e4e02f20071f7562bcd9b5bc61b296dcf39a4894
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 926f46860115fbea9b26f3766d6e79331d2dcc0e
+  revision: ae3fb2bbbba6db998a92fe4eebc971150a2c393e
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: c329f4ed3eeacec01f50d81f5123b9bdf27a0eba
+  revision: f57fea83ff5b8bfecd75d811a65564effff8f0d6
   specs:
     sip (2.0.b10)
       cancancan
@@ -295,7 +295,7 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.10)
     ttfunk (1.6.2.1)
-    twitter_cldr (6.0.2)
+    twitter_cldr (6.1.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
