@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 3886625d22416ff2f112cd168bb6fa31720efd7d
+  revision: 78be08bfc61e31c3e7b0ba21b6cf4caf409f4422
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 48178c5c55e4b2605fc209953d2d51538c075788
+  revision: 75c4035a26e931973c4fa5a72ab7136cf11b8754
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: e802ca7c0921504c721e1a161e5661e8df3cc8ed
+  revision: 3941567101d7540278b84cd5496680c7a4c25613
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 6ed7e3e33e307621b052fbb629f0a47d392ae90a
+  revision: f8363ea2ed1beb9e3dedf170ada4fcfd00e883cd
   specs:
     sip (2.0.b10)
       cancancan
@@ -190,7 +190,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.14.2)
     msgpack (1.3.3)
-    nio4r (2.5.3)
+    nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     odf-report (0.7.2)
@@ -215,7 +215,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (4.0.6)
-    puma (4.3.6)
+    puma (5.0.0)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
