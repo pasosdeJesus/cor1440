@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 78be08bfc61e31c3e7b0ba21b6cf4caf409f4422
+  revision: cf27689c8a3d7c502cb6f5eb71b6d6982bf8a502
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 75c4035a26e931973c4fa5a72ab7136cf11b8754
+  revision: 2bf9fb58ab459e9d28902fe4552755733ac0cab9
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 3941567101d7540278b84cd5496680c7a4c25613
+  revision: a2114b6da79d7ebb876bc2aa3fa9526f15015baa
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: f8363ea2ed1beb9e3dedf170ada4fcfd00e883cd
+  revision: 9cb0829dc2a59726c26107c5e3dc07c0fa3be2de
   specs:
     sip (2.0.b10)
       cancancan
@@ -148,7 +148,7 @@ GEM
     colorize (0.8.1)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
-    devise (4.7.2)
+    devise (4.7.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
@@ -254,7 +254,7 @@ GEM
     raindrops (0.19.1)
     rake (13.0.1)
     redcarpet (3.5.0)
-    regexp_parser (1.7.1)
+    regexp_parser (1.8.0)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
