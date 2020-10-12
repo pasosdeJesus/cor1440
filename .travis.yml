@@ -1,10 +1,15 @@
 language: ruby
 
 rvm:
-        - 2.6.1
+        - 2.7.1
 
 addons:
-        postgresql: "9.6"
+        postgresql: "10"
+
+apt:
+        packages:
+                - postgresql-10
+                - postgresql-client-10
 
 notifications:
         email: false
@@ -21,7 +26,7 @@ before_install:
         - ./cc-test-reporter before-build
         - sudo locale-gen --no-archive es_CO.UTF-8
         - sudo /etc/init.d/postgresql stop
-        - sudo /etc/init.d/postgresql start 9.6
+        - sudo /etc/init.d/postgresql start 10
         - psql -c 'CREATE DATABASE cor1440des_pru;' -U postgres
         - gem install bundler
         - gem update --system
