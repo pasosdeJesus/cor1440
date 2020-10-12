@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: bc1dd7c1e12fa62453f7ceff4488535cc0e0d627
+  revision: 9b2d6e57680a5647257473923369011cbca7cdbc
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f734a861b3abfcc4202cd713c92f158b29d606b9
+  revision: c040263b34825d211a7f3b9237f4a91c10eadc3b
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 5cb8a69efcda4d05d0862b85f5e122530dd8c97a
+  revision: 04afd2b82fdd234c954eea58137f644fb3e412d1
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: a7cc2a1982b55e59a31bcfd0d1fc6478117cd6d3
+  revision: 579c6ef0c93608f1e7d875b0268a688521097954
   specs:
     sip (2.0.b10)
       cancancan
@@ -254,7 +254,7 @@ GEM
     raindrops (0.19.1)
     rake (13.0.1)
     redcarpet (3.5.0)
-    regexp_parser (1.8.1)
+    regexp_parser (1.8.2)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
