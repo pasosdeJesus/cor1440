@@ -3,7 +3,7 @@ language: ruby
 rvm:
         - 2.7.1
 
-addons:
+addon:
         postgresql: "10"
 
 apt:
@@ -39,10 +39,12 @@ before_install:
         - cp config/initializers/sip.rb.plantilla config/initializers/sip.rb
         - cp db/structure.sql db/structure.sql.copia # travis no soporta PostreSQL 10
         - sed -e 's/provider = libc,//g;s/SET default_table_access_method.*/-- &/g' db/structure.sql.copia > db/structure.sql 
-        - bundle exec rake db:setup
-        - bundle exec rake sip:indices
+        - bin/rails db:setup
+        - bin/rails sip:indices
+        - bin/rails assets:precompile --trace
 
-script: bundle exec rails test -b
+script: 
+        - bundle exec rails test -b
 
 after_script:
         - ls
