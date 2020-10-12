@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 9b2d6e57680a5647257473923369011cbca7cdbc
+  revision: 52eff3b1d6c536aabbfe71c9ff617d7759926a0d
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: c040263b34825d211a7f3b9237f4a91c10eadc3b
+  revision: 076a83c2e687b9ec02a6417a51b4567264292794
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 04afd2b82fdd234c954eea58137f644fb3e412d1
+  revision: 3a760e89b7a51075a9042d3813e7fecd347c4cdc
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 579c6ef0c93608f1e7d875b0268a688521097954
+  revision: 4689617d47921b3373b31ce8d268379b634da629
   specs:
     sip (2.0.b10)
       cancancan
@@ -172,6 +172,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
+    json (2.3.1)
     kgio (2.11.3)
     libxml-ruby (3.2.0)
     loofah (2.7.0)
@@ -277,10 +278,11 @@ GEM
     simple_form (5.0.3)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
-    simplecov (0.19.0)
+    simplecov (0.17.1)
       docile (~> 1.1)
-      simplecov-html (~> 0.11)
-    simplecov-html (0.12.3)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -358,7 +360,7 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver
   simple_form
-  simplecov
+  simplecov (< 0.18)
   sip!
   spring
   twitter_cldr
