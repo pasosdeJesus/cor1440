@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: ce0edfe42e1cbd6b81f953541bf3540556f3cf34
+  revision: 4e6fcce47377dd90beaada41a8c7f55a28dd786f
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 2f920877967b498907b56a12622b774cb734cc58
+  revision: 2e9cd09c2a1dd815eaa62072e3d329b3a80bcdf6
   specs:
     sip (2.0.b10)
       cancancan
@@ -371,7 +371,7 @@ DEPENDENCIES
   will_paginate
 
 RUBY VERSION
-   ruby 2.5.0p0
+   ruby 2.7.1p83
 
 BUNDLED WITH
    2.1.4
