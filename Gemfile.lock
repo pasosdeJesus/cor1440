@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 616dac98d64cbb366313560bb6cfcbe10b0a664c
+  revision: 5c6e125dcb5d6baf7cb6dc3f8c0410a4c46eb9b6
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: c6ee14c2a5d3c6d94f55cca9b33f2145b24e3297
+  revision: c1d0f1e756281b296efb3361fd47f07e190a884b
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: da83ac538a69bf4e2520985f7e16a9a17a513877
+  revision: 9fe4cf9a62a253aee8a8b85e1db90423cc1ecc6c
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 78cb44e701aba2f608219d30d8e7c230d02bb93a
+  revision: 3050aa4f2c5ac4ca0e3908ce3fa56a8fe5e80a34
   specs:
     sip (2.0.b10)
       cancancan
@@ -216,7 +216,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (4.0.6)
-    puma (5.0.3)
+    puma (5.0.4)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
@@ -297,7 +297,7 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.10)
     ttfunk (1.6.2.1)
-    twitter_cldr (6.2.0)
+    twitter_cldr (6.3.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
@@ -324,7 +324,7 @@ GEM
     will_paginate (3.3.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.4.0)
+    zeitwerk (2.4.1)
 
 PLATFORMS
   ruby
