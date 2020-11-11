@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4e32ff69d3bee47528471dcfa234d78136167546
+  revision: a1417762411493f97eb0254c5a650ba99aeec618
   branch: sincoord
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: fddaac74a12f08fd8351244f59bb9f6c2a4eebb9
+  revision: a0a4be161fc5096add632f6bfa975ec3d20e8cc3
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 75074ac82382a4b10c1313443d52d28ebeb30871
+  revision: 2c6df84e87715940e0873c3dbc2a04befd0a6089
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: e9fea25b32b41665f8e4c6c258004ab4cefd132e
+  revision: 1585a60b74e8eaf8f50114a05b866556ba7cdadb
   specs:
     sip (2.0.b10)
       cancancan
@@ -119,7 +119,7 @@ GEM
     bcrypt (3.1.16)
     bigdecimal (2.0.0)
     bindex (0.8.1)
-    bootsnap (1.5.0)
+    bootsnap (1.5.1)
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -302,7 +302,7 @@ GEM
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
-    tzinfo (1.2.7)
+    tzinfo (1.2.8)
       thread_safe (~> 0.1)
     unicorn (5.7.0)
       kgio (~> 2.6)
