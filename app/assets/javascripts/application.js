@@ -14,3 +14,6 @@
 //= require_tree .
 
 
+cor1440_gen_recalcula_poblacion = () ->
+  cor1440_gen_recalcula_poblacion(jrs_agrega_beneficiarios_casos)
+
