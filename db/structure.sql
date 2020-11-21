@@ -58,6 +58,30 @@ CREATE FUNCTION public.f_unaccent(text) RETURNS text
 
 
 --
+-- Name: sip_edad_de_fechanac_fecharef(integer, integer, integer, integer, integer, integer); Type: FUNCTION; Schema: public; Owner: -
+--
+
+CREATE FUNCTION public.sip_edad_de_fechanac_fecharef(anionac integer, mesnac integer, dianac integer, anioref integer, mesref integer, diaref integer) RETURNS integer
+    LANGUAGE sql IMMUTABLE
+    AS $$
+        SELECT CASE 
+          WHEN anionac IS NULL THEN NULL
+          WHEN anioref IS NULL THEN NULL
+          WHEN mesnac IS NULL OR dianac IS NULL OR mesref IS NULL OR diaref IS NULL THEN 
+            anioref-anionac 
+          WHEN mesnac < mesref THEN
+            anioref-anionac
+          WHEN mesnac > mesref THEN
+            anioref-anionac-1
+          WHEN dianac > diaref THEN
+            anioref-anionac-1
+          ELSE 
+            anioref-anionac
+        END 
+      $$;
+
+
+--
 -- Name: soundexesp(text); Type: FUNCTION; Schema: public; Owner: -
 --
 
@@ -4620,6 +4644,14 @@ ALTER TABLE ONLY public.cor1440_gen_actorsocial_efecto
 
 
 --
+-- Name: cor1440_gen_actividad_rangoedadac fk_rails_1366d14fb8; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_actividad_rangoedadac
+    ADD CONSTRAINT fk_rails_1366d14fb8 FOREIGN KEY (rangoedadac_id) REFERENCES public.cor1440_gen_rangoedadac(id);
+
+
+--
 -- Name: mr519_gen_encuestausuario fk_rails_1b24d10e82; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -4737,6 +4769,14 @@ ALTER TABLE ONLY public.heb412_gen_doc
 
 ALTER TABLE ONLY public.sip_ubicacionpre
     ADD CONSTRAINT fk_rails_2e86701dfb FOREIGN KEY (departamento_id) REFERENCES public.sip_departamento(id);
+
+
+--
+-- Name: cor1440_gen_actividad_rangoedadac fk_rails_2f8fe7fdca; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_actividad_rangoedadac
+    ADD CONSTRAINT fk_rails_2f8fe7fdca FOREIGN KEY (actividad_id) REFERENCES public.cor1440_gen_actividad(id);
 
 
 --
@@ -5861,6 +5901,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200916022934'),
 ('20200919003430'),
 ('20200921123831'),
-('20201009004421');
+('20201009004421'),
+('20201119125643'),
+('20201121162913');
 
 
