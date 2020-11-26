@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 28de4d1e7f1abc848c8ba83d1151c72908692670
+  revision: 63e347ac17dc93a1213c334f26e3f52cdfeb38e4
   branch: sincoord
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: a3057ae95f4a0c8cfcc6ccea13c17dcf2d9be6fa
+  revision: 7b7573f423a6b85218d821df7d641f5f8b07fc6e
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 68f372924bb9b8894ce8d3ea425fe4e7501e02b0
+  revision: 2dc00d95d09570d5032871ac4ab53c53c434f748
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 6766e1d80065f9c3a15bbf43239b7545f1aae157
+  revision: 1f339551a513c049900634a1bd382a494e7d889a
   specs:
     sip (2.0.b10)
       cancancan
@@ -137,7 +137,7 @@ GEM
       coffee-rails (>= 3.2)
       railties (>= 3.0)
       sassc-rails (>= 2.1.2)
-    cldr-plurals-runtime-rb (1.0.1)
+    cldr-plurals-runtime-rb (1.1.0)
     climate_control (0.2.0)
     coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
@@ -176,7 +176,7 @@ GEM
     json (2.3.1)
     kgio (2.11.3)
     libxml-ruby (3.2.1)
-    loofah (2.7.0)
+    loofah (2.8.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -298,9 +298,9 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.10)
     ttfunk (1.6.2.1)
-    twitter_cldr (6.3.0)
+    twitter_cldr (6.4.0)
       camertron-eprun
-      cldr-plurals-runtime-rb (~> 1.0)
+      cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
     tzinfo (1.2.8)
       thread_safe (~> 0.1)
