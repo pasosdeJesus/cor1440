@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 8786260c490f8bd12406c0773d94818278f526d7
+  revision: 5851c840ce1b8ad0dd871d28efec3e219f0cdd67
   specs:
     cor1440_gen (1.0b3)
       devise
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 3ad0b2864c634b7fe695952df5dfc162f025a82f
+  revision: f0d33b5974a7284e580619572338395763bcc137
   specs:
     sip (2.0.b10)
       cancancan
@@ -274,7 +274,7 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    semantic_range (2.3.0)
+    semantic_range (2.3.1)
     simple_form (5.0.3)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
