@@ -19,12 +19,6 @@ class Ability  < Cor1440Gen::Ability
     if !usuario || usuario.fechadeshabilitacion || !usuario.rol
       return
     end
-
-    case usuario.rol 
-    when Ability::ROLSISTACT
-      can :manage, Cor1440Gen::Actividad
-    end
-
   end # initialize
 
 end
