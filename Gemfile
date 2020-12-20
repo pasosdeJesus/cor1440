@@ -37,7 +37,7 @@ gem 'prawn-table'
 
 gem 'puma'
 
-gem 'rails', '~> 6.0.3.4' # Rails (internacionalización)
+gem 'rails', '~> 6.1.0'
 
 gem 'rails-i18n'
 

@@ -1,4 +1,5 @@
 require "test_helper"
+require_dependency 'selenium-webdriver'
 
 class NilLogger
     def puts * ; end
