@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: ef478c01a07b1f073e53d1f9b16d94c7af50ca13
+  revision: d14b9f3be8e95cd11358b1fde896dd318762b655
   branch: rails6.1
   specs:
     cor1440_gen (1.0b3)
@@ -261,7 +261,7 @@ GEM
       rake (>= 0.8.7)
       thor (~> 1.0)
     raindrops (0.19.1)
-    rake (13.0.2)
+    rake (13.0.3)
     redcarpet (3.5.1)
     regexp_parser (1.8.2)
     responders (3.0.1)
