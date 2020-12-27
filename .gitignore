@@ -40,3 +40,6 @@ yarn-debug.log*
 .yarn-integrity
 
 /config/master.key
+.env
+config/credentials.yml.enc
+public/images/logo.jpg

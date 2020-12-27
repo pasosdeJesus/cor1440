@@ -17,8 +17,15 @@
 
 console.log('Hola Mundo desde Webpacker')
 
-require('@rails/ujs').start()   // Javascript no intrusivo segun rails
-require('turbolinks').start()   // Acelera carga de paginas
+import Rails from "@rails/ujs"
+import Turbolinks from "turbolinks"
+// import * as ActiveStorage from "@rails/activestorage"
+// import "channels"
+
+Rails.start()
+Turbolinks.start()
+
+//ActiveStorage.start()
 
 import {$, jQuery} from 'jquery';
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
