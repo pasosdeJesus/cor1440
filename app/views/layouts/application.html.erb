@@ -24,6 +24,8 @@
           desplegable: true %-->
         <%= opcion_menu "Contar por actividad de marco lógico", 
           cor1440_gen.contar_actividades_path, desplegable: true %>
+        <%= opcion_menu "Contar por beneficiario y actividad de marco lógico", 
+          cor1440_gen.contar_actividades_beneficiarios_path, desplegable: true %>
         <% if can? :manage, ::Sip::Actorsocial %>
           <%= opcion_menu "Organizaciones sociales", sip.actoressociales_path,
             desplegable: true %>
