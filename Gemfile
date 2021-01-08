@@ -68,8 +68,9 @@ gem 'webpacker'
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git'
+  #git: 'https://github.com/pasosdeJesus/sip.git'
   #path: '../sip'
+  path: '/home/vtamara/comp/rails/sip'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
   git: 'https://github.com/pasosdeJesus/mr519_gen.git'
