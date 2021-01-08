@@ -1260,7 +1260,7 @@ CREATE TABLE public.cor1440_gen_proyectofinanciero (
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
     compromisos character varying(5000),
-    monto integer,
+    monto numeric,
     sectorapc_id integer
 );
 
@@ -5963,6 +5963,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20201119125643'),
 ('20201121162913'),
 ('20201205041350'),
-('20201214215209');
+('20201214215209'),
+('20210108202122');
 
 
