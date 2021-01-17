@@ -1463,6 +1463,43 @@ ALTER SEQUENCE public.cor1440_gen_tipoindicador_id_seq OWNED BY public.cor1440_g
 
 
 --
+-- Name: cor1440_gen_tipomoneda; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cor1440_gen_tipomoneda (
+    id bigint NOT NULL,
+    nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
+    codiso4217 character varying(3) NOT NULL,
+    simbolo character varying(10),
+    pais_id integer,
+    observaciones character varying(5000),
+    fechacreacion date NOT NULL,
+    fechadeshabilitacion date,
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
+-- Name: cor1440_gen_tipomoneda_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.cor1440_gen_tipomoneda_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: cor1440_gen_tipomoneda_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.cor1440_gen_tipomoneda_id_seq OWNED BY public.cor1440_gen_tipomoneda.id;
+
+
+--
 -- Name: cor1440_gen_valorcampoact; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -3380,6 +3417,13 @@ ALTER TABLE ONLY public.cor1440_gen_tipoindicador ALTER COLUMN id SET DEFAULT ne
 
 
 --
+-- Name: cor1440_gen_tipomoneda id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_tipomoneda ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_tipomoneda_id_seq'::regclass);
+
+
+--
 -- Name: cor1440_gen_valorcampoact id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -3909,6 +3953,14 @@ ALTER TABLE ONLY public.cor1440_gen_sectorapc
 
 ALTER TABLE ONLY public.cor1440_gen_tipoindicador
     ADD CONSTRAINT cor1440_gen_tipoindicador_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: cor1440_gen_tipomoneda cor1440_gen_tipomoneda_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_tipomoneda
+    ADD CONSTRAINT cor1440_gen_tipomoneda_pkey PRIMARY KEY (id);
 
 
 --
@@ -5110,6 +5162,14 @@ ALTER TABLE ONLY public.mr519_gen_valorcampo
 
 
 --
+-- Name: cor1440_gen_tipomoneda fk_rails_82fd06de79; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_tipomoneda
+    ADD CONSTRAINT fk_rails_82fd06de79 FOREIGN KEY (pais_id) REFERENCES public.sip_pais(id);
+
+
+--
 -- Name: mr519_gen_encuestapersona fk_rails_83755e20b9; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5964,6 +6024,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20201121162913'),
 ('20201205041350'),
 ('20201214215209'),
-('20210108202122');
+('20210108202122'),
+('20210116090353');
 
 
