@@ -11,8 +11,8 @@
  * file per style scope.
  *
  *= require_self
- *= require cor1440_gen/application.css
  *= require_tree .
+ *= require cor1440_gen/application.css
  */
 
 .panel-heading {

@@ -1261,7 +1261,8 @@ CREATE TABLE public.cor1440_gen_proyectofinanciero (
     updated_at timestamp without time zone,
     compromisos character varying(5000),
     monto numeric,
-    sectorapc_id integer
+    sectorapc_id integer,
+    titulo character varying(1000)
 );
 
 
@@ -2142,6 +2143,38 @@ ALTER SEQUENCE public.poa_id_seq OWNED BY public.poa.id;
 
 
 --
+-- Name: proyectoyconvenio; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.proyectoyconvenio (
+    id bigint NOT NULL,
+    id_actividad_proyectofinanciero integer,
+    id_actividad_actividadf integer,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: proyectoyconvenio_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.proyectoyconvenio_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: proyectoyconvenio_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.proyectoyconvenio_id_seq OWNED BY public.proyectoyconvenio.id;
+
+
+--
 -- Name: sal7711_gen_articulo; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -2607,7 +2640,7 @@ CREATE TABLE public.sip_grupoper (
 -- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
 --
 
-COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en cor1440_desarrollo';
+COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en cor1440gen_des';
 
 
 --
@@ -3557,6 +3590,13 @@ ALTER TABLE ONLY public.poa ALTER COLUMN id SET DEFAULT nextval('public.poa_id_s
 
 
 --
+-- Name: proyectoyconvenio id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.proyectoyconvenio ALTER COLUMN id SET DEFAULT nextval('public.proyectoyconvenio_id_seq'::regclass);
+
+
+--
 -- Name: sal7711_gen_articulo id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -3932,6 +3972,14 @@ ALTER TABLE ONLY public.cor1440_gen_proyectofinanciero_usuario
 
 
 --
+-- Name: cor1440_gen_rangoedadac cor1440_gen_rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_rangoedadac
+    ADD CONSTRAINT cor1440_gen_rangoedadac_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: cor1440_gen_resultadopf cor1440_gen_resultadopf_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -4140,11 +4188,11 @@ ALTER TABLE ONLY public.poa
 
 
 --
--- Name: cor1440_gen_rangoedadac rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: proyectoyconvenio proyectoyconvenio_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.cor1440_gen_rangoedadac
-    ADD CONSTRAINT rangoedadac_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.proyectoyconvenio
+    ADD CONSTRAINT proyectoyconvenio_pkey PRIMARY KEY (id);
 
 
 --
@@ -5903,6 +5951,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20180219032546'),
 ('20180220103644'),
 ('20180220104234'),
+('20180223025142'),
 ('20180223091622'),
 ('20180320230847'),
 ('20180427194732'),
@@ -5997,6 +6046,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200212103617'),
 ('20200228235200'),
 ('20200229005951'),
+('20200229191119'),
 ('20200302194744'),
 ('20200314033958'),
 ('20200319183515'),
@@ -6026,6 +6076,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20201214215209'),
 ('20210108202122'),
 ('20210116090353'),
-('20210117234541');
+('20210117234541'),
+('20210201101144');
 
 

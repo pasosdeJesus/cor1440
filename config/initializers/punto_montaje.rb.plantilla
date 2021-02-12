@@ -1,2 +1,0 @@
-Cor1440::Application.config.relative_url_root = '/cor1440'
-Cor1440::Application.config.assets.prefix = '/cor1440/assets'

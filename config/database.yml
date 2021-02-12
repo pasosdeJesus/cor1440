@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= ENV.fetch('BD_USUARIO', 'sipdes') %>
+  password: <%= ENV.fetch('BD_CLAVE') %>
+  host: /var/www/var/run/postgresql
+
+development:
+  <<: *default
+  database: <%= ENV.fetch('BD_DES', 'cor1440gen_des') %>
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: <%= ENV.fetch('BD_PRUEBA', 'cor1440gen_pru') %>
+
+production:
+  <<: *default
+  database: <%= ENV.fetch('BD_PRO', 'cor1440gen_pro') %>
