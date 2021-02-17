@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 95d56681d27a77d77c47f969db626870bef88da3
+  revision: f3abd13d53841e29718a6ccf01a800b61053ec0a
   branch: main
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 95f0349813ea8365402af11fa2c237f1eca67f60
+  revision: 60a03c88b7d3f86f4c54a694446d820c445cdcc9
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 26eeb05ff090f82f24a00fe78e4ba70336c149d0
+  revision: 0da2b8e0715d862b6bdfeb45f964e2ac9b0674f2
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 6b2e67e60459a96373f8f0796b705bfaa540beb9
+  revision: 533dac71cb8f2431ee16d7243f1870f28310d1d2
   branch: main
   specs:
     sip (2.0.b11)
