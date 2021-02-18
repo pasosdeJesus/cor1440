@@ -13,9 +13,11 @@ class MejoraReportesHojaDeCalculo < ActiveRecord::Migration[6.0]
 
     idp = 509
     ('G'..'N').each do |col|
-      c = Heb412Gen::Campoplantillahcm.find(idp)
-      c.columna = col
-      c.save!
+      if Heb412Gen::Campoplantillahcm.where(id: idp).count > 0
+        c = Heb412Gen::Campoplantillahcm.find(idp)
+        c.columna = col
+        c.save!
+      end
       idp += 1
     end
     execute <<-SQL
