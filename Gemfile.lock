@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 64bc9841d1923fd81a4aedf8c1e46c28cba2d2c6
+  revision: d8151655bb1dd373fc357ee8b8725fcd54496d08
   branch: main
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 4941801fa6559713a421a4feb128ce9f19171d18
+  revision: 678b1b1f2ea3f93387683e9cb3cb3996473d939c
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 75055e84eb7e5d8a43d029a3e676af0f07d04315
+  revision: 76ada19fa3943a917edc4179376cf96f2f8dd754
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 0bfebc3466de1f5a9919b4fbaa7cfd48d5bc00e1
+  revision: e272200577a25729de81e46d228512661a273c0d
   branch: main
   specs:
     sip (2.0.b11)
@@ -203,7 +203,7 @@ GEM
     mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)
-    nio4r (2.5.5)
+    nio4r (2.5.7)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
@@ -288,7 +288,7 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    semantic_range (2.3.1)
+    semantic_range (3.0.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
