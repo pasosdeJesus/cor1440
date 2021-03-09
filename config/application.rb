@@ -40,7 +40,7 @@ module Cor1440
 
     #config.web_console.whitelisted_ips = ['186.154.35.237']
 
-    #config.relative_url_root = ENV.fetch('RUTA_RELATIVA', '/cor1440')
+    config.relative_url_root = ENV.fetch('RUTA_RELATIVA', '/cor1440')
 
     # sip
     config.x.formato_fecha = ENV.fetch('SIP_FORMATO_FECHA', 'dd/M/yyyy')
