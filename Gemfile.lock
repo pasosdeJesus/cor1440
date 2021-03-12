@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: e57b5f5a82a26b5e98e63040b8a2139fa8eb09d9
+  revision: df1954eca3f1ddcd0664e7a755dd8d377fc482b5
   branch: main
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: e205237d233d6cc1f071fe042c96b0b598adf53c
+  revision: 6942d90e6df86998305538971c651fc01b1994e5
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 5bda61e16ad0006acb1fcaea961ad54130e0a140
+  revision: 6d265ec88f4fa9957f036e9c68103a7391be14af
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 6d830ff53bffe40c610585b798cc3811c7a55536
+  revision: e29da93b88cc3923f87a6ccc8762e9aa5413e388
   branch: main
   specs:
     sip (2.0.b11)
@@ -162,7 +162,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.9.2)
+    devise-i18n (1.9.3)
       devise (>= 4.7.1)
     docile (1.3.5)
     dotenv (2.7.6)
@@ -204,7 +204,7 @@ GEM
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
-    nokogiri (1.11.1)
+    nokogiri (1.11.2)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     odf-report (0.7.2)
@@ -387,4 +387,4 @@ RUBY VERSION
    ruby 2.7.1p83
 
 BUNDLED WITH
-   2.2.13
+   2.2.14
