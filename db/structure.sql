@@ -526,8 +526,8 @@ CREATE TABLE public.cor1440_gen_actividadpf (
     descripcion character varying(5000),
     resultadopf_id integer,
     actividadtipo_id integer,
-    heredade_id integer,
-    formulario_id integer
+    formulario_id integer,
+    heredade_id integer
 );
 
 
