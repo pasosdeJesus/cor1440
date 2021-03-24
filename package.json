@@ -9,6 +9,7 @@
     "copy-webpack-plugin": "^6.0.3",
     "expose-loader": "^0.7.5",
     "gridstack": "^0.6.0",
+    "is-svg": "^4.2.2",
     "jquery": "^3.5.1",
     "jquery-ui": "^1.12.1",
     "node-forge": "0.10.0",
