@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: c8a30ffada7f71dcac5dff96fbf117400512b51a
+  revision: 9a80d84f67dba1a4099b465536fecc5127ae3377
   branch: main
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f3248590aa99d5b3c2defd599af4fc0d8b0d54d1
+  revision: eec5495836e9bbf14c2d94cf375c0f941c4e9f1e
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: b6ee5537745365f9031dd0b357f8a6827bd5f094
+  revision: 761ebc0f6c9e182d38278fccc9acbec33630fb59
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 9f2c92efd4ddd23ca9075ddbd30b1d9f21d575e0
+  revision: 611f2d80c82f7ddbda403f8f0cd8f2b76a8c00b6
   branch: main
   specs:
     sip (2.0.b11)
@@ -198,7 +198,7 @@ GEM
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2021.0225)
-    mimemagic (0.3.5)
+    mimemagic (0.3.6)
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
     minitest (5.14.4)
