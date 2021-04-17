@@ -67,7 +67,7 @@ gem 'webpacker'
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/sip.git', branch: :bs5
   #path: '../sip'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas

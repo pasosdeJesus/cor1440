@@ -28,9 +28,15 @@ Turbolinks.start()
 //ActiveStorage.start()
 
 import {$, jQuery} from 'jquery';
-import 'popper.js'              // Dialogos emergentes usados por bootstrap
-import 'bootstrap'              // Maquetacion y elementos de diseño
+
+import { Tooltip, Toast, Popover } from 'bootstrap';
+
+import PerfectScrollbar from 'perfect-scrollbar';
+
+import ApexCharts from 'apexcharts'
+
 import 'chosen-js/chosen.jquery';       // Cuadros de seleccion potenciados
+import 'feather-icons'
 import 'bootstrap-datepicker'
 import 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js'
 import 'jquery-ui'
