@@ -29,6 +29,10 @@ Turbolinks.start()
 
 import $ from "expose-loader?exposes=$,jQuery!jquery";
 
+import { Tooltip, Toast, Popover } from 'bootstrap';
+import PerfectScrollbar from 'perfect-scrollbar';
+import ApexCharts from 'apexcharts'
+
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
 import 'bootstrap'              // Maquetacion y elementos de diseño
 import 'chosen-js/chosen.jquery';       // Cuadros de seleccion potenciados
@@ -38,4 +42,6 @@ import 'jquery-ui'
 import 'jquery-ui/ui/widgets/autocomplete' 
 import 'jquery-ui/ui/data' 
 import 'jquery-ui/ui/focusable' 
+import 'feather-icons'
+
 
