@@ -2856,7 +2856,7 @@ CREATE TABLE public.sip_persona (
     anionac integer,
     mesnac integer,
     dianac integer,
-    sexo character(1) NOT NULL,
+    sexo character(1) DEFAULT 'S'::bpchar NOT NULL,
     numerodocumento character varying(100),
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
@@ -6104,6 +6104,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210401194637'),
 ('20210401210102'),
 ('20210414201956'),
-('20210417152053');
+('20210417152053'),
+('20210419161145');
 
 
