@@ -257,16 +257,6 @@ CREATE TABLE public.cor1440_gen_actividad_actividadtipo (
 
 
 --
--- Name: cor1440_gen_actividad_actorsocial; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.cor1440_gen_actividad_actorsocial (
-    actividad_id bigint NOT NULL,
-    actorsocial_id bigint NOT NULL
-);
-
-
---
 -- Name: cor1440_gen_actividad_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -283,6 +273,16 @@ CREATE SEQUENCE public.cor1440_gen_actividad_id_seq
 --
 
 ALTER SEQUENCE public.cor1440_gen_actividad_id_seq OWNED BY public.cor1440_gen_actividad.id;
+
+
+--
+-- Name: cor1440_gen_actividad_orgsocial; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cor1440_gen_actividad_orgsocial (
+    actividad_id bigint NOT NULL,
+    orgsocial_id bigint NOT NULL
+);
 
 
 --
@@ -526,8 +526,8 @@ CREATE TABLE public.cor1440_gen_actividadpf (
     descripcion character varying(5000),
     resultadopf_id integer,
     actividadtipo_id integer,
-    formulario_id integer,
-    heredade_id integer
+    heredade_id integer,
+    formulario_id integer
 );
 
 
@@ -606,16 +606,6 @@ ALTER SEQUENCE public.cor1440_gen_actividadtipo_id_seq OWNED BY public.cor1440_g
 
 
 --
--- Name: cor1440_gen_actorsocial_efecto; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.cor1440_gen_actorsocial_efecto (
-    efecto_id integer,
-    actorsocial_id integer
-);
-
-
---
 -- Name: cor1440_gen_anexo_efecto; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -685,8 +675,8 @@ CREATE TABLE public.cor1440_gen_asistencia (
     persona_id integer NOT NULL,
     rangoedadac_id integer,
     externo boolean,
-    actorsocial_id integer,
-    perfilactorsocial_id integer
+    orgsocial_id integer,
+    perfilorgsocial_id integer
 );
 
 
@@ -833,6 +823,7 @@ CREATE TABLE public.cor1440_gen_datointermedioti (
     nombre character varying(1024) NOT NULL,
     tipoindicador_id integer,
     nombreinterno character varying(127),
+    filtro character varying(5000),
     funcion character varying(5000),
     mindicadorpf_id integer
 );
@@ -890,6 +881,40 @@ ALTER SEQUENCE public.cor1440_gen_datointermedioti_pmindicadorpf_id_seq OWNED BY
 
 
 --
+-- Name: cor1440_gen_desembolso; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cor1440_gen_desembolso (
+    id bigint NOT NULL,
+    proyectofinanciero_id integer NOT NULL,
+    detalle character varying(5000),
+    fecha date,
+    valorpesos numeric(20,2),
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
+-- Name: cor1440_gen_desembolso_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.cor1440_gen_desembolso_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: cor1440_gen_desembolso_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.cor1440_gen_desembolso_id_seq OWNED BY public.cor1440_gen_desembolso.id;
+
+
+--
 -- Name: cor1440_gen_efecto; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -920,6 +945,16 @@ CREATE SEQUENCE public.cor1440_gen_efecto_id_seq
 --
 
 ALTER SEQUENCE public.cor1440_gen_efecto_id_seq OWNED BY public.cor1440_gen_efecto.id;
+
+
+--
+-- Name: cor1440_gen_efecto_orgsocial; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cor1440_gen_efecto_orgsocial (
+    efecto_id integer,
+    orgsocial_id integer
+);
 
 
 --
@@ -1080,6 +1115,111 @@ CREATE SEQUENCE public.cor1440_gen_informe_id_seq
 --
 
 ALTER SEQUENCE public.cor1440_gen_informe_id_seq OWNED BY public.cor1440_gen_informe.id;
+
+
+--
+-- Name: cor1440_gen_informeauditoria; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cor1440_gen_informeauditoria (
+    id bigint NOT NULL,
+    proyectofinanciero_id integer NOT NULL,
+    detalle character varying(5000),
+    fecha date,
+    devoluciones boolean,
+    seguimiento character varying(5000),
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
+-- Name: cor1440_gen_informeauditoria_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.cor1440_gen_informeauditoria_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: cor1440_gen_informeauditoria_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.cor1440_gen_informeauditoria_id_seq OWNED BY public.cor1440_gen_informeauditoria.id;
+
+
+--
+-- Name: cor1440_gen_informefinanciero; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cor1440_gen_informefinanciero (
+    id bigint NOT NULL,
+    proyectofinanciero_id integer NOT NULL,
+    detalle character varying(5000),
+    fecha date,
+    devoluciones boolean,
+    seguimiento character varying(5000),
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
+-- Name: cor1440_gen_informefinanciero_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.cor1440_gen_informefinanciero_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: cor1440_gen_informefinanciero_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.cor1440_gen_informefinanciero_id_seq OWNED BY public.cor1440_gen_informefinanciero.id;
+
+
+--
+-- Name: cor1440_gen_informenarrativo; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cor1440_gen_informenarrativo (
+    id bigint NOT NULL,
+    proyectofinanciero_id integer NOT NULL,
+    detalle character varying(5000),
+    fecha date,
+    devoluciones boolean,
+    seguimiento character varying(5000),
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
+-- Name: cor1440_gen_informenarrativo_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.cor1440_gen_informenarrativo_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: cor1440_gen_informenarrativo_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.cor1440_gen_informenarrativo_id_seq OWNED BY public.cor1440_gen_informenarrativo.id;
 
 
 --
@@ -1280,7 +1420,20 @@ CREATE TABLE public.cor1440_gen_proyectofinanciero (
     monto numeric,
     sectorapc_id integer,
     titulo character varying(1000),
-    poromision boolean
+    poromision boolean,
+    fechaformulacion date,
+    fechaaprobacion date,
+    fechaliquidacion date,
+    estado character varying(1) DEFAULT 'E'::character varying,
+    dificultad character varying(1) DEFAULT 'N'::character varying,
+    tipomoneda_id integer,
+    saldoaejecutarp numeric(20,2),
+    centrocosto character varying(500),
+    tasaej double precision,
+    montoej double precision,
+    aportepropioej double precision,
+    aporteotrosej double precision,
+    presupuestototalej double precision
 );
 
 
@@ -3413,6 +3566,13 @@ ALTER TABLE ONLY public.cor1440_gen_datointermedioti_pmindicadorpf ALTER COLUMN 
 
 
 --
+-- Name: cor1440_gen_desembolso id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_desembolso ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_desembolso_id_seq'::regclass);
+
+
+--
 -- Name: cor1440_gen_efecto id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -3438,6 +3598,27 @@ ALTER TABLE ONLY public.cor1440_gen_indicadorpf ALTER COLUMN id SET DEFAULT next
 --
 
 ALTER TABLE ONLY public.cor1440_gen_informe ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_informe_id_seq'::regclass);
+
+
+--
+-- Name: cor1440_gen_informeauditoria id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informeauditoria ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_informeauditoria_id_seq'::regclass);
+
+
+--
+-- Name: cor1440_gen_informefinanciero id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informefinanciero ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_informefinanciero_id_seq'::regclass);
+
+
+--
+-- Name: cor1440_gen_informenarrativo id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informenarrativo ALTER COLUMN id SET DEFAULT nextval('public.cor1440_gen_informenarrativo_id_seq'::regclass);
 
 
 --
@@ -3960,6 +4141,14 @@ ALTER TABLE ONLY public.cor1440_gen_datointermedioti_pmindicadorpf
 
 
 --
+-- Name: cor1440_gen_desembolso cor1440_gen_desembolso_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_desembolso
+    ADD CONSTRAINT cor1440_gen_desembolso_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: cor1440_gen_efecto cor1440_gen_efecto_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -3989,6 +4178,30 @@ ALTER TABLE ONLY public.cor1440_gen_indicadorpf
 
 ALTER TABLE ONLY public.cor1440_gen_informe
     ADD CONSTRAINT cor1440_gen_informe_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: cor1440_gen_informeauditoria cor1440_gen_informeauditoria_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informeauditoria
+    ADD CONSTRAINT cor1440_gen_informeauditoria_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: cor1440_gen_informefinanciero cor1440_gen_informefinanciero_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informefinanciero
+    ADD CONSTRAINT cor1440_gen_informefinanciero_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: cor1440_gen_informenarrativo cor1440_gen_informenarrativo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informenarrativo
+    ADD CONSTRAINT cor1440_gen_informenarrativo_pkey PRIMARY KEY (id);
 
 
 --
@@ -4877,11 +5090,11 @@ ALTER TABLE ONLY public.cor1440_gen_caracterizacionpersona
 
 
 --
--- Name: cor1440_gen_actorsocial_efecto fk_rails_12f7139ec8; Type: FK CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_efecto_orgsocial fk_rails_12f7139ec8; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.cor1440_gen_actorsocial_efecto
-    ADD CONSTRAINT fk_rails_12f7139ec8 FOREIGN KEY (actorsocial_id) REFERENCES public.sip_orgsocial(id);
+ALTER TABLE ONLY public.cor1440_gen_efecto_orgsocial
+    ADD CONSTRAINT fk_rails_12f7139ec8 FOREIGN KEY (orgsocial_id) REFERENCES public.sip_orgsocial(id);
 
 
 --
@@ -5085,6 +5298,14 @@ ALTER TABLE ONLY public.cor1440_gen_actividad
 
 
 --
+-- Name: cor1440_gen_informeauditoria fk_rails_44cf03d3e2; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informeauditoria
+    ADD CONSTRAINT fk_rails_44cf03d3e2 FOREIGN KEY (proyectofinanciero_id) REFERENCES public.cor1440_gen_proyectofinanciero(id);
+
+
+--
 -- Name: sip_orgsocial_persona fk_rails_4672f6cbcd; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5189,6 +5410,14 @@ ALTER TABLE ONLY public.sip_orgsocial
 
 
 --
+-- Name: cor1440_gen_informenarrativo fk_rails_629d2a2cb8; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informenarrativo
+    ADD CONSTRAINT fk_rails_629d2a2cb8 FOREIGN KEY (proyectofinanciero_id) REFERENCES public.cor1440_gen_proyectofinanciero(id);
+
+
+--
 -- Name: cor1440_gen_plantillahcm_proyectofinanciero fk_rails_62c9243a43; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5277,10 +5506,10 @@ ALTER TABLE ONLY public.cor1440_gen_pmindicadorpf
 
 
 --
--- Name: cor1440_gen_actorsocial_efecto fk_rails_72ba94182e; Type: FK CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_efecto_orgsocial fk_rails_72ba94182e; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.cor1440_gen_actorsocial_efecto
+ALTER TABLE ONLY public.cor1440_gen_efecto_orgsocial
     ADD CONSTRAINT fk_rails_72ba94182e FOREIGN KEY (efecto_id) REFERENCES public.cor1440_gen_efecto(id);
 
 
@@ -5365,11 +5594,11 @@ ALTER TABLE ONLY public.cor1440_gen_formulario_tipoindicador
 
 
 --
--- Name: cor1440_gen_actividad_actorsocial fk_rails_8ba599a224; Type: FK CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_orgsocial fk_rails_8ba599a224; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.cor1440_gen_actividad_actorsocial
-    ADD CONSTRAINT fk_rails_8ba599a224 FOREIGN KEY (actorsocial_id) REFERENCES public.sip_orgsocial(id);
+ALTER TABLE ONLY public.cor1440_gen_actividad_orgsocial
+    ADD CONSTRAINT fk_rails_8ba599a224 FOREIGN KEY (orgsocial_id) REFERENCES public.sip_orgsocial(id);
 
 
 --
@@ -5378,6 +5607,14 @@ ALTER TABLE ONLY public.cor1440_gen_actividad_actorsocial
 
 ALTER TABLE ONLY public.mr519_gen_valorcampo
     ADD CONSTRAINT fk_rails_8bb7650018 FOREIGN KEY (respuestafor_id) REFERENCES public.mr519_gen_respuestafor(id);
+
+
+--
+-- Name: cor1440_gen_informefinanciero fk_rails_8bd007af77; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_informefinanciero
+    ADD CONSTRAINT fk_rails_8bd007af77 FOREIGN KEY (proyectofinanciero_id) REFERENCES public.cor1440_gen_proyectofinanciero(id);
 
 
 --
@@ -5557,6 +5794,14 @@ ALTER TABLE ONLY public.sip_ubicacionpre
 
 
 --
+-- Name: cor1440_gen_desembolso fk_rails_c858edd00a; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_desembolso
+    ADD CONSTRAINT fk_rails_c858edd00a FOREIGN KEY (proyectofinanciero_id) REFERENCES public.cor1440_gen_proyectofinanciero(id);
+
+
+--
 -- Name: cor1440_gen_financiador_proyectofinanciero fk_rails_ca93eb04dc; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5602,6 +5847,14 @@ ALTER TABLE ONLY public.cor1440_gen_indicadorpf
 
 ALTER TABLE ONLY public.cor1440_gen_actividadpf_mindicadorpf
     ADD CONSTRAINT fk_rails_cfff77ad98 FOREIGN KEY (actividadpf_id) REFERENCES public.cor1440_gen_actividadpf(id);
+
+
+--
+-- Name: cor1440_gen_proyectofinanciero fk_rails_d0ff83bfc6; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_proyectofinanciero
+    ADD CONSTRAINT fk_rails_d0ff83bfc6 FOREIGN KEY (tipomoneda_id) REFERENCES public.cor1440_gen_tipomoneda(id);
 
 
 --
@@ -5709,10 +5962,10 @@ ALTER TABLE ONLY public.sip_ubicacionpre
 
 
 --
--- Name: cor1440_gen_actividad_actorsocial fk_rails_ecdad5c731; Type: FK CONSTRAINT; Schema: public; Owner: -
+-- Name: cor1440_gen_actividad_orgsocial fk_rails_ecdad5c731; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.cor1440_gen_actividad_actorsocial
+ALTER TABLE ONLY public.cor1440_gen_actividad_orgsocial
     ADD CONSTRAINT fk_rails_ecdad5c731 FOREIGN KEY (actividad_id) REFERENCES public.cor1440_gen_actividad(id);
 
 
@@ -6221,11 +6474,17 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20201119125643'),
 ('20201121162913'),
 ('20201205041350'),
+('20201205213317'),
 ('20201214215209'),
 ('20210108202122'),
 ('20210116090353'),
+('20210116104426'),
 ('20210117234541'),
 ('20210201101144'),
+('20210201112227'),
+('20210202144410'),
+('20210202201520'),
+('20210202201530'),
 ('20210308183041'),
 ('20210308211112'),
 ('20210308214507'),
@@ -6234,13 +6493,15 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210414201956'),
 ('20210417152053'),
 ('20210419161145'),
-('20210420205711'),
 ('20210430160739'),
 ('20210514201449'),
 ('20210524121112'),
 ('20210608180736'),
 ('20210609024118'),
 ('20210614120835'),
-('20210616003251');
+('20210614212220'),
+('20210616003251'),
+('20210619191706'),
+('20210728214424');
 
 
