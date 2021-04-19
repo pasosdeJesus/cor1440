@@ -102,7 +102,7 @@ end
 
 group :development, :test do
 
-  gem 'byebug'
+  #gem 'byebug'
 
   gem 'colorize' # Color en terminal
 
