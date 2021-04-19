@@ -84,17 +84,19 @@ gem 'cor1440_gen', # Motor Cor1440_gen
 
 
 group :development do
+  gem 'erd'
 
   gem 'puma'
+  
+  gem 'rails-erd'
 
   gem 'web-console'
-
 end
 
 
 group :development, :test do
 
-  #gem 'byebug'
+  gem 'byebug'
 
   gem 'colorize' # Color en terminal
 

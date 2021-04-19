@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: f56afe7e241744e9d5ee47489f2e2c31ca021011
+  revision: ab37e9169a07ceb0adac5f2da4b13a963a904d92
   branch: main
   specs:
     cor1440_gen (1.0b3)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 95eda0f32a3993f63b43e46d50946dfa6c3e1357
+  revision: 54d7b2abd01337e0467523fa5416964ccb9d4959
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 3626ae2129ecac196586a54e164bc84ddaa1f879
+  revision: 3978baab8facaa5b2d19f2b7f1c0799303e43a20
   branch: main
   specs:
     sip (2.0.b11)
@@ -129,6 +129,7 @@ GEM
     bootsnap (1.7.3)
       msgpack (~> 1.0)
     builder (3.2.4)
+    byebug (11.1.3)
     camertron-eprun (1.1.1)
     cancancan (3.2.1)
     capybara (3.35.3)
@@ -140,6 +141,7 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (3.0.0)
+    choice (0.2.0)
     chosen-rails (1.9.0)
       coffee-rails (>= 3.2)
       railties (>= 3.0)
@@ -169,6 +171,9 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    erd (0.8.0)
+      nokogiri
+      ruby-graphviz
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.15.0)
@@ -256,6 +261,11 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
+    rails-erd (1.6.1)
+      activerecord (>= 4.2)
+      activesupport (>= 4.2)
+      choice (~> 0.2.0)
+      ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
     rails-i18n (6.0.0)
@@ -274,9 +284,12 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    rexml (3.2.5)
     rspreadsheet (0.5.3)
       andand (>= 1.3)
       rubyzip (>= 1.3)
+    ruby-graphviz (1.2.5)
+      rexml
     rubyzip (2.3.0)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -346,6 +359,7 @@ DEPENDENCIES
   bcrypt
   bigdecimal
   bootsnap (>= 1.1.0)
+  byebug
   cancancan
   capybara
   cocoon!
@@ -355,6 +369,7 @@ DEPENDENCIES
   devise
   devise-i18n
   dotenv-rails
+  erd
   heb412_gen!
   jbuilder
   libxml-ruby
@@ -368,6 +383,7 @@ DEPENDENCIES
   prawnto_2
   puma
   rails (~> 6.1)
+  rails-erd
   rails-i18n
   redcarpet
   rspreadsheet
