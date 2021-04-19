@@ -109,7 +109,6 @@ end
 
 
 group :development, :test do
-
   gem 'debug'
 
   gem 'colorize' # Color en terminal
