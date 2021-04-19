@@ -234,8 +234,8 @@ CREATE TABLE public.cor1440_gen_actividad (
 --
 
 CREATE TABLE public.cor1440_gen_actividad_actividadpf (
-    actividad_id integer NOT NULL,
-    actividadpf_id integer NOT NULL
+    actividad_id bigint NOT NULL,
+    actividadpf_id bigint NOT NULL
 );
 
 
@@ -519,8 +519,8 @@ CREATE TABLE public.cor1440_gen_actividadpf (
     descripcion character varying(5000),
     resultadopf_id integer,
     actividadtipo_id integer,
-    formulario_id integer,
-    heredade_id integer
+    heredade_id integer,
+    formulario_id integer
 );
 
 
@@ -529,7 +529,6 @@ CREATE TABLE public.cor1440_gen_actividadpf (
 --
 
 CREATE SEQUENCE public.cor1440_gen_actividadpf_id_seq
-    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2340,6 +2339,38 @@ ALTER SEQUENCE public.poa_id_seq OWNED BY public.poa.id;
 
 
 --
+-- Name: proyectoyconvenio; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.proyectoyconvenio (
+    id bigint NOT NULL,
+    id_actividad_proyectofinanciero integer,
+    id_actividad_actividadf integer,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: proyectoyconvenio_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.proyectoyconvenio_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: proyectoyconvenio_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.proyectoyconvenio_id_seq OWNED BY public.proyectoyconvenio.id;
+
+
+--
 -- Name: sal7711_gen_articulo; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -2714,8 +2745,8 @@ ALTER SEQUENCE public.sip_grupo_id_seq OWNED BY public.sip_grupo.id;
 --
 
 CREATE TABLE public.sip_grupo_usuario (
-    usuario_id bigint NOT NULL,
-    sip_grupo_id bigint NOT NULL
+    usuario_id integer NOT NULL,
+    sip_grupo_id integer NOT NULL
 );
 
 
@@ -3403,10 +3434,6 @@ CREATE TABLE public.usuario (
     locked_at timestamp without time zone,
     oficina_id integer,
     tema_id integer,
-    foto_file_name character varying,
-    foto_content_type character varying,
-    foto_file_size bigint,
-    foto_updated_at timestamp without time zone,
     CONSTRAINT usuario_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion))),
     CONSTRAINT usuario_rol_check CHECK ((rol >= 1))
 );
@@ -3795,6 +3822,13 @@ ALTER TABLE ONLY public.mr519_gen_valorcampo ALTER COLUMN id SET DEFAULT nextval
 --
 
 ALTER TABLE ONLY public.poa ALTER COLUMN id SET DEFAULT nextval('public.poa_id_seq'::regclass);
+
+
+--
+-- Name: proyectoyconvenio id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.proyectoyconvenio ALTER COLUMN id SET DEFAULT nextval('public.proyectoyconvenio_id_seq'::regclass);
 
 
 --
@@ -4205,6 +4239,14 @@ ALTER TABLE ONLY public.cor1440_gen_proyectofinanciero_usuario
 
 
 --
+-- Name: cor1440_gen_rangoedadac cor1440_gen_rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_rangoedadac
+    ADD CONSTRAINT cor1440_gen_rangoedadac_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: cor1440_gen_resultadopf cor1440_gen_resultadopf_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -4421,11 +4463,11 @@ ALTER TABLE ONLY public.poa
 
 
 --
--- Name: cor1440_gen_rangoedadac rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: proyectoyconvenio proyectoyconvenio_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.cor1440_gen_rangoedadac
-    ADD CONSTRAINT rangoedadac_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.proyectoyconvenio
+    ADD CONSTRAINT proyectoyconvenio_pkey PRIMARY KEY (id);
 
 
 --
@@ -4501,11 +4543,11 @@ ALTER TABLE ONLY public.sip_departamento
 
 
 --
--- Name: sip_departamento sip_departamento_id_pais_id_deplocal_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_departamento sip_departamento_id_pais_id_deplocal_unico; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.sip_departamento
-    ADD CONSTRAINT sip_departamento_id_pais_id_deplocal_key UNIQUE (id_pais, id_deplocal);
+    ADD CONSTRAINT sip_departamento_id_pais_id_deplocal_unico UNIQUE (id_pais, id_deplocal);
 
 
 --
@@ -4541,11 +4583,11 @@ ALTER TABLE ONLY public.sip_grupoper
 
 
 --
--- Name: sip_municipio sip_municipio_id_departamento_id_munlocal_key; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sip_municipio sip_municipio_id_departamento_id_munlocal_unico; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.sip_municipio
-    ADD CONSTRAINT sip_municipio_id_departamento_id_munlocal_key UNIQUE (id_departamento, id_munlocal);
+    ADD CONSTRAINT sip_municipio_id_departamento_id_munlocal_unico UNIQUE (id_departamento, id_munlocal);
 
 
 --
@@ -4578,6 +4620,14 @@ ALTER TABLE ONLY public.sip_orgsocial_persona
 
 ALTER TABLE ONLY public.sip_orgsocial
     ADD CONSTRAINT sip_orgsocial_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: sip_pais sip_pais_codiso_unico; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sip_pais
+    ADD CONSTRAINT sip_pais_codiso_unico UNIQUE (codiso);
 
 
 --
@@ -6309,6 +6359,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20180219032546'),
 ('20180220103644'),
 ('20180220104234'),
+('20180223025142'),
 ('20180223091622'),
 ('20180320230847'),
 ('20180427194732'),
@@ -6404,6 +6455,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200212103617'),
 ('20200228235200'),
 ('20200229005951'),
+('20200229191119'),
 ('20200302194744'),
 ('20200314033958'),
 ('20200319183515'),
@@ -6459,10 +6511,10 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210616003251'),
 ('20210619191706'),
 ('20210728214424'),
-('20210820201118'),
-('20210820211926'),
 ('20211024105450'),
 ('20211117200456'),
-('20211216125250');
+('20211216125250'),
+('20220213031520'),
+('20220214121713');
 
 
