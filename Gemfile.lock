@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 3978baab8facaa5b2d19f2b7f1c0799303e43a20
+  revision: afa46403da6a303bfb458755bbf59f6d8a0d683e
   branch: main
   specs:
     sip (2.0.b11)
@@ -129,7 +129,6 @@ GEM
     bootsnap (1.7.3)
       msgpack (~> 1.0)
     builder (3.2.4)
-    byebug (11.1.3)
     camertron-eprun (1.1.1)
     cancancan (3.2.1)
     capybara (3.35.3)
@@ -359,7 +358,6 @@ DEPENDENCIES
   bcrypt
   bigdecimal
   bootsnap (>= 1.1.0)
-  byebug
   cancancan
   capybara
   cocoon!
