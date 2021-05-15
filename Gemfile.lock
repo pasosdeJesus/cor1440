@@ -368,6 +368,7 @@ DEPENDENCIES
   devise-i18n
   dotenv-rails
   erd
+  execjs
   heb412_gen!
   jbuilder
   libxml-ruby
