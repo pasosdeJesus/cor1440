@@ -30,6 +30,7 @@
     "prismjs": "^1.23.0",
     "serialize-javascript": "3.1.0",
   },
+  "version": "0.1.0",
   "devDependencies": {
     "babel-plugin-macros": "^3.1.0",
     "glob-parent": "^5.1.2",
@@ -43,3 +44,4 @@
     "defaults"
   ]
 }
+
