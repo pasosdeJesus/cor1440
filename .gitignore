@@ -43,3 +43,4 @@ yarn-debug.log*
 .env
 config/credentials.yml.enc
 public/images/logo.jpg
+*.cp
