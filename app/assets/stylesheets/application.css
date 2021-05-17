@@ -11,7 +11,9 @@
  * file per style scope.
  *
  *= require cor1440_gen/application.css
- *= require_tree .
+ *= require animate.css/animate.min.css
+ *= require perfect-scrollbar/css/perfect-scrollbar.css
+ *= require dk1/styles
  *= require_self
  */
 
