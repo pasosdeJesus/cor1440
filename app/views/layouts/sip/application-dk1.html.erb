@@ -24,14 +24,17 @@
     <meta name="keywords" content="Cor1440, Marco lógico, monitore y evaluacion de proyectos">
     <meta name="author" content="Pasos de Jesús">
 
+
     <meta name="formato_fecha" content="<%= Rails.configuration.x.formato_fecha  ? Rails.configuration.x.formato_fecha : 'yyyy-mm-dd' %>">
     <title><%= content_for?(:titulo) ? yield(:titulo) : Sip.titulo %></title>
     <%= csrf_meta_tags %>
 
-
     <%=  yield(:linkhref) if content_for?(:linkhref) %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'dk1', 'data-turbolinks-track': 'reload' %>
+    <%=  yield(:linkhref) if content_for?(:linkhref) %>
+
+    <%= stylesheet_link_tag "application", :media => "all", 'data-turbolinks-track': 'reload' %>
     <!-- Seguimios usando sprockets mientras:
       1. Pasamos javascript en assets/javascript a modulos
       2. Publicamos partes de gemas como paquetes npm -->
@@ -78,9 +81,12 @@
       'dk1/assets/css/style.css').to_s %>" id="main-style-link">
 
     <!--%= stylesheet_link_tag "style-dk", :media => "all",
-      'data-turbolinks-track': 'reload' %-->
+        'data-turbolinks-track': 'reload' %-->
+
+
   </head>
   <body>
+
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
       <div class="loader-track">
@@ -91,10 +97,9 @@
     <!-- [ Mobile header ] start -->
     <div class="pc-mob-header pc-header">
       <div class="pcm-logo">
-        <img src="<%= Pathname(Rails.configuration.relative_url_root).join(
-          'assets/favicon.ico').to_s %>" 
-             alt="" class="logo logo-lg" >
-             <span style='color: white; acolor: white'>Cor1440</span>
+        <img src="<% Pathname(Rails.configuration.relative_url_root).join(
+          'dk1/assets/fonts/feather.css').to_s %>"
+             alt="" class="logo logo-lg">
       </div>
       <div class="pcm-toolbar">
         <a href="#!" class="pc-head-link" id="mobile-collapse">
@@ -133,7 +138,7 @@
               <li class="pc-item pc-hasmenu">
                 <a href="#!" class="pc-link ">
                   <span class="pc-micon">
-                    <i class="material-icons-two-tone">mediation</i>
+                    <i class="material-icons-two-tone">business_center</i>
                   </span>
                   <span class="pc-mtext">Proyectos</span>
                   <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
@@ -152,8 +157,7 @@
               </li>
               <li class="pc-item pc-hasmenu">
                 <a href="#!" class="pc-link ">
-                  <span class="pc-micon">
-                    <i class="material-icons-two-tone">rowing</i>
+                    <i class="material-icons-two-tone">history_edu</i>
                   </span>
                   <span class="pc-mtext">Actividades</span>
                   <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
@@ -179,30 +183,38 @@
               </li>
             <% end %>
             <li class="pc-item pc-caption">
-              <label>Otros</label>
+                </span>
+                  <span class="pc-micon">
+              <label>Documentos</label>
             </li>
             <li class="pc-item">
               <a href="https://docs.google.com/document/d/1mmydkqNmZbXkzcpkiegQ_XAP_NkjfX-RXgcW1yzjdpE/edit?usp=sharing"
-                 target='_blank'
                  class="pc-link ">
                 <span class="pc-micon">
-                  <i class="material-icons-two-tone">menu_book</i>
+                  <i class="material-icons-two-tone">home</i>
                 </span>
                 <span class="pc-mtext">Manual</span></a>
             </li>
+
             <% if !current_usuario.nil? %>
+              <li class="pc-item">
+                <a href="<%= Rails.configuration.relative_url_root.to_s %>"
+                   class="pc-link "><span class="pc-micon">
+                     <i class="material-icons-two-tone">home</i></span>
+                   <span class="pc-mtext">Nube</span></a>
+              </li>
+
               <li class="pc-item pc-hasmenu">
                 <a href="#!" class="pc-link ">
                   <span class="pc-micon">
-                    <i class="material-icons-two-tone">cloud</i>
+                    <i class="material-icons-two-tone">edit</i>
                   </span>
-                  <span class="pc-mtext">Nube y formatos</span>
-                  <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
+                  <span class="pc-mtext">Plantillas</span>
+                  <span class="pc-arrow">
+                    <i data-feather="chevron-right"></i>
+                  </span>
                 </a>
                 <ul class="pc-submenu">
-                  <%= opcion_menu_dk(
-                    "Nube",
-                    heb412_gen.sisini_path) %>
                   <% if can? :manage, ::Heb412Gen::Plantillahcm %>
                     <%= opcion_menu_dk(
                       "Plantillas para listados en hojas de calculo",
@@ -240,6 +252,7 @@
         </div>
       </div>
     </nav>
+  
     <header class="pc-header">
       <div class="header-wrapper"> 
         <div class="mr-auto pc-mob-drp">

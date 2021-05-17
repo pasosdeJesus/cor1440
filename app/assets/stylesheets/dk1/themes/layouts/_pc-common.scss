@@ -15,7 +15,7 @@
     }
 
     .page-header + .row{
-        padding-top: 10px;
+        padding-top: 50px;
     }
     .page-header + .pcoded-content {
         padding-top: calc(30px + 55px);
@@ -35,13 +35,14 @@
 .page-header {
     background: $header-background;
     box-shadow: $header-shadow;
+    position: fixed;
     display: flex;
     align-items: center;
     top: $header-height;
     left: $sidebar-width;
     right: 0;
     z-index: 1023;
-    min-height: 35px;
+    min-height: 55px;
     padding: 13px 30px;
 
     .page-block {
