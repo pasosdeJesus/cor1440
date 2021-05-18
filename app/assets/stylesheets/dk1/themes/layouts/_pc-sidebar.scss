@@ -108,7 +108,7 @@
     }
 
     .m-header {
-        height: $header-height;
+        height: calc($header-height + 60);
         display: flex;
         align-items: center;
         padding: 15px 30px;
@@ -121,7 +121,7 @@
 
     .navbar-content {
         position: relative;
-        height: calc(100vh - #{$header-height});
+        height: calc(80vh - #{$header-height});
         padding: 10px 0;
     }
 

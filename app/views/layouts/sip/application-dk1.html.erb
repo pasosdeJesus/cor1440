@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+            <%
+                def opcion_menu_dk(opcionmenu, url, opciones={})
+                  cop = opciones.clone
+                  if cop[:desplegable] || cop[:dropdown]
+                    cop.delete(:desplegable)
+                    cop.delete(:dropdown)
+                    r = link_to opcionmenu, url, cop.merge({class: 'dropdown-item'})
+                  else
+                    r = content_tag(:li, class: 'pc-item') do
+                      link_to opcionmenu, url, cop.merge({class: 'pc-link'})
+                    end
+                  end
+                  return r
+            end %>
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -76,9 +91,10 @@
     <!-- [ Mobile header ] start -->
     <div class="pc-mob-header pc-header">
       <div class="pcm-logo">
-        <img src="<% Pathname(Rails.configuration.relative_url_root).join(
-          'dk1/assets/fonts/feather.css').to_s %>"
-             alt="" class="logo logo-lg">
+        <img src="<%= Pathname(Rails.configuration.relative_url_root).join(
+          'assets/favicon.ico').to_s %>" 
+             alt="" class="logo logo-lg" >
+             <span style='color: white; acolor: white'>Cor1440</span>
       </div>
       <div class="pcm-toolbar">
         <a href="#!" class="pc-head-link" id="mobile-collapse">
@@ -87,12 +103,6 @@
               <div class="hamburger-inner"></div>
             </div>
           </div>
-        </a>
-        <a href="#!" class="pc-head-link" id="headerdrp-collapse">
-          <i data-feather="align-right"></i>
-        </a>
-        <a href="#!" class="pc-head-link" id="header-collapse">
-          <i data-feather="more-vertical"></i>
         </a>
       </div>
     </div>
@@ -103,56 +113,59 @@
       <div class="navbar-wrapper">
         <div class="m-header">
 
-    <a href="<%= Rails.configuration.relative_url_root.to_s %>" class="b-brand">
-            <!-- ========   change your logo hear   ============ -->
-            <img src="<% Pathname(Rails.configuration.relative_url_root).join(
-              'dk1/assets/images/logo.svg').to_s %>"
-                 alt="" class="logo logo-lg" >
-            <img src="<%
-              Pathname(Rails.configuration.relative_url_root).join(
-                'dk1/assets/images/logo-sm.svg').to_s %>"
-                 alt="" class="logo logo-sm">
+          <a href="<%= Rails.configuration.relative_url_root.to_s %>" 
+             class="b-brand"
+              style="text-decoration: none" >
+             <img src="<%= Pathname(Rails.configuration.relative_url_root).join(
+               'dk1/assets/images/logo-av2.png').to_s %>" 
+                  alt="" class="logo logo-lg" >
+                  <span style='color: white'> Cor1440</span>
           </a>
         </div>
         <div class="navbar-content">
           <ul class="pc-navbar">
-            <!--%= barra_navegacion_dk(
-              marca: content_for?(:titulo) ? yield(:titulo) : Sip.titulo,
-              enlace_marca: main_app.root_path) do %-->
-              <!--%= yield :menu %-->
-            <!--% end %-->
-            <li class="pc-item pc-caption">
-              <label>Navegación</label>
-            </li>
-            <li class="pc-item">
-              <a href="<%= Rails.configuration.relative_url_root.to_s %>"
-                 class="pc-link "><span class="pc-micon">
-                   <i class="material-icons-two-tone">home</i></span>
-               <span class="pc-mtext">Tablero</span></a>
-            </li>
-            <li class="pc-item pc-caption">
-              <label>Monitoreo</label>
-            </li>
-            <%
-                def opcion_menu_dk(opcionmenu, url, opciones={})
-                  cop = opciones.clone
-                  if cop[:desplegable] || cop[:dropdown]
-                    cop.delete(:desplegable)
-                    cop.delete(:dropdown)
-                    r = link_to opcionmenu, url, cop.merge({class: 'dropdown-item'})
-                  else
-                    r = content_tag(:li, class: 'pc-item') do
-                      link_to opcionmenu, url, cop.merge({class: 'pc-link'})
-                    end
-                  end
-                  return r
-            end %>
 
             <% if !current_usuario.nil? %>
               <li class="pc-item pc-hasmenu">
+
                 <a href="#!" class="pc-link ">
                   <span class="pc-micon">
-                    <i class="material-icons-two-tone">business_center</i>
+                    <img src="/cor1440/dk1/assets/images/user/avatar-2.jpg" 
+                         alt="user-image" class="user-avtar">
+                  </span>
+                  <span class="pc-mtext"><%= current_usuario.nusuario %></span>
+                  <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
+                </a>
+                <ul class="pc-submenu">
+                  <%= opcion_menu_dk "Clave y tema", 
+                    main_app.editar_registro_usuario_path %>
+                  <%= opcion_menu_dk "Salir", main_app.sign_out_path %>
+                </ul>
+              </li>
+            <% else %>
+              <li class="pc-item">
+                <a href="<%= main_app.new_usuario_session_path %>"
+                   class="pc-link ">
+                   <span class="pc-micon">
+                     <i class="material-icons-two-tone">https</i>
+                   </span>
+                   <span class="pc-mtext">Iniciar Sesión</span></a>
+              </li>
+            <% end %>
+            <% if !current_usuario.nil? %>
+              <li class="pc-item pc-caption">
+                <label>Monitoreo</label>
+              </li>
+              <li class="pc-item">
+                <a href="<%= Rails.configuration.relative_url_root.to_s %>"
+                   class="pc-link "><span class="pc-micon">
+                     <i class="material-icons-two-tone">home</i></span>
+                   <span class="pc-mtext">Tablero</span></a>
+              </li>
+              <li class="pc-item pc-hasmenu">
+                <a href="#!" class="pc-link ">
+                  <span class="pc-micon">
+                    <i class="material-icons-two-tone">mediation</i>
                   </span>
                   <span class="pc-mtext">Proyectos</span>
                   <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
@@ -172,7 +185,7 @@
               <li class="pc-item pc-hasmenu">
                 <a href="#!" class="pc-link ">
                   <span class="pc-micon">
-                    <i class="material-icons-two-tone">history_edu</i>
+                    <i class="material-icons-two-tone">rowing</i>
                   </span>
                   <span class="pc-mtext">Actividades</span>
                   <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
@@ -198,36 +211,31 @@
               </li>
             <% end %>
             <li class="pc-item pc-caption">
-              <label>Documentos</label>
+              <label>Otros</label>
             </li>
             <li class="pc-item">
               <a href="https://docs.google.com/document/d/1mmydkqNmZbXkzcpkiegQ_XAP_NkjfX-RXgcW1yzjdpE/edit?usp=sharing"
+                 target='_blank'
                  class="pc-link ">
                 <span class="pc-micon">
-                  <i class="material-icons-two-tone">home</i>
+                  <i class="material-icons-two-tone">menu_book</i>
                 </span>
                 <span class="pc-mtext">Manual</span></a>
             </li>
 
             <% if !current_usuario.nil? %>
-              <li class="pc-item">
-                <a href="<%= Rails.configuration.relative_url_root.to_s %>"
-                   class="pc-link "><span class="pc-micon">
-                     <i class="material-icons-two-tone">home</i></span>
-                   <span class="pc-mtext">Nube</span></a>
-              </li>
-
               <li class="pc-item pc-hasmenu">
                 <a href="#!" class="pc-link ">
                   <span class="pc-micon">
-                    <i class="material-icons-two-tone">edit</i>
+                    <i class="material-icons-two-tone">cloud</i>
                   </span>
-                  <span class="pc-mtext">Plantillas</span>
-                  <span class="pc-arrow">
-                    <i data-feather="chevron-right"></i>
-                  </span>
+                  <span class="pc-mtext">Nube y formatos</span>
+                  <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                 </a>
                 <ul class="pc-submenu">
+                  <%= opcion_menu_dk(
+                    "Nube",
+                    heb412_gen.sisini_path) %>
                   <% if can? :manage, ::Heb412Gen::Plantillahcm %>
                     <%= opcion_menu_dk(
                       "Plantillas para listados en hojas de calculo",
@@ -240,187 +248,49 @@
                   <% end %>
                 </ul>
               </li>
-              <li class="pc-item pc-caption">
-                <label>Administrar</label>
-              </li>
-              <% if current_usuario.rol == Ability::ROLADMIN %>
-                <%= opcion_menu_dk "Usuarios", main_app.usuarios_path %>
-              <% end %>
-              <% if can? :manage, Mr519Gen::Formulario %>
-                <%= opcion_menu_dk "Formularios", mr519_gen.formularios_path %>
-              <% end %>
-              <% if current_usuario.rol == Ability::ROLADMIN %>
-                <%= opcion_menu_dk "Tablas básicas", sip.tablasbasicas_path %>
-              <% end %>
-            <% end %>
-            <li class="pc-item pc-hasmenu">
-              <a href="#!" class="pc-link">
-                <span class="pc-micon">
-                  <i class="material-icons-two-tone">https</i>
-                </span>
-                <span class="pc-mtext">Autenticación</span>
-                <span class="pc-arrow">
-                  <i data-feather="chevron-right"></i>
-                </span>
+
+              <li class="pc-item pc-hasmenu">
+                <a href="#!" class="pc-link ">
+                  <span class="pc-micon">
+                    <i class="material-icons-two-tone">settings</i>
+                  </span>
+                  <span class="pc-mtext">Administrar</span>
+                  <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                 </a>
                 <ul class="pc-submenu">
-                  <% if current_usuario.nil? %>
-                    <%= opcion_menu_dk "Iniciar Sesión",
-                      main_app.new_usuario_session_path %>
-                  <% else %>
-                    <%= opcion_menu_dk "Salir #{current_usuario.nusuario}",
-                      main_app.sign_out_path %>
+                  <% if current_usuario.rol == Ability::ROLADMIN %>
+                    <%= opcion_menu_dk "Usuarios", main_app.usuarios_path %>
+                  <% end %>
+                  <% if can? :manage, Mr519Gen::Formulario %>
+                    <%= opcion_menu_dk "Formularios", mr519_gen.formularios_path %>
+                  <% end %>
+                  <% if current_usuario.rol == Ability::ROLADMIN %>
+                    <%= opcion_menu_dk "Tablas básicas", sip.tablasbasicas_path %>
                   <% end %>
                 </ul>
               </li>
-          </ul>
+            <% end %>
         </div>
       </div>
     </nav>
     <!-- [ navigation menu ] end -->
-    <!-- [ Header ] start -->
-    <header class="pc-header ">
-      <div class="header-wrapper">
-        <div class="mr-auto pc-mob-drp">
-          <ul class="list-unstyled">
-            <li class="dropdown pc-h-item">
-              <a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                Level
-              </a>
-              <div class="dropdown-menu pc-h-dropdown">
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">account_circle</i>
-                  <span>My Account</span>
-                </a>
-                <div class="pc-level-menu">
-                  <a href="#!" class="dropdown-item">
-                    <i class="material-icons-two-tone">list_alt</i>
-                    <span class="float-right"><i data-feather="chevron-right" class="mr-0"></i></span>
-                    <span>Level2.1</span>
-                  </a>
-                  <div class="dropdown-menu pc-h-dropdown">
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>My Account</span>
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>Settings</span>
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>Support</span>
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>Lock Screen</span>
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>Logout</span>
-                    </a>
-                  </div>
-                </div>
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">settings</i>
-                  <span>Settings</span>
-                </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">support</i>
-                  <span>Support</span>
-                </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">https</i>
-                  <span>Lock Screen</span>
-                </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">chrome_reader_mode</i>
-                  <span>Logout</span>
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="ml-auto">
-          <ul class="list-unstyled">
-            <li class="dropdown pc-h-item">
-              <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                <i class="material-icons-two-tone">search</i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
-                <form class="px-3">
-                  <div class="form-group mb-0 d-flex align-items-center">
-                    <i data-feather="search"></i>
-                    <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li class="dropdown pc-h-item">
-              <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                <img src="<%= Pathname(Rails.configuration.relative_url_root).
-                  join('dk1/assets/images/user/avatar-2.jpg').to_s %>"
-                     alt="user-image" class="user-avtar">
-                <span>
-                  <span class="user-name">Joseph William</span>
-                  <span class="user-desc">Administrator</span>
-                </span>
-              </a>
-                <a href="auth-signin.html" class="dropdown-item">
-                  <i class="material-icons-two-tone">chrome_reader_mode</i>
-                  <span>Logout</span>
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </header>
-    <!-- [ Header ] end -->
-
     <!-- [ Main Content ] start -->
     <div class="pc-container">
-      <div class="pcoded-content">
-        <!-- [ breadcrumb ] start -->
-        <div class="page-header">
-          <div class="page-block">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="page-header-title">
-                  <h5 class="m-b-10">Dashboard sale</h5>
-                </div>
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item">Dashboard sale</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- [ breadcrumb ] end -->
-        <!-- [ Main Content ] start -->
+      <div class="pcoded-content"> 
+        <%= anuncios_bootstrap %>
 
-    <div class="container master-container">
-      <% if content_for?(:breadcrumb) %>
-        <ul class="breadcrumb">
-          <%= yield :breadcrumb %>
-        </ul>
+        <%= yield %>
+      </div> <!-- pcoded-content -->
+
+
+      <% if content_for?(:piedepagina) %>
+        <footer style='text-align: right'>
+          <%= yield :piedepagina %>
+        </footer>
       <% end %>
-      <div class="page-header"> </div>
-      <%= anuncios_bootstrap %>
 
-      <%= yield %>
+    </div> <!-- pc-container -->
 
-    </div>
-
-    <% if content_for?(:piedepagina) %>
-      <footer style='text-align: right'>
-        <%= yield :piedepagina %>
-      </footer>
-    <% end %>
-
-    </div> <!-- /container -->
 
   </body>
 </html>
