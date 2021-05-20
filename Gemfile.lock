@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 8e4efbe6e750e800e5a6c5c274f9010ad462a02f
+  revision: 1e164f6c4784a7aa581d7225a5d9eb9ef4b7e965
   branch: main
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 942d9cb68898e6e29e3df2a540f244c4dd57fce6
+  revision: b054577d4aad494b53ababd2ba499a81d56a687c
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 7544b0660624e98aed230d7d37dbb8f1651b5bf0
+  revision: ec21999bc5fafdf58defc9af92ad595c8566b851
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 309f8ef49de94a1fac799d008a04896686f2eca2
+  revision: d370cdbcaa1d226ded61549a2e75690996ab1d04
   branch: main
   specs:
     sip (2.0.b11)
@@ -209,7 +209,7 @@ GEM
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
-    nokogiri (1.11.4)
+    nokogiri (1.11.5)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     odf-report (0.7.2)
@@ -338,7 +338,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (5.3.0)
+    webpacker (5.4.0)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
