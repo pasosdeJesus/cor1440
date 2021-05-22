@@ -12,7 +12,6 @@
     "bootstrap-datepicker": "^1.9.0",
     "chosen-js": "^1.8.7",
     "copy-webpack-plugin": "^6.0.3",
-    "expose-loader": "^0.7.5",
     "feather-icons": "^4.28.0",
     "gridstack": "^0.6.0",
     "is-svg": "^4.2.2",
@@ -29,6 +28,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.4.1"
+    "expose-loader": "^1.0.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
