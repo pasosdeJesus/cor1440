@@ -831,7 +831,10 @@ CREATE TABLE public.cor1440_gen_caracterizacionpf (
 CREATE TABLE public.cor1440_gen_datointermedioti (
     id bigint NOT NULL,
     nombre character varying(1024) NOT NULL,
-    tipoindicador_id integer NOT NULL
+    tipoindicador_id integer NOT NULL,
+    nombreinterno character varying(127),
+    filtro character varying(5000),
+    funcion character varying(5000)
 );
 
 
@@ -6164,6 +6167,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210419161145'),
 ('20210420205711'),
 ('20210430160739'),
-('20210514201449');
+('20210514201449'),
+('20210524121112');
 
 
