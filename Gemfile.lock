@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 702c34a44b558803310e53a80a2011875c958c08
+  revision: 10cc854e22aedb2df0593031da966e4784bcfaef
   branch: main
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f87b5d67e24f94ae9970ddef2aeab8b6cf96a3eb
+  revision: 5d7a247f9c8b032c982be1913241d7c4e9893b4e
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: b00717baf7159c2f86cae935e849b319727016af
+  revision: 860448840eb79bc6f3244ef23be1374d1aec2301
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 524bdfe93a18508882dff552fcf080c1e523578b
+  revision: c4a3b76592e9948cd7614cce12ca0e07e6d8b8ea
   branch: main
   specs:
     sip (2.0.b11)
@@ -205,7 +205,7 @@ GEM
       nokogiri (~> 1)
       rake
     mini_mime (1.0.3)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
@@ -238,7 +238,7 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-proxy (0.6.5)
+    rack-proxy (0.7.0)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)

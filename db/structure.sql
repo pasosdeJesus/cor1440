@@ -833,7 +833,6 @@ CREATE TABLE public.cor1440_gen_datointermedioti (
     nombre character varying(1024) NOT NULL,
     tipoindicador_id integer NOT NULL,
     nombreinterno character varying(127),
-    filtro character varying(5000),
     funcion character varying(5000)
 );
 
