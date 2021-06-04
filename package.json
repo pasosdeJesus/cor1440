@@ -30,7 +30,6 @@
   "version": "0.1.0",
   "devDependencies": {
     "postcss": "^8.2.10",
-    "expose-loader": "^1.0.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
