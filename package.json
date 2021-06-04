@@ -32,6 +32,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+<<<<<<< HEAD
     "babel-plugin-macros": "^3.1.0",
     "glob-parent": "^5.1.2",
     "normalize-url": "^4.5.1",
@@ -44,4 +45,9 @@
   "browserslist": [
     "defaults"
   ]
+=======
+    "postcss": "^8.2.10",
+    "webpack-dev-server": "^3.11.2"
+  }
+>>>>>>> 3993855 (Actualiza)
 }
