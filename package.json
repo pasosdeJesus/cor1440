@@ -8,6 +8,7 @@
     "bootstrap": "^4.6.0",
     "bootstrap-datepicker": "^1.9.0",
     "chosen-js": "^1.8.7",
+    "expose-loader": "^1.0.0",
     "font-awesome": "^4.7.0",
     "gridstack": "^0.6.0",
     "is-svg": "^4.3.1",
@@ -22,7 +23,6 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "expose-loader": "^1.0.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
