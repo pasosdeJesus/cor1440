@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: ce5ee13ebe0500b2cb50798660c712657eb790d8
+  revision: b4bada0f3d640a96ed2f43a00fec7fbd95860964
   branch: main
   specs:
     cor1440_gen (1.0b3)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 1a06a6809d96ef13553ad6945802af112d91ab14
+  revision: 93a9e276ce826e86af71cf3928f558a2a47949f9
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: e2f0899f9307610977c81b8ee75d8b62040b022a
+  revision: f46fb0b78e763aaae18c4911651962b3aedc1456
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 134b5da4626d27a58e437d37a45646b034c1d893
+  revision: f611bc10c5a30b305b6e3f478baa3e0fb49f2ec9
   branch: main
   specs:
     sip (2.0.b11)
@@ -155,7 +155,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     colorize (0.8.1)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     crass (1.0.6)
     devise (4.8.0)
       bcrypt (~> 3.0)
@@ -191,7 +191,7 @@ GEM
     json (2.5.1)
     kgio (2.11.4)
     libxml-ruby (3.2.1)
-    loofah (2.9.1)
+    loofah (2.10.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
