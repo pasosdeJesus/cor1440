@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: de19b0ae9272cdf1ad3476da6dee061979e4ff53
+  revision: 506ba65c7c819153e01b13b3f9e4972131a658c5
   branch: main
   specs:
-    cor1440_gen (1.0b3)
+    cor1440_gen (1.0b4)
       devise
       heb412_gen
       jquery-rails
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: a90ce2596ec3ee5cec69c3d29f309d0a4ec90666
+  revision: 93a9e276ce826e86af71cf3928f558a2a47949f9
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: bb5067a8f414443bdfca9a7c390a99c3287f9f1e
+  revision: f46fb0b78e763aaae18c4911651962b3aedc1456
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -130,7 +130,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
-    cancancan (3.2.1)
+    cancancan (3.2.2)
     capybara (3.35.3)
       addressable
       mini_mime (>= 0.1.3)
@@ -154,7 +154,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     colorize (0.8.1)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     crass (1.0.6)
     devise (4.8.0)
       bcrypt (~> 3.0)
@@ -171,7 +171,7 @@ GEM
       railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.0)
+    ffi (1.15.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.10)
@@ -185,9 +185,9 @@ GEM
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
     json (2.5.1)
-    kgio (2.11.3)
+    kgio (2.11.4)
     libxml-ruby (3.2.1)
-    loofah (2.9.1)
+    loofah (2.10.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -201,11 +201,11 @@ GEM
       nokogiri (~> 1)
       rake
     mini_mime (1.0.3)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
-    nokogiri (1.11.4)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     odf-report (0.7.2)
@@ -230,11 +230,11 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (4.0.6)
-    puma (5.3.1)
+    puma (5.3.2)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-proxy (0.6.5)
+    rack-proxy (0.7.0)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -267,7 +267,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (~> 1.0)
-    raindrops (0.19.1)
+    raindrops (0.19.2)
     rake (13.0.3)
     redcarpet (3.5.1)
     regexp_parser (2.1.1)
@@ -326,12 +326,12 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (5.3.0)
+    webpacker (5.4.0)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    websocket-driver (0.7.3)
+    websocket-driver (0.7.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     will_paginate (3.3.0)
