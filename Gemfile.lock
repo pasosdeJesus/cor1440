@@ -223,6 +223,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
+    parslet (2.0.0)
     pdf-core (0.9.0)
     pg (1.2.3)
     prawn (2.4.0)
@@ -376,6 +377,7 @@ DEPENDENCIES
   nokogiri (>= 1.11.1)
   odf-report
   paperclip
+  parslet
   pg
   prawn
   prawn-table
