@@ -28,7 +28,6 @@
     "serialize-javascript": "3.1.0",
     "turbolinks": "^5.2.0"
   },
-  "version": "0.1.0",
   "devDependencies": {
     "glob-parent": "^5.1.2",
     "normalize-url": "^4.5.1",
