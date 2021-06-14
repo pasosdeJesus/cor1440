@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: b4bada0f3d640a96ed2f43a00fec7fbd95860964
+  revision: a6d0fff7f1c124ebbfd54de6fa5e7b55e2c604f5
   branch: main
   specs:
-    cor1440_gen (1.0b3)
+    cor1440_gen (1.0b4)
       devise
       heb412_gen
       jquery-rails
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 93a9e276ce826e86af71cf3928f558a2a47949f9
+  revision: f3b56ce03c914d23e087170458e981edd49cdb84
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: f46fb0b78e763aaae18c4911651962b3aedc1456
+  revision: f1d132e9aceb751453b10562a6c8df589a3039fb
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: f611bc10c5a30b305b6e3f478baa3e0fb49f2ec9
+  revision: cac5a627399d4ad11cf849be4044897601057411
   branch: main
   specs:
     sip (2.0.b11)
@@ -343,7 +343,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    websocket-driver (0.7.4)
+    websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     will_paginate (3.3.0)
