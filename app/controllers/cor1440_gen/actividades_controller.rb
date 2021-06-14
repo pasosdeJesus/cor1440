@@ -22,7 +22,7 @@ module Cor1440Gen
 #        :respuestafor,
 #        :objetivo,
 #        :resultado,
-#        :actorsocial,
+#        :orgsocial,
 #        :listadoasistencia,
 #        :poblacion,
 #        :anexos
