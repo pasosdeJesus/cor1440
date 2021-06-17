@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 568f99d21a73d9fde95db02a63deb2c92e6df7ec
+  revision: 675369b349bb0347057bcd3350658e632a18f7f2
   branch: orgsocial
   specs:
     cor1440_gen (1.0b4)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 724260407be0e2c509cca0651be8c99d19a813ce
+  revision: 04afc987890c7be94c29c3370de073ee5413ee35
   branch: orgsocial
   specs:
     heb412_gen (1.0.b6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 917450e779fb99a1301e3426530e6cade614a7e8
+  revision: c27bbcafb5460fa15f1b565d2f133c85d54cc904
   branch: orgsocial
   specs:
     mr519_gen (0.2.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d3d7f4fd197395da9e0b1844360ac7d3ce9a04f2
+  revision: e2278cdd5263bca4f406d71ec4ce0cee368f8f15
   branch: orgsocial
   specs:
     sip (2.0.b11)
@@ -175,7 +175,7 @@ GEM
       ruby-graphviz
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.1)
+    ffi (1.15.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.10)
