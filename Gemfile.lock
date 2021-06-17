@@ -1,4 +1,15 @@
 GIT
+  remote: https://github.com/kreeti/kt-paperclip.git
+  revision: 379d3a8ca990ce91baef7498bd74c8680c181c3c
+  specs:
+    kt-paperclip (7.0.0)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      marcel (~> 1.0.1)
+      mime-types
+      terrapin (~> 0.6.0)
+
+GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
   revision: 675369b349bb0347057bcd3350658e632a18f7f2
   branch: orgsocial
@@ -372,11 +383,11 @@ DEPENDENCIES
   execjs
   heb412_gen!
   jbuilder
+  kt-paperclip!
   libxml-ruby
   mr519_gen!
   nokogiri (>= 1.11.1)
   odf-report
-  paperclip
   parslet
   pg
   prawn
