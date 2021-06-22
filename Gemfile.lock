@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4c5efa6e26099afa6b58bfef7498ffe23bec0201
+  revision: a9c1c879a013cbb608635b35de68138dcb039c59
   branch: main
   specs:
     cor1440_gen (1.0b4)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 7e46d1e708be95ef6abefeabc93a594331b42c4f
+  revision: ca3be815779cc65e08ce4e2d394b36773d9f50ed
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: f695e5fb6e354242f4457c6e32f7f301bda95cc5
+  revision: 0c856804b8713d140b69053b5233fbe937d37557
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: cf302cb1f25b58a2c93d7b380cc4b6a2ae6e4956
+  revision: 23c86b555ae99ad65b5f6c27769fc657d5a0d85a
   branch: main
   specs:
     sip (2.0.b12)
@@ -141,7 +141,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
-    cancancan (3.2.2)
+    cancancan (3.3.0)
     capybara (3.35.3)
       addressable
       mini_mime (>= 0.1.3)
@@ -174,8 +174,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.9.4)
-      devise (>= 4.7.1)
+    devise-i18n (1.10.0)
+      devise (>= 4.8.0)
     docile (1.4.0)
     dotenv (2.7.6)
     dotenv-rails (2.7.6)
