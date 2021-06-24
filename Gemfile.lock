@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: a9c1c879a013cbb608635b35de68138dcb039c59
+  revision: 500e1bfe879d4c4d919b0c932d6137355c518b99
   branch: main
   specs:
     cor1440_gen (1.0b4)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: ca3be815779cc65e08ce4e2d394b36773d9f50ed
+  revision: 4b806692bef8e7aba85b069a62ad5563ea815d2d
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 0c856804b8713d140b69053b5233fbe937d37557
+  revision: 508c202a07f614a070f33a8fe0741508c2c1bacd
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 23c86b555ae99ad65b5f6c27769fc657d5a0d85a
+  revision: 0a380a499c6726c25765d2cc660f972159c74a43
   branch: main
   specs:
     sip (2.0.b12)
@@ -413,7 +413,7 @@ DEPENDENCIES
   will_paginate
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 3.0.1p64
 
 BUNDLED WITH
-   2.2.15
+   2.2.20
