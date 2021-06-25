@@ -526,8 +526,8 @@ CREATE TABLE public.cor1440_gen_actividadpf (
     descripcion character varying(5000),
     resultadopf_id integer,
     actividadtipo_id integer,
-    formulario_id integer,
-    heredade_id integer
+    heredade_id integer,
+    formulario_id integer
 );
 
 
@@ -823,6 +823,7 @@ CREATE TABLE public.cor1440_gen_datointermedioti (
     nombre character varying(1024) NOT NULL,
     tipoindicador_id integer,
     nombreinterno character varying(127),
+    filtro character varying(5000),
     funcion character varying(5000),
     mindicadorpf_id integer
 );
@@ -6234,7 +6235,6 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210414201956'),
 ('20210417152053'),
 ('20210419161145'),
-('20210420205711'),
 ('20210430160739'),
 ('20210514201449'),
 ('20210524121112'),
