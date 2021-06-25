@@ -63,7 +63,8 @@ gem 'tzinfo' # Zonas horarias
 
 gem 'will_paginate' # Listados en páginas
 
-gem 'webpacker'
+gem 'webpacker',#, '~> 5.4'       # Traduce y compila modulos Javascript
+  git: 'https://github.com/rails/webpacker'
 
 
 
@@ -76,15 +77,15 @@ gem 'sip', # Motor generico
   #path: '../sip'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
-  git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :webpacker6
   #path: '../mr519_gen'
 
 gem 'heb412_gen',  # Motor de nube y llenado de plantillas
-  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :webpacker6
   #path: '../heb412_gen'
 
 gem 'cor1440_gen', # Motor Cor1440_gen
-  git: 'https://github.com/pasosdeJesus/cor1440_gen.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/cor1440_gen.git', branch: :webpacker6
   #path: '../cor1440_gen'
 
 
