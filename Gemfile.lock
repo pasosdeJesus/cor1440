@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: a131a70f2cdaf0b4d0275fdf98b82410b028073a
+  revision: ef40e25ccca2ab9c3e95e33d6b244e92b0410147
   branch: webpacker6
   specs:
     cor1440_gen (1.0b4)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 05b77adecf5e6e56e59ca15dcf2915a5da63c439
+  revision: 02c7808763dadec8151cea738431ab03ac7b90b8
   branch: webpacker6
   specs:
     heb412_gen (1.0.b6)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: b21946204eaa22298889260bbccfdb745733bb47
+  revision: 21c74b4f07b5e3edf113fd66af70d780751c8b1f
   branch: webpacker6
   specs:
     mr519_gen (0.2.0)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 94708c35617d468557cfe31015131a3558701723
+  revision: d5d373d3038be7a4080f84d54320326bab629aea
   branch: webpacker6
   specs:
     sip (2.0.b12)
@@ -64,7 +64,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker
-  revision: beb645ecbf707eb4f3311e61b05abb67fe0ca010
+  revision: 032c2d11a3758035305fe34e6795ab133128ee32
   specs:
     webpacker (6.0.0.beta.7)
       activesupport (>= 5.2)
@@ -344,7 +344,7 @@ GEM
     thor (1.1.0)
     tilt (2.0.10)
     ttfunk (1.7.0)
-    twitter_cldr (6.6.0)
+    twitter_cldr (6.6.1)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
@@ -421,4 +421,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.2.20
+   2.2.21
