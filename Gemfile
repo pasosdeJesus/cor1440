@@ -91,6 +91,7 @@ gem 'sip', # Motor generico
   #path: '../sip'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
+<<<<<<< HEAD
   git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :rails7jses
   #path: '../mr519_gen'
 
