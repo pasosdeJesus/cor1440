@@ -5,7 +5,7 @@ default: &default
   pool: 5
   username: <%= ENV.fetch('BD_USUARIO', 'sipdes') %>
   password: <%= ENV.fetch('BD_CLAVE') %>
-  host: /var/www/var/run/postgresql
+  host: <%= ENV.fetch('BD_SERVIDOR', '/var/www/var/run/postgresql') %>
 
 development:
   <<: *default
