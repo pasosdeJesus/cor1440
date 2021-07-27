@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 201eb9469c6c524d5b5044e190b799ac8a80c1c9
+  revision: 819f54f69268300507e0ce1923b718e1b1aa09f9
   branch: main
   specs:
     cor1440_gen (1.0b4)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: ac558ad1b7dd212d3ae14952baf3e5a959451dc2
+  revision: fc97e1e0576e9f815b60695fe29bbda269b51ece
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: a5dd13dc79f73c309fb3e05e80e737cc1d0b6101
+  revision: 63541576e2a7d7c6a4592b68d65315482bbb940e
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 9b97a4b70bc65f3eb1ef7d2f7cb9518318afd823
+  revision: 691687ff593a262b8355753e1873529ba7c19a29
   branch: main
   specs:
     sip (2.0.b12)
@@ -147,7 +147,7 @@ GEM
     bcrypt (3.1.16)
     bigdecimal (3.0.2)
     bindex (0.8.1)
-    bootsnap (1.7.5)
+    bootsnap (1.7.6)
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
