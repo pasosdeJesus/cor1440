@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 819f54f69268300507e0ce1923b718e1b1aa09f9
+  revision: 64f35bc342a9de57eef768218f5a60986986d461
   branch: main
   specs:
     cor1440_gen (1.0b4)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: fc97e1e0576e9f815b60695fe29bbda269b51ece
+  revision: 9670bd942ed97adf929d23e6193ccb4e6980cfa7
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 63541576e2a7d7c6a4592b68d65315482bbb940e
+  revision: 63d67a6288038da00855d0648038bc8c7a815292
   branch: main
   specs:
     mr519_gen (0.2.0)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 691687ff593a262b8355753e1873529ba7c19a29
+  revision: 529a5ecc6b309a6474e7c1411f63fad59bdd11e9
   branch: main
   specs:
     sip (2.0.b12)
@@ -147,7 +147,7 @@ GEM
     bcrypt (3.1.16)
     bigdecimal (3.0.2)
     bindex (0.8.1)
-    bootsnap (1.7.6)
+    bootsnap (1.7.7)
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -197,8 +197,8 @@ GEM
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.3)
-    globalid (0.4.2)
-      activesupport (>= 4.2.0)
+    globalid (0.5.2)
+      activesupport (>= 5.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -212,7 +212,7 @@ GEM
     json (2.5.1)
     kgio (2.11.4)
     libxml-ruby (3.2.1)
-    loofah (2.10.0)
+    loofah (2.11.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -226,12 +226,12 @@ GEM
       nokogiri (~> 1)
       rake
     mini_mime (1.1.0)
-    mini_portile2 (2.5.3)
+    mini_portile2 (2.6.1)
     minitest (5.14.4)
     msgpack (1.4.2)
-    nio4r (2.5.7)
-    nokogiri (1.11.7)
-      mini_portile2 (~> 2.5.0)
+    nio4r (2.5.8)
+    nokogiri (1.12.2)
+      mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     odf-report (0.7.2)
       mime-types
@@ -256,7 +256,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (4.0.6)
-    puma (5.3.2)
+    puma (5.4.0)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -421,4 +421,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.2.21
+   2.2.25
