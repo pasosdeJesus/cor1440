@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-=======
-
->>>>>>> 2f6ea77 (Emplea maquetación de dashboardkit 1. Closes https://github.com/pasosdeJesus/cor1440_gen/issues/72)
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +10,10 @@
     <meta name="author" content="Pasos de Jesús">
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 2f6ea77 (Emplea maquetación de dashboardkit 1. Closes https://github.com/pasosdeJesus/cor1440_gen/issues/72)
     <meta name="formato_fecha" content="<%= Rails.configuration.x.formato_fecha  ? Rails.configuration.x.formato_fecha : 'yyyy-mm-dd' %>">
     <title><%= content_for?(:titulo) ? yield(:titulo) : Sip.titulo %></title>
     <%= csrf_meta_tags %>
 
-<<<<<<< HEAD
     <%= stylesheet_link_tag "application", :media => "all", 
       'data-turbo-track': 'reload' %>
     <%=  yield(:linkhref) if content_for?(:linkhref) %>
@@ -32,7 +22,7 @@
       1. Pasamos javascript en assets/javascript a modulos
       2. Publicamos partes de gemas como paquetes npm -->
       <%= javascript_include_tag "application", defer: true %>
-      <%= javascript_include_tag "recursos_globales", defer: true %>
+      <%= javascript_include_tag "recursos_sprockets", defer: true %>
 
       <!-- ****** favicons e ideas de enlaces de  faviconit.com ****** -->
       <%= favicon_link_tag 'favicon-16.png', :rel => 'icon', :type => 'image/png', :sizes => '16x16' %>
@@ -76,54 +66,6 @@
               <link rel="stylesheet" href="<%=
               Pathname(Rails.configuration.relative_url_root).join(
                 'dk1/assets/css/personaliza-dk1.css').to_s %>">
-=======
-    <%=  yield(:linkhref) if content_for?(:linkhref) %>
-
-    <%= stylesheet_link_tag "application", :media => "all", 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'dk1', 'data-turbolinks-track': 'reload' %>
-    <!-- Seguimios usando sprockets mientras:
-      1. Pasamos javascript en assets/javascript a modulos
-      2. Publicamos partes de gemas como paquetes npm -->
-    <%= javascript_include_tag "application" %>
-
-    <!-- ****** favicons e ideas de enlaces de  faviconit.com ****** -->
-    <%= favicon_link_tag 'favicon-16.png', :rel => 'icon', :type => 'image/png', :sizes => '16x16' %>
-    <%= favicon_link_tag 'favicon-32.png', :rel => 'icon', :type => 'image/png', :sizes => '32x32' %>
-    <%= favicon_link_tag 'favicon-64.png', :rel => 'icon', :type => 'image/png', :sizes => '64x64' %>
-    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon',  :sizes => '16x16 32x32 64x64' %>
-    <%= favicon_link_tag 'favicon-96.png', :rel => 'icon', :type => 'image/png', :sizes => '96x96' %>
-    <%= favicon_link_tag 'favicon-160.png', :rel => 'icon', :type => 'image/png', :sizes => '160x160' %>
-    <%= favicon_link_tag 'favicon-192.png', :rel => 'icon', :type => 'image/png', :sizes => '192x192' %>
-    <%= favicon_link_tag 'favicon-57.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
-    <%= favicon_link_tag 'favicon-57.png', :rel => 'apple-touch-icon', :type => 'image/png' %>
-    <%= favicon_link_tag 'favicon-60.png', :rel => 'apple-touch-icon', :size => '60x60', :type => 'image/png' %>
-    <%= favicon_link_tag 'favicon-72.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
-    <%= favicon_link_tag 'favicon-72.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '72x72' %>
-    <%= favicon_link_tag 'favicon-76.png', :rel => 'apple-touch-icon', :size => '76x76', :type => 'image/png' %>
-    <%= favicon_link_tag 'favicon-114.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
-    <%= favicon_link_tag 'favicon-114.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '114x114' %>
-    <%= favicon_link_tag 'favicon-120.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '120x120' %>
-    <%= favicon_link_tag 'favicon-144.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
-    <%= favicon_link_tag 'favicon-144.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '144x144' %>
-    <%= favicon_link_tag 'favicon-152.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '152x152' %>
-    <%= favicon_link_tag 'favicon-180.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '180x180' %>
-
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="/assets/favicon-144.png">
-    <meta name="msapplication-config" content="/assets/browserconfig.xml">
-
-    <!-- dashboardkit 1.0 -->
-    <link rel="stylesheet" href="<%=
-    Pathname(Rails.configuration.relative_url_root).join(
-      'dk1/assets/fonts/feather.css').to_s %>">
-    <link rel="stylesheet" href="<%=
-    Pathname(Rails.configuration.relative_url_root).join(
-      'dk1/assets/fonts/material.css').to_s %>">
-
-    <!--%= stylesheet_link_tag "style-dk", :media => "all",
-        'data-turbolinks-track': 'reload' %-->
->>>>>>> 2f6ea77 (Emplea maquetación de dashboardkit 1. Closes https://github.com/pasosdeJesus/cor1440_gen/issues/72)
 
 
   </head>
@@ -141,11 +83,7 @@
       <div class="pcm-logo">
         <img src="<% Pathname(Rails.configuration.relative_url_root).join(
           'dk1/assets/fonts/feather.css').to_s %>"
-<<<<<<< HEAD
           alt="" class="logo logo-lg">
-=======
-             alt="" class="logo logo-lg">
->>>>>>> 2f6ea77 (Emplea maquetación de dashboardkit 1. Closes https://github.com/pasosdeJesus/cor1440_gen/issues/72)
       </div>
       <div class="pcm-toolbar">
         <a href="#!" class="pc-head-link" id="mobile-collapse">
@@ -155,7 +93,6 @@
             </div>
           </div>
         </a>
-<<<<<<< HEAD
       </div>
     </div>
     <nav class="pc-sidebar">
@@ -178,260 +115,6 @@
     <header class="pc-header">
       <div class="header-wrapper"> 
         <div class="mr-auto pc-mob-drp">
-=======
-        <a href="#!" class="pc-head-link" id="headerdrp-collapse">
-          <i data-feather="align-right"></i>
-        </a>
-        <a href="#!" class="pc-head-link" id="header-collapse">
-          <i data-feather="more-vertical"></i>
-        </a>
-      </div>
-    </div>
-    <!-- [ Mobile header ] End -->
-
-    <!-- [ navigation menu ] start -->
-    <nav class="pc-sidebar ">
-      <div class="navbar-wrapper">
-        <div class="m-header">
-
-    <a href="<%= Rails.configuration.relative_url_root.to_s %>" class="b-brand">
-            <!-- ========   change your logo hear   ============ -->
-            <img src="<% Pathname(Rails.configuration.relative_url_root).join(
-              'dk1/assets/images/logo.svg').to_s %>"
-                 alt="" class="logo logo-lg" >
-            <img src="<%
-              Pathname(Rails.configuration.relative_url_root).join(
-                'dk1/assets/images/logo-sm.svg').to_s %>"
-                 alt="" class="logo logo-sm">
-          </a>
-        </div>
-        <div class="navbar-content">
-          <ul class="pc-navbar">
-            <!--%= barra_navegacion_dk(
-              marca: content_for?(:titulo) ? yield(:titulo) : Sip.titulo,
-              enlace_marca: main_app.root_path) do %-->
-              <!--%= yield :menu %-->
-            <!--% end %-->
-            <li class="pc-item pc-caption">
-              <label>Navegación</label>
-            </li>
-            <li class="pc-item">
-              <a href="<%= Rails.configuration.relative_url_root.to_s %>"
-                 class="pc-link "><span class="pc-micon">
-                   <i class="material-icons-two-tone">home</i></span>
-               <span class="pc-mtext">Tablero</span></a>
-            </li>
-            <li class="pc-item pc-caption">
-              <label>Monitoreo</label>
-            </li>
-            <%
-                def opcion_menu_dk(opcionmenu, url, opciones={})
-                  cop = opciones.clone
-                  if cop[:desplegable] || cop[:dropdown]
-                    cop.delete(:desplegable)
-                    cop.delete(:dropdown)
-                    r = link_to opcionmenu, url, cop.merge({class: 'dropdown-item'})
-                  else
-                    r = content_tag(:li, class: 'pc-item') do
-                      link_to opcionmenu, url, cop.merge({class: 'pc-link'})
-                    end
-                  end
-                  return r
-            end %>
-
-            <% if !current_usuario.nil? %>
-              <li class="pc-item pc-hasmenu">
-                <a href="#!" class="pc-link ">
-                  <span class="pc-micon">
-                    <i class="material-icons-two-tone">business_center</i>
-                  </span>
-                  <span class="pc-mtext">Proyectos</span>
-                  <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
-                </a>
-                <ul class="pc-submenu">
-                  <%= opcion_menu_dk(
-                    'Listado', cor1440_gen.proyectosfinancieros_path) %>
-                  <%= opcion_menu_dk(
-                    'Validar', cor1440_gen.validar_proyectosfinancieros_path) %>
-                  <% if can? :manage, Cor1440Gen::Mindicadorpf %>
-                    <%= opcion_menu_dk(
-                      'Medir Indicadores de Resultado',
-                      cor1440_gen.mindicadorespf_path) %>
-                  <% end %>
-                </ul>
-              </li>
-              <li class="pc-item pc-hasmenu">
-                <a href="#!" class="pc-link ">
-                  <span class="pc-micon">
-                    <i class="material-icons-two-tone">history_edu</i>
-                  </span>
-                  <span class="pc-mtext">Actividades</span>
-                  <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
-                </a>
-                <ul class="pc-submenu">
-                  <%= opcion_menu_dk(
-                    'Listado', cor1440_gen.actividades_path) %>
-                  <%= opcion_menu_dk(
-                    'Contar por actividad de marco lógico',
-                    cor1440_gen.contar_actividades_path) %>
-                  <%= opcion_menu_dk(
-                    'Contar por beneficiario y actividad de marco lógico',
-                    cor1440_gen.contar_actividades_beneficiarios_path) %>
-                  <% if can? :manage, ::Sip::Actorsocial %>
-                    <%= opcion_menu_dk "Organizaciones sociales",
-                      sip.actoressociales_path %>
-                  <% end %>
-                  <% if can? :manage, ::Sip::Persona %>
-                    <%= opcion_menu_dk "Beneficiarios",
-                      sip.personas_path %>
-                  <% end %>
-                </ul>
-              </li>
-            <% end %>
-            <li class="pc-item pc-caption">
-              <label>Documentos</label>
-            </li>
-            <li class="pc-item">
-              <a href="https://docs.google.com/document/d/1mmydkqNmZbXkzcpkiegQ_XAP_NkjfX-RXgcW1yzjdpE/edit?usp=sharing"
-                 class="pc-link ">
-                <span class="pc-micon">
-                  <i class="material-icons-two-tone">home</i>
-                </span>
-                <span class="pc-mtext">Manual</span></a>
-            </li>
-
-            <% if !current_usuario.nil? %>
-              <li class="pc-item">
-                <a href="<%= Rails.configuration.relative_url_root.to_s %>"
-                   class="pc-link "><span class="pc-micon">
-                     <i class="material-icons-two-tone">home</i></span>
-                   <span class="pc-mtext">Nube</span></a>
-              </li>
-
-              <li class="pc-item pc-hasmenu">
-                <a href="#!" class="pc-link ">
-                  <span class="pc-micon">
-                    <i class="material-icons-two-tone">edit</i>
-                  </span>
-                  <span class="pc-mtext">Plantillas</span>
-                  <span class="pc-arrow">
-                    <i data-feather="chevron-right"></i>
-                  </span>
-                </a>
-                <ul class="pc-submenu">
-                  <% if can? :manage, ::Heb412Gen::Plantillahcm %>
-                    <%= opcion_menu_dk(
-                      "Plantillas para listados en hojas de calculo",
-                      heb412_gen.plantillashcm_path) %>
-                  <% end %>
-                  <% if can? :manage, ::Heb412Gen::Plantillahcr %>
-                    <%= opcion_menu_dk(
-                      "Plantillas para un registro en hoja de calculo",
-                      heb412_gen.plantillashcr_path) %>
-                  <% end %>
-                </ul>
-              </li>
-              <li class="pc-item pc-caption">
-                <label>Administrar</label>
-              </li>
-              <% if current_usuario.rol == Ability::ROLADMIN %>
-                <%= opcion_menu_dk "Usuarios", main_app.usuarios_path %>
-              <% end %>
-              <% if can? :manage, Mr519Gen::Formulario %>
-                <%= opcion_menu_dk "Formularios", mr519_gen.formularios_path %>
-              <% end %>
-              <% if current_usuario.rol == Ability::ROLADMIN %>
-                <%= opcion_menu_dk "Tablas básicas", sip.tablasbasicas_path %>
-              <% end %>
-            <% end %>
-            <li class="pc-item pc-hasmenu">
-              <a href="#!" class="pc-link">
-                <span class="pc-micon">
-                  <i class="material-icons-two-tone">https</i>
-                </span>
-                <span class="pc-mtext">Autenticación</span>
-                <span class="pc-arrow">
-                  <i data-feather="chevron-right"></i>
-                </span>
-                </a>
-                <ul class="pc-submenu">
-                  <% if current_usuario.nil? %>
-                    <%= opcion_menu_dk "Iniciar Sesión",
-                      main_app.new_usuario_session_path %>
-                  <% else %>
-                    <%= opcion_menu_dk "Salir #{current_usuario.nusuario}",
-                      main_app.sign_out_path %>
-                  <% end %>
-                </ul>
-              </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- [ navigation menu ] end -->
-    <!-- [ Header ] start -->
-    <header class="pc-header ">
-      <div class="header-wrapper">
-        <div class="mr-auto pc-mob-drp">
-          <ul class="list-unstyled">
-            <li class="dropdown pc-h-item">
-              <a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                Level
-              </a>
-              <div class="dropdown-menu pc-h-dropdown">
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">account_circle</i>
-                  <span>My Account</span>
-                </a>
-                <div class="pc-level-menu">
-                  <a href="#!" class="dropdown-item">
-                    <i class="material-icons-two-tone">list_alt</i>
-                    <span class="float-right"><i data-feather="chevron-right" class="mr-0"></i></span>
-                    <span>Level2.1</span>
-                  </a>
-                  <div class="dropdown-menu pc-h-dropdown">
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>My Account</span>
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>Settings</span>
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>Support</span>
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>Lock Screen</span>
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      <i class="fas fa-circle"></i>
-                      <span>Logout</span>
-                    </a>
-                  </div>
-                </div>
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">settings</i>
-                  <span>Settings</span>
-                </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">support</i>
-                  <span>Support</span>
-                </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">https</i>
-                  <span>Lock Screen</span>
-                </a>
-                <a href="#!" class="dropdown-item">
-                  <i class="material-icons-two-tone">chrome_reader_mode</i>
-                  <span>Logout</span>
-                </a>
-              </div>
-            </li>
-          </ul>
->>>>>>> 2f6ea77 (Emplea maquetación de dashboardkit 1. Closes https://github.com/pasosdeJesus/cor1440_gen/issues/72)
         </div>
         <div class="ml-auto">
           <ul class="list-unstyled">
@@ -448,7 +131,6 @@
                 </form>
               </div>
             </li>
-<<<<<<< HEAD
             <% if current_usuario %>
               <li class="dropdown pc-h-item">
                 <a href="#" class="pc-head-link dropdown-toggle arrow-none mr-0"  data-bs-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
@@ -497,73 +179,5 @@
       <% end %>
     </div> 
     <!-- pc-container -->
-=======
-            <li class="dropdown pc-h-item">
-              <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                <img src="<%= Pathname(Rails.configuration.relative_url_root).
-                  join('dk1/assets/images/user/avatar-2.jpg').to_s %>"
-                     alt="user-image" class="user-avtar">
-                <span>
-                  <span class="user-name">Joseph William</span>
-                  <span class="user-desc">Administrator</span>
-                </span>
-              </a>
-                <a href="auth-signin.html" class="dropdown-item">
-                  <i class="material-icons-two-tone">chrome_reader_mode</i>
-                  <span>Logout</span>
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </header>
-    <!-- [ Header ] end -->
-
-    <!-- [ Main Content ] start -->
-    <div class="pc-container">
-      <div class="pcoded-content">
-        <!-- [ breadcrumb ] start -->
-        <div class="page-header">
-          <div class="page-block">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="page-header-title">
-                  <h5 class="m-b-10">Dashboard sale</h5>
-                </div>
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item">Dashboard sale</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- [ breadcrumb ] end -->
-        <!-- [ Main Content ] start -->
-
-    <div class="container master-container">
-      <% if content_for?(:breadcrumb) %>
-        <ul class="breadcrumb">
-          <%= yield :breadcrumb %>
-        </ul>
-      <% end %>
-      <div class="page-header"> </div>
-      <%= anuncios_bootstrap %>
-
-      <%= yield %>
-
-    </div>
-
-    <% if content_for?(:piedepagina) %>
-      <footer style='text-align: right'>
-        <%= yield :piedepagina %>
-      </footer>
-    <% end %>
-
-    </div> <!-- /container -->
-
->>>>>>> 2f6ea77 (Emplea maquetación de dashboardkit 1. Closes https://github.com/pasosdeJesus/cor1440_gen/issues/72)
   </body>
 </html>
