@@ -1,4 +1,15 @@
 GIT
+  remote: https://github.com/kreeti/kt-paperclip.git
+  revision: 8e4a154ae0c7b8ca1e17daec768d6b211186ca63
+  specs:
+    kt-paperclip (7.0.0)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      marcel (~> 1.0.1)
+      mime-types
+      terrapin (~> 0.6.0)
+
+GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
   revision: eb64749e49ff80381e31672caf203dab6a0cf65f
   branch: main
@@ -50,6 +61,16 @@ GIT
       simple_form
       twitter_cldr
       will_paginate
+
+GIT
+  remote: https://github.com/rails/webpacker
+  revision: 79c7b677ed20a650d45776ed173c7a5ecd6c4c6d
+  specs:
+    webpacker (6.0.0.beta.7)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
@@ -129,7 +150,6 @@ GEM
     bootsnap (1.7.7)
       msgpack (~> 1.0)
     builder (3.2.4)
-    byebug (11.1.3)
     camertron-eprun (1.1.1)
     cancancan (3.3.0)
     capybara (3.35.3)
@@ -224,6 +244,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
+    parslet (2.0.0)
     pdf-core (0.9.0)
     pg (1.2.3)
     prawn (2.4.0)
@@ -339,11 +360,6 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (5.4.0)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -359,7 +375,6 @@ DEPENDENCIES
   bcrypt
   bigdecimal
   bootsnap (>= 1.1.0)
-  byebug
   cancancan
   capybara
   cocoon!
@@ -370,13 +385,15 @@ DEPENDENCIES
   devise-i18n
   dotenv-rails
   erd
+  execjs
   heb412_gen!
   jbuilder
+  kt-paperclip!
   libxml-ruby
   mr519_gen!
   nokogiri (>= 1.11.1)
   odf-report
-  paperclip
+  parslet
   pg
   prawn
   prawn-table
@@ -397,7 +414,7 @@ DEPENDENCIES
   tzinfo
   unicorn
   web-console
-  webpacker
+  webpacker!
   will_paginate
 
 RUBY VERSION
