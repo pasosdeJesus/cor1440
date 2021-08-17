@@ -136,7 +136,11 @@ function collapseedge() {
 }
 
 var flg = "0";
+<<<<<<< HEAD
 if (document.addEventListener('turbo:load', function() {
+=======
+if (document.addEventListener('turbolinks:load', function() {
+>>>>>>> 632982d (sincroniza con main)
     function e(e) {
       try {
         e.attr("placeholder").length
