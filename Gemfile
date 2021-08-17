@@ -101,7 +101,7 @@ group :development do
   gem 'erd'
 
   gem 'puma'
-  
+
   gem 'rails-erd'
 
   gem 'rails-erd'
