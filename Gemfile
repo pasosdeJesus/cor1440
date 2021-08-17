@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
 ruby '>=2.4'
 
+gem 'apexcharts'
 
 gem 'bcrypt'
 
-gem 'bigdecimal'
+#gem 'bigdecimal'
 
 gem 'bootsnap', '>=1.1.0', require: false
 
@@ -61,11 +64,10 @@ gem 'twitter_cldr' # ICU con CLDR
 
 gem 'tzinfo' # Zonas horarias
 
-gem 'will_paginate' # Listados en páginas
-
 gem 'webpacker',#, '~> 5.4'       # Traduce y compila modulos Javascript
   git: 'https://github.com/rails/webpacker'
 
+gem 'will_paginate' # Listados en páginas
 
 
 #####
@@ -93,7 +95,7 @@ group :development do
   gem 'erd'
 
   gem 'puma'
-  
+
   gem 'rails-erd'
 
   gem 'web-console'
