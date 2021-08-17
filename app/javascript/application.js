@@ -68,6 +68,7 @@ window.ApexCharts = ApexCharts
 import $ from "expose-loader?exposes=$,jQuery!jquery";
 
 import { Tooltip, Toast, Popover } from 'bootstrap';
+
 import PerfectScrollbar from 'perfect-scrollbar';
 
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
