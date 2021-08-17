@@ -27,6 +27,9 @@ Rails.start()
 Turbolinks.start()
 
 
+import ApexCharts from 'apexcharts'
+window.ApexCharts = ApexCharts
+
 import $ from "expose-loader?exposes=$,jQuery!jquery";
 
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
