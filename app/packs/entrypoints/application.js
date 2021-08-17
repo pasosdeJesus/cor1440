@@ -29,6 +29,9 @@ Turbolinks.start()
 import ApexCharts from 'apexcharts'
 window.ApexCharts = ApexCharts
 
+import ApexCharts from 'apexcharts'
+window.ApexCharts = ApexCharts
+
 import $ from "expose-loader?exposes=$,jQuery!jquery";
 
 window.jQuery = $
