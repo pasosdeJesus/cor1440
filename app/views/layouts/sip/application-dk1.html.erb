@@ -171,9 +171,9 @@
                   <%= opcion_menu_dk(
                     'Contar por beneficiario y actividad de marco lógico',
                     cor1440_gen.contar_actividades_beneficiarios_path) %>
-                  <% if can? :manage, ::Sip::Actorsocial %>
+                  <% if can? :manage, ::Sip::Orgsocial %>
                     <%= opcion_menu_dk "Organizaciones sociales",
-                      sip.actoressociales_path %>
+                      sip.orgsociales_path %>
                   <% end %>
                   <% if can? :manage, ::Sip::Persona %>
                     <%= opcion_menu_dk "Beneficiarios",

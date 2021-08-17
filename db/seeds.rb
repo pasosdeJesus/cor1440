@@ -5,7 +5,9 @@ conexion = ActiveRecord::Base.connection();
 # De motores
 motor = ['sip', 'cor1440_gen', nil]
 motor.each do |m|
+  puts "OJO cambios #{m}"
     Sip::carga_semillas_sql(conexion, m, :cambios)
+  puts "OJO datos #{m}"
     Sip::carga_semillas_sql(conexion, m, :datos)
 end
 

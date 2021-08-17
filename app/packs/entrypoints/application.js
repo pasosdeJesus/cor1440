@@ -26,12 +26,13 @@ import Turbolinks from "turbolinks"
 Rails.start()
 Turbolinks.start()
 
+import ApexCharts from 'apexcharts'
+window.ApexCharts = ApexCharts
 
 import $ from "expose-loader?exposes=$,jQuery!jquery";
 
 import { Tooltip, Toast, Popover } from 'bootstrap';
 import PerfectScrollbar from 'perfect-scrollbar';
-import ApexCharts from 'apexcharts'
 
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
 import 'bootstrap'              // Maquetacion y elementos de diseño
