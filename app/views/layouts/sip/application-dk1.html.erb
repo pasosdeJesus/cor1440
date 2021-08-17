@@ -188,7 +188,7 @@
               <label>Documentos</label>
             </li>
             <li class="pc-item">
-              <a href="https://docs.google.com/document/d/1mmydkqNmZbXkzcpkiegQ_XAP_NkjfX-RXgcW1yzjdpE/edit?usp=sharing"
+              <a href="https://docs.google.com/document/d/1mmydkqNmZbXkzcpkiegQ_XAP_NkjfX-RXgcW1yzjdpE/edit?usp=sharing" target="_blank"
                  class="pc-link ">
                 <span class="pc-micon">
                   <i class="material-icons-two-tone">home</i>
@@ -272,39 +272,39 @@
         				</form>
         			</div>
         		</li>
-            <li class="dropdown pc-h-item">
               <% if current_usuario %>
-                <a href="#" class="pc-head-link dropdown-toggle arrow-none mr-0"  data-bs-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
-                  <img src="/cor1440/dk1/assets/images/user/avatar-2.jpg" 
-                      alt="user-image" class="user-avtar">
-                  <span>
-                    <span class="user-name"><%= current_usuario.nusuario %></span>
-                    <span class="user-desc"><%= Ability::ROLES.to_h.key(current_usuario.rol) %></span>
-                  </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
-                  <a href="<%= main_app.editar_registro_usuario_path %>" class="dropdown-item">
-                		<i class="material-icons">chrome_reader_mode</i>
-                		<span>Clave y tema</span>
-                	</a>
-                  <a href="<%= main_app.sign_out_path %>" class="dropdown-item">
-                    <i class="material-icons">
-                      logout
-                    </i>
-                		<span>Salir</span>
-                	</a>
-                </div>
+                <li class="dropdown pc-h-item">
+                  <a href="#" class="pc-head-link dropdown-toggle arrow-none mr-0"  data-bs-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="/cor1440/dk1/assets/images/user/avatar-2.jpg" 
+                         alt="user-image" class="user-avtar">
+                    <span>
+                      <span class="user-name"><%= current_usuario.nusuario %></span>
+                      <span class="user-desc"><%= Ability::ROLES.to_h.key(current_usuario.rol) %></span>
+                    </span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
+                    <a href="<%= main_app.editar_registro_usuario_path %>" class="dropdown-item">
+                      <i class="material-icons">chrome_reader_mode</i>
+                      <span>Clave y tema</span>
+                    </a>
+                    <a href="<%= main_app.sign_out_path %>" class="dropdown-item">
+                      <i class="material-icons">
+                        logout
+                      </i>
+                      <span>Salir</span>
+                    </a>
+                  </div>
+                </li>
               <% else %>
-              <li class="pc-h-item">
-                <a href="<%= main_app.new_usuario_session_path %>">
-                  <i class="material-icons">
-                    login
-                  </i>
-                  <span class="align-top">Iniciar sesión</span>
-                </a>
-              </li>
+                <li class="pc-h-item">
+                  <a href="<%= main_app.new_usuario_session_path %>">
+                    <i class="material-icons">
+                      login
+                    </i>
+                    <span class="align-top">Iniciar sesión</span>
+                  </a>
+                </li>
             <% end %>
-            </li>
         	</ul>
         </div>
       </div>
