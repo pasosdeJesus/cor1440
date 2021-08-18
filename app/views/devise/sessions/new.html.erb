@@ -1,0 +1,33 @@
+<div class="auth-wrapper">
+  <div class="auth-content">
+    <div class="card">
+      <div class="row align-items-center text-center">
+        <div class="col-md-12">
+          <div class="card-body">
+            <h4 class="mb-3 f-w-400">Inicio de Sesión</h4>
+
+            <%= simple_form_for(resource, 
+                                as: resource_name, 
+                                url: session_path(resource_name)
+                               ) do |f| %>
+              <div class="form-inputs">
+                <%= f.input :nusuario, required:  false, autofocus: true, 
+                  label: "Usuario" %>
+                <%= f.input :password, required: false, label: "Clave" %>
+                <% if devise_mapping.rememberable? %>
+                  <%= f.label :remember_me, 'Recordarme', :class => 'control-label' %>
+                  <%= f.check_box :remember_me %> 
+                <% end %>
+              </div>
+
+              <div class="form-actions">
+                <%= f.button :submit, "Iniciar Sesión", class: "btn btn-block btn-primary mb-4" %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
