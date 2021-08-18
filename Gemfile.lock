@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: eb64749e49ff80381e31672caf203dab6a0cf65f
+  revision: ac08b33cf30bfcd747461d6173027b7d3449c2af
   branch: main
   specs:
     cor1440_gen (1.0b4)
@@ -64,9 +64,9 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker
-  revision: 79c7b677ed20a650d45776ed173c7a5ecd6c4c6d
+  revision: 2ab76b3b2b7bc42cd73c33d46220a69a91f1b2dd
   specs:
-    webpacker (6.0.0.beta.7)
+    webpacker (6.0.0.rc.1)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
