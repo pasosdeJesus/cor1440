@@ -35,7 +35,8 @@
     <%= javascript_pack_tag 'dk1', 'data-turbolinks-track': 'reload' %>
     <%=  yield(:linkhref) if content_for?(:linkhref) %>
 
-    <%= stylesheet_link_tag "application", :media => "all", 'data-turbolinks-track': 'reload' %>
+    <!--%= stylesheet_link_tag "application", :media => "all", 
+      'data-turbolinks-track': 'reload' %-->
     <!-- Seguimios usando sprockets mientras:
       1. Pasamos javascript en assets/javascript a modulos
       2. Publicamos partes de gemas como paquetes npm -->
@@ -189,7 +190,7 @@
                 target="_blank"
                 class="pc-link ">
                 <span class="pc-micon">
-                  <i class="material-icons-two-tone">home</i>
+                  <i class="material-icons-two-tone">menu_book</i>
                 </span>
                 <span class="pc-mtext">Manual</span></a>
             </li>
