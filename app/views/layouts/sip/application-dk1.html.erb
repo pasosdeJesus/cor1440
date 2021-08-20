@@ -29,7 +29,8 @@
     <title><%= content_for?(:titulo) ? yield(:titulo) : Sip.titulo %></title>
     <%= csrf_meta_tags %>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload',
+      defer: false %>
     <%=  yield(:linkhref) if content_for?(:linkhref) %>
 
     <!-- Seguimios usando sprockets mientras:

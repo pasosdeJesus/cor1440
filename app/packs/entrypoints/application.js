@@ -31,6 +31,8 @@ window.ApexCharts = ApexCharts
 
 import $ from "expose-loader?exposes=$,jQuery!jquery";
 
+window.jQuery = $
+
 import { Tooltip, Toast, Popover } from 'bootstrap';
 
 import PerfectScrollbar from 'perfect-scrollbar';
@@ -46,4 +48,5 @@ import 'jquery-ui/ui/data'
 import 'jquery-ui/ui/focusable' 
 import 'feather-icons'
 
+import '../components/dk1'
 

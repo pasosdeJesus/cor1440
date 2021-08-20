@@ -63,8 +63,9 @@ gem 'tzinfo' # Zonas horarias
 
 gem 'will_paginate' # Listados en páginas
 
-gem 'webpacker',#, '~> 5.4'       # Traduce y compila modulos Javascript
-  git: 'https://github.com/rails/webpacker'
+gem 'webpacker', #'~> 6.0.0.beta.7'       # Traduce y compila modulos Javascript
+  git: 'https://github.com/rails/webpacker.git', branch: '5dae8b5'
+
 
 
 
