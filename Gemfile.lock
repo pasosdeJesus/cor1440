@@ -63,17 +63,6 @@ GIT
       will_paginate
 
 GIT
-  remote: https://github.com/rails/webpacker.git
-  revision: 5dae8b51956e9cd739bdfae44f8214fa1e0f49b2
-  branch: 5dae8b5
-  specs:
-    webpacker (6.0.0.beta.7)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
-
-GIT
   remote: https://github.com/vtamara/cocoon.git
   revision: 9f1892403c3dbdb8f7d457a06f237ff58e7dfb07
   branch: new_id_with_ajax
@@ -361,6 +350,11 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webpacker (6.0.0.rc.1)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -415,7 +409,7 @@ DEPENDENCIES
   tzinfo
   unicorn
   web-console
-  webpacker!
+  webpacker (~> 6.0.0.rc.1)
   will_paginate
 
 RUBY VERSION
