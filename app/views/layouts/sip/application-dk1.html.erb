@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <%
-      def opcion_menu_dk(opcionmenu, url, opciones={})
-        cop = opciones.clone
-        if cop[:desplegable] || cop[:dropdown]
-          cop.delete(:desplegable)
-          cop.delete(:dropdown)
-          r = link_to opcionmenu, url, cop.merge({class: 'dropdown-item'})
-        else
-          r = content_tag(:li, class: 'pc-item') do
-            link_to opcionmenu, url, cop.merge({class: 'pc-link'})
-          end
-        end
-        return r
-      end 
-    %>
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -29,6 +14,8 @@
     <title><%= content_for?(:titulo) ? yield(:titulo) : Sip.titulo %></title>
     <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag "application", :media => "all", 
+      'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload',
       defer: false %>
     <%=  yield(:linkhref) if content_for?(:linkhref) %>
@@ -36,47 +23,51 @@
     <!-- Seguimios usando sprockets mientras:
       1. Pasamos javascript en assets/javascript a modulos
       2. Publicamos partes de gemas como paquetes npm -->
-    <%= javascript_include_tag "application" %>
+      <%= javascript_include_tag "application" %>
 
-    <!-- ****** favicons e ideas de enlaces de  faviconit.com ****** -->
-    <%= favicon_link_tag 'favicon-16.png', :rel => 'icon', :type => 'image/png', :sizes => '16x16' %>
-    <%= favicon_link_tag 'favicon-32.png', :rel => 'icon', :type => 'image/png', :sizes => '32x32' %>
-    <%= favicon_link_tag 'favicon-64.png', :rel => 'icon', :type => 'image/png', :sizes => '64x64' %>
-    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon',  :sizes => '16x16 32x32 64x64' %>
-    <%= favicon_link_tag 'favicon-96.png', :rel => 'icon', :type => 'image/png', :sizes => '96x96' %>
-    <%= favicon_link_tag 'favicon-160.png', :rel => 'icon', :type => 'image/png', :sizes => '160x160' %>
-    <%= favicon_link_tag 'favicon-192.png', :rel => 'icon', :type => 'image/png', :sizes => '192x192' %>
-    <%= favicon_link_tag 'favicon-57.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
-    <%= favicon_link_tag 'favicon-57.png', :rel => 'apple-touch-icon', :type => 'image/png' %>
-    <%= favicon_link_tag 'favicon-60.png', :rel => 'apple-touch-icon', :size => '60x60', :type => 'image/png' %>
-    <%= favicon_link_tag 'favicon-72.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
-    <%= favicon_link_tag 'favicon-72.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '72x72' %>
-    <%= favicon_link_tag 'favicon-76.png', :rel => 'apple-touch-icon', :size => '76x76', :type => 'image/png' %>
-    <%= favicon_link_tag 'favicon-114.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
-    <%= favicon_link_tag 'favicon-114.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '114x114' %>
-    <%= favicon_link_tag 'favicon-120.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '120x120' %>
-    <%= favicon_link_tag 'favicon-144.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
-    <%= favicon_link_tag 'favicon-144.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '144x144' %>
-    <%= favicon_link_tag 'favicon-152.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '152x152' %>
-    <%= favicon_link_tag 'favicon-180.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '180x180' %>
+      <!-- ****** favicons e ideas de enlaces de  faviconit.com ****** -->
+      <%= favicon_link_tag 'favicon-16.png', :rel => 'icon', :type => 'image/png', :sizes => '16x16' %>
+      <%= favicon_link_tag 'favicon-32.png', :rel => 'icon', :type => 'image/png', :sizes => '32x32' %>
+      <%= favicon_link_tag 'favicon-64.png', :rel => 'icon', :type => 'image/png', :sizes => '64x64' %>
+      <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon',  :sizes => '16x16 32x32 64x64' %>
+      <%= favicon_link_tag 'favicon-96.png', :rel => 'icon', :type => 'image/png', :sizes => '96x96' %>
+      <%= favicon_link_tag 'favicon-160.png', :rel => 'icon', :type => 'image/png', :sizes => '160x160' %>
+      <%= favicon_link_tag 'favicon-192.png', :rel => 'icon', :type => 'image/png', :sizes => '192x192' %>
+      <%= favicon_link_tag 'favicon-57.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+      <%= favicon_link_tag 'favicon-57.png', :rel => 'apple-touch-icon', :type => 'image/png' %>
+      <%= favicon_link_tag 'favicon-60.png', :rel => 'apple-touch-icon', :size => '60x60', :type => 'image/png' %>
+      <%= favicon_link_tag 'favicon-72.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+      <%= favicon_link_tag 'favicon-72.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '72x72' %>
+      <%= favicon_link_tag 'favicon-76.png', :rel => 'apple-touch-icon', :size => '76x76', :type => 'image/png' %>
+      <%= favicon_link_tag 'favicon-114.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+      <%= favicon_link_tag 'favicon-114.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '114x114' %>
+      <%= favicon_link_tag 'favicon-120.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '120x120' %>
+      <%= favicon_link_tag 'favicon-144.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+      <%= favicon_link_tag 'favicon-144.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '144x144' %>
+      <%= favicon_link_tag 'favicon-152.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '152x152' %>
+      <%= favicon_link_tag 'favicon-180.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '180x180' %>
 
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="/assets/favicon-144.png">
-    <meta name="msapplication-config" content="/assets/browserconfig.xml">
+      <meta name="msapplication-TileColor" content="#FFFFFF">
+      <meta name="msapplication-TileImage" content="/assets/favicon-144.png">
+      <meta name="msapplication-config" content="/assets/browserconfig.xml">
 
-    <!-- dashboardkit 1.0 -->
-    <link rel="stylesheet" href="<%=
-    Pathname(Rails.configuration.relative_url_root).join(
-      'dk1/assets/fonts/feather.css').to_s %>">
-    <link rel="stylesheet" href="<%=
-    Pathname(Rails.configuration.relative_url_root).join(
-      'dk1/assets/fonts/fontawesome.css').to_s %>">
-    <link rel="stylesheet" href="<%=
-    Pathname(Rails.configuration.relative_url_root).join(
-      'dk1/assets/fonts/material.css').to_s %>">
-    <link rel="stylesheet" href="<%=
-    Pathname(Rails.configuration.relative_url_root).join(
-      'dk1/assets/css/style.css').to_s %>" id="main-style-link">
+      <!-- dashboardkit 1.0 -->
+      <link rel="stylesheet" href="<%=
+      Pathname(Rails.configuration.relative_url_root).join(
+        'dk1/assets/fonts/feather.css').to_s %>">
+        <link rel="stylesheet" href="<%=
+        Pathname(Rails.configuration.relative_url_root).join(
+          'dk1/assets/fonts/fontawesome.css').to_s %>">
+          <link rel="stylesheet" href="<%=
+          Pathname(Rails.configuration.relative_url_root).join(
+            'dk1/assets/fonts/material.css').to_s %>">
+            <link rel="stylesheet" href="<%=
+            Pathname(Rails.configuration.relative_url_root).join(
+              'dk1/assets/css/style.css').to_s %>" id="main-style-link">
+              <link rel="stylesheet" href="<%=
+              Pathname(Rails.configuration.relative_url_root).join(
+                'dk1/assets/css/personaliza.css').to_s %>" id="main-style-link">
+
 
   </head>
   <body>
@@ -93,7 +84,7 @@
       <div class="pcm-logo">
         <img src="<% Pathname(Rails.configuration.relative_url_root).join(
           'dk1/assets/fonts/feather.css').to_s %>"
-             alt="" class="logo logo-lg">
+          alt="" class="logo logo-lg">
       </div>
       <div class="pcm-toolbar">
         <a href="#!" class="pc-head-link" id="mobile-collapse">
@@ -109,24 +100,24 @@
       <div class="navbar-wrapper">
         <div class="m-header">
           <a href="<%= Rails.configuration.relative_url_root.to_s %>" 
-             class="b-brand"
-              style="text-decoration: none" >
-              <%= image_tag('logo-av2.png', 
-                            class: 'logo logo-lg') %>
-              <span style='color: white'> Cor1440</span>
+            class="b-brand"
+            style="text-decoration: none" >
+            <%= image_tag('logo-av2.png', 
+                          class: 'logo logo-lg') %>
+                        <span style='color: white'> Cor1440</span>
           </a>
         </div>
         <div class="navbar-content ps ps--active-y">
           <ul class="pc-navbar">
-              <li class="pc-item pc-caption">
-                <label>Monitoreo</label>
-              </li>
-              <li class="pc-item">
-                <a href="<%= Rails.configuration.relative_url_root.to_s %>"
-                   class="pc-link "><span class="pc-micon">
-                     <i class="material-icons-two-tone">home</i></span>
-                   <span class="pc-mtext">Tablero</span></a>
-              </li>
+            <li class="pc-item pc-caption">
+              <label>Monitoreo</label>
+            </li>
+            <li class="pc-item">
+              <a href="<%= Rails.configuration.relative_url_root.to_s %>"
+                class="pc-link "><span class="pc-micon">
+                  <i class="material-icons-two-tone">home</i></span>
+                <span class="pc-mtext">Tablero</span></a>
+            </li>
             <% if !current_usuario.nil? %>
               <li class="pc-item pc-hasmenu">
                 <a href="#!" class="pc-link ">
@@ -150,7 +141,7 @@
               </li>
               <li class="pc-item pc-hasmenu">
                 <a href="#!" class="pc-link ">
-                    <i class="material-icons-two-tone">history_edu</i>
+                  <i class="material-icons-two-tone">history_edu</i>
                   </span>
                   <span class="pc-mtext">Actividades</span>
                   <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
@@ -176,14 +167,14 @@
               </li>
             <% end %>
             <li class="pc-item pc-caption">
-                </span>
-                  <span class="pc-micon">
-              <label>Documentos</label>
+              </span>
+              <span class="pc-micon">
+                <label>Documentos</label>
             </li>
             <li class="pc-item">
               <a href="https://docs.google.com/document/d/1mmydkqNmZbXkzcpkiegQ_XAP_NkjfX-RXgcW1yzjdpE/edit?usp=sharing" 
-                 target="_blank"
-                 class="pc-link ">
+                target="_blank"
+                class="pc-link ">
                 <span class="pc-micon">
                   <i class="material-icons-two-tone">menu_book</i>
                 </span>
@@ -193,9 +184,9 @@
             <% if !current_usuario.nil? %>
               <li class="pc-item">
                 <a href="<%= Rails.configuration.relative_url_root.to_s %>"
-                   class="pc-link "><span class="pc-micon">
-                     <i class="material-icons-two-tone">cloud</i></span>
-                   <span class="pc-mtext">Nube</span></a>
+                  class="pc-link "><span class="pc-micon">
+                    <i class="material-icons-two-tone">cloud</i></span>
+                  <span class="pc-mtext">Nube</span></a>
               </li>
 
               <li class="pc-item pc-hasmenu">
@@ -246,72 +237,72 @@
         </div>
       </div>
     </nav>
-  
+
     <header class="pc-header">
       <div class="header-wrapper"> 
         <div class="mr-auto pc-mob-drp">
         </div>
         <div class="ml-auto">
-        	<ul class="list-unstyled">
-        		<li class="dropdown pc-h-item">
-        			<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-        				<i class="material-icons-two-tone">search</i>
-        			</a>
-        			<div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
-        				<form class="px-3">
-        					<div class="form-group mb-0 d-flex align-items-center">
-        						<i data-feather="search"></i>
-        						<input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
-        					</div>
-        				</form>
-        			</div>
-        		</li>
-              <% if current_usuario %>
-                <li class="dropdown pc-h-item">
-                  <a href="#" class="pc-head-link dropdown-toggle arrow-none mr-0"  data-bs-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
-                    <img src="/cor1440/dk1/assets/images/user/avatar-2.jpg" 
-                         alt="user-image" class="user-avtar">
-                    <span>
-                      <span class="user-name"><%= current_usuario.nusuario %></span>
-                      <span class="user-desc"><%= Ability::ROLES.to_h.key(current_usuario.rol) %></span>
-                    </span>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
-                    <a href="<%= main_app.editar_registro_usuario_path %>" class="dropdown-item">
-                      <i class="material-icons">chrome_reader_mode</i>
-                      <span>Clave y tema</span>
-                    </a>
-                    <a href="<%= main_app.sign_out_path %>" class="dropdown-item">
-                      <i class="material-icons">
-                        logout
-                      </i>
-                      <span>Salir</span>
-                    </a>
+          <ul class="list-unstyled">
+            <li class="dropdown pc-h-item">
+              <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                <i class="material-icons-two-tone">search</i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
+                <form class="px-3">
+                  <div class="form-group mb-0 d-flex align-items-center">
+                    <i data-feather="search"></i>
+                    <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
                   </div>
-                </li>
-              <% else %>
-                <li class="pc-h-item">
-                  <a href="<%= main_app.new_usuario_session_path %>">
-                    <i class="material-icons">
-                      login
-                    </i>
-                    <span class="align-top">Iniciar sesión</span>
+                </form>
+              </div>
+            </li>
+            <% if current_usuario %>
+              <li class="dropdown pc-h-item">
+                <a href="#" class="pc-head-link dropdown-toggle arrow-none mr-0"  data-bs-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
+                  <img src="<%= main_app.usuarios_foto_path(@current_usuario.id) %>" 
+                  alt="user-image" class="user-avtar">
+                  <span>
+                    <span class="user-name"><%= current_usuario.nusuario %></span>
+                    <span class="user-desc"><%= Ability::ROLES.to_h.key(current_usuario.rol) %></span>
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
+                  <a href="<%= main_app.editar_registro_usuario_path %>" class="dropdown-item">
+                    <i class="material-icons">chrome_reader_mode</i>
+                    <span>Clave y tema</span>
                   </a>
-                </li>
+                  <a href="<%= main_app.sign_out_path %>" class="dropdown-item">
+                    <i class="material-icons">
+                      logout
+                    </i>
+                    <span>Salir</span>
+                  </a>
+                </div>
+              </li>
+            <% else %>
+              <li class="pc-h-item">
+                <a href="<%= main_app.new_usuario_session_path %>">
+                  <i class="material-icons">
+                    login
+                  </i>
+                  <span class="align-top">Iniciar sesión</span>
+                </a>
+              </li>
             <% end %>
-        	</ul>
+          </ul>
         </div>
       </div>
     </header>
     <!-- [ Main Content ] start -->
     <div class="pc-container">
       <%= anuncios_bootstrap %>
-        <%= yield %>
-        <% if content_for?(:piedepagina) %>
-          <footer style='text-align: right'>
-            <%= yield :piedepagina %>
-          </footer>
-        <% end %>
+      <%= yield %>
+      <% if content_for?(:piedepagina) %>
+        <footer style='text-align: right'>
+          <%= yield :piedepagina %>
+        </footer>
+      <% end %>
     </div> 
     <!-- pc-container -->
   </body>
