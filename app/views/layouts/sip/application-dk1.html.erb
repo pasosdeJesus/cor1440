@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <%
-      def opcion_menu_dk(opcionmenu, url, opciones={})
-        cop = opciones.clone
-        if cop[:desplegable] || cop[:dropdown]
-          cop.delete(:desplegable)
-          cop.delete(:dropdown)
-          r = link_to opcionmenu, url, cop.merge({class: 'dropdown-item'})
-        else
-          r = content_tag(:li, class: 'pc-item') do
-            link_to opcionmenu, url, cop.merge({class: 'pc-link'})
-          end
-        end
-        return r
-      end 
-    %>
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -99,7 +84,7 @@
       <div class="pcm-logo">
         <img src="<% Pathname(Rails.configuration.relative_url_root).join(
           'dk1/assets/fonts/feather.css').to_s %>"
-             alt="" class="logo logo-lg">
+          alt="" class="logo logo-lg">
       </div>
       <div class="pcm-toolbar">
         <a href="#!" class="pc-head-link" id="mobile-collapse">
@@ -252,6 +237,7 @@
         </div>
       </div>
     </nav>
+
     <header class="pc-header">
       <div class="header-wrapper"> 
         <div class="mr-auto pc-mob-drp">
@@ -274,7 +260,7 @@
             <% if current_usuario %>
               <li class="dropdown pc-h-item">
                 <a href="#" class="pc-head-link dropdown-toggle arrow-none mr-0"  data-bs-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
-                  <img src="<%= main_app.usuarios_foto_path(current_usuario.id) %>" 
+                  <img src="<%= main_app.usuarios_foto_path(@current_usuario.id) %>" 
                   alt="user-image" class="user-avtar">
                   <span>
                     <span class="user-name"><%= current_usuario.nusuario %></span>
@@ -288,7 +274,7 @@
                   </a>
                   <a href="<%= main_app.sign_out_path %>" class="dropdown-item">
                     <i class="material-icons">
-                      login
+                      logout
                     </i>
                     <span>Salir</span>
                   </a>
