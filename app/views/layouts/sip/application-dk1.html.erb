@@ -69,6 +69,7 @@
               <link rel="stylesheet" href="<%=
               Pathname(Rails.configuration.relative_url_root).join(
                 'dk1/assets/css/personaliza-dk1.css').to_s %>">
+
   </head>
   <body>
 
@@ -260,7 +261,7 @@
             <% if current_usuario %>
               <li class="dropdown pc-h-item">
                 <a href="#" class="pc-head-link dropdown-toggle arrow-none mr-0"  data-bs-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
-                  <img src="<%= main_app.usuarios_foto_path(@current_usuario.id) %>" 
+                  <img src="<%= main_app.usuarios_foto_path(current_usuario.id) %>" 
                   alt="user-image" class="user-avtar">
                   <span>
                     <span class="user-name"><%= current_usuario.nusuario %></span>
