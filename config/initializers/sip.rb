@@ -10,7 +10,7 @@ Sip.setup do |config|
     config.ruta_anexos = "#{Rails.root}/tmp/"
   end
   config.titulo = "Cor1440 #{Cor1440Gen::VERSION}"
-  config.colorom_fondo = '#ffffff'
+  config.colorom_fondo = '#eef0f6'
   config.colorom_color_fuente = '#293240'
   config.colorom_nav_ini = '#6450b9'
   config.colorom_nav_fin = '#6450b9'

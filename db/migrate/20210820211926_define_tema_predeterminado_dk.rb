@@ -3,7 +3,7 @@ class DefineTemaPredeterminadoDk < ActiveRecord::Migration[6.1]
     execute <<-SQL
       UPDATE sip_tema SET
         nombre='PREDETERMINADO DASHBOARDKIT',
-        fondo = '#ffffff',
+        fondo = '#eef0f6',
         color_fuente = '#293240',
         nav_ini = '#6450b9',
         nav_fin = '#6450b9',
