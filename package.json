@@ -26,7 +26,6 @@
     "popper.js": "^2.0.0-next.4",
     "prismjs": "^1.23.0",
     "serialize-javascript": "3.1.0",
-    "turbolinks": "^5.2.0"
   },
   "devDependencies": {
     "@webpack-cli/serve": "^1.5.1",
