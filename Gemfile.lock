@@ -11,8 +11,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4a8e93a1bca8ecc3c85732ada4b97d1965b43a31
-  branch: main
+  revision: e9cb221d1147c0c3262eba49da7fe270a0a57a9b
+  branch: bs5
   specs:
     cor1440_gen (1.0b4)
       devise
@@ -25,8 +25,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 6f3a2ec0436b5c14584faf7df6632923b884db4e
-  branch: main
+  revision: 2a808bc0ccebcd65153f9d5c0984c016db10c2a3
+  branch: bs5
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -36,8 +36,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 2c5cf6fe25487ad08c8ad8f5ae8a2f2da734b592
-  branch: main
+  revision: d458cd8b718d9538805afdf9d18b73422e5e2d3f
+  branch: bs5
   specs:
     mr519_gen (0.2.0)
       rails
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: dcfd4cab800add0627a6ca67aada414ecf93b9ce
+  revision: 12d1998bac8d584ae2bd9254bcc4364b107889a4
   branch: bs5
   specs:
     sip (2.0.b12)
@@ -64,9 +64,9 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: f0a29a589e36421980213350c304f69d631e6561
+  revision: 156a88d7553cd6e83f10216dcae819ec98c8b68d
   specs:
-    webpacker (6.0.0.rc.1)
+    webpacker (6.0.0.rc.5)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -150,7 +150,7 @@ GEM
     bcrypt (3.1.16)
     bigdecimal (3.0.2)
     bindex (0.8.1)
-    bootsnap (1.7.7)
+    bootsnap (1.8.1)
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -254,7 +254,7 @@ GEM
     mimemagic (0.3.10)
       nokogiri (~> 1)
       rake
-    mini_mime (1.1.0)
+    mini_mime (1.1.1)
     mini_portile2 (2.6.1)
     minitest (5.14.4)
     msgpack (1.4.2)
@@ -316,7 +316,7 @@ GEM
       activesupport (>= 4.2)
       choice (~> 0.2.0)
       ruby-graphviz (~> 1.2)
-    rails-html-sanitizer (1.4.1)
+    rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
     rails-i18n (6.0.0)
       i18n (>= 0.7, < 2)
