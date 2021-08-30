@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 26060099b7f7fde3df087a22f50b61e75e60d776
+  revision: 22eee567c989af373f85e67774266862948534ef
   branch: bs5
   specs:
     cor1440_gen (1.0b4)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 2a808bc0ccebcd65153f9d5c0984c016db10c2a3
+  revision: 0f5c9168165e8fffe7f4822ecd462797091d5700
   branch: bs5
   specs:
     heb412_gen (1.0.b6)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 6797a61336e2293472d94f5822c4fc26c35572d6
+  revision: 1a749da96758da730a40948445950ec58325b4ef
   branch: bs5
   specs:
     mr519_gen (0.2.0)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 12d1998bac8d584ae2bd9254bcc4364b107889a4
+  revision: 09ee2bf7f2e1249a4a95cf35d6315aa79c399386
   branch: bs5
   specs:
     sip (2.0.b12)
@@ -206,7 +206,7 @@ GEM
     dry-logic (1.2.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.5, >= 0.5)
-    dry-schema (1.7.0)
+    dry-schema (1.7.1)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.8, >= 0.8.3)
       dry-core (~> 0.5, >= 0.5)
@@ -258,7 +258,7 @@ GEM
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.8)
-    nokogiri (1.12.3)
+    nokogiri (1.12.4)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     odf-report (0.7.2)
