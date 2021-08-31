@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 74bdb33eb09cd3194c9a34ed49e5c1448695d04e
+  revision: b575d17fd86d774afca4d85758b689eb727e8e9b
   branch: bs5
   specs:
     cor1440_gen (1.0b4)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: b6465bee508b1e877f429b20609faf2bd9294256
+  revision: d275e539ceb741fde39ca872330876295d8f3d06
   branch: bs5
   specs:
     heb412_gen (1.0.b6)
@@ -36,31 +36,12 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: d523a296af7915f8e24eee286af6a6d53076def0
+  revision: 54afbc7ac041a06c51021cf9385d8b1e77928629
   branch: bs5
   specs:
     mr519_gen (0.2.0)
       rails
       sip
-
-GIT
-  remote: https://github.com/pasosdeJesus/sip.git
-  revision: 8ef8dd05f8de25e84c45c3c32db1909a7da898f8
-  branch: bs5
-  specs:
-    sip (2.0.b12)
-      cancancan
-      chosen-rails
-      devise
-      devise-i18n
-      jquery-ui-rails
-      minitest
-      paperclip
-      rails
-      rails-i18n
-      simple_form
-      twitter_cldr
-      will_paginate
 
 GIT
   remote: https://github.com/rails/webpacker.git
@@ -78,6 +59,23 @@ GIT
   branch: new_id_with_ajax
   specs:
     cocoon (1.2.11)
+
+PATH
+  remote: ../sip
+  specs:
+    sip (2.0.b12)
+      cancancan
+      chosen-rails
+      devise
+      devise-i18n
+      jquery-ui-rails
+      minitest
+      paperclip
+      rails
+      rails-i18n
+      simple_form
+      twitter_cldr
+      will_paginate
 
 GEM
   remote: https://rubygems.org/
