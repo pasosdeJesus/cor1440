@@ -11,10 +11,10 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: b575d17fd86d774afca4d85758b689eb727e8e9b
+  revision: cf1288c3fb3a7b609aff72a4f61738c731c458bb
   branch: bs5
   specs:
-    cor1440_gen (1.0b4)
+    cor1440_gen (1.0b5)
       devise
       heb412_gen
       jquery-rails
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: d275e539ceb741fde39ca872330876295d8f3d06
+  revision: 88bc7c37f58f627760ba00145015222da7341c27
   branch: bs5
   specs:
     heb412_gen (1.0.b6)
@@ -36,12 +36,31 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 54afbc7ac041a06c51021cf9385d8b1e77928629
+  revision: c2aa0cd5c9cf2ce5d855f6ed199ce30ba6a2527c
   branch: bs5
   specs:
     mr519_gen (0.2.0)
       rails
       sip
+
+GIT
+  remote: https://github.com/pasosdeJesus/sip.git
+  revision: 652aa3e135ae001888e0664de75fa26834a5ef41
+  branch: bs5
+  specs:
+    sip (2.0.b12)
+      cancancan
+      chosen-rails
+      devise
+      devise-i18n
+      jquery-ui-rails
+      minitest
+      paperclip
+      rails
+      rails-i18n
+      simple_form
+      twitter_cldr
+      will_paginate
 
 GIT
   remote: https://github.com/rails/webpacker.git
@@ -59,23 +78,6 @@ GIT
   branch: new_id_with_ajax
   specs:
     cocoon (1.2.11)
-
-PATH
-  remote: ../sip
-  specs:
-    sip (2.0.b12)
-      cancancan
-      chosen-rails
-      devise
-      devise-i18n
-      jquery-ui-rails
-      minitest
-      paperclip
-      rails
-      rails-i18n
-      simple_form
-      twitter_cldr
-      will_paginate
 
 GEM
   remote: https://rubygems.org/
@@ -222,7 +224,7 @@ GEM
       ruby-graphviz
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.3)
+    ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
     i18n (1.8.10)
@@ -247,7 +249,7 @@ GEM
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0704)
+    mime-types-data (3.2021.0901)
     mimemagic (0.3.10)
       nokogiri (~> 1)
       rake
