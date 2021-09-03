@@ -11,10 +11,10 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 6ac30127154e28cf3caf6391a87e3598f187fce9
+  revision: cf1288c3fb3a7b609aff72a4f61738c731c458bb
   branch: bs5
   specs:
-    cor1440_gen (1.0b4)
+    cor1440_gen (1.0b5)
       devise
       heb412_gen
       jquery-rails
@@ -25,10 +25,10 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 2a808bc0ccebcd65153f9d5c0984c016db10c2a3
+  revision: 7b889380d99d4b0dfe3ec846db1207a42262056b
   branch: bs5
   specs:
-    heb412_gen (1.0.b6)
+    heb412_gen (1.0.b7)
       mr519_gen
       redcarpet
       rspreadsheet
@@ -36,16 +36,16 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: d458cd8b718d9538805afdf9d18b73422e5e2d3f
+  revision: fd394552c3712d10b9d34bdec230fc218d39e8da
   branch: bs5
   specs:
-    mr519_gen (0.2.0)
+    mr519_gen (0.2.1)
       rails
       sip
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 12d1998bac8d584ae2bd9254bcc4364b107889a4
+  revision: 3c5a40b62e102dbdd17cc0de5b082ad0987ae5f9
   branch: bs5
   specs:
     sip (2.0.b12)
@@ -64,7 +64,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: 156a88d7553cd6e83f10216dcae819ec98c8b68d
+  revision: b143810d0ca0ea6f1c1c9eaa17acbfc3d69aa9f8
   specs:
     webpacker (6.0.0.rc.5)
       activesupport (>= 5.2)
@@ -207,7 +207,7 @@ GEM
     dry-logic (1.2.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.5, >= 0.5)
-    dry-schema (1.7.0)
+    dry-schema (1.7.1)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.8, >= 0.8.3)
       dry-core (~> 0.5, >= 0.5)
@@ -225,7 +225,7 @@ GEM
       ruby-graphviz
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.3)
+    ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
     i18n (1.8.10)
@@ -250,7 +250,7 @@ GEM
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0704)
+    mime-types-data (3.2021.0901)
     mimemagic (0.3.10)
       nokogiri (~> 1)
       rake
@@ -259,7 +259,7 @@ GEM
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.8)
-    nokogiri (1.12.3)
+    nokogiri (1.12.4)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     odf-report (0.7.2)
