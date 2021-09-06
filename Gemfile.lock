@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: ceaee68bd8632073388cda57504d442828f2a3b5
+  revision: c80170dc2ad677ac860b92a09a6671170ba835bd
   branch: main
   specs:
     cor1440_gen (1.0b5)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: e02973d32b7c3f9df37862a0973c7a694667009b
+  revision: 1c5ae7c4a5b38ea689cb5716a8f5e363de0cc9ff
   branch: main
   specs:
     heb412_gen (1.0.b7)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 3c81e39b831bc6c4d8f086b33bd7dc82125389c4
+  revision: c67f16bcee25e32c28a2750f1ca7077769ba3739
   branch: main
   specs:
     mr519_gen (0.2.1)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 785140129f07bc40259ae21053718254755732d8
+  revision: 88791d6ed425c2280586a7989495902232e49857
   branch: main
   specs:
     sip (2.0.b12)
@@ -64,7 +64,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: b143810d0ca0ea6f1c1c9eaa17acbfc3d69aa9f8
+  revision: 5de0fbc1e16d3db0c93202fb39f5b4d80582c682
   specs:
     webpacker (6.0.0.rc.5)
       activesupport (>= 5.2)
