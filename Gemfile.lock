@@ -11,8 +11,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: cf1288c3fb3a7b609aff72a4f61738c731c458bb
-  branch: bs5
+  revision: 22c4cd7a47ad0477b135599c0508f6198494c2cf
+  branch: main
   specs:
     cor1440_gen (1.0b5)
       devise
@@ -25,8 +25,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 7b889380d99d4b0dfe3ec846db1207a42262056b
-  branch: bs5
+  revision: 6c446b8043977e20437294454e8a5832a3a0dc09
+  branch: main
   specs:
     heb412_gen (1.0.b7)
       mr519_gen
@@ -36,8 +36,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: fd394552c3712d10b9d34bdec230fc218d39e8da
-  branch: bs5
+  revision: 5cc03deed0a8d5d9453031b7b075f98eb9257767
+  branch: main
   specs:
     mr519_gen (0.2.1)
       rails
@@ -45,8 +45,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 3c5a40b62e102dbdd17cc0de5b082ad0987ae5f9
-  branch: bs5
+  revision: 477fae344516e7021ab150316799406beb4aedd2
+  branch: main
   specs:
     sip (2.0.b12)
       cancancan
@@ -60,17 +60,6 @@ GIT
       rails-i18n
       simple_form
       twitter_cldr
-      will_paginate
-
-GIT
-  remote: https://github.com/rails/webpacker.git
-  revision: 540b04de8ae7ddeefe82a19c704e10cdbf9d772e
-  specs:
-    webpacker (6.0.0.rc.5)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
@@ -390,6 +379,11 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webpacker (6.0.0.rc.1)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -445,7 +439,7 @@ DEPENDENCIES
   tzinfo
   unicorn
   web-console
-  webpacker!
+  webpacker (= 6.0.0.rc.1)
   will_paginate
 
 RUBY VERSION
