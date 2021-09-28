@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 8470a5bdac9bd6a495267b5f3577745cd21f2397
+  revision: 22c4cd7a47ad0477b135599c0508f6198494c2cf
   branch: main
   specs:
     cor1440_gen (1.0b5)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 30c989e447d6bdc796d4a69c705ac7077802033d
+  revision: 6c446b8043977e20437294454e8a5832a3a0dc09
   branch: main
   specs:
     heb412_gen (1.0.b7)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 2fdf6d88dee709a4e7f64473367f9acdbb574447
+  revision: 5cc03deed0a8d5d9453031b7b075f98eb9257767
   branch: main
   specs:
     mr519_gen (0.2.1)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 2f46ce0b2ae542f03bc5ae21fc4582bbbc9b09ce
+  revision: 477fae344516e7021ab150316799406beb4aedd2
   branch: main
   specs:
     sip (2.0.b12)
@@ -60,16 +60,6 @@ GIT
       rails-i18n
       simple_form
       twitter_cldr
-
-GIT
-  remote: https://github.com/rails/webpacker.git
-  revision: d7adcd20ddb77097a99a27f94491e78884c6ec59
-  specs:
-    webpacker (6.0.0.rc.5)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
@@ -257,7 +247,7 @@ GEM
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.8)
-    nokogiri (1.12.4)
+    nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     odf-report (0.7.2)
@@ -388,6 +378,11 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webpacker (6.0.0.rc.1)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -442,7 +437,7 @@ DEPENDENCIES
   tzinfo
   unicorn
   web-console
-  webpacker!
+  webpacker (= 6.0.0.rc.1)
   will_paginate
 
 RUBY VERSION
