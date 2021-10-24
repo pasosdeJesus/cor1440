@@ -4932,6 +4932,20 @@ CREATE INDEX sip_nombre_ubicacionpre_b ON public.sip_ubicacionpre USING gin (to_
 
 
 --
+-- Name: sip_persona_anionac_ind; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX sip_persona_anionac_ind ON public.sip_persona USING btree (anionac);
+
+
+--
+-- Name: sip_persona_sexo_ind; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX sip_persona_sexo_ind ON public.sip_persona USING btree (sexo);
+
+
+--
 -- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -6502,6 +6516,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210614212220'),
 ('20210616003251'),
 ('20210619191706'),
-('20210728214424');
+('20210728214424'),
+('20211024105450');
 
 

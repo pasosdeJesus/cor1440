@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 8524572a220b3fa2e8f659b5a0353b6f3ab1351d
+  revision: ee7a8172dea2270ffe373a1f23bea2734cf9c1ef
   branch: main
   specs:
     cor1440_gen (1.0b5)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 0aa27860fe73592ff58f61fdac419e0b4b8f859a
+  revision: 736b55117638bac78bac63b718c9935566de7360
   branch: main
   specs:
     heb412_gen (1.0.b7)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 563d87e5a729442db722aa901d655fe32cc07832
+  revision: f75765a12814a384eebd2f5e0c84f93f7b1fe6e8
   branch: main
   specs:
     mr519_gen (0.2.1)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 5f69b2b6b725a5febe46d2ec5287ed85f1f230b6
+  revision: fc24fa659acb8e2a06009496858a5673fadd1655
   branch: main
   specs:
     sip (2.0.b12)
@@ -226,7 +226,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
-    json (2.6.0)
+    json (2.6.1)
     kgio (2.11.4)
     libxml-ruby (3.2.1)
     loofah (2.12.0)
