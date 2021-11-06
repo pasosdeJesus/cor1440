@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 428fa51f6ac034e94de67f6d495c2b6c455963fb
+  revision: a1b6e1b0e0dd1eb9f05e68b5447bda3dc44c287e
   branch: main
   specs:
     cor1440_gen (1.0b5)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: dc0e19cd43e760d303b2d36548077f8c0277320c
+  revision: 2c46b6daa111781e2a9f9bc08c15cf8aaf3f924c
   branch: main
   specs:
     heb412_gen (1.0.b7)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 5be7b03e93432fc1994f1f46ec36ed50829173a7
+  revision: fc020a2b47ca4e1b3637d8840991d96973708c7a
   branch: main
   specs:
     mr519_gen (0.2.1)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: c13e90196c7321167a61e459f5f8ac301a572aaf
+  revision: 8d48911ae6209d6dbf830806a2c0615ae53260ae
   branch: main
   specs:
     sip (2.0.b12)
@@ -217,7 +217,7 @@ GEM
     ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
