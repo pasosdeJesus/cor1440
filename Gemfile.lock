@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: a1b6e1b0e0dd1eb9f05e68b5447bda3dc44c287e
+  revision: cb4c09fa3a2bd1c9fea50a4398951b41902408c0
   branch: main
   specs:
     cor1440_gen (1.0b5)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 2c46b6daa111781e2a9f9bc08c15cf8aaf3f924c
+  revision: 1ed8783025ad331340aca4ba5fb3e6303190d5b5
   branch: main
   specs:
     heb412_gen (1.0.b7)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: fc020a2b47ca4e1b3637d8840991d96973708c7a
+  revision: 02586167b0ed6cf5bd67876d36aeb770107294d9
   branch: main
   specs:
     mr519_gen (0.2.1)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 8d48911ae6209d6dbf830806a2c0615ae53260ae
+  revision: e1541228592b1fbc3995bc316fa8626aa09c123f
   branch: main
   specs:
     sip (2.0.b12)
@@ -356,9 +356,9 @@ GEM
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.2)
-      actionpack (>= 4.0)
-      activesupport (>= 4.0)
+    sprockets-rails (3.3.0)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
