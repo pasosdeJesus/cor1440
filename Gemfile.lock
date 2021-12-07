@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: d04f9ec34baf395402390ca7d410aa90073f704f
+  revision: 4676c5a8da47705df75705d311ec05e985b88b56
   branch: main
   specs:
     cor1440_gen (1.0b5)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 6a23ddbe791ead3c1bd30db5641f1dbe3f822f18
+  revision: cb0512f67ee69b43dbe1ae31815433e2487ecfd2
   branch: main
   specs:
     heb412_gen (2.0)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: e9c7caaa0edde34f338c03dc71cff5da9f058440
+  revision: ff21794c3ea7b9633a8545f381a54238f852a3a8
   branch: main
   specs:
     mr519_gen (2.0)
@@ -317,7 +317,7 @@ GEM
       method_source
       rake (>= 0.13)
       thor (~> 1.0)
-    raindrops (0.19.2)
+    raindrops (0.20.0)
     rake (13.0.6)
     redcarpet (3.5.1)
     regexp_parser (2.2.0)
