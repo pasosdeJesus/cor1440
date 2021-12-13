@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 752590e3a4adc85337f021ccf02f1e01af7f4ed8
+  revision: 32a524307aadacdd7ceecddbb5f83da3b0ad1dff
   branch: main
   specs:
     cor1440_gen (1.0b5)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: bed3fa3d7b29ecb8d19a88da07a209a53ef6fbdd
+  revision: fb333776e455d7f2ef34858f69eca1e4b619e7f8
   branch: main
   specs:
     heb412_gen (2.0)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 1f5a44cb5b45102fe0a281b990fabfba7a45bced
+  revision: ec051ccd4febf1f7a82963336ee2bdc1783448ff
   branch: main
   specs:
     mr519_gen (2.0)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: f5e1c53d6c8f24be9cc654e875cb956b0e1fb834
+  revision: 45fd00188714cd9024131dc5f58b72afe035c7f7
   branch: main
   specs:
     sip (2.0)
@@ -230,7 +230,7 @@ GEM
     json (2.6.1)
     kgio (2.11.4)
     libxml-ruby (3.2.1)
-    loofah (2.12.0)
+    loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -356,7 +356,7 @@ GEM
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.4.1)
+    sprockets-rails (3.4.2)
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
