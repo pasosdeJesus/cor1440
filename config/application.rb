@@ -10,7 +10,7 @@ Bundler.require(*Rails.groups)
 module Cor1440
   class Application < Rails::Application
 
-    # config.load_defaults 6.0
+    config.load_defaults 7.0
 
     # Las configuraciones en config/environments/* tiene precedencia sobre
     # las especificadas aquí.
