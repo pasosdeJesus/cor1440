@@ -1,8 +1,4 @@
 /* eslint no-console:0 */
-<<<<<<< HEAD
-
-=======
->>>>>>> 81d55d1 (actualiza a webpacker 6)
 // Este archivo se compila automaticamente con Webpack, junto con otros
 // archivos presentes en este directorio.  Lo animamos a poner la lógica
 // de su aplicacíon en una estructura relevante dentro de app/javascript
@@ -25,7 +21,6 @@
 console.log('Hola Mundo desde Webpacker')
 
 import Rails from "@rails/ujs"
-<<<<<<< HEAD
 Rails.start()
 
 import Turbolinks from "turbolinks"
@@ -33,8 +28,6 @@ Turbolinks.start()
 
 import './jquery'
 import '../../vendor/assets/javascripts/jquery-ui'
-
-window.jQuery = $
 
 import { Tooltip, Toast, Popover } from 'bootstrap';
 
@@ -47,7 +40,7 @@ import 'bootstrap-datepicker'
 import 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js'
 import 'feather-icons'
 
-import '../components/dk1'
+import './dk1'
 
 import ApexCharts from 'apexcharts'
 window.ApexCharts = ApexCharts
@@ -56,34 +49,4 @@ Apex.chart = {
   locales: [apexes],
   defaultLocale: 'es',
 }
-=======
-import Turbolinks from "turbolinks"
 
-Rails.start()
-Turbolinks.start()
-
-import ApexCharts from 'apexcharts'
-window.ApexCharts = ApexCharts
-
-import $ from "expose-loader?exposes=$,jQuery!jquery";
-
-window.jQuery = $
-
-import { Tooltip, Toast, Popover } from 'bootstrap';
-
-import PerfectScrollbar from 'perfect-scrollbar';
-
-import 'popper.js'              // Dialogos emergentes usados por bootstrap
-import 'bootstrap'              // Maquetacion y elementos de diseño
-import 'chosen-js/chosen.jquery';       // Cuadros de seleccion potenciados
-import 'bootstrap-datepicker'
-import 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js'
-import 'jquery-ui'
-import 'jquery-ui/ui/widgets/autocomplete' 
-import 'jquery-ui/ui/data' 
-import 'jquery-ui/ui/focusable' 
-import 'feather-icons'
-
-import '../components/dk1'
-
->>>>>>> 81d55d1 (actualiza a webpacker 6)
