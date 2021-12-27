@@ -2,11 +2,13 @@
   "name": "cor1440",
   "private": true,
   "version": "0.1.0",
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "@popperjs/core": "^2.9.3",
     "@rails/ujs": "^6.0.1",
-    "@rails/webpacker": "6.0.0-rc.1",
     "animate.css": "^4.1.1",
     "apexcharts": "^3.26.0",
     "apexcharts": "^3.27.2",
@@ -14,6 +16,8 @@
     "bootstrap": "^5.1.0",
     "bootstrap-datepicker": "^1.9.0",
     "chosen-js": "^1.8.7",
+    "esbuild": "^0.14.8",
+    "expose-loader": "^3.0.0",
     "feather-icons": "^4.28.0",
     "gridstack": "^0.6.0",
     "is-svg": "^4.2.2",
@@ -26,7 +30,6 @@
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "@webpack-cli/serve": "^1.5.1",
     "babel-plugin-macros": "^3.1.0",
     "glob-parent": "^5.1.2",
     "normalize-url": "^4.5.1",
