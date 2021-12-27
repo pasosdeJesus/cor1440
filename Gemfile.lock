@@ -11,8 +11,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 277f4d3d597bb29997c828907dc2bd46ef0dbd8a
-  branch: rails7
+  revision: 57819633de1af8b9b9d950b2e1f11f2896e9a949
+  branch: rails7jses
   specs:
     cor1440_gen (2.0a1)
       devise
@@ -25,10 +25,10 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f7ddbef09741b4e2071824f61471b53dd44b723e
-  branch: rails7
+  revision: f5991388740a6312ff55baabcde7747ce37b54a3
+  branch: rails7jses
   specs:
-    heb412_gen (2.0)
+    heb412_gen (2.1a1)
       mr519_gen
       redcarpet
       rspreadsheet
@@ -36,17 +36,17 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: e87a73ea3ad39f2db894095068a876cd9f1ace1a
-  branch: rails7
+  revision: af543c6edf0b27f9f1ec106442587300a29c564a
+  branch: rails7jses
   specs:
-    mr519_gen (2.0)
+    mr519_gen (2.1a1)
       rails
       sip
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 66677df6ad96d7241cd939c99917a01190273841
-  branch: rails7
+  revision: 15dcc86e684b98c2eeef60d6fffe2dcd3c182b46
+  branch: rails7jses
   specs:
     sip (2.1a1)
       cancancan
@@ -228,6 +228,8 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
+    jsbundling-rails (1.0.0)
+      railties (>= 6.0.0)
     json (2.6.1)
     kgio (2.11.4)
     libxml-ruby (3.2.1)
@@ -280,8 +282,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
-    rack-proxy (0.7.0)
-      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.0)
@@ -344,7 +344,6 @@ GEM
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
-    semantic_range (3.0.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -382,11 +381,6 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (6.0.0.rc.1)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -415,6 +409,7 @@ DEPENDENCIES
   execjs
   heb412_gen!
   jbuilder
+  jsbundling-rails
   kt-paperclip!
   libxml-ruby
   mr519_gen!
@@ -437,11 +432,11 @@ DEPENDENCIES
   simple_form
   simplecov (< 0.18)
   sip!
+  sprockets-rails
   twitter_cldr
   tzinfo
   unicorn
   web-console
-  webpacker (= 6.0.0.rc.1)
   will_paginate
 
 RUBY VERSION

@@ -39,6 +39,8 @@ public/cor1440*
 yarn-debug.log*
 .yarn-integrity
 
+app/assets/builds/
+
 /config/master.key
 .env
 config/credentials.yml.enc
