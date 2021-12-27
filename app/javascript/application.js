@@ -16,6 +16,7 @@ import { Tooltip, Toast, Popover } from 'bootstrap';
 import PerfectScrollbar from 'perfect-scrollbar';
 window.PerfectScrollbar=PerfectScrollbar
 
+window.jQuery = $
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
 import * as bootstrap from 'bootstrap'              // Maquetacion y elementos de diseño
 import 'chosen-js/chosen.jquery';       // Cuadros de seleccion potenciados
