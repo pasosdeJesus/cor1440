@@ -10,8 +10,6 @@ gem 'babel-transpiler'
 
 gem 'bcrypt'
 
-gem 'babel-transpiler'
-
 gem 'bootsnap', '>=1.1.0', require: false
 
 gem 'cancancan'
@@ -81,7 +79,6 @@ gem 'will_paginate' # Listados en páginas
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-<<<<<<< HEAD
   git: 'https://github.com/pasosdeJesus/sip.git', branch: :main
   #path: '../sip'
 
@@ -105,13 +102,12 @@ group :development do
   
   gem 'rails-erd'
 
-  gem 'rails-erd'
-
   gem 'web-console'
 end
 
 
 group :development, :test do
+
   gem 'debug'
 
   gem 'colorize' # Color en terminal
