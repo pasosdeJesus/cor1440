@@ -24,13 +24,6 @@ CREATE EXTENSION IF NOT EXISTS unaccent WITH SCHEMA public;
 
 
 --
--- Name: EXTENSION unaccent; Type: COMMENT; Schema: -; Owner: -
---
-
-COMMENT ON EXTENSION unaccent IS 'text search dictionary that removes accents';
-
-
---
 -- Name: completa_obs(character varying, character varying); Type: FUNCTION; Schema: public; Owner: -
 --
 
@@ -2738,13 +2731,6 @@ CREATE TABLE public.sip_grupoper (
 
 
 --
--- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
---
-
-COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en cor1440_produccion';
-
-
---
 -- Name: sip_grupoper_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -4890,6 +4876,20 @@ CREATE INDEX sip_nombre_ubicacionpre_b ON public.sip_ubicacionpre USING gin (to_
 
 
 --
+-- Name: sip_persona_anionac_ind; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX sip_persona_anionac_ind ON public.sip_persona USING btree (anionac);
+
+
+--
+-- Name: sip_persona_sexo_ind; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX sip_persona_sexo_ind ON public.sip_persona USING btree (sexo);
+
+
+--
 -- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -6460,6 +6460,9 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210619191706'),
 ('20210728214424'),
 ('20210820201118'),
-('20210820211926');
+('20210820211926'),
+('20211024105450'),
+('20211117200456'),
+('20211216125250');
 
 

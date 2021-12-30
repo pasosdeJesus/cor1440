@@ -76,19 +76,19 @@ gem 'will_paginate' # Listados en páginas
 
 gem 'sip', # Motor generico
   git: 'https://github.com/pasosdeJesus/sip.git', branch: :rails7jses
-  #path: '../sip'
+  #path: '../sip-rails7'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
   git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :rails7jses
-  #path: '../mr519_gen'
+  #path: '../mr519_gen-rails7'
 
 gem 'heb412_gen',  # Motor de nube y llenado de plantillas
   git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :rails7jses
-  #path: '../heb412_gen'
+  #path: '../heb412_gen-rails7'
 
 gem 'cor1440_gen', # Motor Cor1440_gen
   git: 'https://github.com/pasosdeJesus/cor1440_gen.git', branch: :rails7jses
-  #path: '../cor1440_gen'
+  #path: '../cor1440_gen-rails7'
 
 
 group :development do
@@ -104,7 +104,7 @@ end
 
 group :development, :test do
 
-  #gem 'byebug'
+  gem 'debug'
 
   gem 'colorize' # Color en terminal
 

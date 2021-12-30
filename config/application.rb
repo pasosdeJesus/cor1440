@@ -28,7 +28,7 @@ module Cor1440
     # El locale predeterminado es :en y todas las traducciones de
     # config/locales/*.rb,yml se cargan automaticamente
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :es
+    config.i18n.default_locale = :en
 
     #config.railties_order = [:main_app, Sip::Engine, :all]
 

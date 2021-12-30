@@ -4,10 +4,10 @@ class Ability  < Cor1440Gen::Ability
     Sip::Ability::BASICAS_PROPIAS + BASICAS_PROPIAS - [
       ['Sip', 'fuenteprensa'], 
       ['Sip', 'oficina'], 
-      ['Cor1440Gen', 'proyecto'], 
-      ['Sip', 'tdocumento'], 
       ['Sip', 'trelacion'], 
-      ['Sip', 'tsitio']
+      ['Sip', 'tsitio'],
+      ['Cor1440Gen', 'proyecto'], 
+      ['Cor1440Gen', 'actividadarea']
     ]
   end
 

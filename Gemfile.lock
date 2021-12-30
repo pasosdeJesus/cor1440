@@ -11,21 +11,21 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 57819633de1af8b9b9d950b2e1f11f2896e9a949
+  revision: f5e2f7337528cf948abbe8acf1554dff5939522f
   branch: rails7jses
   specs:
     cor1440_gen (2.0a1)
       devise
       heb412_gen
       jquery-rails
+      kt-paperclip
       mr519_gen
-      paperclip
       rails
       sip
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f5991388740a6312ff55baabcde7747ce37b54a3
+  revision: 0b1afb82661f9956502850438162be925dfce87d
   branch: rails7jses
   specs:
     heb412_gen (2.1a1)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: af543c6edf0b27f9f1ec106442587300a29c564a
+  revision: 28de985e85a076cc7f9686ef12d3470600e7e1b9
   branch: rails7jses
   specs:
     mr519_gen (2.1a1)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 24fc38a745e4b90c6e1068da289cf79f5e2faf0d
+  revision: d14beee32d5ca6c5b2eeb67a3dfc2ea139cd32bc
   branch: rails7jses
   specs:
     sip (2.1a1)
@@ -164,6 +164,9 @@ GEM
     colorize (0.8.1)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    debug (1.4.0)
+      irb (>= 1.3.6)
+      reline (>= 0.2.7)
     devise (4.8.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -213,6 +216,9 @@ GEM
       activesupport (>= 5.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
+    io-console (0.5.9)
+    irb (1.4.1)
+      reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -236,9 +242,6 @@ GEM
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2021.1115)
-    mimemagic (0.3.10)
-      nokogiri (~> 1)
-      rake
     mini_mime (1.1.2)
     mini_portile2 (2.6.1)
     minitest (5.15.0)
@@ -252,12 +255,6 @@ GEM
       nokogiri (>= 1.10.0)
       rubyzip (>= 1.3.0)
     orm_adapter (0.5.0)
-    paperclip (6.1.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      mime-types
-      mimemagic (~> 0.3.0)
-      terrapin (~> 0.6.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
     pg (1.2.3)
@@ -314,6 +311,8 @@ GEM
     rake (13.0.6)
     redcarpet (3.5.1)
     regexp_parser (2.2.0)
+    reline (0.3.0)
+      io-console (~> 0.5)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -357,7 +356,7 @@ GEM
     thor (1.1.0)
     tilt (2.0.10)
     ttfunk (1.7.0)
-    twitter_cldr (6.10.0)
+    twitter_cldr (6.11.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
@@ -379,7 +378,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.2)
+    zeitwerk (2.5.3)
 
 PLATFORMS
   x86_64-openbsd
@@ -394,6 +393,7 @@ DEPENDENCIES
   coffee-rails
   colorize
   cor1440_gen!
+  debug
   devise
   devise-i18n
   dotenv-rails

@@ -30,4 +30,24 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  attributes:
+    proyectosfinancieros: Projects
+    proyectofinanciero: Project
+  activerecord:
+    attributes:
+      "cor1440_gen/proyectofinanciero":
+        Proyectofinanciero: Project
+        Proyectosfinancieros: Projects
+      "cor1440_gen/actividades":
+        Actividad: Activity
+        Actividades: Activities
+        Listdo: List
+        Contar_por_aml: Counting by activity of logical famework
+        Contar_por_beneficiario: Counting by beneficiary and activity of logical famework
+        "Organizaciones sociales": Social organizations
+        "Beneficiarios": Beneficiares
+
+
+
+
+
