@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4e843d7d8b920ec9caea1082f04d3413b05ff73c
+  revision: b2e066b114e2a567cf80bfdd8a44788317394ae7
   branch: rails7jses
   specs:
     cor1440_gen (2.0a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 97a3d85b3df696bf48d03cffb78b50c0a4795c45
+  revision: 1aeab05dadb8e9089ffa96759d63d54c5120a422
   branch: rails7jses
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 41e8450c76ec572ff90b60a3fc28e87679e3539d
+  revision: fb37805d38e0253c4222b75d761d0ee69522e191
   branch: rails7jses
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: a63326dc9855766a7d9e0b5e63b8e60408b6e4e7
+  revision: 1be63d69081e8683d7c2d0170ca53e6590556311
   branch: rails7jses
   specs:
     sip (2.1a1)
@@ -215,7 +215,7 @@ GEM
       activesupport (>= 5.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
-    io-console (0.5.9)
+    io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
@@ -306,7 +306,7 @@ GEM
     rake (13.0.6)
     redcarpet (3.5.1)
     regexp_parser (2.2.0)
-    reline (0.3.0)
+    reline (0.3.1)
       io-console (~> 0.5)
     responders (3.0.1)
       actionpack (>= 5.0)
