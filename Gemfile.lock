@@ -11,21 +11,20 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 57819633de1af8b9b9d950b2e1f11f2896e9a949
+  revision: b2e066b114e2a567cf80bfdd8a44788317394ae7
   branch: rails7jses
   specs:
     cor1440_gen (2.0a1)
       devise
       heb412_gen
-      jquery-rails
+      kt-paperclip
       mr519_gen
-      paperclip
       rails
       sip
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f5991388740a6312ff55baabcde7747ce37b54a3
+  revision: 1aeab05dadb8e9089ffa96759d63d54c5120a422
   branch: rails7jses
   specs:
     heb412_gen (2.1a1)
@@ -36,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: af543c6edf0b27f9f1ec106442587300a29c564a
+  revision: fb37805d38e0253c4222b75d761d0ee69522e191
   branch: rails7jses
   specs:
     mr519_gen (2.1a1)
@@ -45,17 +44,15 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 15dcc86e684b98c2eeef60d6fffe2dcd3c182b46
+  revision: 1be63d69081e8683d7c2d0170ca53e6590556311
   branch: rails7jses
   specs:
     sip (2.1a1)
       cancancan
-      chosen-rails
       devise
       devise-i18n
-      jquery-ui-rails
+      kt-paperclip
       minitest
-      paperclip
       rails
       rails-i18n
       simple_form
@@ -154,10 +151,6 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     choice (0.2.0)
-    chosen-rails (1.9.0)
-      coffee-rails (>= 3.2)
-      railties (>= 3.0)
-      sassc-rails (>= 2.1.2)
     cldr-plurals-runtime-rb (1.1.0)
     climate_control (0.2.0)
     coffee-rails (5.0.0)
@@ -222,12 +215,6 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jquery-rails (4.4.0)
-      rails-dom-testing (>= 1, < 3)
-      railties (>= 4.2.0)
-      thor (>= 0.14, < 2.0)
-    jquery-ui-rails (6.0.1)
-      railties (>= 3.2.16)
     jsbundling-rails (1.0.0)
       railties (>= 6.0.0)
     json (2.6.1)
@@ -244,9 +231,6 @@ GEM
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2021.1115)
-    mimemagic (0.3.10)
-      nokogiri (~> 1)
-      rake
     mini_mime (1.1.2)
     mini_portile2 (2.6.1)
     minitest (5.15.0)
@@ -260,12 +244,6 @@ GEM
       nokogiri (>= 1.10.0)
       rubyzip (>= 1.3.0)
     orm_adapter (0.5.0)
-    paperclip (6.1.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      mime-types
-      mimemagic (~> 0.3.0)
-      terrapin (~> 0.6.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
     pg (1.2.3)
@@ -365,7 +343,7 @@ GEM
     thor (1.1.0)
     tilt (2.0.10)
     ttfunk (1.7.0)
-    twitter_cldr (6.10.0)
+    twitter_cldr (6.11.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
@@ -387,7 +365,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.2)
+    zeitwerk (2.5.3)
 
 PLATFORMS
   x86_64-openbsd
