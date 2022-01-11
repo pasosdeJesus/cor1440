@@ -6,9 +6,9 @@ ruby '>=2.4'
 
 gem 'apexcharts'
 
-gem 'bcrypt'
+gem 'babel-transpiler'
 
-#gem 'bigdecimal'
+gem 'bcrypt'
 
 gem 'babel-transpiler'
 
