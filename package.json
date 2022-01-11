@@ -7,8 +7,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
+    "@hotwired/turbo-rails": "^7.1.0",
     "@popperjs/core": "^2.9.3",
-    "@rails/ujs": "^6.0.0",
     "apexcharts": "^3.27.2",
     "bootstrap": "^5.1.0",
     "bootstrap-datepicker": "^1.9.0",
@@ -19,10 +19,10 @@
     "is-svg": "^4.3.1",
     "jquery": "^3.6.0",
     "jquery-ui": "^1.12.1",
+    "mrujs": "^0.7.4",
     "node-forge": "0.10.0",
     "popper.js": "^2.0.0-next.4",
-    "postcss": "^8.2.10",
-    "turbolinks": "^5.2.0"
+    "postcss": "^8.2.10"
   },
   "devDependencies": {
     "babel-plugin-macros": "^3.1.0",

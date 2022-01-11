@@ -4,3 +4,5 @@
 //= link_directory ../../../node_modules/chosen-js .png
 //= link application.css
 //= link_tree ../builds
+//= link recursos_globales.js
+//= link recursos_globales.js.map

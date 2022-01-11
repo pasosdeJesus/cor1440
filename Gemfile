@@ -6,9 +6,9 @@ ruby '>=2.4'
 
 gem 'apexcharts'
 
-gem 'bcrypt'
+gem 'babel-transpiler'
 
-#gem 'bigdecimal'
+gem 'bcrypt'
 
 gem 'bootsnap', '>=1.1.0', require: false
 
@@ -63,6 +63,10 @@ gem 'sassc-rails' # CSS
 gem 'simple_form' # Formularios simples 
 
 gem 'sprockets-rails'
+
+gem 'stimulus-rails'
+
+gem 'turbo-rails'
 
 gem 'twitter_cldr' # ICU con CLDR
 
