@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: 1328a1a69f88c9bab911c305455e67ca4daa0b5a
+  revision: a077561f75d6ef064dbd4f4806b519cb3df28c88
   specs:
     kt-paperclip (7.0.1)
       activemodel (>= 4.2.0)
@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: aa864f9fd67b6124ef3248a42040adcc889fbacc
+  revision: 80961e90366c73591537b41836f79876bd9be7d1
   branch: rails7jses
   specs:
     cor1440_gen (2.0a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 611ace7e57f54d34c88337a8b7da535690d792e2
+  revision: a952bd11812d0aaa4dc05d70c9636215e5ba5fe6
   branch: rails7jses
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: e4ed1565b0343ec8cb1fbd974568cef35f4710f9
+  revision: eb59f1251335c0dd543f1c6bc2a0f46d5520703f
   branch: rails7jses
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 54e170700c6a3cd0b7496bb213e7e8580f97436f
+  revision: bb97f33730a35f6bcc844b61a86e79c8b44ee397
   branch: rails7jses
   specs:
     sip (2.1a1)
@@ -165,6 +165,7 @@ GEM
     choice (0.2.0)
     cldr-plurals-runtime-rb (1.1.0)
     climate_control (0.2.0)
+    cliver (0.3.2)
     coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 5.2.0)
@@ -175,6 +176,9 @@ GEM
     colorize (0.8.1)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    cuprite (0.13)
+      capybara (>= 2.1, < 4)
+      ferrum (~> 0.11.0)
     devise (4.8.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -189,7 +193,7 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
-    dry-configurable (0.13.0)
+    dry-configurable (0.14.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.6)
     dry-container (0.9.0)
@@ -220,6 +224,11 @@ GEM
       ruby-graphviz
     erubi (1.10.0)
     execjs (2.8.1)
+    ferrum (0.11)
+      addressable (~> 2.5)
+      cliver (~> 0.3)
+      concurrent-ruby (~> 1.1)
+      websocket-driver (>= 0.6, < 0.8)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -265,7 +274,7 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.0)
+    nokogiri (1.13.1)
       mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
     odf-report (0.7.2)
@@ -416,6 +425,7 @@ DEPENDENCIES
   coffee-rails
   colorize
   cor1440_gen!
+  cuprite
   devise
   devise-i18n
   dotenv-rails

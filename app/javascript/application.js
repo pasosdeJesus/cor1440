@@ -2,9 +2,10 @@
 
 console.log('Hola Mundo desde ESM')
 
-import mrujs from "mrujs";
+import Rails from "@rails/ujs";
 import "@hotwired/turbo-rails";
-mrujs.start();
+Rails.start();
+window.Rails = Rails
 
 import './jquery'
 import '../../vendor/assets/javascripts/jquery-ui'
