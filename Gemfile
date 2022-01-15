@@ -119,10 +119,7 @@ end
 group :test do
   gem 'cuprite'
 
-
   gem 'capybara'
-
-  gem 'selenium-webdriver'
 
   gem 'simplecov', '<0.18' # Debido a https://github.com/codeclimate/test-reporter/issues/418
 

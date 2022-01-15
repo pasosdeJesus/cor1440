@@ -2,7 +2,6 @@
 
 console.log('Hola Mundo desde ESM')
 
-
 import Rails from "@rails/ujs";
 import "@hotwired/turbo-rails";
 Rails.start();

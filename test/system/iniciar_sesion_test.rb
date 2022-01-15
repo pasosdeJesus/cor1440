@@ -4,7 +4,7 @@ class IniciarSesionTest < ApplicationSystemTestCase
 
   test "iniciar sesión" do
     Sip::CapybaraHelper.iniciar_sesion(
-      self, Rails.configuration.relative_url_root , 'sivel2', 'sivel2')
+      self, Rails.configuration.relative_url_root, 'cor1440', 'cor1440')
   end
 
 end
