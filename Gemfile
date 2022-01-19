@@ -118,6 +118,8 @@ group :development, :test do
 end
 
 group :test do
+  gem 'cuprite'
+
 
   gem 'capybara'
 
