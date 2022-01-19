@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 82ff855d157e8f3580d4d8e852da782c43cdcf5c
+  revision: 3108406d75ad7b4699299780b1fdbae7cb8b9960
   branch: main
   specs:
     cor1440_gen (2.0a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 0ee5177abd86e7566cba6c524ec00b0f8613576c
+  revision: a33f9ed9de0f7e1c1b92050df8b0822b4ec3af0a
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 630f1bbe6e62616cff0086b96d44632134c53e7d
+  revision: 97770afac36dc89fcc88dccc63072b961070e288
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: e70ec9afa508794d74ec15d86d4bb95902836876
+  revision: f195f8c2ce1af3144ec15847e86b442fd44cfc63
   branch: main
   specs:
     sip (2.1a1)
@@ -382,7 +382,7 @@ GEM
     ttfunk (1.7.0)
     turbo-rails (7.1.1)
       rails (>= 6.0.0)
-    twitter_cldr (6.11.0)
+    twitter_cldr (6.11.1)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
