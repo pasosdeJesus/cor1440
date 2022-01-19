@@ -136,7 +136,7 @@ function collapseedge() {
 }
 
 var flg = "0";
-if (document.addEventListener('turbolinks:load', function() {
+if (document.addEventListener('turbo:load', function() {
     function e(e) {
       try {
         e.attr("placeholder").length

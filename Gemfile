@@ -10,6 +10,8 @@ gem 'babel-transpiler'
 
 gem 'bcrypt'
 
+gem 'babel-transpiler'
+
 gem 'bootsnap', '>=1.1.0', require: false
 
 gem 'cancancan'
