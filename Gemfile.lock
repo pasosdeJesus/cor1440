@@ -11,8 +11,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: b2e066b114e2a567cf80bfdd8a44788317394ae7
-  branch: rails7jses
+  revision: d47068c3705a192f23fd2cdecdcf76505ac4c389
+  branch: main
   specs:
     cor1440_gen (2.0a1)
       devise
@@ -24,8 +24,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 1aeab05dadb8e9089ffa96759d63d54c5120a422
-  branch: rails7jses
+  revision: 4dd47fb0bf946a5deafaa10cff98a6b7aa59a0cb
+  branch: main
   specs:
     heb412_gen (2.1a1)
       mr519_gen
@@ -35,8 +35,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: fb37805d38e0253c4222b75d761d0ee69522e191
-  branch: rails7jses
+  revision: 1f364d9e32047ed82fdaaf17ce603643b7fa66fe
+  branch: main
   specs:
     mr519_gen (2.1a1)
       rails
@@ -44,17 +44,19 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 1be63d69081e8683d7c2d0170ca53e6590556311
-  branch: rails7jses
+  revision: f195f8c2ce1af3144ec15847e86b442fd44cfc63
+  branch: main
   specs:
     sip (2.1a1)
       cancancan
+      coffee-rails
       devise
       devise-i18n
       kt-paperclip
       minitest
       rails
       rails-i18n
+      sassc-rails
       simple_form
       twitter_cldr
 
@@ -133,6 +135,10 @@ GEM
     apexcharts (0.1.11)
       dry-schema (~> 1.5)
       smart_kv (~> 0.2.8)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.9.3)
@@ -346,11 +352,15 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    stimulus-rails (1.0.2)
+      railties (>= 6.0.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
     thor (1.1.0)
     tilt (2.0.10)
     ttfunk (1.7.0)
+    turbo-rails (7.1.1)
+      rails (>= 6.0.0)
     twitter_cldr (6.11.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
@@ -380,6 +390,7 @@ PLATFORMS
 
 DEPENDENCIES
   apexcharts
+  babel-transpiler
   bcrypt
   bootsnap (>= 1.1.0)
   cancancan
@@ -420,6 +431,8 @@ DEPENDENCIES
   simplecov (< 0.18)
   sip!
   sprockets-rails
+  stimulus-rails
+  turbo-rails
   twitter_cldr
   tzinfo
   unicorn

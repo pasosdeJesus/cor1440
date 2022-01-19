@@ -15,7 +15,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all", 
-      'data-turbolinks-track': 'reload' %>
+      'data-turbo-track': 'reload' %>
     <%=  yield(:linkhref) if content_for?(:linkhref) %>
 
     <!-- Seguimios usando sprockets mientras:

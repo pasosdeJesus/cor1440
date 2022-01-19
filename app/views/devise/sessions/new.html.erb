@@ -24,7 +24,8 @@
 
               <div class="form-actions">
                 <%= f.button :submit, I18n.t('Iniciar sesión'), 
-                  class: "btn btn-block btn-primary mb-4" %>
+                  class: "btn btn-block btn-primary mb-4",
+                  'data-turbo' => false %>
               </div>
             <% end %>
           </div>
