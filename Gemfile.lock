@@ -43,14 +43,9 @@ GIT
       sip
 
 GIT
-  remote: https://github.com/vtamara/cocoon.git
-  revision: 9f1892403c3dbdb8f7d457a06f237ff58e7dfb07
-  branch: new_id_with_ajax
-  specs:
-    cocoon (1.2.11)
-
-PATH
-  remote: ../sip
+  remote: https://github.com/pasosdeJesus/sip.git
+  revision: 1eaaaa80d745a41446f313e9ed7c24beb6d765df
+  branch: main
   specs:
     sip (2.1a1)
       cancancan
@@ -64,6 +59,13 @@ PATH
       sassc-rails
       simple_form
       twitter_cldr
+
+GIT
+  remote: https://github.com/vtamara/cocoon.git
+  revision: 9f1892403c3dbdb8f7d457a06f237ff58e7dfb07
+  branch: new_id_with_ajax
+  specs:
+    cocoon (1.2.11)
 
 GEM
   remote: https://rubygems.org/
