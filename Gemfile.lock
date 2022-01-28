@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4276a57bbdcac7eb3854dc2225fb45a210c7b730
+  revision: 1dbcff2eff86944806de3b8a6ac82cf6bab4ddc5
   branch: main
   specs:
     cor1440_gen (2.0a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f4d0b2343f9a066d899a04fd75bd44ddea46dcba
+  revision: 4e5b4729d6948e60ca4fc88dbe7aada5e8a55803
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 77570a9fddf5219f4874facc0919881bab2421e8
+  revision: 5ce2757b0849344e6b26fe782bfe7505e9fd0384
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 1eaaaa80d745a41446f313e9ed7c24beb6d765df
+  revision: fe6a248bde0daa98923c16c84f0e6fc10309fc1b
   branch: main
   specs:
     sip (2.1a1)
@@ -234,7 +234,7 @@ GEM
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    i18n (1.9.0)
+    i18n (1.9.1)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
     io-wait (0.2.1)
@@ -412,7 +412,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.3)
+    zeitwerk (2.5.4)
 
 PLATFORMS
   x86_64-openbsd
