@@ -388,8 +388,9 @@ GEM
     tilt (2.0.10)
     timeout (0.2.0)
     ttfunk (1.7.0)
-    turbo-rails (7.1.1)
-      rails (>= 6.0.0)
+    turbo-rails (1.0.1)
+      actionpack (>= 6.0.0)
+      railties (>= 6.0.0)
     twitter_cldr (6.11.1)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
@@ -461,7 +462,7 @@ DEPENDENCIES
   sip!
   sprockets-rails
   stimulus-rails
-  turbo-rails
+  turbo-rails (~> 1.0)
   twitter_cldr
   tzinfo
   unicorn
