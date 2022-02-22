@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 92a77d907760d5e161d6cf41db098f9f2571b899
+  revision: c36abc981f6177cce03454476368c728b08b5f51
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 2ac9691882730bd6252f52d0ba0abddaf480c552
+  revision: 308777bc871be3154ec6150b6c6ae0575a7eb0fd
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 9f2eb7ad98db8e2516824c1f3cd665c8e863318a
+  revision: 02c7ee2152b55cfdbaf011e666b626d60528af8f
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: df8eb8c4da8dc61216f2758805a34e6a6739bb5d
+  revision: 22e9f51c0319cb77d257251cf280399b8fb0e313
   branch: main
   specs:
     sip (2.1a1)
@@ -279,7 +279,7 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.2)
+    nokogiri (1.13.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     odf-report (0.7.2)
@@ -289,7 +289,7 @@ GEM
     orm_adapter (0.5.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
-    pg (1.3.2)
+    pg (1.3.3)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
@@ -379,7 +379,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.0.3)
+    stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     strscan (3.0.1)
     terrapin (0.6.0)
