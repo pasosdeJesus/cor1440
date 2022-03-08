@@ -3434,6 +3434,10 @@ CREATE TABLE public.usuario (
     locked_at timestamp without time zone,
     oficina_id integer,
     tema_id integer,
+    foto_file_name character varying,
+    foto_content_type character varying,
+    foto_file_size bigint,
+    foto_updated_at timestamp(6) without time zone,
     CONSTRAINT usuario_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion))),
     CONSTRAINT usuario_rol_check CHECK ((rol >= 1))
 );
@@ -6511,6 +6515,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210616003251'),
 ('20210619191706'),
 ('20210728214424'),
+('20210820201118'),
+('20210820211926'),
 ('20211024105450'),
 ('20211117200456'),
 ('20211216125250'),
