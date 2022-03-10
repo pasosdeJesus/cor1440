@@ -79,6 +79,4 @@ document.addEventListener('turbo:load', (e) => {
   sip_ejecutarAlCargarPagina(window)
 })
 
-import './components/dk1'
-
 import "./controllers"
