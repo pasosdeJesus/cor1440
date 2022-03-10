@@ -10,12 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap-datepicker/dist/js/bootstrap-datepicker.min
-//= require chosen-js/chosen.jquery.min
 //= require cor1440_gen/application
-//= require perfect-scrollbar/dist/perfect-scrollbar.min
-//= require feather-icons/dist/feather.min
-//= require apexcharts/dist/apexcharts.min
 //= require_tree .
 
 
