@@ -136,15 +136,7 @@ function collapseedge() {
 }
 
 var flg = "0";
-<<<<<<< HEAD
-<<<<<<< HEAD
 if (document.addEventListener('turbo:load', function() {
-=======
-if (document.addEventListener('turbolinks:load', function() {
->>>>>>> 632982d (sincroniza con main)
-=======
-if (document.addEventListener('turbo:load', function() {
->>>>>>> fe52a71 (Cambia turbolinks por turbo, agrega , stimulus y sirve ES6 con sprockets)
     function e(e) {
       try {
         e.attr("placeholder").length
