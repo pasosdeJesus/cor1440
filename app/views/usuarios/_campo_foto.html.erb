@@ -1,0 +1,10 @@
+<!--% if !f.object || !f.object.id || !f.object.foto_file_name %-->
+  <%= f.input :foto, as: :file, label: t('fotojpgpngtiff'),
+    input_html: { "data-imagenpre": 'imagen-detalle'} %>
+<!--% else %-->
+  <div class="foto_adjunto">
+    <label for="foto_attributes_<%=f.object.id%>_adjunto"><%= t('Foto') %></label>
+    <a id="foto_attributes_<%=f.object.id%>_adjunto" href="<%= main_app.usuarios_foto_path(f.object.id) %>", style="text-decoration:none"><%= f.object.foto_file_name %></a>
+  </div>
+<!--% end %-->
+
