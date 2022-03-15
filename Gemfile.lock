@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4a0c9db65d2863443d000b42116254740dbfb927
+  revision: 96da08b04305a6fedfb14b69ec17814185e940e6
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: daf9aed6993c2ae3a1520d419a777b70fc9ed68a
+  revision: 54bc41c4403e1e68e0f8897120b2512d3b6c106b
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: d07ec1099ecebf99ef6811d2b8c7ef27e3e4f236
+  revision: 54282807d5110fdf61ac1bda7f537034a9787645
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 1513f4e13b1ee3e9f7a9465e428325638c937cdb
+  revision: ca5478a9446b5e11666bcff4715a322f69adb542
   branch: main
   specs:
     sip (2.1a1)
@@ -143,7 +143,7 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
-    bcrypt (3.1.16)
+    bcrypt (3.1.17)
     bindex (0.8.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
@@ -220,7 +220,7 @@ GEM
     json (2.6.1)
     kgio (2.11.4)
     libxml-ruby (3.2.2)
-    loofah (2.14.0)
+    loofah (2.15.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
