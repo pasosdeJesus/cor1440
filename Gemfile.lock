@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 3cd1e3b6086135fa1e8c456db5c6430e72426a5b
+  revision: 33126945c95cc0a19d206da24a20a92ea4614bfd
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 6b01c2e4690a800498987fab94413709d0e6b831
+  revision: be7f97a59ce43c3a9a9606807f9df8f26b897077
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: fa214310715712cc0a1e2a7677a83c5bab8d9680
+  revision: b9415fe3c18f0d87c45b45bc5e606666371d3d18
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: dfd35b99433b7d3c5156b3f44aec3d4ff59f5769
+  revision: c0700b00e533656e7e0266f20c89f7e5951d1f23
   branch: main
   specs:
     sip (2.1a1)
@@ -249,7 +249,7 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     odf-report (0.7.3)
@@ -268,7 +268,7 @@ GEM
     prawnto_2 (0.3.1)
       prawn (>= 1.0.0)
       rails (>= 3.2)
-    public_suffix (4.0.6)
+    public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -312,7 +312,7 @@ GEM
     raindrops (0.20.0)
     rake (13.0.6)
     redcarpet (3.5.1)
-    regexp_parser (2.2.1)
+    regexp_parser (2.3.0)
     reline (0.3.1)
       io-console (~> 0.5)
     responders (3.0.1)
