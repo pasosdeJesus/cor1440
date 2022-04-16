@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: be65a9dde51940ad2a62ee056c29d30a579c887c
+  revision: 0232b347482605480f1ccde5898b7013c146e06e
   branch: main
   specs:
     heb412_gen (2.2.0.alfa1)
@@ -439,7 +439,7 @@ DEPENDENCIES
   will_paginate
 
 RUBY VERSION
-   ruby 3.0.1p64
+   ruby 3.2.0p0
 
 BUNDLED WITH
    2.4.5
