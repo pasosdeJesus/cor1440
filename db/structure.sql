@@ -2963,7 +2963,7 @@ CREATE TABLE public.sip_orgsocial_sectororgsocial (
 CREATE TABLE public.sip_pais (
     id integer NOT NULL,
     nombre character varying(200) NOT NULL COLLATE public.es_co_utf_8,
-    nombreosm character varying(200) NOT NULL,
+    nombreiso_espanol character varying(200) NOT NULL,
     latitud double precision,
     longitud double precision,
     alfa2 character varying(2),
@@ -2979,8 +2979,45 @@ CREATE TABLE public.sip_pais (
     observaciones character varying(5000) COLLATE public.es_co_utf_8,
     nombreiso_ingles character varying(512),
     nombreiso_frances character varying(512),
+    ultvigenciaini date,
+    ultvigenciafin date,
     CONSTRAINT pais_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
+
+
+--
+-- Name: sip_pais_histvigencia; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sip_pais_histvigencia (
+    id bigint NOT NULL,
+    pais_id integer,
+    vigenciaini date,
+    vigenciafin date NOT NULL,
+    codiso integer,
+    alfa2 character varying(2),
+    alfa3 character varying(3),
+    codcambio character varying(4)
+);
+
+
+--
+-- Name: sip_pais_histvigencia_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sip_pais_histvigencia_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sip_pais_histvigencia_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.sip_pais_histvigencia_id_seq OWNED BY public.sip_pais_histvigencia.id;
 
 
 --
@@ -3912,6 +3949,13 @@ ALTER TABLE ONLY public.sip_pais ALTER COLUMN id SET DEFAULT nextval('public.sip
 
 
 --
+-- Name: sip_pais_histvigencia id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sip_pais_histvigencia ALTER COLUMN id SET DEFAULT nextval('public.sip_pais_histvigencia_id_seq'::regclass);
+
+
+--
 -- Name: sip_perfilorgsocial id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -4623,6 +4667,14 @@ ALTER TABLE ONLY public.sip_orgsocial
 
 ALTER TABLE ONLY public.sip_pais
     ADD CONSTRAINT sip_pais_codiso_unico UNIQUE (codiso);
+
+
+--
+-- Name: sip_pais_histvigencia sip_pais_histvigencia_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sip_pais_histvigencia
+    ADD CONSTRAINT sip_pais_histvigencia_pkey PRIMARY KEY (id);
 
 
 --
@@ -6511,6 +6563,9 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20211216125250'),
 ('20220213031520'),
 ('20220214121713'),
-('20220413123127');
+('20220413123127'),
+('20220417203841'),
+('20220417220914'),
+('20220417221010');
 
 
