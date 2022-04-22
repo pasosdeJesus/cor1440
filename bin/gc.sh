@@ -31,6 +31,7 @@ if (test "$?" = "0") then {
 } fi;
 
 if (test "$SINAC" != "1") then {
+  NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle update --bundler
   NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle update
   if (test "$?" != "0") then {
     exit 1;

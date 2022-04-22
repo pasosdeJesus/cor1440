@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 9e881b6b7850fcbabcb9f0b99d42e39f17e2307b
+  revision: 47a29b92e1607011d6a7da320d8a9d4c5430f29d
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 0b7932c2a8593cce7a9b2f358185dca4fca99b21
+  revision: 2543618ba81ed349fee49717ebee6dc916ccadcc
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 18099836a6325e74c3b8d20ef07ee71bccfdf881
+  revision: 154663c366f2327e5a2798750536825e04549729
   branch: main
   specs:
     sip (2.1a1)
@@ -360,7 +360,7 @@ GEM
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
-    twitter_cldr (6.11.2)
+    twitter_cldr (6.11.3)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
@@ -442,4 +442,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.3.7
+   2.3.12
