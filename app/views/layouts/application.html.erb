@@ -3,77 +3,71 @@
 <% end %>
 
 <% content_for :menu do %>
-  <%= grupo_menus do %>
+  <%= grupo_menus_prosidebar do %>
+    <%= opcion_menu_prosidebar "Inicio", 
+      Rails.configuration.relative_url_root.to_s %>
     <% if !current_usuario.nil? %>
-      <%= despliega_abajo "Proyectos" do %>
-        <%= opcion_menu "Listado", cor1440_gen.proyectosfinancieros_path,
-          desplegable: true %>
-        <%= opcion_menu "Validar", 
-          cor1440_gen.validar_proyectosfinancieros_path,
-          desplegable: true %>
+      <%= despliega_abajo_prosidebar "Proyectos", 'ri-briefcase-4-fill', nil do %>
+        <%= opcion_menu_prosidebar "Listado", 
+          cor1440_gen.proyectosfinancieros_path %>
+        <%= opcion_menu_prosidebar "Validar", 
+          cor1440_gen.validar_proyectosfinancieros_path %>
         <% if can? :manage, Cor1440Gen::Mindicadorpf %>
-          <%= opcion_menu "Medir Indicadores", 
-            cor1440_gen.mindicadorespf_path,
-            desplegable: true %>
+          <%= opcion_menu_prosidebar "Medir Indicadores", 
+            cor1440_gen.mindicadorespf_path %>
         <% end %>
       <% end %>
-      <%= despliega_abajo "Actividades" do %>
-        <%= opcion_menu "Listado", cor1440_gen.actividades_path,
-          desplegable: true %>
-        <!--%= opcion_menu "Informes", cor1440_gen.informes_path,
-          desplegable: true %-->
-        <%= opcion_menu "Contar por actividad de marco lógico", 
-          cor1440_gen.contar_actividades_path, desplegable: true %>
-        <%= opcion_menu "Contar por beneficiario y actividad de marco lógico", 
-          cor1440_gen.contar_actividades_beneficiarios_path, desplegable: true %>
+      <%= despliega_abajo_prosidebar "Actividades", 'ri-riding-fill', nil do %>
+        <%= opcion_menu_prosidebar "Listado", 
+          cor1440_gen.actividades_path %>
+        <%= opcion_menu_prosidebar "Contar por actividad de marco lógico", 
+          cor1440_gen.contar_actividades_path %>
+        <%= opcion_menu_prosidebar "Contar por beneficiario y actividad de marco lógico",
+          cor1440_gen.contar_actividades_beneficiarios_path %>
         <% if can? :manage, ::Sip::Orgsocial %>
-          <%= opcion_menu "Organizaciones sociales", sip.orgsociales_path,
-            desplegable: true %>
+          <%= opcion_menu_prosidebar "Organizaciones sociales", 
+            sip.orgsociales_path %>
         <% end %>
         <% if can? :manage, ::Sip::Persona %>
-          <%= opcion_menu "Beneficiarios", sip.personas_path,
-            desplegable: true %>
+          <%= opcion_menu_prosidebar "Beneficiarios", sip.personas_path %>
         <% end %>
       <% end %>
     <% end %>
-  <% end %>
-  <%= grupo_menus :pull => :right do %>
     <% if !current_usuario.nil? %>
-      <%= despliega_abajo "Documentos y plantillas" do %>
-        <%= opcion_menu "Nube", heb412_gen.sisini_path, 
-          desplegable: true %>
+      <%= despliega_abajo_prosidebar "Documentos y plantillas", 
+        'ri-book-open-fill', nil do %>
+        <%= opcion_menu_prosidebar "Nube", heb412_gen.sisini_path %>
         <% if can? :manage, ::Heb412Gen::Plantillahcm %>
-          <%= opcion_menu "Plantillas para listados en hojas de calculo",
-            heb412_gen.plantillashcm_path,
-          desplegable: true %>
+          <%= opcion_menu_prosidebar "Plantillas para listados en hojas de calculo",
+            heb412_gen.plantillashcm_path %>
         <% end %>
         <% if can? :manage, ::Heb412Gen::Plantillahcr %>
-          <%= opcion_menu "Plantillas para un registro en hoja de calculo",
-            heb412_gen.plantillashcr_path,
-            desplegable: true %>
+          <%= opcion_menu_prosidebar "Plantillas para un registro en hoja de calculo",
+            heb412_gen.plantillashcr_path %>
         <% end %>
       <% end %>
-      <%= despliega_abajo "Administrar" do %>
-        <%= opcion_menu "Clave y tema", main_app.editar_registro_usuario_path,
-            desplegable: true %>
+      <%= despliega_abajo_prosidebar "Administrar", 'ri-settings-4-fill', nil do %>
+        <%= opcion_menu_prosidebar "Clave y tema", 
+          main_app.editar_registro_usuario_path %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
-          <%= opcion_menu "Usuarios", main_app.usuarios_path,
-            desplegable: true %>
+          <%= opcion_menu_prosidebar "Usuarios", main_app.usuarios_path %>
         <% end %>
         <% if can? :manage, Mr519Gen::Formulario %>
-          <%= opcion_menu "Formularios", mr519_gen.formularios_path,
-            desplegable: true %>
+          <%= opcion_menu_prosidebar "Formularios", 
+            mr519_gen.formularios_path %>
         <% end %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
-          <%= opcion_menu "Tablas básicas", sip.tablasbasicas_path,
-            desplegable: true %>
+          <%= opcion_menu_prosidebar "Tablas básicas", 
+            sip.tablasbasicas_path %>
         <% end %>
       <% end %>
-      <%= opcion_menu "Salir #{current_usuario.nusuario}", main_app.sign_out_path %>
+      <%= opcion_menu_prosidebar "Salir #{current_usuario.nusuario}", 
+        main_app.sign_out_path %>
     <% else %>
-      <%= opcion_menu "Acerca de", sip.acercade_path, desplegable: true %>
-      <%= opcion_menu "Iniciar Sesión", main_app.new_usuario_session_path,
-        desplegable: true %>
+      <%= opcion_menu_prosidebar "Acerca de", 
+        sip.acercade_path %>
+      <%= opcion_menu_prosidebar "Iniciar Sesión", 
+        main_app.new_usuario_session_path %>
     <% end %>
   <% end %>
 <% end %>

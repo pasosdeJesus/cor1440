@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: 4d95c60665fbb5d453a3f710977a259760996cd9
+  revision: 7f73b7442743f57fb957b4bb54c1bca11ddd1c72
   specs:
     kt-paperclip (7.1.1)
       activemodel (>= 4.2.0)
@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 4c38e68a7873629e15aba949672fc4fd7c370d87
+  revision: 57c1ced586a8da1b7f2a17a20a8f6d683fc33144
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: fec96d6c768ebb7c13d8e562934dd68cf90d71bb
+  revision: a29d8f4e565d846901ede6197123fd3692672575
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: aa05ae46a278e00c94ff8efa368649d4fe457e73
+  revision: 8caaec2b4010033519d0f96102a719d43d943d21
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 847587f9ef64010996fdd3991a9999d0b6542a54
+  revision: be284ccd1f9bcf7c2bcf0846bcf0021ffc12cd6e
   branch: main
   specs:
     sip (2.1a1)
@@ -312,7 +312,7 @@ GEM
     raindrops (0.20.0)
     rake (13.0.6)
     redcarpet (3.5.1)
-    regexp_parser (2.3.0)
+    regexp_parser (2.3.1)
     reline (0.3.1)
       io-console (~> 0.5)
     responders (3.0.1)
@@ -360,7 +360,7 @@ GEM
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
-    twitter_cldr (6.11.2)
+    twitter_cldr (6.11.3)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
