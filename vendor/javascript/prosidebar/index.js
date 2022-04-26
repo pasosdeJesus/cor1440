@@ -1,3 +1,5 @@
+//Adaptado de https://github.com/azouaoui-med/pro-sidebar-template
+
 //import './styles/styles.scss';
 import { slideToggle, slideUp, slideDown } from './libs/slide';
 import {
