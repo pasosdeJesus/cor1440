@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: 4d95c60665fbb5d453a3f710977a259760996cd9
+  revision: 7f73b7442743f57fb957b4bb54c1bca11ddd1c72
   specs:
     kt-paperclip (7.1.1)
       activemodel (>= 4.2.0)
@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 134592ea336853f533d4af4a77af4ab7a5e58470
+  revision: 18d170e4fe5659412b70dae1379c59cdcec1bc03
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 47a29b92e1607011d6a7da320d8a9d4c5430f29d
+  revision: b65ec63c891367b9af3cdb2c9bcea78e6b63e995
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 2543618ba81ed349fee49717ebee6dc916ccadcc
+  revision: 2253602d897c175ff04d625646c02e285a7c682c
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 154663c366f2327e5a2798750536825e04549729
+  revision: 27c2d00c3d05a5f7edd804d29bb93e0740274357
   branch: main
   specs:
     sip (2.1a1)
@@ -312,7 +312,7 @@ GEM
     raindrops (0.20.0)
     rake (13.0.6)
     redcarpet (3.5.1)
-    regexp_parser (2.3.0)
+    regexp_parser (2.3.1)
     reline (0.3.1)
       io-console (~> 0.5)
     responders (3.0.1)
