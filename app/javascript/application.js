@@ -29,7 +29,7 @@ import 'gridstack'
 import {AutocompletaAjaxExpreg} from '@pasosdejesus/autocompleta_ajax'
 window.AutocompletaAjaxExpreg = AutocompletaAjaxExpreg
 
-import inicializaProsidebar from './prosidebar/index.js'
+import inicializaProsidebar from '../../vendor/javascript/prosidebar/index.js'
 window.inicializaProsidebar = inicializaProsidebar
 
 
