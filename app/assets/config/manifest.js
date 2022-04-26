@@ -2,11 +2,11 @@
 //= link_directory ../javascripts .js
 //= link_directory ../stylesheets .css
 //= link_directory ../../../node_modules/chosen-js .png
-//= link_directory ../remixicon .eot
-//= link_directory ../remixicon .svg
-//= link_directory ../remixicon .ttf
-//= link_directory ../remixicon .woff
-//= link_directory ../remixicon .woff2
+//= link_directory ../../../vendor/assets/remixicon .eot
+//= link_directory ../../../vendor/assets/remixicon .svg
+//= link_directory ../../../vendor/assets/remixicon .ttf
+//= link_directory ../../../vendor/assets/remixicon .woff
+//= link_directory ../../../vendor/assets/remixicon .woff2
 //= link application.css
 //= link_tree ../builds
 //= link recursos_sprockets.js
