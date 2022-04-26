@@ -43,12 +43,6 @@
     <meta name="msapplication-TileImage" content="/assets/favicon-144.png">
     <meta name="msapplication-config" content="/assets/browserconfig.xml">
 
-
-    <link rel="stylesheet" href="<%= Pathname(
-      Rails.configuration.relative_url_root).join(
-        'prosidebar/main.css').to_s %>" >
-
-
   </head>
   <body>
 
@@ -81,10 +75,10 @@
           <%= yield :menu %>
           <div class="sidebar-footer">
             <a id="btn-collapse" href="#">
-              <i class="ri-riding-fill ri-xl"></i>
+              <i class="ri-swap-box-fill ri-xl"></i>
             </a>
             <a id="btn-toggle" href="#" class="sidebar-toggler break-point-lg">
-              <i class="ri-riding-fill ri-xl"></i>
+              <i class="ri-swap-box-fill ri-xl"></i>
             </a>
           </div>
         </div>
