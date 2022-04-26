@@ -1,5 +1,5 @@
 import { createPopper } from '@popperjs/core';
-import { SIDEBAR_EL } from './constants';
+import { sidebarEl } from './constants';
 
 class Popper {
   instance = null;
@@ -48,8 +48,7 @@ class Popper {
   }
 
   clicker(event, popperTarget, reference) {
-    if (
-      SIDEBAR_EL.classList.contains('collapsed') &&
+    if (sidebarEl().classList.contains('collapsed') &&
       !popperTarget.contains(event.target) &&
       !reference.contains(event.target)
     ) {

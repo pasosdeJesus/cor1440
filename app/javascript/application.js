@@ -29,7 +29,9 @@ import 'gridstack'
 import {AutocompletaAjaxExpreg} from '@pasosdejesus/autocompleta_ajax'
 window.AutocompletaAjaxExpreg = AutocompletaAjaxExpreg
 
-import './prosidebar/index.js'
+import inicializaProsidebar from './prosidebar/index.js'
+window.inicializaProsidebar = inicializaProsidebar
+
 
 let esperarRecursosSprocketsYDocumento = function (resolver) {
   if (typeof window.puntomontaje == 'undefined') {
@@ -71,6 +73,7 @@ document.addEventListener('turbo:load', (e) => {
   console.log('Escuchador turbo:load')
 
   sip_ejecutarAlCargarPagina(window)
+  window.inicializaProsidebar()
 })
 
 

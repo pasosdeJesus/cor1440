@@ -1,4 +1,4 @@
-import { SUB_MENU_ELS } from './constants';
+import { subMenuEls }  from './constants';
 import Popper from './popper';
 
 class Poppers {
@@ -9,7 +9,8 @@ class Poppers {
   }
 
   init() {
-    SUB_MENU_ELS.forEach((element) => {
+
+    subMenuEls().forEach((element) => {
       this.subMenuPoppers.push(new Popper(element, element.lastElementChild));
       this.closePoppers();
     });
