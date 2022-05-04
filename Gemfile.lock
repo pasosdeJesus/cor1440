@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: a660aeb5bcd11261354b6bb814073118bd56190b
+  revision: 2a9557ce675f66aa3a0a49529196e9f02a58073f
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 3e07e6dea0075b05244991a4b0efb353a3388cd8
+  revision: 7ddd1873c7de49546ced0f9bf0c5914dd2a7a36e
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 134eafef0eb23165f5621c92f64396c7ed99ff96
+  revision: ac15a24b0c3a24dee856b2edf765624d83c3dc23
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d2a539cb39fd4f865e3082ee3ef3c4a07e0066ee
+  revision: ecd84d450ede45707a4ccb9c2dbded9514713316
   branch: main
   specs:
     sip (2.1a1)
@@ -219,7 +219,7 @@ GEM
     json (2.6.1)
     kgio (2.11.4)
     libxml-ruby (3.2.2)
-    loofah (2.16.0)
+    loofah (2.17.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
