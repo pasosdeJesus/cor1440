@@ -9,15 +9,15 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV.fetch('BD_DES', 'cor1440gen_des') %>
+  database: <%= ENV.fetch('BD_DES', 'cor1440dk_des') %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV.fetch('BD_PRUEBA', 'cor1440gen_pru') %>
+  database: <%= ENV.fetch('BD_PRUEBA', 'cor1440dk_pru') %>
 
 production:
   <<: *default
-  database: <%= ENV.fetch('BD_PRO', 'cor1440gen_pro') %>
+  database: <%= ENV.fetch('BD_PRO', 'cor1440dk_pro') %>
