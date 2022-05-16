@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 9a5be0059dfda3ab5c7463202b1e8d69cad78acd
+  revision: 797b8f39d1135fd4e6e3868a15c37abe3b602ce2
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 90acde28b80e34c0a7960d0352a69896a3ab56c1
+  revision: 25463bfc404df05a72ea4dba7f7b841ed8f68673
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: b443691f871df3fab9d3cea26befc2a6400ddfac
+  revision: ebe6633106d5d201093aedec96336687b6734305
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 5a5db0dba4692898acd085c4518af70e83758e7f
+  revision: 17ae565405f07d1de201e9356fd63c62008db97a
   branch: main
   specs:
     sip (2.1a1)
@@ -216,10 +216,10 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.0.2)
       railties (>= 6.0.0)
-    json (2.6.1)
+    json (2.6.2)
     kgio (2.11.4)
     libxml-ruby (3.2.2)
-    loofah (2.17.0)
+    loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
