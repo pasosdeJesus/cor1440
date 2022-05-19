@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 797b8f39d1135fd4e6e3868a15c37abe3b602ce2
+  revision: b0a451a470c32c387bd01ff08a8eada2d4fe07d2
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 25463bfc404df05a72ea4dba7f7b841ed8f68673
+  revision: 5b8d611c8b654df847859c2e00f4ca31f1da4a2d
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: ebe6633106d5d201093aedec96336687b6734305
+  revision: 92aa3b3ec94e64b51d9af90133e4c7444981aa17
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 17ae565405f07d1de201e9356fd63c62008db97a
+  revision: 35a41e1ebb9a8180266768ae3fd4ea7dfb843d32
   branch: main
   specs:
     sip (2.1a1)
@@ -143,7 +143,7 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
-    bcrypt (3.1.17)
+    bcrypt (3.1.18)
     bindex (0.8.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
