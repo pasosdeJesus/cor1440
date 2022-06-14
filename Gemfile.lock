@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: bec7ea5f1aefee7b525e68c23de3541ff1c2b853
+  revision: da79513b07050c9fefe923ed2a7889632b0f7fe1
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: f20df79027b87daec024410ed84a802db840fcf9
+  revision: 91a8984b847d7ef10d6c20bb6d4e4f6ea7b4189f
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: b11215b8c059825e317341250415117a34929bfa
+  revision: acbc8d9bd85d81e0e9a2840ec3f5da421abe9ee1
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 6d39789609a5fc54274d47d64fe8ffba37d8896c
+  revision: e727be566e024da19e608f96de0092fe2a025ef2
   branch: main
   specs:
     sip (2.1a1)
@@ -292,12 +292,12 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-erd (1.7.0)
+    rails-erd (1.7.1)
       activerecord (>= 4.2)
       activesupport (>= 4.2)
       choice (~> 0.2.0)
       ruby-graphviz (~> 1.2)
-    rails-html-sanitizer (1.4.2)
+    rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
     rails-i18n (7.0.3)
       i18n (>= 0.7, < 2)
@@ -383,7 +383,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.4)
+    zeitwerk (2.6.0)
 
 PLATFORMS
   x86_64-openbsd
