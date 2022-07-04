@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 3888a5270e4c6c7620a53a4a38393f9a9411b5b8
+  revision: 4ff9bff8f64bf7c6e54dc814cb18098c2dd6908f
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 74fbe57b8e2039e03e8b3197f8373b6f46c0b998
+  revision: 2352d7740b14b71380fba200761d562d42e347eb
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: bdeacca5126f19dba7b8dc859d1daa898fe92296
+  revision: f5c52f60a66d127634305b92726cb4b8378b57bd
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: a3aa36110a086b82d9b8d6724d424ec43f7eaf47
+  revision: 7acc8a6379016f196b9fb3de0f8b16509a9784c0
   branch: main
   specs:
     sip (2.1a1)
@@ -232,7 +232,7 @@ GEM
     mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.16.1)
+    minitest (5.16.2)
     msgpack (1.5.3)
     net-imap (0.2.3)
       digest
@@ -299,7 +299,7 @@ GEM
       ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
-    rails-i18n (7.0.3)
+    rails-i18n (7.0.5)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
     railties (7.0.3)
