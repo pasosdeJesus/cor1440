@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 05ae1a8b26be54767bb1cc35f3113329b946ede3
+  revision: 1230bd5dd85ee841963470434631c98d9eac0bb1
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 826904ff115a8119fb6c58af1f8b456a114a2de1
+  revision: 65f9432be21e18299d3a4b70c3f572a0ac6e3aa0
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 4c85abe3cbc0a8469b671c0f1133eb9da1ad28d2
+  revision: 68d437633c5d522b20ba7d0f60de261e9242fdbb
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: b2c1f088669332f4062dce29fa118c60c87d7c1f
+  revision: 7ee65ec06f7d6a0dcab8789cb0d7db08d8b080ac
   branch: main
   specs:
     sip (2.1a1)
@@ -348,7 +348,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.0.4)
+    stimulus-rails (1.1.0)
       railties (>= 6.0.0)
     strscan (3.0.3)
     terrapin (0.6.0)
