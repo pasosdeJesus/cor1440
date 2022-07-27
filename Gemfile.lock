@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: a1f98aff5a7f39e0364ad9fb0021c4bf616087be
+  revision: f8c667df4e862ff0bd8db162bdb5f698dfe59dbc
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 1b81d5c9f0346556ad27f6863d87c4c6358780ef
+  revision: 31e4214e417190cec05839bd90fe2479f3e74d8c
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 3e148bfeb81014a4abacfe56706aa156f05f450f
+  revision: 699e46effcb766429499ed6bb740599963958669
   branch: main
   specs:
     sip (2.1a2)
@@ -259,7 +259,7 @@ GEM
     orm_adapter (0.5.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
-    pg (1.4.1)
+    pg (1.4.2)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
