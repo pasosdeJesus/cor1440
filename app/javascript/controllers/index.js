@@ -4,8 +4,8 @@
 
 import { application } from "./application"
 
-import HelloController from "./hello_controller.js"
+import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-import Sip__CancelarVacioEsEliminarController from "./sip/cancelar_vacio_es_eliminar_controller.js"
+import Sip__CancelarVacioEsEliminarController from "./sip/cancelar_vacio_es_eliminar_controller"
 application.register("sip--cancelar-vacio-es-eliminar", Sip__CancelarVacioEsEliminarController)
