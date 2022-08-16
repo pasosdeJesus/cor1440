@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 06ea0ccf96e0ad176dfec3ee4ab1e52935943d5a
+  revision: b03a3bd3ed4fe5b15b5e68dec901a3ef94aac9c7
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 0c7e30fe3a322a6726d8c524792c17de7fab8d21
+  revision: 6050fc54d376d288cc64cc4aace2014609385caa
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 06768070dd45709a984050d1bc4f52dc5f1194a6
+  revision: e5226307827696c6e4f6f521f86a7eb03e62ca56
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 2d7c6ddb6039c0775190dee61fef92ffd306df0a
+  revision: 7086f8814070e1f37a6cc72adadb2a0f97d89496
   branch: main
   specs:
     sip (2.1a2)
@@ -176,7 +176,7 @@ GEM
     cuprite (0.13)
       capybara (>= 2.1, < 4)
       ferrum (~> 0.11.0)
-    debug (1.6.1)
+    debug (1.6.2)
       irb (>= 1.3.6)
       reline (>= 0.3.1)
     devise (4.8.1)
@@ -259,7 +259,7 @@ GEM
     orm_adapter (0.5.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
-    pg (1.4.2)
+    pg (1.4.3)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
@@ -292,7 +292,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-erd (1.7.1)
+    rails-erd (1.7.2)
       activerecord (>= 4.2)
       activesupport (>= 4.2)
       choice (~> 0.2.0)
