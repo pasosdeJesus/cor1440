@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: fb84fd6e6c024eb41592ee441bba07d3f3ed4d87
+  revision: dc3ab3046d0cc35900c0690997fd9d393d952322
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 357aaac1f1cf55921c07d763d93fc5a333b16e3a
+  revision: 68a2715b2120e49d9aa88a372df23f84aed5ccce
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 5e43f80824e5b4d7e9118ad9ac1b78926642491f
+  revision: 3a8ea01a43bbb88aee6a15cc9ef9b28fd6f4138f
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: cfce234050c2f5b494ed4636808bcf4db62a5194
+  revision: 64d814d092fa5b9d9d93087285e108fdab7bd45a
   branch: main
   specs:
     sip (2.1a2)
@@ -233,7 +233,7 @@ GEM
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
     minitest (5.16.3)
-    msgpack (1.5.4)
+    msgpack (1.5.5)
     net-imap (0.2.3)
       digest
       net-protocol
