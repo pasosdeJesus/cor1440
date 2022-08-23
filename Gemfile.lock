@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: dc3ab3046d0cc35900c0690997fd9d393d952322
+  revision: 420d2035fb660c4ace727b5ae3b12abf9cd2ff99
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 68a2715b2120e49d9aa88a372df23f84aed5ccce
+  revision: ff66127f3eba08e3003c855f1ea1b7230c1c78d0
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 3a8ea01a43bbb88aee6a15cc9ef9b28fd6f4138f
+  revision: f27bbcf26bd1367010008650667dfdd015617f6d
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 64d814d092fa5b9d9d93087285e108fdab7bd45a
+  revision: a2b2b90e6569a8076aa46aab64ba961fc59510ca
   branch: main
   specs:
     sip (2.1a2)
@@ -233,7 +233,7 @@ GEM
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
     minitest (5.16.3)
-    msgpack (1.5.5)
+    msgpack (1.5.6)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -269,7 +269,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (5.0.0)
-    puma (5.6.4)
+    puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
