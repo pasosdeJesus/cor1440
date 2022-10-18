@@ -117,12 +117,12 @@ group :development, :test do
 end
 
 group :test do
+  gem 'capybara',
+    git: 'https://github.com/teamcapybara/capybara.git', branch: :master
+
   gem 'cuprite'
 
-  gem 'capybara'
-
   gem 'simplecov', '<0.18' # Debido a https://github.com/codeclimate/test-reporter/issues/418
-
 end
 
 

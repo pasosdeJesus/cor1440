@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 643bcc22b55d10105aaf4cd3bc040a70bd8cbab2
+  revision: 240109cf9291d3f244e1c4ee80b70d2d2a53a027
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 046d30d050ae6998831c834c32d9c24fb477cf45
+  revision: e4aad6d684bde6ac133c0d65692f809435b7d392
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 3a44af73b38d1648daa07aebe52e656b877a915e
+  revision: d9988188158bca17ff02ca2ca8b4a37fcfdc9e03
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 58aa73c39acea62be88d2f2f7cb93de56bff1e29
+  revision: eb3939b1ae2afa99389ee939fa398044ac123e7e
   branch: main
   specs:
     sip (2.1a2)
@@ -59,6 +59,21 @@ GIT
       sassc-rails
       simple_form
       twitter_cldr
+
+GIT
+  remote: https://github.com/teamcapybara/capybara.git
+  revision: 7a2f63592276ca819715053d71e2d1fecc526a90
+  branch: master
+  specs:
+    capybara (3.38.0)
+      addressable
+      matrix
+      mini_mime (>= 0.1.3)
+      nokogiri (~> 1.8)
+      rack (>= 1.6.0)
+      rack-test (>= 0.6.3)
+      regexp_parser (>= 1.5, < 3.0)
+      xpath (~> 3.2)
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
@@ -150,15 +165,6 @@ GEM
     builder (3.2.4)
     camertron-eprun (1.1.1)
     cancancan (3.4.0)
-    capybara (3.37.1)
-      addressable
-      matrix
-      mini_mime (>= 0.1.3)
-      nokogiri (~> 1.8)
-      rack (>= 1.6.0)
-      rack-test (>= 0.6.3)
-      regexp_parser (>= 1.5, < 3.0)
-      xpath (~> 3.2)
     choice (0.2.0)
     cldr-plurals-runtime-rb (1.1.0)
     climate_control (0.2.0)
@@ -251,7 +257,7 @@ GEM
     orm_adapter (0.5.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
-    pg (1.4.3)
+    pg (1.4.4)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
@@ -261,7 +267,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (5.0.0)
-    puma (5.6.5)
+    puma (6.0.0)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
@@ -348,7 +354,7 @@ GEM
     tilt (2.0.11)
     timeout (0.3.0)
     ttfunk (1.7.0)
-    turbo-rails (1.3.0)
+    turbo-rails (1.3.1)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
@@ -386,7 +392,7 @@ DEPENDENCIES
   bcrypt
   bootsnap (>= 1.1.0)
   cancancan
-  capybara
+  capybara!
   cocoon!
   coffee-rails
   colorize
@@ -435,4 +441,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.3.23
+   2.3.24
