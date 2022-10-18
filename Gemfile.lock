@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 2b54037e93ee9e65895808abaa3154451b85edcd
+  revision: 47c163db1b947a73d146bb39812b9312f426bb2a
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: a56a1a41af1101e4608ad06ac77a87829c6ab3e5
+  revision: e96d2626cda8dd3fa618be078a331878b1a518fa
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: d8569ba9c51ead0e6dabd30de9e596ee5c346566
+  revision: 724658371c4cdc0f40c466d261bcf9d443533adb
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: fecffd0de7da675bb0b2607f000b67338ad86800
+  revision: 45ab942e382b271c81c900db99c6d33af8b9f412
   branch: main
   specs:
     sip (2.1a2)
@@ -247,7 +247,7 @@ GEM
     net-smtp (0.3.2)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.8)
+    nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     odf-report (0.7.3)
