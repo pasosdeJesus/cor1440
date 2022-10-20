@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 47c163db1b947a73d146bb39812b9312f426bb2a
+  revision: 841476de45766acf9bf643f5e9b08aa33c7b8851
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: e96d2626cda8dd3fa618be078a331878b1a518fa
+  revision: 6315279f80b8bc82b7f009c76dfafa0a9c94bb7a
   branch: main
   specs:
     heb412_gen (2.1a1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 724658371c4cdc0f40c466d261bcf9d443533adb
+  revision: c3204023f4839856416e91f8617b927322e91568
   branch: main
   specs:
     mr519_gen (2.1a1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 45ab942e382b271c81c900db99c6d33af8b9f412
+  revision: 1c68b0f4338db64241863596f3a400bd1b6d4e3e
   branch: main
   specs:
     sip (2.1a2)
@@ -62,7 +62,7 @@ GIT
 
 GIT
   remote: https://github.com/teamcapybara/capybara.git
-  revision: 7a2f63592276ca819715053d71e2d1fecc526a90
+  revision: ad2f11e75c3ecfe1b45b0de658a996787a6cdbe2
   branch: master
   specs:
     capybara (3.38.0)
