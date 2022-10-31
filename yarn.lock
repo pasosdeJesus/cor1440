@@ -24,11 +24,11 @@
     js-tokens "^4.0.0"
 
 "@babel/runtime@^7.12.5":
-  version "7.19.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.4.tgz#a42f814502ee467d55b38dd1c256f53a7b885c78"
-  integrity sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==
+  version "7.20.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.0.tgz#824a9ef325ffde6f78056059db3168c08785e24a"
+  integrity sha512-NDYdls71fTXoU8TZHfbBWg7DiZfNzClcKui/+kyi6ppD2L1qnWW3VV6CjtaBXSUGGhiTWJ6ereOIkUvenif66Q==
   dependencies:
-    regenerator-runtime "^0.13.4"
+    regenerator-runtime "^0.13.10"
 
 "@esbuild/linux-loong64@0.14.54":
   version "0.14.54"
@@ -46,17 +46,17 @@
   integrity sha512-iDMHUhiEJ1xFeicyHcZQQgBzhtk5mPR0QZO3L6wtqzMsJEk2TKECuCQTGKjm+KJTHVY0dKq1dOOAWvODjpd2Mg==
 
 "@hotwired/turbo-rails@^7.1.0":
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-7.2.2.tgz#577d0d2d8253f395e6c922e3afaf6a9483a75487"
-  integrity sha512-UlHB++XYlNprpfro4YbywUXFC8QuqH59I+xuU26WMu1mE+RbV2EVS7ARlcUlwzl3PFgsKgJ+xxrJ4HW5gZkJdQ==
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-7.2.4.tgz#d155533e79c4ebdac23e8fe12697d821d5c06307"
+  integrity sha512-givDUQqaccd19BvErz1Cf2j6MXF74m0G6I75oqFJGeXAa7vwkz9nDplefVNrALCR9Xi9j9gy32xmSI6wD0tZyA==
   dependencies:
-    "@hotwired/turbo" "^7.2.2"
+    "@hotwired/turbo" "^7.2.4"
     "@rails/actioncable" "^7.0"
 
-"@hotwired/turbo@^7.2.2":
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.2.2.tgz#69e1f4be7f468690fa31791099e2a837e88c9518"
-  integrity sha512-YfTHwnur3tDFS/D5JYstU+09Z3bvCF6euqqXajHAks2lTSIDbLc8gMp8yLomD+cAC337h1wnv0oWduK6+6pUDw==
+"@hotwired/turbo@^7.2.4":
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.2.4.tgz#0d35541be32cfae3b4f78c6ab9138f5b21f28a21"
+  integrity sha512-c3xlOroHp/cCZHDOuLp6uzQYEbvXBUVaal0puXoGJ9M8L/KHwZ3hQozD4dVeSN9msHWLxxtmPT1TlCN7gFhj4w==
 
 "@pasosdejesus/autocompleta_ajax@https://gitlab.com/pasosdeJesus/autocompleta_ajax.git":
   version "0.9.9-a29"
@@ -355,9 +355,9 @@ is-arrayish@^0.2.1:
   integrity sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==
 
 is-core-module@^2.9.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.10.0.tgz#9012ede0a91c69587e647514e1d5277019e728ed"
-  integrity sha512-Erxj2n/LDAZ7H8WNJXd9tw38GYM3dv8rk8Zcs+jJuxYTW7sozH+SS8NtrSjVL1/vpLvWi1hxy96IzjJ3EHTJJg==
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.11.0.tgz#ad4cb3e3863e814523c96f3f58d26cc570ff0144"
+  integrity sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==
   dependencies:
     has "^1.0.3"
 
@@ -463,7 +463,7 @@ postcss@^8.2.10:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-regenerator-runtime@^0.13.4:
+regenerator-runtime@^0.13.10:
   version "0.13.10"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz#ed07b19616bcbec5da6274ebc75ae95634bfc2ee"
   integrity sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==
