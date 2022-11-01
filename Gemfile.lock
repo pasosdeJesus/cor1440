@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 0183945c3448daabe00ed625a16d63fe78c786bb
+  revision: 20fc63c1430d6cb7af62a74b7776e717f6a32751
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: d17bfd3e6aad8ad25fa099d048cf03ba7e7d2e29
+  revision: bc713f7a91af2ed0f3e120cfa56cb8b0558e6277
   branch: main
   specs:
     heb412_gen (2.1.0.beta1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 8ac9ae4f68254f0640e24def4526dd64207f7a4d
+  revision: 2280724785996a983e78ec3bf11282f743ce3598
   branch: main
   specs:
     mr519_gen (2.1.0.beta1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: f6870e519c63ba8479e3f316349a660072b6ea94
+  revision: 7e4d1a7f2f6b619d4f9d25176567ab93e8ce663d
   branch: main
   specs:
     sip (2.1.0.beta1)
@@ -346,7 +346,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.1.0)
+    stimulus-rails (1.1.1)
       railties (>= 6.0.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
@@ -381,7 +381,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.1)
+    zeitwerk (2.6.3)
 
 PLATFORMS
   x86_64-openbsd
