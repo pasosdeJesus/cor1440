@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 20fc63c1430d6cb7af62a74b7776e717f6a32751
+  revision: 608441098b15ca1da8c2bd503bf6d02ccd487579
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: bc713f7a91af2ed0f3e120cfa56cb8b0558e6277
+  revision: 72b8bf3086b41614b1f9ed153dce9d1704ebced8
   branch: main
   specs:
     heb412_gen (2.1.0.beta1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 2280724785996a983e78ec3bf11282f743ce3598
+  revision: 064b052e4373f9d5aad8032425725fac0f49620c
   branch: main
   specs:
     mr519_gen (2.1.0.beta1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 7e4d1a7f2f6b619d4f9d25176567ab93e8ce663d
+  revision: f896985cb96861e99315a7c27dbad4a5c30ecb13
   branch: main
   specs:
     sip (2.1.0.beta1)
@@ -62,7 +62,7 @@ GIT
 
 GIT
   remote: https://github.com/teamcapybara/capybara.git
-  revision: 2d05c203d79bca7b3b093c37f866ee41f294925b
+  revision: 48fe7018edbbf46c61f1c7632ff49fb8f1116f6c
   branch: master
   specs:
     capybara (3.38.0)
@@ -358,7 +358,7 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    twitter_cldr (6.11.3)
+    twitter_cldr (6.11.4)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
@@ -381,7 +381,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.3)
+    zeitwerk (2.6.4)
 
 PLATFORMS
   x86_64-openbsd
@@ -441,4 +441,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.3.24
+   2.3.25
