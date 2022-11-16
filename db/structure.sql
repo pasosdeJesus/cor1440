@@ -1456,6 +1456,8 @@ CREATE TABLE public.cor1440_gen_proyectofinanciero (
     compromisos character varying(5000),
     monto numeric,
     sectorapc_id integer,
+    titulo character varying(1000),
+    poromision boolean,
     fechaformulacion date,
     fechaaprobacion date,
     fechaliquidacion date,
@@ -1468,9 +1470,7 @@ CREATE TABLE public.cor1440_gen_proyectofinanciero (
     montoej double precision,
     aportepropioej double precision,
     aporteotrosej double precision,
-    presupuestototalej double precision,
-    titulo character varying(1000),
-    poromision boolean
+    presupuestototalej double precision
 );
 
 
@@ -1770,6 +1770,149 @@ ALTER SEQUENCE public.cor1440_gen_valorcampotind_id_seq OWNED BY public.cor1440_
 
 
 --
+-- Name: divipola_oficial_2021_corregido; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.divipola_oficial_2021_corregido (
+    coddep integer,
+    departamento character varying(512) COLLATE public.es_co_utf_8,
+    codmun integer,
+    municipio character varying(512) COLLATE public.es_co_utf_8,
+    codcp integer,
+    centropoblado character varying(512) COLLATE public.es_co_utf_8,
+    tipocp character varying(6)
+);
+
+
+--
+-- Name: sip_clase_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sip_clase_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sip_clase; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sip_clase (
+    id_clalocal integer,
+    nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
+    id_tclase character varying(10) DEFAULT 'CP'::character varying NOT NULL,
+    latitud double precision,
+    longitud double precision,
+    fechacreacion date NOT NULL,
+    fechadeshabilitacion date,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    id_municipio integer,
+    id integer DEFAULT nextval('public.sip_clase_id_seq'::regclass) NOT NULL,
+    observaciones character varying(5000) COLLATE public.es_co_utf_8,
+    ultvigenciaini date,
+    ultvigenciafin date,
+    CONSTRAINT clase_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
+);
+
+
+--
+-- Name: sip_departamento_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sip_departamento_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sip_departamento; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sip_departamento (
+    id_deplocal integer,
+    nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
+    latitud double precision,
+    longitud double precision,
+    fechacreacion date DEFAULT ('now'::text)::date NOT NULL,
+    fechadeshabilitacion date,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    id_pais integer DEFAULT 0 NOT NULL,
+    id integer DEFAULT nextval('public.sip_departamento_id_seq'::regclass) NOT NULL,
+    observaciones character varying(5000) COLLATE public.es_co_utf_8,
+    codiso character varying(6),
+    catiso character varying(64),
+    codreg integer,
+    ultvigenciaini date,
+    ultvigenciafin date,
+    CONSTRAINT departamento_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
+);
+
+
+--
+-- Name: sip_municipio_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sip_municipio_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sip_municipio; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sip_municipio (
+    id_munlocal integer,
+    nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
+    latitud double precision,
+    longitud double precision,
+    fechacreacion date DEFAULT ('now'::text)::date NOT NULL,
+    fechadeshabilitacion date,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    id_departamento integer,
+    id integer DEFAULT nextval('public.sip_municipio_id_seq'::regclass) NOT NULL,
+    observaciones character varying(5000) COLLATE public.es_co_utf_8,
+    codreg integer,
+    ultvigenciaini date,
+    ultvigenciafin date,
+    tipomun character varying(32),
+    CONSTRAINT municipio_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
+);
+
+
+--
+-- Name: divipola_sip; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW public.divipola_sip AS
+ SELECT sip_departamento.id_deplocal AS coddep,
+    sip_departamento.nombre AS departamento,
+    ((sip_departamento.id_deplocal * 1000) + sip_municipio.id_munlocal) AS codmun,
+    sip_municipio.nombre AS municipio,
+    (((sip_departamento.id_deplocal * 1000000) + (sip_municipio.id_munlocal * 1000)) + sip_clase.id_clalocal) AS codcp,
+    sip_clase.nombre AS centropoblado,
+    sip_clase.id_tclase AS tipocp,
+    sip_clase.id AS sip_idcp
+   FROM ((public.sip_departamento
+     JOIN public.sip_municipio ON ((sip_municipio.id_departamento = sip_departamento.id)))
+     JOIN public.sip_clase ON ((sip_clase.id_municipio = sip_municipio.id)))
+  WHERE ((sip_departamento.id_pais = 170) AND (sip_clase.fechadeshabilitacion IS NULL) AND (sip_clase.id < 100000))
+  ORDER BY sip_departamento.nombre, sip_municipio.nombre, sip_clase.nombre;
+
+
+--
 -- Name: heb412_gen_campohc; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -1787,7 +1930,6 @@ CREATE TABLE public.heb412_gen_campohc (
 --
 
 CREATE SEQUENCE public.heb412_gen_campohc_id_seq
-    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -1819,7 +1961,6 @@ CREATE TABLE public.heb412_gen_campoplantillahcm (
 --
 
 CREATE SEQUENCE public.heb412_gen_campoplantillahcm_id_seq
-    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -1914,7 +2055,7 @@ CREATE TABLE public.heb412_gen_doc (
     updated_at timestamp without time zone NOT NULL,
     adjunto_file_name character varying,
     adjunto_content_type character varying,
-    adjunto_file_size bigint,
+    adjunto_file_size integer,
     adjunto_updated_at timestamp without time zone,
     nombremenu character varying(127),
     vista character varying(255),
@@ -1931,7 +2072,6 @@ CREATE TABLE public.heb412_gen_doc (
 --
 
 CREATE SEQUENCE public.heb412_gen_doc_id_seq
-    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2039,7 +2179,6 @@ CREATE TABLE public.heb412_gen_plantillahcm (
 --
 
 CREATE SEQUENCE public.heb412_gen_plantillahcm_id_seq
-    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2387,122 +2526,6 @@ ALTER SEQUENCE public.poa_id_seq OWNED BY public.poa.id;
 
 
 --
--- Name: sal7711_gen_articulo; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sal7711_gen_articulo (
-    id integer NOT NULL,
-    departamento_id integer,
-    municipio_id integer,
-    fuenteprensa_id integer NOT NULL,
-    fecha date NOT NULL,
-    pagina character varying(20),
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL,
-    anexo_id integer NOT NULL,
-    texto text,
-    url character varying(5000)
-);
-
-
---
--- Name: sal7711_gen_articulo_categoriaprensa; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sal7711_gen_articulo_categoriaprensa (
-    articulo_id integer NOT NULL,
-    categoriaprensa_id integer NOT NULL
-);
-
-
---
--- Name: sal7711_gen_articulo_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sal7711_gen_articulo_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sal7711_gen_articulo_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.sal7711_gen_articulo_id_seq OWNED BY public.sal7711_gen_articulo.id;
-
-
---
--- Name: sal7711_gen_bitacora; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sal7711_gen_bitacora (
-    id integer NOT NULL,
-    fecha timestamp without time zone,
-    ip character varying(100),
-    usuario_id integer,
-    operacion character varying(50),
-    detalle character varying(5000)
-);
-
-
---
--- Name: sal7711_gen_bitacora_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sal7711_gen_bitacora_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sal7711_gen_bitacora_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.sal7711_gen_bitacora_id_seq OWNED BY public.sal7711_gen_bitacora.id;
-
-
---
--- Name: sal7711_gen_categoriaprensa; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sal7711_gen_categoriaprensa (
-    id integer NOT NULL,
-    codigo character varying(15),
-    nombre character varying(500),
-    observaciones character varying(5000),
-    fechacreacion date,
-    fechadeshabilitacion date,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone
-);
-
-
---
--- Name: sal7711_gen_categoriaprensa_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sal7711_gen_categoriaprensa_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sal7711_gen_categoriaprensa_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.sal7711_gen_categoriaprensa_id_seq OWNED BY public.sal7711_gen_categoriaprensa.id;
-
-
---
 -- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -2586,41 +2609,6 @@ ALTER SEQUENCE public.sip_bitacora_id_seq OWNED BY public.sip_bitacora.id;
 
 
 --
--- Name: sip_clase_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sip_clase_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sip_clase; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sip_clase (
-    id_clalocal integer,
-    nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
-    id_tclase character varying(10) DEFAULT 'CP'::character varying NOT NULL,
-    latitud double precision,
-    longitud double precision,
-    fechacreacion date NOT NULL,
-    fechadeshabilitacion date,
-    created_at timestamp without time zone,
-    updated_at timestamp without time zone,
-    id_municipio integer,
-    id integer DEFAULT nextval('public.sip_clase_id_seq'::regclass) NOT NULL,
-    observaciones character varying(5000) COLLATE public.es_co_utf_8,
-    ultvigenciaini date,
-    ultvigenciafin date,
-    CONSTRAINT clase_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
-);
-
-
---
 -- Name: sip_clase_histvigencia; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -2653,43 +2641,6 @@ CREATE SEQUENCE public.sip_clase_histvigencia_id_seq
 --
 
 ALTER SEQUENCE public.sip_clase_histvigencia_id_seq OWNED BY public.sip_clase_histvigencia.id;
-
-
---
--- Name: sip_departamento_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sip_departamento_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sip_departamento; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sip_departamento (
-    id_deplocal integer,
-    nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
-    latitud double precision,
-    longitud double precision,
-    fechacreacion date DEFAULT ('now'::text)::date NOT NULL,
-    fechadeshabilitacion date,
-    created_at timestamp without time zone,
-    updated_at timestamp without time zone,
-    id_pais integer DEFAULT 0 NOT NULL,
-    id integer DEFAULT nextval('public.sip_departamento_id_seq'::regclass) NOT NULL,
-    observaciones character varying(5000) COLLATE public.es_co_utf_8,
-    codiso character varying(6),
-    catiso character varying(64),
-    codreg integer,
-    ultvigenciaini date,
-    ultvigenciafin date,
-    CONSTRAINT departamento_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
-);
 
 
 --
@@ -2855,7 +2806,6 @@ CREATE TABLE public.sip_grupo (
 --
 
 CREATE SEQUENCE public.sip_grupo_id_seq
-    AS integer
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2875,8 +2825,8 @@ ALTER SEQUENCE public.sip_grupo_id_seq OWNED BY public.sip_grupo.id;
 --
 
 CREATE TABLE public.sip_grupo_usuario (
-    usuario_id integer NOT NULL,
-    sip_grupo_id integer NOT NULL
+    usuario_id bigint NOT NULL,
+    sip_grupo_id bigint NOT NULL
 );
 
 
@@ -2889,13 +2839,6 @@ CREATE TABLE public.sip_grupoper (
     nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
     anotaciones character varying(1000)
 );
-
-
---
--- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
---
-
-COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en cor1440_desarrollo';
 
 
 --
@@ -2915,42 +2858,6 @@ CREATE SEQUENCE public.sip_grupoper_id_seq
 --
 
 ALTER SEQUENCE public.sip_grupoper_id_seq OWNED BY public.sip_grupoper.id;
-
-
---
--- Name: sip_municipio_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sip_municipio_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sip_municipio; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sip_municipio (
-    id_munlocal integer,
-    nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
-    latitud double precision,
-    longitud double precision,
-    fechacreacion date DEFAULT ('now'::text)::date NOT NULL,
-    fechadeshabilitacion date,
-    created_at timestamp without time zone,
-    updated_at timestamp without time zone,
-    id_departamento integer,
-    id integer DEFAULT nextval('public.sip_municipio_id_seq'::regclass) NOT NULL,
-    observaciones character varying(5000) COLLATE public.es_co_utf_8,
-    codreg integer,
-    ultvigenciaini date,
-    ultvigenciafin date,
-    tipomun character varying(32),
-    CONSTRAINT municipio_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
-);
 
 
 --
@@ -3770,7 +3677,7 @@ CREATE TABLE public.usuario (
     foto_file_name character varying,
     foto_content_type character varying,
     foto_file_size bigint,
-    foto_updated_at timestamp(6) without time zone,
+    foto_updated_at timestamp without time zone,
     CONSTRAINT usuario_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion))),
     CONSTRAINT usuario_rol_check CHECK ((rol >= 1))
 );
@@ -4162,27 +4069,6 @@ ALTER TABLE ONLY public.poa ALTER COLUMN id SET DEFAULT nextval('public.poa_id_s
 
 
 --
--- Name: sal7711_gen_articulo id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_articulo_id_seq'::regclass);
-
-
---
--- Name: sal7711_gen_bitacora id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_bitacora ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_bitacora_id_seq'::regclass);
-
-
---
--- Name: sal7711_gen_categoriaprensa id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_categoriaprensa ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_categoriaprensa_id_seq'::regclass);
-
-
---
 -- Name: sip_anexo id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -4337,14 +4223,6 @@ ALTER TABLE ONLY public.sip_vereda ALTER COLUMN id SET DEFAULT nextval('public.s
 
 
 --
--- Name: cor1440_gen_actividad actividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.cor1440_gen_actividad
-    ADD CONSTRAINT actividad_pkey PRIMARY KEY (id);
-
-
---
 -- Name: cor1440_gen_actividad_rangoedadac actividad_rangoedadac_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -4382,6 +4260,14 @@ ALTER TABLE ONLY public.sip_anexo
 
 ALTER TABLE ONLY public.ar_internal_metadata
     ADD CONSTRAINT ar_internal_metadata_pkey PRIMARY KEY (key);
+
+
+--
+-- Name: cor1440_gen_actividad cor1440_gen_actividad_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_actividad
+    ADD CONSTRAINT cor1440_gen_actividad_pkey PRIMARY KEY (id);
 
 
 --
@@ -4857,30 +4743,6 @@ ALTER TABLE ONLY public.sip_oficina
 
 
 --
--- Name: sal7711_gen_articulo sal7711_gen_articulo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo
-    ADD CONSTRAINT sal7711_gen_articulo_pkey PRIMARY KEY (id);
-
-
---
--- Name: sal7711_gen_bitacora sal7711_gen_bitacora_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_bitacora
-    ADD CONSTRAINT sal7711_gen_bitacora_pkey PRIMARY KEY (id);
-
-
---
--- Name: sal7711_gen_categoriaprensa sal7711_gen_categoriaprensa_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_categoriaprensa
-    ADD CONSTRAINT sal7711_gen_categoriaprensa_pkey PRIMARY KEY (id);
-
-
---
 -- Name: sip_bitacora sip_bitacora_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5190,6 +5052,20 @@ ALTER TABLE ONLY public.usuario
 
 ALTER TABLE ONLY public.usuario
     ADD CONSTRAINT usuario_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: cor1440_gen_actividad_id_actividadpf_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX cor1440_gen_actividad_id_actividadpf_id_idx ON public.cor1440_gen_actividad_actividadpf USING btree (actividad_id, actividadpf_id);
+
+
+--
+-- Name: cor1440_gen_actividad_id_persona_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX cor1440_gen_actividad_id_persona_id_idx ON public.cor1440_gen_asistencia USING btree (actividad_id, persona_id);
 
 
 --
@@ -5826,14 +5702,6 @@ ALTER TABLE ONLY public.cor1440_gen_actividad_proyectofinanciero
 
 
 --
--- Name: sal7711_gen_bitacora fk_rails_52d9d2f700; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_bitacora
-    ADD CONSTRAINT fk_rails_52d9d2f700 FOREIGN KEY (usuario_id) REFERENCES public.usuario(id);
-
-
---
 -- Name: mr519_gen_encuestapersona fk_rails_54b3e0ed5c; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -5903,14 +5771,6 @@ ALTER TABLE ONLY public.cor1440_gen_plantillahcm_proyectofinanciero
 
 ALTER TABLE ONLY public.mr519_gen_opcioncs
     ADD CONSTRAINT fk_rails_656b4a3ca7 FOREIGN KEY (campo_id) REFERENCES public.mr519_gen_campo(id);
-
-
---
--- Name: sal7711_gen_articulo fk_rails_65eae7449f; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo
-    ADD CONSTRAINT fk_rails_65eae7449f FOREIGN KEY (departamento_id) REFERENCES public.sip_departamento(id);
 
 
 --
@@ -6010,14 +5870,6 @@ ALTER TABLE ONLY public.sip_orgsocial_persona
 
 
 --
--- Name: sal7711_gen_articulo_categoriaprensa fk_rails_7d1213c35b; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo_categoriaprensa
-    ADD CONSTRAINT fk_rails_7d1213c35b FOREIGN KEY (articulo_id) REFERENCES public.sal7711_gen_articulo(id);
-
-
---
 -- Name: mr519_gen_respuestafor fk_rails_805efe6935; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -6095,14 +5947,6 @@ ALTER TABLE ONLY public.cor1440_gen_informefinanciero
 
 ALTER TABLE ONLY public.sip_grupo_usuario
     ADD CONSTRAINT fk_rails_8d24f7c1c0 FOREIGN KEY (sip_grupo_id) REFERENCES public.sip_grupo(id);
-
-
---
--- Name: sal7711_gen_articulo fk_rails_8e3e0703f9; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo
-    ADD CONSTRAINT fk_rails_8e3e0703f9 FOREIGN KEY (municipio_id) REFERENCES public.sip_municipio(id);
 
 
 --
@@ -6215,14 +6059,6 @@ ALTER TABLE ONLY public.cor1440_gen_actividad_actividadpf
 
 ALTER TABLE ONLY public.cor1440_gen_anexo_efecto
     ADD CONSTRAINT fk_rails_bcd8d7b7ad FOREIGN KEY (anexo_id) REFERENCES public.sip_anexo(id);
-
-
---
--- Name: sal7711_gen_articulo fk_rails_bdb4c828f9; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo
-    ADD CONSTRAINT fk_rails_bdb4c828f9 FOREIGN KEY (anexo_id) REFERENCES public.sip_anexo(id);
 
 
 --
@@ -6343,14 +6179,6 @@ ALTER TABLE ONLY public.cor1440_gen_proyectofinanciero
 
 ALTER TABLE ONLY public.cor1440_gen_indicadorpf
     ADD CONSTRAINT fk_rails_d264d408b0 FOREIGN KEY (resultadopf_id) REFERENCES public.cor1440_gen_resultadopf(id);
-
-
---
--- Name: sal7711_gen_articulo fk_rails_d3b628101f; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo
-    ADD CONSTRAINT fk_rails_d3b628101f FOREIGN KEY (fuenteprensa_id) REFERENCES public.sip_fuenteprensa(id);
 
 
 --
@@ -6511,14 +6339,6 @@ ALTER TABLE ONLY public.sip_clase
 
 ALTER TABLE ONLY public.heb412_gen_formulario_plantillahcm
     ADD CONSTRAINT fk_rails_fc3149fc44 FOREIGN KEY (plantillahcm_id) REFERENCES public.heb412_gen_plantillahcm(id);
-
-
---
--- Name: sal7711_gen_articulo_categoriaprensa fk_rails_fcf649bab3; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo_categoriaprensa
-    ADD CONSTRAINT fk_rails_fcf649bab3 FOREIGN KEY (categoriaprensa_id) REFERENCES public.sal7711_gen_categoriaprensa(id);
 
 
 --
@@ -7002,6 +6822,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210619191706'),
 ('20210728214424'),
 ('20210820201118'),
+('20210820211926'),
 ('20211010164634'),
 ('20211024105450'),
 ('20211117200456'),
@@ -7032,7 +6853,9 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220722192214'),
 ('20220805181901'),
 ('20220822132754'),
+('20221020172553'),
 ('20221102144613'),
-('20221102145906');
+('20221102145906'),
+('20221112113323');
 
 
