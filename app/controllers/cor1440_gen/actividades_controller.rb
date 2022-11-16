@@ -10,41 +10,6 @@ module Cor1440Gen
       exclude: [:contar]
     load_and_authorize_resource class: Cor1440Gen::Actividad
 
-#    def atributos_show
-#      [ :id, 
-#        :fecha_localizada, 
-#        :nombre, 
-#        :lugar,
-#        :responsable,
-#        :corresponsables,
-#        :proyectofinanciero,
-#        :respuestafor,
-#        :objetivo,
-#        :resultado,
-#        :orgsocial,
-#        :listadoasistencia,
-#        :poblacion,
-#        :anexos
-#      ]
-#    end
-#
-#    def atributos_index
-#      [ :id, 
-#        :fecha_localizada, 
-#        :nombre, 
-#        :responsable,
-#        :proyectofinanciero,
-#        :actividadpf, 
-#        :objetivo,
-#        :poblacion,
-#        :anexos
-#      ]
-#    end
-#
-#    def atributos_form
-#      atributos_show - [:id, 'id']
-#    end
-
     def edit
       edit_cor1440_gen
       @listadoasistencia = true
