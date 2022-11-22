@@ -59,8 +59,6 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
-  config.assets.debug = true
-
   config.assets.resolv_with = %i[manifest]
 
   # Raises error for missing translations.
