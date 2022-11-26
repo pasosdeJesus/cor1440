@@ -64,21 +64,25 @@ CREATE FUNCTION public.f_unaccent(text) RETURNS text
 CREATE FUNCTION public.sip_edad_de_fechanac_fecharef(anionac integer, mesnac integer, dianac integer, anioref integer, mesref integer, diaref integer) RETURNS integer
     LANGUAGE sql IMMUTABLE
     AS $$
-        SELECT CASE 
-          WHEN anionac IS NULL THEN NULL
-          WHEN anioref IS NULL THEN NULL
-          WHEN mesnac IS NULL OR dianac IS NULL OR mesref IS NULL OR diaref IS NULL THEN 
-            anioref-anionac 
-          WHEN mesnac < mesref THEN
-            anioref-anionac
-          WHEN mesnac > mesref THEN
-            anioref-anionac-1
-          WHEN dianac > diaref THEN
-            anioref-anionac-1
-          ELSE 
-            anioref-anionac
-        END 
-      $$;
+            SELECT CASE 
+              WHEN anionac IS NULL THEN NULL
+              WHEN anioref IS NULL THEN NULL
+              WHEN anioref < anionac THEN -1
+              WHEN mesnac IS NOT NULL AND mesnac > 0 
+                AND mesref IS NOT NULL AND mesref > 0 
+                AND mesnac >= mesref THEN
+                CASE 
+                  WHEN mesnac > mesref OR (dianac IS NOT NULL 
+                    AND dianac > 0 AND diaref IS NOT NULL 
+                    AND diaref > 0 AND dianac > diaref) THEN 
+                    anioref-anionac-1
+                  ELSE 
+                    anioref-anionac
+                END
+              ELSE
+                anioref-anionac
+            END 
+          $$;
 
 
 --
@@ -4295,6 +4299,14 @@ ALTER TABLE ONLY public.cor1440_gen_actividad_proyectofinanciero
 
 
 --
+-- Name: cor1440_gen_actividad_rangoedadac cor1440_gen_actividad_rangoedadac_unicos; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cor1440_gen_actividad_rangoedadac
+    ADD CONSTRAINT cor1440_gen_actividad_rangoedadac_unicos UNIQUE (actividad_id, rangoedadac_id);
+
+
+--
 -- Name: cor1440_gen_actividad_sip_anexo cor1440_gen_actividad_sip_anexo_id_key; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -6856,6 +6868,9 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20221020172553'),
 ('20221102144613'),
 ('20221102145906'),
-('20221112113323');
+('20221112113323'),
+('20221118010717'),
+('20221118023539'),
+('20221118032223');
 
 
