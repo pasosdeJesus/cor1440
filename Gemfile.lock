@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: 1c190bccdf3a441963ec93d9d8c90d08dc7cadd8
+  revision: 83284fa39c5b1e22454918c31041e99ba3dc529c
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 76e34fc0a413f193642c4f2994fabc8365fa7306
+  revision: 0728394ca7e879c16e53a28b96a397bd991e59aa
   branch: main
   specs:
     heb412_gen (2.1.0.beta1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 28d27b1ca62c2a16798c814a84d42b7aba24ded0
+  revision: 5637c98668779f7749618ca1863c24fb6f656af6
   branch: main
   specs:
     mr519_gen (2.1.0.beta1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: f6e0efff565110d41d447a9090b823f9f49289dd
+  revision: 3d05638bc7d0caa1197a2e67f705bae564a069c3
   branch: main
   specs:
     sip (2.1.0.beta1)
@@ -175,8 +175,8 @@ GEM
     cuprite (0.14.3)
       capybara (~> 3.0)
       ferrum (~> 0.13.0)
-    debug (1.6.3)
-      irb (>= 1.3.6)
+    debug (1.7.0)
+      irb (>= 1.5.0)
       reline (>= 0.3.1)
     devise (4.8.1)
       bcrypt (~> 3.0)
@@ -207,21 +207,24 @@ GEM
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
-    irb (1.5.0)
+    irb (1.5.1)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
-    json (2.6.2)
+    json (2.6.3)
     kgio (2.11.4)
     libxml-ruby (3.2.4)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.7.1)
+    mail (2.8.0)
       mini_mime (>= 0.1.1)
+      net-imap
+      net-pop
+      net-smtp
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
@@ -236,12 +239,12 @@ GEM
       net-protocol
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.1.3)
+    net-protocol (0.2.1)
       timeout
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.9)
+    nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     odf-report (0.7.3)
@@ -260,10 +263,10 @@ GEM
     prawnto_2 (0.3.1)
       prawn (>= 1.0.0)
       rails (>= 3.2)
-    public_suffix (5.0.0)
+    public_suffix (5.0.1)
     puma (6.0.0)
       nio4r (~> 2.0)
-    racc (1.6.0)
+    racc (1.6.1)
     rack (2.2.4)
     rack-test (2.0.2)
       rack (>= 1.3)
@@ -340,13 +343,13 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.1.1)
+    stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
     thor (1.2.1)
     tilt (2.0.11)
-    timeout (0.3.0)
+    timeout (0.3.1)
     ttfunk (1.7.0)
     turbo-rails (1.3.2)
       actionpack (>= 6.0.0)
