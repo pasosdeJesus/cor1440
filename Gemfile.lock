@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: adca637d054a5ec6dd3994a861c572293996688d
+  revision: e594e08ac0f4da53cd1d4eaa953fee6150e0ce95
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 2068b368571b7c5ffe21e52ee76dd25607ace11c
+  revision: 45ab4d3cc27d615d521f5c87018c22c05e5b97b6
   branch: main
   specs:
     heb412_gen (2.1.0.beta1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: bf34d591ac8f99a00110a50217a01615b175c974
+  revision: 2c76d99d70d14245c2636b8d47fc274aee40a9cc
   branch: main
   specs:
     mr519_gen (2.1.0.beta1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: a3e756f998528ef6124c654a62f41498ebb7bc2e
+  revision: 3ee8371d11d99b499759d0d86100d29af9d5fafe
   branch: main
   specs:
     sip (2.1.0.beta1)
@@ -175,7 +175,7 @@ GEM
     cuprite (0.14.3)
       capybara (~> 3.0)
       ferrum (~> 0.13.0)
-    date (3.3.1)
+    date (3.3.2)
     debug (1.7.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
@@ -207,18 +207,18 @@ GEM
       activesupport (>= 5.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    io-console (0.5.11)
-    irb (1.6.0)
+    io-console (0.6.0)
+    irb (1.6.1)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.0.3)
+    jsbundling-rails (1.1.1)
       railties (>= 6.0.0)
     json (2.6.3)
     kgio (2.11.4)
     libxml-ruby (3.2.4)
-    loofah (2.19.0)
+    loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.8.0)
@@ -294,8 +294,8 @@ GEM
       activesupport (>= 4.2)
       choice (~> 0.2.0)
       ruby-graphviz (~> 1.2)
-    rails-html-sanitizer (1.4.3)
-      loofah (~> 2.3)
+    rails-html-sanitizer (1.4.4)
+      loofah (~> 2.19, >= 2.19.1)
     rails-i18n (7.0.6)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
@@ -310,7 +310,7 @@ GEM
     rake (13.0.6)
     redcarpet (3.5.1)
     regexp_parser (2.6.1)
-    reline (0.3.1)
+    reline (0.3.2)
       io-console (~> 0.5)
     responders (3.0.1)
       actionpack (>= 5.0)
