@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/cor1440_gen.git
-  revision: f538467b8020b971053c5a4e8119814a04322e30
+  revision: 455366f2cbce6a312ca4af39aefc934da3c27b23
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: d13cca20c42a7e49e311adb6b4f5f67d398b5274
+  revision: 3b7062dd0cbed0f7428387437488c47e9ad98394
   branch: main
   specs:
     heb412_gen (2.1.0.beta1)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: a8dae6635fb9224d036f798d003434bdcaef9142
+  revision: a827f46c1600a36047f31a4c4fbb1d4b4ec13807
   branch: main
   specs:
     mr519_gen (2.1.0.beta1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 323392d2043a648b0a5d9e17bcbb6f981ba3da50
+  revision: 20b5646a730f8a8c174ab2bc252953e5feb9bd79
   branch: main
   specs:
     sip (2.1.0.beta1)
@@ -217,7 +217,7 @@ GEM
       railties (>= 6.0.0)
     json (2.6.3)
     kgio (2.11.4)
-    libxml-ruby (3.2.4)
+    libxml-ruby (4.0.0)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -269,7 +269,7 @@ GEM
     puma (6.0.1)
       nio4r (~> 2.0)
     racc (1.6.2)
-    rack (2.2.4)
+    rack (2.2.5)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.4)
