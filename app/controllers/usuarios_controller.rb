@@ -1,6 +1,6 @@
 require 'cor1440_gen/concerns/controllers/usuarios_controller'
 
-class UsuariosController < Sip::ModelosController
+class UsuariosController < Msip::ModelosController
   include Cor1440Gen::Concerns::Controllers::UsuariosController
 
   # Sin definicion de autoridad por ser requerido por no autenticados
@@ -10,7 +10,7 @@ class UsuariosController < Sip::ModelosController
       :nusuario,
       :nombre,
       :email,
-      :sip_grupo_ids,
+      :grupo_ids,
       :foto,
       :habilitado,
     ]
@@ -32,7 +32,7 @@ class UsuariosController < Sip::ModelosController
       r += [
         :email,
         :tema,
-        :sip_grupo,
+        :msip_grupo,
         :foto,
         :fechacreacion_localizada,
         :fechadeshabilitacion_localizada,
@@ -95,10 +95,10 @@ class UsuariosController < Sip::ModelosController
       @usuario = Usuario.find(params[:id].to_i)
       ruta = @usuario.foto_file_name
       if !ruta.nil?
-        n=sprintf(Sip.ruta_anexos.to_s + "/fotos/%d_%s", @usuario.id.to_i, 
+        n=sprintf(Msip.ruta_anexos.to_s + "/fotos/%d_%s", @usuario.id.to_i, 
                   File.basename(ruta))
       else
-        n = Sip.ruta_anexos.to_s + "/fotos/predeterminada.png"
+        n = Msip.ruta_anexos.to_s + "/fotos/predeterminada.png"
       end
       logger.debug "Descargando #{n}"
       send_file n, x_sendfile: true

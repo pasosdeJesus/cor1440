@@ -2,8 +2,8 @@
 # Integracion continua
 
 if (test "$S2NOG" != "1") then {
-	echo "## sip"
-	cd ../sip/
+	echo "## msip"
+	cd ../msip/
 	sudo bundle update
 	sudo bundle install
 	bin/gc.sh

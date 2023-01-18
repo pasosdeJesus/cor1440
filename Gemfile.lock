@@ -20,7 +20,7 @@ GIT
       kt-paperclip
       mr519_gen
       rails
-      sip
+      msip
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
@@ -31,7 +31,7 @@ GIT
       mr519_gen
       redcarpet
       rspreadsheet
-      sip
+      msip
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
@@ -40,14 +40,14 @@ GIT
   specs:
     mr519_gen (2.1.0.beta1)
       rails
-      sip
+      msip
 
 GIT
-  remote: https://github.com/pasosdeJesus/sip.git
+  remote: https://github.com/pasosdeJesus/msip.git
   revision: 20b5646a730f8a8c174ab2bc252953e5feb9bd79
   branch: main
   specs:
-    sip (2.1.0.beta1)
+    msip (2.1.0.beta1)
       cancancan
       coffee-rails
       devise
@@ -426,7 +426,7 @@ DEPENDENCIES
   sassc-rails
   simple_form
   simplecov (< 0.18)
-  sip!
+  msip!
   sprockets-rails
   stimulus-rails
   turbo-rails (~> 1.0)

@@ -18,7 +18,7 @@ if (test "$IPDES" = "") then {
 } fi;
 if (test "$RAILS_ENV" = "development") then {
 	if (test "$SININD" = "") then {
-		bundle exec rake sip:indices
+		bundle exec rake msip:indices
 	} fi;
 	bin/rails s -p $PUERTODES -b $IPDES
 } else {

@@ -1,10 +1,10 @@
 conexion = ActiveRecord::Base.connection();
 
 # De motores
-motor = ['sip', 'cor1440_gen', nil]
+motor = ['msip', 'cor1440_gen', nil]
 motor.each do |m|
-    Sip::carga_semillas_sql(conexion, m, :cambios)
-    Sip::carga_semillas_sql(conexion, m, :datos)
+    Msip::carga_semillas_sql(conexion, m, :cambios)
+    Msip::carga_semillas_sql(conexion, m, :datos)
 end
 
 #cor1440, cor1440

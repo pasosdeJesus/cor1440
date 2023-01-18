@@ -31,8 +31,15 @@ if (test "$?" = "0") then {
 } fi;
 
 if (test "$SINAC" != "1") then {
-  NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle update --bundler
+  rer=`bundle config get path | grep ":" | head -n 1 | sed -e "s/.*\"\(.*\)\"/\1/g"`
+  rubyver=`ruby -v | sed -e "s/^[^ ]* \([0-9].[0-9]\).*/\1/g"`
+  rutapore="$rer/ruby/$rubyver/cache/bundler/git/"
+  if (test -d "$rutapore") then {
+    echo "Eliminando $rutapore/*"
+    rm -rf $rutapore/*
+  } fi;
   NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle update
+  NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle update --bundler
   if (test "$?" != "0") then {
     exit 1;
   } fi;
@@ -49,7 +56,7 @@ if (test "$SININS" != "1") then {
   } fi;
 
   echo "\n== Enlaza controladores stimulus de motores =="
-  (cd $rutaap; bin/rails sip:stimulus_motores)
+  (cd $rutaap; bin/rails msip:stimulus_motores)
   if (test "$?" != "0") then {
     exit 1;
   } fi;
@@ -61,29 +68,13 @@ if (test "$SININS" != "1") then {
 } fi;
 
 if (test "$SINMIG" != "1") then {
-  (cd $rutaap; bin/rails db:migrate sip:indices db:schema:dump)
+  (cd $rutaap; bin/rails db:migrate msip:indices db:schema:dump)
   if (test "$?" != "0") then {
     exit 1;
   } fi;
 } fi;
 
-(cd $rutaap; RAILS_ENV=test bin/rails db:drop db:setup; RAILS_ENV=test bin/rails db:migrate sip:indices)
-if (test "$?" != "0") then {
-  echo "No puede preparse base de prueba";
-  exit 1;
-} fi;
-
-CONFIG_HOSTS=www.example.com bin/rails test
-if (test "$?" != "0") then {
-  echo "No pasaron pruebas de regresion";
-  exit 1;
-} fi;
-
-(cd $rutaap; CONFIG_HOSTS=127.0.0.1 bin/rails test:system)
-if (test "$?" != "0") then {
-  echo "No pasaron pruebas del sistema";
-  exit 1;
-} fi;
+bin/regresion.sh
 
 
 (cd $rutaap; RAILS_ENV=test bin/rails db:schema:dump)
@@ -96,7 +87,7 @@ if (test "$MENSCONS" = "") then {
 git commit -m "$MENSCONS" -a
 git push origin ${b}
 if (test "$?" != "0") then {
-  echo "No pudo subirse el cambio a github";
+  echo "No pudo subirse el cambio a gitlab";
   exit 1;
 } fi;
 

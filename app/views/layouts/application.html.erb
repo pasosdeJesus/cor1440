@@ -1,5 +1,5 @@
 <% content_for :title do %>
-    <%= Sip.titulo %>
+    <%= Msip.titulo %>
 <% end %>
 
 <% content_for :menu do %>
@@ -26,12 +26,12 @@
           cor1440_gen.contar_actividades_path, desplegable: true %>
         <%= opcion_menu "Contar por beneficiario y actividad de marco lógico", 
           cor1440_gen.contar_actividades_beneficiarios_path, desplegable: true %>
-        <% if can? :manage, ::Sip::Orgsocial %>
-          <%= opcion_menu "Organizaciones sociales", sip.orgsociales_path,
+        <% if can? :manage, ::Msip::Orgsocial %>
+          <%= opcion_menu "Organizaciones sociales", msip.orgsociales_path,
             desplegable: true %>
         <% end %>
-        <% if can? :manage, ::Sip::Persona %>
-          <%= opcion_menu "Beneficiarios", sip.personas_path,
+        <% if can? :manage, ::Msip::Persona %>
+          <%= opcion_menu "Beneficiarios", msip.personas_path,
             desplegable: true %>
         <% end %>
       <% end %>
@@ -65,13 +65,13 @@
             desplegable: true %>
         <% end %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
-          <%= opcion_menu "Tablas básicas", sip.tablasbasicas_path,
+          <%= opcion_menu "Tablas básicas", msip.tablasbasicas_path,
             desplegable: true %>
         <% end %>
       <% end %>
       <%= opcion_menu "Salir #{current_usuario.nusuario}", main_app.sign_out_path %>
     <% else %>
-      <%= opcion_menu "Acerca de", sip.acercade_path, desplegable: true %>
+      <%= opcion_menu "Acerca de", msip.acercade_path, desplegable: true %>
       <%= opcion_menu "Iniciar Sesión", main_app.new_usuario_session_path,
         desplegable: true %>
     <% end %>
@@ -81,9 +81,9 @@
 <% content_for :piedepagina do %>
   <p><span class='derechos'>Sistema de información de 
     <a href='https://github.com/pasosdeJesus/cor1440'>código abierto</a> con 
-    <a href="https://github.com/pasosdeJesus/sip/blob/main/LICENCIA.md">licencia ISC</a>
+    <a href="https://github.com/pasosdeJesus/msip/blob/main/LICENCIA.md">licencia ISC</a>
     <br/>
     Desarrollado por <a id='pasosdeJesus' href="http://www.pasosdeJesus.org" target="_blank">Pasos de Jesús</a>. 2022. 
 <% end %>
 
-<%= render template: "layouts/sip/application" %>
+<%= render template: "layouts/msip/application" %>
