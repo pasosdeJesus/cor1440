@@ -24,12 +24,12 @@
           cor1440_gen.contar_actividades_path %>
         <%= opcion_menu_prosidebar "Contar por beneficiario y actividad de marco lógico",
           cor1440_gen.contar_actividades_beneficiarios_path %>
-        <% if can? :manage, ::Sip::Orgsocial %>
+        <% if can? :manage, ::Msip::Orgsocial %>
           <%= opcion_menu_prosidebar "Organizaciones sociales", 
-            sip.orgsociales_path %>
+            msip.orgsociales_path %>
         <% end %>
-        <% if can? :manage, ::Sip::Persona %>
-          <%= opcion_menu_prosidebar "Beneficiarios", sip.personas_path %>
+        <% if can? :manage, ::Msip::Persona %>
+          <%= opcion_menu_prosidebar "Beneficiarios", msip.personas_path %>
         <% end %>
       <% end %>
     <% end %>
@@ -58,14 +58,14 @@
         <% end %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
           <%= opcion_menu_prosidebar "Tablas básicas", 
-            sip.tablasbasicas_path %>
+            msip.tablasbasicas_path %>
         <% end %>
       <% end %>
       <%= opcion_menu_prosidebar "Salir #{current_usuario.nusuario}", 
         main_app.sign_out_path %>
     <% else %>
       <%= opcion_menu_prosidebar "Acerca de", 
-        sip.acercade_path %>
+        msip.acercade_path %>
       <%= opcion_menu_prosidebar "Iniciar Sesión", 
         main_app.new_usuario_session_path %>
     <% end %>
@@ -80,4 +80,4 @@
     Desarrollado por <a id='pasosdeJesus' href="http://www.pasosdeJesus.org" target="_blank">Pasos de Jesús</a>. 2022. 
 <% end %>
 
-<%= render template: "layouts/sip/application-prosidebar" %>
+<%= render template: "layouts/msip/application-prosidebar" %>
