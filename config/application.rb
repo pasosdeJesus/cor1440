@@ -30,7 +30,7 @@ module Cor1440
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :es
 
-    #config.railties_order = [:main_app, Sip::Engine, :all]
+    #config.railties_order = [:main_app, Msip::Engine, :all]
 
     config.colorize_logging = true
 
@@ -44,7 +44,7 @@ module Cor1440
 
     config.relative_url_root = ENV.fetch('RUTA_RELATIVA', '/cor1440')
 
-    # sip
+    # msip
     config.x.formato_fecha = ENV.fetch('SIP_FORMATO_FECHA', 'dd/M/yyyy')
     # En el momento soporta 3 formatos: yyyy-mm-dd, dd-mm-yyyy y dd/M/yyyy
 

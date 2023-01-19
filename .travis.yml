@@ -36,11 +36,11 @@ before_install:
         - cp config/database.travis.yml config/database.yml
         - cp config/application.rb.plantilla config/application.rb
         - cp config/routes.rb.plantilla config/routes.rb
-        - cp config/initializers/sip.rb.plantilla config/initializers/sip.rb
+        - cp config/initializers/msip.rb.plantilla config/initializers/msip.rb
         - cp db/structure.sql db/structure.sql.copia # travis no soporta PostreSQL 10
         - sed -e 's/provider = libc,//g;s/SET default_table_access_method.*/-- &/g' db/structure.sql.copia > db/structure.sql 
         - bin/rails db:setup
-        - bin/rails sip:indices
+        - bin/rails msip:indices
         - bin/rails assets:precompile --trace
 
 script: 

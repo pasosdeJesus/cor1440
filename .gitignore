@@ -22,7 +22,7 @@ app/views/hogar/_local.html.erb
 config/application.rb
 config/database.yml
 config/initializers/punto_montaje.rb
-config/initializers/sip.rb
+config/initializers/msip.rb
 config/routes.rb
 config/unicorn.conf.minimal.rb
 archivos/*
@@ -45,13 +45,13 @@ app/assets/builds/
 .env
 config/credentials.yml.enc
 public/images/logo.jpg
-app/javascript/controllers/sip
+app/javascript/controllers/msip
 app/javascript/controllers/mr519_gen
 app/javascript/controllers/heb412_gen
 app/javascript/controllers/cor1440_gen
 app/javascript/controllers/sal7711_gen
 app/javascript/controllers/sivel2_gen
-app/javascript/controllers/sip
+app/javascript/controllers/msip
 app/javascript/controllers/mr519_gen
 app/javascript/controllers/heb412_gen
 app/javascript/controllers/cor1440_gen

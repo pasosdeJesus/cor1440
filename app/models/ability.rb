@@ -1,20 +1,20 @@
 class Ability  < Cor1440Gen::Ability
 
   def tablasbasicas 
-    Sip::Ability::BASICAS_PROPIAS + BASICAS_PROPIAS - [
-      ['Sip', 'fuenteprensa'], 
-      ['Sip', 'oficina'], 
+    Msip::Ability::BASICAS_PROPIAS + BASICAS_PROPIAS - [
+      ['Msip', 'fuenteprensa'], 
+      ['Msip', 'oficina'], 
       ['Cor1440Gen', 'proyecto'], 
-      ['Sip', 'tdocumento'], 
-      ['Sip', 'trelacion'], 
-      ['Sip', 'tsitio']
+      ['Msip', 'tdocumento'], 
+      ['Msip', 'trelacion'], 
+      ['Msip', 'tsitio']
     ]
   end
 
   # Autorizacion con CanCanCan
   def initialize(usuario = nil)
     initialize_cor1440_gen(usuario)
-    cannot :read, Sip::Oficina
+    cannot :read, Msip::Oficina
     if !usuario || usuario.fechadeshabilitacion || !usuario.rol
       return
     end
