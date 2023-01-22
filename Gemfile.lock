@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: e6879fde31dc39e27c36afa71123e0b19c003917
+  revision: 7f46212f2c29510e1a9b32bdd396b6c90f3c96c1
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: fb542620a496f00a0c2ac3e4110de56cfc3ad0c1
+  revision: d4b8ebdc32e2b259521c00430ff1bfce4180b934
   branch: main
   specs:
     heb412_gen (2.1.0.beta1)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 96d3e8af49ae88ed4bcc7f6fbca73eec7b6ef045
+  revision: 12faab0baca4d62483dea191c7aba09edf01dbd9
   branch: main
   specs:
     mr519_gen (2.2.0.beta1)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 0f4dff0a6b63ea4acac59e70e189cfbfe3710033
+  revision: 0705d5258c4ea443d231db1e53aec9fc3ddc75bc
   branch: main
   specs:
     msip (2.2.0.alfa3)
@@ -296,7 +296,7 @@ GEM
       activesupport (>= 4.2)
       choice (~> 0.2.0)
       ruby-graphviz (~> 1.2)
-    rails-html-sanitizer (1.4.4)
+    rails-html-sanitizer (1.5.0)
       loofah (~> 2.19, >= 2.19.1)
     rails-i18n (7.0.6)
       i18n (>= 0.7, < 2)
@@ -311,7 +311,7 @@ GEM
     raindrops (0.20.0)
     rake (13.0.6)
     redcarpet (3.5.1)
-    regexp_parser (2.6.1)
+    regexp_parser (2.6.2)
     reline (0.3.2)
       io-console (~> 0.5)
     responders (3.0.1)
@@ -442,4 +442,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.4.4
+   2.4.5
