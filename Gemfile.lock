@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 1508f7f9b09709fefa9ac8c21fc9f912ee9710e1
+  revision: c71d239d907786d1684af1ed352dd517909cb8e4
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: bedb165f2058763c3140b717ca4c887790db19ad
+  revision: be65a9dde51940ad2a62ee056c29d30a579c887c
   branch: main
   specs:
     heb412_gen (2.2.0.alfa1)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 603f536facf68656129def120baef8b901b928ef
+  revision: 5ec914c25764529252701df1b5e6e1e6926b078d
   branch: main
   specs:
     mr519_gen (2.2.0.beta1)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 720dc66d67d8015ccffa7dddece086619ed92954
+  revision: 918170d534e9d0e5fd3035b2e85fec797aa9c4d3
   branch: main
   specs:
     msip (2.2.0.alfa3)
@@ -375,7 +375,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webrick (1.7.0)
+    webrick (1.8.1)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
