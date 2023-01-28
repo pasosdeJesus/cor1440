@@ -18,7 +18,7 @@ Para incluirlo en un proyecto rails:
     //= link_directory ../../../vendor/assets/remixicon .woff
     //= link_directory ../../../vendor/assets/remixicon .woff2
     ```
-5. Cambir app/javascript/application.js para agregar junto con 
+5. Cambiar app/javascript/application.js para agregar junto con 
    otras inicializaciones:
    ```
    import inicializaProsidebar from '../../vendor/javascript/prosidebar/index.js'

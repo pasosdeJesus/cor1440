@@ -160,7 +160,8 @@ CREATE PROCEDURE public.cor1440_gen_recalcular_poblacion_actividad(IN par_activi
             RAISE NOTICE 'edad es %', edad;
             SELECT id INTO rango_id FROM cor1440_gen_rangoedadac WHERE
               fechadeshabilitacion IS NULL AND
-              limiteinferior <= edad AND edad <= limitesuperior LIMIT 1;
+              limiteinferior <= edad AND 
+                (limitesuperior IS NULL OR edad <= limitesuperior) LIMIT 1;
             IF rango_id IS NULL THEN
               rango_id := 7;
             END IF;
@@ -5171,6 +5172,13 @@ CREATE INDEX cor1440_gen_actividad_proyectofinanciero_actividad_id_idx ON public
 
 
 --
+-- Name: cor1440_gen_actividad_proyectofinanciero_unico; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX cor1440_gen_actividad_proyectofinanciero_unico ON public.cor1440_gen_actividad_proyectofinanciero USING btree (actividad_id, proyectofinanciero_id);
+
+
+--
 -- Name: cor1440_gen_datointermedioti_pmindicadorpf_llaves_idx; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -6959,6 +6967,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20221211141208'),
 ('20221211141209'),
 ('20221212021533'),
-('20230113133200');
+('20230113133200'),
+('20230127041839'),
+('20230127123623');
 
 
