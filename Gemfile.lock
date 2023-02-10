@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: d17cd0265ad0219deda49f216a7df8416144359a
+  revision: cd7ac5adf3157ac25cde6e7ebd3e3ae9e2d0e0e4
   branch: main
   specs:
     cor1440_gen (2.1a1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 789984060580479cae4f083bcaf47b59b47d039e
+  revision: 8e93b9bedab1e46d375d318475595884b555e527
   branch: main
   specs:
     heb412_gen (2.2.0.alfa1)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: e0109fe64d450a587e797817377a1a80eb3b5a25
+  revision: 3cb441983775b1e5d6ddad01e4923dfcabc4ddf2
   branch: main
   specs:
     mr519_gen (2.2.0.beta1)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b65fc7d91decdc9a238b206a2785d6d36f1fdf31
+  revision: 484be27d5f0cf08e39496b8f0c240c2f1556602c
   branch: main
   specs:
     msip (2.2.0.beta1)
@@ -311,7 +311,7 @@ GEM
     raindrops (0.20.0)
     rake (13.0.6)
     redcarpet (3.6.0)
-    regexp_parser (2.6.2)
+    regexp_parser (2.7.0)
     reline (0.3.2)
       io-console (~> 0.5)
     responders (3.1.0)
@@ -382,7 +382,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.6)
+    zeitwerk (2.6.7)
 
 PLATFORMS
   x86_64-openbsd
