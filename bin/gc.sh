@@ -38,8 +38,8 @@ if (test "$SINAC" != "1") then {
     echo "Eliminando $rutapore/*"
     rm -rf $rutapore/*
   } fi;
-  NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle update --bundler
   NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle update
+  NOKOGIRI_USE_SYSTEM_LIBRARIES=1 MAKE=gmake make=gmake QMAKE=qmake4 bundle update --bundler
   if (test "$?" != "0") then {
     exit 1;
   } fi;
@@ -75,6 +75,9 @@ if (test "$SINMIG" != "1") then {
 } fi;
 
 bin/regresion.sh
+if (test "$?" != "0") then {
+  exit 1;
+} fi;
 
 
 (cd $rutaap; RAILS_ENV=test bin/rails db:schema:dump)
