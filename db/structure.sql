@@ -2596,6 +2596,8 @@ CREATE TABLE public.msip_clase (
     svgcdy integer,
     svgcdancho integer,
     svgcdalto integer,
+    svgrotx double precision,
+    svgroty double precision,
     CONSTRAINT clase_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
 
@@ -2673,6 +2675,8 @@ CREATE TABLE public.msip_departamento (
     svgcdy integer,
     svgcdancho integer,
     svgcdalto integer,
+    svgrotx double precision,
+    svgroty double precision,
     CONSTRAINT departamento_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
 
@@ -2931,6 +2935,8 @@ CREATE TABLE public.msip_municipio (
     svgcdy integer,
     svgcdancho integer,
     svgcdalto integer,
+    svgrotx double precision,
+    svgroty double precision,
     CONSTRAINT municipio_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
 
@@ -3141,6 +3147,8 @@ CREATE TABLE public.msip_pais (
     svgcdy integer,
     svgcdancho integer,
     svgcdalto integer,
+    svgrotx double precision,
+    svgroty double precision,
     CONSTRAINT pais_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
 
@@ -6969,6 +6977,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20221212021533'),
 ('20230113133200'),
 ('20230127041839'),
-('20230127123623');
+('20230127123623'),
+('20230301145222'),
+('20230301212546');
 
 
