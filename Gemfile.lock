@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 3c8439e9e402032ef70b7f2f3ddee99b511744c4
+  revision: f065a33ad98b5a98818f3ab306c42527c7a3c396
   branch: main
   specs:
     cor1440_gen (2.2.0.beta1)
@@ -210,7 +210,7 @@ GEM
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.6.2)
+    irb (1.6.3)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
