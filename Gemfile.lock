@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: f3672277a3870929263eea1a36595d23bcf433f4
+  revision: 60cb940bc15419f66997127977a81bd48593d337
   branch: main
   specs:
     cor1440_gen (2.2.0.beta1)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: a4d84376e258b64e5e9df38ca954fedd9dd5b458
+  revision: f35b086edc9cdeee93221526c244fab1d14d21a4
   branch: main
   specs:
     heb412_gen (2.2.0.beta1)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 439f4dabe5c58c64311eb71609c8d0060bc64397
+  revision: e1f96262313c776c6b9425a210bfb13dd3272305
   branch: main
   specs:
     mr519_gen (2.2.0.beta1)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 0a43287e615dbd5b907b4756c8fdc81d303bd78a
+  revision: 72093d806a4dfce0430c73a830cdb6eca506d7bf
   branch: main
   specs:
     msip (2.2.0.beta1)
@@ -271,7 +271,7 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.4)
-    rack-test (2.0.2)
+    rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.4.3)
       actioncable (= 7.0.4.3)
