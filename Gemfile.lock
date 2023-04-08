@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: c4575806725953c0d64591ba448d4d71b9b2824a
-  branch: conv2
+  revision: b3afb21c4080386caac1df0d7509de41dd21b6f4
+  branch: main
   specs:
     cor1440_gen (2.2.0.beta2)
       devise
@@ -31,8 +31,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 4face5f255e8cad917567cd2b1ae67f256958fe4
-  branch: conv2
+  revision: 2756cdf73e81649f5f41aec0bc03425583692ce2
+  branch: main
   specs:
     heb412_gen (2.2.0.beta2)
       mr519_gen
@@ -42,8 +42,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 081cddb10db3dfbb404483e3d3a86db26ef25141
-  branch: conv2
+  revision: 3ebb0575f23781bb53f1942b2ef70f7ff4719365
+  branch: main
   specs:
     mr519_gen (2.2.0.beta2)
       msip
@@ -51,8 +51,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 3f038fea927f1d9bdeaa3d87d2d657e04a79438a
-  branch: conv2
+  revision: fe87198e3c81056cda121f744f5f96694fda2e3f
+  branch: main
   specs:
     msip (2.2.0.beta2)
       cancancan (~> 3)
