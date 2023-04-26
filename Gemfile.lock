@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 6dd4ba78e237eb23de8ae5535e743cf16c0fdfed
+  revision: 1d6429d0d6b533e3e28bfac25cdacdf838e116a1
   branch: main
   specs:
     cor1440_gen (2.2.0.beta2)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: cceb8cb59402533c0d6b5b2d9f402efe4b2b6c7d
+  revision: 89e25cf36edde558a982849a6ff87ee510ff10b3
   branch: main
   specs:
     heb412_gen (2.2.0.beta2)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: e91b8ffbee087014b0a2b8d0f424808d2e191407
+  revision: dc219cc315057122dd8a1d480eabcd3f4c377e1c
   branch: main
   specs:
     mr519_gen (2.2.0.beta2)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: a879c2ed810b93278a1b7c9d8ec6487cb311ca67
+  revision: e6bd731480ca60c7cf06e5423c529a7835023d1c
   branch: main
   specs:
     msip (2.2.0.beta2)
@@ -207,7 +207,7 @@ GEM
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    i18n (1.12.0)
+    i18n (1.13.0)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
     irb (1.6.4)
@@ -257,7 +257,7 @@ GEM
     orm_adapter (0.5.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
-    pg (1.4.6)
+    pg (1.5.2)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
@@ -270,7 +270,7 @@ GEM
     puma (6.2.2)
       nio4r (~> 2.0)
     racc (1.6.2)
-    rack (2.2.6.4)
+    rack (2.2.7)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.4.3)
