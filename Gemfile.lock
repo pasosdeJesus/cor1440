@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 9adc7e0df23087c1fbc1deeb7c3c2382f2e3c47d
+  revision: fbffa58574b1b1522d1f219413e1bf4e80673e88
   branch: main
   specs:
     cor1440_gen (2.2.0.beta2)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 65e601dde2ec6ea0aa7f90934415b3a83adbfb68
+  revision: 34edd70dcddb486c4a4db33adeda1f180f5c9378
   branch: main
   specs:
     heb412_gen (2.2.0.beta2)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: b7f5d923bff14cade342c38526903e6ca815bfec
+  revision: f9e2d3dd9300505067cf74d78a5d290c606218ec
   branch: main
   specs:
     mr519_gen (2.2.0.beta2)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: a5e485d1594ce0f41a8a40f5e9bd3a2097310ae8
+  revision: 0cfaf1d7e7f4497a1941e2df85e8df448e78d7ae
   branch: main
   specs:
     msip (2.2.0.beta2)
@@ -236,7 +236,7 @@ GEM
     mini_mime (1.1.2)
     mini_portile2 (2.8.2)
     minitest (5.18.0)
-    msgpack (1.7.0)
+    msgpack (1.7.1)
     net-imap (0.3.4)
       date
       net-protocol
@@ -247,7 +247,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.0)
+    nokogiri (1.15.1)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.7.3)
@@ -311,7 +311,7 @@ GEM
     rake (13.0.6)
     redcarpet (3.6.0)
     regexp_parser (2.8.0)
-    reline (0.3.3)
+    reline (0.3.4)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
