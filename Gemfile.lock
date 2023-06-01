@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: ac106696d12f1ef173f7559135a52fad06852799
+  revision: 6dd3c3100f66d09503ae7856ab83f26abd653fad
   branch: main
   specs:
     cor1440_gen (2.2.0.beta2)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 6cdb9623c87365d15accef41dd5af610d3f45cf3
+  revision: 059d39e61e225e812e9ae48437b82b813409b0c9
   branch: main
   specs:
     heb412_gen (2.2.0.beta2)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: c29fc45dbc5bed1c239b13995f1ad68dcedaa5c0
+  revision: f4dc81d01a09c241baf4573a7590b52f9ec31a83
   branch: main
   specs:
     mr519_gen (2.2.0.beta2)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: d4db20c2da70e902bddcbadbf2f8104c3c797a33
+  revision: 4b337148f544220894d53fc2d27a4d681a50ca1b
   branch: main
   specs:
     msip (2.2.0.beta2)
@@ -267,7 +267,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (5.0.1)
-    puma (6.2.2)
+    puma (6.3.0)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.7)
