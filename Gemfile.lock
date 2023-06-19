@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: f625bc01ff9426e495060831ac3c5de3da8128dc
+  revision: 3360ee9406edd4bdd5bfad455426ac6a9e4bdb08
   branch: main
   specs:
     heb412_gen (2.2.0.beta2)
@@ -215,7 +215,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.1.1)
+    jsbundling-rails (1.1.2)
       railties (>= 6.0.0)
     kgio (2.11.4)
     libxml-ruby (4.1.1)
