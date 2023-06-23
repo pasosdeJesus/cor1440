@@ -3443,7 +3443,7 @@ CREATE TABLE public.msip_tclase (
 CREATE TABLE public.msip_tdocumento (
     id integer NOT NULL,
     nombre character varying(500) NOT NULL COLLATE public.es_co_utf_8,
-    sigla character varying(100),
+    sigla character varying(500) NOT NULL,
     formatoregex character varying(500),
     fechacreacion date NOT NULL,
     fechadeshabilitacion date,
@@ -7057,6 +7057,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20230404025025'),
 ('20230405012229'),
 ('20230504084246'),
-('20230613111532');
+('20230613111532'),
+('20230622205530');
 
 
