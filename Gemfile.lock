@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: c16dbfdae1aeb0963a54e5c26e1a9b52723fcebd
+  revision: 980b12418c92d8a698df715747920b6501f00244
   branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 7e6faaf96d30ff220eaef9b60bde9b2779ca5775
+  revision: cf57fae18941d6cdd092cc00411a2bb1df7fc7cd
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: e53876a3a7597df6127f187004a83dd7e9732374
+  revision: abd3574a359eebaad73cfac0cbffee70cfc96b7c
   branch: main
   specs:
     mr519_gen (2.2.0.beta4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 808e9a3efe20e6b4824b1e72e78542e0e1861ba1
+  revision: 50061129551b86143281b857e9ed038a16c885f4
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -171,7 +171,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    colorize (1.0.5)
+    colorize (1.1.0)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     cuprite (0.14.3)
