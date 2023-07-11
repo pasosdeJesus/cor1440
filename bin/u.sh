@@ -38,8 +38,12 @@ $DOAS su - ${USUARIO_AP} -c "cd $DIRAP;
     DIRAP=$DIRAP RAILS_ENV=production SECRET_KEY_BASE=${SECRET_KEY_BASE} \
     BD_CLAVE=${BD_CLAVE} BD_USUARIO=${BD_USUARIO} \
     BD_PRO=${BD_PRO} \
-    RUTA_RELATIVA=${RUTA_RELATIVA} \
     HEB412_RUTA=${HEB412_RUTA} \
+    MSIP_FORMATO_FECHA=\"${MSIP_FORMATO_FECHA}\" \
+    MSIP_RUTA_ANEXOS=\"${MSIP_RUTA_ANEXOS}\" \
+    MSIP_RUTA_VOLCADOS=\"${MSIP_RUTA_VOLCADOS}\" \
+    MSIP_TITULO=\"${SIP_TITULO}\" \
+    RUTA_RELATIVA=${RUTA_RELATIVA} \
     bundle exec /usr/local/bin/unicorn_rails \
     -c $DIRAP/config/unicorn.conf.minimal.rb  -E production -D"
 
