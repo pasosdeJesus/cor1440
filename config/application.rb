@@ -45,7 +45,7 @@ module Cor1440
     config.relative_url_root = ENV.fetch('RUTA_RELATIVA', '/cor1440')
 
     # msip
-    config.x.formato_fecha = ENV.fetch('SIP_FORMATO_FECHA', 'dd/M/yyyy')
+    config.x.formato_fecha = ENV.fetch('MSIP_FORMATO_FECHA', 'dd/M/yyyy')
     # En el momento soporta 3 formatos: yyyy-mm-dd, dd-mm-yyyy y dd/M/yyyy
 
     # heb412
