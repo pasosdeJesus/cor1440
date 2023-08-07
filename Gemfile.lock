@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 335013d1476b9b46ec7157484a881110a36f7bea
+  revision: 290d1cafe223335ddc01483a000af4044b135901
   branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 574fe853a6baf3c98318abf06310e94cca9ab4e6
+  revision: 4fe9701ce11ee712c35e0203ca1a055169f10500
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: f2ee6ba67e9f5d5e28f6dca5478fea5bf7f45460
+  revision: cd3026848646061158e7edd559fef9cca882383f
   branch: main
   specs:
     mr519_gen (2.2.0.beta4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 606497d3c5f11f85081d351b8891b89df41ed043
+  revision: b4357e4c46f7e164e393b6139466a63c9ed90747
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -230,7 +230,7 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
-    mime-types (3.4.1)
+    mime-types (3.5.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.0218.1)
     mini_mime (1.1.2)
