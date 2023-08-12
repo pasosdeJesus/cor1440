@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 290d1cafe223335ddc01483a000af4044b135901
+  revision: 63922b41ddead55458a4b88aa67b1acc83ee5b8a
   branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 4fe9701ce11ee712c35e0203ca1a055169f10500
+  revision: 863827ce441d97ff4e56fbb150bcdc6f859b5899
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: cd3026848646061158e7edd559fef9cca882383f
+  revision: 930cbc3493647f0132b1824dccf30b0b1cf970c7
   branch: main
   specs:
     mr519_gen (2.2.0.beta4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b4357e4c46f7e164e393b6139466a63c9ed90747
+  revision: 844678c27f55647cc60907a2f919da60297e5301
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -72,67 +72,67 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actioncable (7.0.6)
-      actionpack (= 7.0.6)
-      activesupport (= 7.0.6)
+    actioncable (7.0.7)
+      actionpack (= 7.0.7)
+      activesupport (= 7.0.7)
       nio4r (~> 2.0)
       websocket-driver (>= 0.6.1)
-    actionmailbox (7.0.6)
-      actionpack (= 7.0.6)
-      activejob (= 7.0.6)
-      activerecord (= 7.0.6)
-      activestorage (= 7.0.6)
-      activesupport (= 7.0.6)
+    actionmailbox (7.0.7)
+      actionpack (= 7.0.7)
+      activejob (= 7.0.7)
+      activerecord (= 7.0.7)
+      activestorage (= 7.0.7)
+      activesupport (= 7.0.7)
       mail (>= 2.7.1)
       net-imap
       net-pop
       net-smtp
-    actionmailer (7.0.6)
-      actionpack (= 7.0.6)
-      actionview (= 7.0.6)
-      activejob (= 7.0.6)
-      activesupport (= 7.0.6)
+    actionmailer (7.0.7)
+      actionpack (= 7.0.7)
+      actionview (= 7.0.7)
+      activejob (= 7.0.7)
+      activesupport (= 7.0.7)
       mail (~> 2.5, >= 2.5.4)
       net-imap
       net-pop
       net-smtp
       rails-dom-testing (~> 2.0)
-    actionpack (7.0.6)
-      actionview (= 7.0.6)
-      activesupport (= 7.0.6)
+    actionpack (7.0.7)
+      actionview (= 7.0.7)
+      activesupport (= 7.0.7)
       rack (~> 2.0, >= 2.2.4)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actiontext (7.0.6)
-      actionpack (= 7.0.6)
-      activerecord (= 7.0.6)
-      activestorage (= 7.0.6)
-      activesupport (= 7.0.6)
+    actiontext (7.0.7)
+      actionpack (= 7.0.7)
+      activerecord (= 7.0.7)
+      activestorage (= 7.0.7)
+      activesupport (= 7.0.7)
       globalid (>= 0.6.0)
       nokogiri (>= 1.8.5)
-    actionview (7.0.6)
-      activesupport (= 7.0.6)
+    actionview (7.0.7)
+      activesupport (= 7.0.7)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activejob (7.0.6)
-      activesupport (= 7.0.6)
+    activejob (7.0.7)
+      activesupport (= 7.0.7)
       globalid (>= 0.3.6)
-    activemodel (7.0.6)
-      activesupport (= 7.0.6)
-    activerecord (7.0.6)
-      activemodel (= 7.0.6)
-      activesupport (= 7.0.6)
-    activestorage (7.0.6)
-      actionpack (= 7.0.6)
-      activejob (= 7.0.6)
-      activerecord (= 7.0.6)
-      activesupport (= 7.0.6)
+    activemodel (7.0.7)
+      activesupport (= 7.0.7)
+    activerecord (7.0.7)
+      activemodel (= 7.0.7)
+      activesupport (= 7.0.7)
+    activestorage (7.0.7)
+      actionpack (= 7.0.7)
+      activejob (= 7.0.7)
+      activerecord (= 7.0.7)
+      activesupport (= 7.0.7)
       marcel (~> 1.0)
       mini_mime (>= 1.1.0)
-    activesupport (7.0.6)
+    activesupport (7.0.7)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -232,8 +232,8 @@ GEM
     method_source (1.0.0)
     mime-types (3.5.0)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2023.0218.1)
-    mini_mime (1.1.2)
+    mime-types-data (3.2023.0808)
+    mini_mime (1.1.5)
     mini_portile2 (2.8.4)
     minitest (5.19.0)
     msgpack (1.7.2)
@@ -247,7 +247,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.3)
+    nokogiri (1.15.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.7.3)
@@ -273,20 +273,20 @@ GEM
     rack (2.2.8)
     rack-test (2.1.0)
       rack (>= 1.3)
-    rails (7.0.6)
-      actioncable (= 7.0.6)
-      actionmailbox (= 7.0.6)
-      actionmailer (= 7.0.6)
-      actionpack (= 7.0.6)
-      actiontext (= 7.0.6)
-      actionview (= 7.0.6)
-      activejob (= 7.0.6)
-      activemodel (= 7.0.6)
-      activerecord (= 7.0.6)
-      activestorage (= 7.0.6)
-      activesupport (= 7.0.6)
+    rails (7.0.7)
+      actioncable (= 7.0.7)
+      actionmailbox (= 7.0.7)
+      actionmailer (= 7.0.7)
+      actionpack (= 7.0.7)
+      actiontext (= 7.0.7)
+      actionview (= 7.0.7)
+      activejob (= 7.0.7)
+      activemodel (= 7.0.7)
+      activerecord (= 7.0.7)
+      activestorage (= 7.0.7)
+      activesupport (= 7.0.7)
       bundler (>= 1.15.0)
-      railties (= 7.0.6)
+      railties (= 7.0.7)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -302,9 +302,9 @@ GEM
     rails-i18n (7.0.7)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
-    railties (7.0.6)
-      actionpack (= 7.0.6)
-      activesupport (= 7.0.6)
+    railties (7.0.7)
+      actionpack (= 7.0.7)
+      activesupport (= 7.0.7)
       method_source
       rake (>= 12.2)
       thor (~> 1.0)
@@ -349,7 +349,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.2.1)
+    stimulus-rails (1.2.2)
       railties (>= 6.0.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
