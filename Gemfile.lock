@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: edd1d9d6c6a9e66f5a31bf2068fc6777bfeade0a
+  revision: 743979bb57f5a680d9bc17399149a759d1e0b873
   specs:
     kt-paperclip (7.2.0)
       activemodel (>= 4.2.0)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 63922b41ddead55458a4b88aa67b1acc83ee5b8a
+  revision: 5351f01f68ae3cb0d775ba6a4466ecffdbc4ad28
   branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 863827ce441d97ff4e56fbb150bcdc6f859b5899
+  revision: 47902df88c9d3e5cfce8a4e06c0a6f37115fd7f1
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 930cbc3493647f0132b1824dccf30b0b1cf970c7
+  revision: aa43fad0240dcde5c49f850fc6d68c8fcf15c26c
   branch: main
   specs:
     mr519_gen (2.2.0.beta4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 844678c27f55647cc60907a2f919da60297e5301
+  revision: b34ff05ac3be750dce547bf2b0c14913b3d04c4c
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -267,7 +267,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (5.0.3)
-    puma (6.3.0)
+    puma (6.3.1)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
@@ -299,7 +299,7 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails-i18n (7.0.7)
+    rails-i18n (7.0.8)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
     railties (7.0.7)
@@ -313,7 +313,7 @@ GEM
     rake (13.0.6)
     redcarpet (3.6.0)
     regexp_parser (2.8.1)
-    reline (0.3.7)
+    reline (0.3.8)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
@@ -444,4 +444,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.18
+   2.4.19
