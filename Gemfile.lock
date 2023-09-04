@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 9767fab0319265bcc2c1a188d587511913caae9b
+  revision: f4bd0f04fcf24d7ecd5bb83d361aa9892b71cea5
   branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 5814d4c3cceef84c4de15ec9b953dbba03166e8b
+  revision: ed5862e1a2159860e22648e4905e14703eb5a0ff
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 76343e324635cd44ef064ecf45287871a8daabe1
+  revision: 5ccc8fe8f30c3abd4bd99d8a6ebb193b9f3fac6d
   branch: main
   specs:
     mr519_gen (2.2.0.beta4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: a74ec0bf8af2c711c43dbe0defb5b906cceb6aab
+  revision: b702b56ef31ee7d6efaa086945a23e4c446e38da
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -205,12 +205,13 @@ GEM
       webrick (~> 1.7)
       websocket-driver (>= 0.6, < 0.8)
     ffi (1.15.5)
-    globalid (1.1.0)
-      activesupport (>= 5.0)
+    globalid (1.2.0)
+      activesupport (>= 6.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.7.4)
+    irb (1.8.0)
+      rdoc (~> 6.5)
       reline (>= 0.3.6)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
@@ -257,7 +258,7 @@ GEM
     orm_adapter (0.5.0)
     parslet (2.0.0)
     pdf-core (0.9.0)
-    pg (1.5.3)
+    pg (1.5.4)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
@@ -266,6 +267,8 @@ GEM
     prawnto_2 (0.3.1)
       prawn (>= 1.0.0)
       rails (>= 3.2)
+    psych (5.1.0)
+      stringio
     public_suffix (5.0.3)
     puma (6.3.1)
       nio4r (~> 2.0)
@@ -311,6 +314,8 @@ GEM
       zeitwerk (~> 2.5)
     raindrops (0.20.1)
     rake (13.0.6)
+    rdoc (6.5.0)
+      psych (>= 4.0.0)
     redcarpet (3.6.0)
     regexp_parser (2.8.1)
     reline (0.3.8)
@@ -351,6 +356,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
+    stringio (3.0.8)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
     thor (1.2.2)
@@ -361,7 +367,7 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    twitter_cldr (6.11.5)
+    twitter_cldr (6.12.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
