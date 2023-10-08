@@ -3142,7 +3142,7 @@ CREATE TABLE public.msip_oficina (
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
     observaciones character varying(5000) COLLATE public.es_co_utf_8,
-    CONSTRAINT regionsjr_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
+    CONSTRAINT msip_oficina_fechadeshabilitacion_chequeo CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
 
 
@@ -3876,7 +3876,6 @@ CREATE TABLE public.usuario (
     last_sign_in_ip character varying(255),
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
-    regionsjr_id integer,
     failed_attempts integer DEFAULT 0,
     unlock_token character varying(255),
     locked_at timestamp without time zone,
@@ -5450,13 +5449,6 @@ CREATE INDEX index_sivel2_gen_actividad_rangoedadac_on_rangoedadac_id ON public.
 --
 
 CREATE UNIQUE INDEX index_usuario_on_email ON public.usuario USING btree (email);
-
-
---
--- Name: index_usuario_on_regionsjr_id; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_usuario_on_regionsjr_id ON public.usuario USING btree (regionsjr_id);
 
 
 --
@@ -7154,6 +7146,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20230712163859'),
 ('20230722180204'),
 ('20230723011110'),
-('20230927001422');
+('20230927001422'),
+('20231007095930');
 
 

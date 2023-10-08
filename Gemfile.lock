@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 1666533f3d0cd0407dffc0e4eaa6de64f60e4ed6
+  revision: cc5a1d4572fabf53062627fb15922fa93ca7d98f
   branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 71495453bb62ca518ca00be3aee5add3f3faa8ff
+  revision: 31f166f4c14aae30f070b28707338f052b6ba82b
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 5acca0ef5c97b547155025ee23a0a7833ce0641b
+  revision: 1b98b3ba2b146f2768d4699049b0a2c322adb4ae
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -187,7 +187,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.11.1)
+    devise-i18n (1.12.0)
       devise (>= 4.9.0)
     docile (1.4.0)
     dotenv (2.8.1)
@@ -204,7 +204,7 @@ GEM
       concurrent-ruby (~> 1.1)
       webrick (~> 1.7)
       websocket-driver (>= 0.6, < 0.8)
-    ffi (1.16.2)
+    ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -233,12 +233,12 @@ GEM
     method_source (1.0.0)
     mime-types (3.5.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2023.0808)
+    mime-types-data (3.2023.1003)
     mini_mime (1.1.5)
     mini_portile2 (2.8.4)
     minitest (5.20.0)
     msgpack (1.7.2)
-    net-imap (0.3.7)
+    net-imap (0.4.0)
       date
       net-protocol
     net-pop (0.1.2)
@@ -318,7 +318,7 @@ GEM
       psych (>= 4.0.0)
     redcarpet (3.6.0)
     regexp_parser (2.8.1)
-    reline (0.3.8)
+    reline (0.3.9)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
@@ -428,7 +428,7 @@ DEPENDENCIES
   prawn-table
   prawnto_2
   puma
-  rails (~> 7.0)
+  rails (>= 7.0, < 7.1)
   rails-erd
   rails-i18n
   redcarpet
