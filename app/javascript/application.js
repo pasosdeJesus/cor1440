@@ -3,9 +3,13 @@
 console.log('Hola Mundo desde ESM')
 
 import Rails from "@rails/ujs";
-import "@hotwired/turbo-rails";
-Rails.start();
-window.Rails = Rails
+if (typeof window.Rails == 'undefined') {
+  Rails.start();
+  window.Rails = Rails
+}
+import {Turbo} from "@hotwired/turbo-rails";
+// no hacer "Turbo.session.drive = false " porque dejan de operar
+// operaciones con turbo como añadir familiar
 
 import './jquery'
 import '../../vendor/assets/javascripts/jquery-ui'
@@ -55,7 +59,6 @@ promesaRecursosSprocketsYDocumento.then((mensaje) => {
   console.log(mensaje)
   var root = window 
   root.cor1440_gen_activa_autocompleta_mismotipo = true
-  msip_prepara_eventos_comunes(root);
   msip_prepara_eventos_comunes(root);
   heb412_gen_prepara_eventos_comunes(root);
   mr519_gen_prepara_eventos_comunes(root);

@@ -17,21 +17,8 @@ GIT
     cocoon (1.2.11)
 
 GIT
-  remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: cc5a1d4572fabf53062627fb15922fa93ca7d98f
-  branch: main
-  specs:
-    cor1440_gen (2.2.0.beta4)
-      devise
-      heb412_gen
-      kt-paperclip
-      mr519_gen
-      msip
-      rails
-
-GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 31f166f4c14aae30f070b28707338f052b6ba82b
+  revision: 30d8cbf33e5ffe40981c27494d5f4017f527f8ab
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -51,7 +38,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 1b98b3ba2b146f2768d4699049b0a2c322adb4ae
+  revision: 87b9cbd23c2cf7356b64a469706769895db27f0a
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -68,6 +55,17 @@ GIT
       stimulus-rails (~> 1)
       twitter_cldr (~> 6)
       will_paginate (~> 3)
+
+PATH
+  remote: ../cor1440_gen
+  specs:
+    cor1440_gen (2.2.0.beta4)
+      devise
+      heb412_gen
+      kt-paperclip
+      mr519_gen
+      msip
+      rails
 
 GEM
   remote: https://rubygems.org/
@@ -147,7 +145,7 @@ GEM
       execjs (~> 2.0)
     bcrypt (3.1.19)
     bindex (0.8.1)
-    bootsnap (1.16.0)
+    bootsnap (1.17.0)
       msgpack (~> 1.2)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -174,14 +172,14 @@ GEM
     colorize (1.1.0)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
-    cuprite (0.14.3)
+    cuprite (0.15)
       capybara (~> 3.0)
-      ferrum (~> 0.13.0)
+      ferrum (~> 0.14.0)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
-    devise (4.9.2)
+    devise (4.9.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
@@ -199,7 +197,7 @@ GEM
       ruby-graphviz
     erubi (1.12.0)
     execjs (2.9.1)
-    ferrum (0.13)
+    ferrum (0.14)
       addressable (~> 2.5)
       concurrent-ruby (~> 1.1)
       webrick (~> 1.7)
@@ -210,7 +208,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.8.1)
+    irb (1.8.3)
       rdoc
       reline (>= 0.3.8)
     jbuilder (2.11.5)
@@ -219,8 +217,8 @@ GEM
     jsbundling-rails (1.2.1)
       railties (>= 6.0.0)
     kgio (2.11.4)
-    libxml-ruby (4.1.1)
-    loofah (2.21.3)
+    libxml-ruby (4.1.2)
+    loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -235,10 +233,10 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.1003)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.4)
+    mini_portile2 (2.8.5)
     minitest (5.20.0)
     msgpack (1.7.2)
-    net-imap (0.4.0)
+    net-imap (0.4.4)
       date
       net-protocol
     net-pop (0.1.2)
@@ -267,12 +265,12 @@ GEM
     prawnto_2 (0.3.1)
       prawn (>= 1.0.0)
       rails (>= 3.2)
-    psych (5.1.0)
+    psych (5.1.1.1)
       stringio
     public_suffix (5.0.3)
     puma (6.4.0)
       nio4r (~> 2.0)
-    racc (1.7.1)
+    racc (1.7.3)
     rack (2.2.8)
     rack-test (2.1.0)
       rack (>= 1.3)
@@ -313,14 +311,14 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     raindrops (0.20.1)
-    rake (13.0.6)
-    rdoc (6.5.0)
+    rake (13.1.0)
+    rdoc (6.6.0)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
-    regexp_parser (2.8.1)
+    regexp_parser (2.8.2)
     reline (0.3.9)
       io-console (~> 0.5)
-    responders (3.1.0)
+    responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.2.6)
@@ -338,7 +336,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    simple_form (5.2.0)
+    simple_form (5.3.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
     simplecov (0.22.0)
@@ -354,16 +352,16 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.2.2)
+    stimulus-rails (1.3.0)
       railties (>= 6.0.0)
     stringio (3.0.8)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
-    thor (1.2.2)
+    thor (1.3.0)
     tilt (2.3.0)
     timeout (0.4.0)
     ttfunk (1.7.0)
-    turbo-rails (1.4.0)
+    turbo-rails (1.5.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
@@ -450,4 +448,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.20
+   2.4.21
