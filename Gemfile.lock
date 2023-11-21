@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: c88e1ddd9de1607574554da6e2569c77f2cdcde0
-  branch: main
+  revision: ffc9e906ab63e931fb1ebff4394e02de128c1f86
+  branch: renclase
   specs:
     cor1440_gen (2.2.0.beta4)
       devise
@@ -31,8 +31,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 69bc34f6d7ed90cfe3fe00e0e21e94bffeb6e360
-  branch: main
+  revision: a044ff731677281d6c5f85d2d1e5a812fe330e28
+  branch: renclase
   specs:
     heb412_gen (2.2.0.beta4)
       mr519_gen
@@ -42,8 +42,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: b03de0034224fc0588279ee418e06a0f9efc8272
-  branch: main
+  revision: 2ba047bdc09de9e808cc66f1f77e4f7add3c6b08
+  branch: renclase
   specs:
     mr519_gen (2.2.0.beta4)
       msip
@@ -51,8 +51,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 44bfeb4374774206509a9bc9abc927ba27b71453
-  branch: main
+  revision: 49840ef8e91936b18f8842ec47c374e7a18d8563
+  branch: renclase
   specs:
     msip (2.2.0.beta4)
       cancancan (~> 3)
@@ -145,7 +145,7 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
-    bcrypt (3.1.19)
+    bcrypt (3.1.20)
     bindex (0.8.1)
     bootsnap (1.17.0)
       msgpack (~> 1.2)
@@ -210,7 +210,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.9.0)
+    irb (1.9.1)
       rdoc
       reline (>= 0.3.8)
     jbuilder (2.11.5)
@@ -247,8 +247,8 @@ GEM
       timeout
     net-smtp (0.4.0)
       net-protocol
-    nio4r (2.5.9)
-    nokogiri (1.15.4)
+    nio4r (2.6.1)
+    nokogiri (1.15.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.7.3)
@@ -269,7 +269,7 @@ GEM
       rails (>= 3.2)
     psych (5.1.1.1)
       stringio
-    public_suffix (5.0.3)
+    public_suffix (5.0.4)
     puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.7.3)
