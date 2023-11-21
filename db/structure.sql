@@ -4934,19 +4934,19 @@ ALTER TABLE ONLY public.msip_centropoblado
 
 
 --
+-- Name: msip_centropoblado msip_centropoblado_id_uniq; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_centropoblado
+    ADD CONSTRAINT msip_centropoblado_id_uniq UNIQUE (id);
+
+
+--
 -- Name: msip_centropoblado msip_centropoblado_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.msip_centropoblado
     ADD CONSTRAINT msip_centropoblado_pkey PRIMARY KEY (id);
-
-
---
--- Name: msip_centropoblado msip_clase_id_key; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_centropoblado
-    ADD CONSTRAINT msip_clase_id_key UNIQUE (id);
 
 
 --
@@ -6632,11 +6632,11 @@ ALTER TABLE ONLY public.msip_centropoblado
 
 
 --
--- Name: msip_centropoblado msip_clase_id_municipio_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+-- Name: msip_centropoblado msip_centropoblado_municipio_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.msip_centropoblado
-    ADD CONSTRAINT msip_clase_id_municipio_fkey FOREIGN KEY (municipio_id) REFERENCES public.msip_municipio(id);
+    ADD CONSTRAINT msip_centropoblado_municipio_id_fkey FOREIGN KEY (municipio_id) REFERENCES public.msip_municipio(id);
 
 
 --
@@ -6648,11 +6648,11 @@ ALTER TABLE ONLY public.msip_municipio
 
 
 --
--- Name: msip_persona msip_persona_id_clase_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+-- Name: msip_persona msip_persona_centropoblado_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.msip_persona
-    ADD CONSTRAINT msip_persona_id_clase_fkey FOREIGN KEY (centropoblado_id) REFERENCES public.msip_centropoblado(id);
+    ADD CONSTRAINT msip_persona_centropoblado_id_fkey FOREIGN KEY (centropoblado_id) REFERENCES public.msip_centropoblado(id);
 
 
 --
@@ -6672,11 +6672,11 @@ ALTER TABLE ONLY public.msip_persona
 
 
 --
--- Name: msip_ubicacion msip_ubicacion_id_clase_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+-- Name: msip_ubicacion msip_ubicacion_centropoblado_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.msip_ubicacion
-    ADD CONSTRAINT msip_ubicacion_id_clase_fkey FOREIGN KEY (centropoblado_id) REFERENCES public.msip_centropoblado(id);
+    ADD CONSTRAINT msip_ubicacion_centropoblado_id_fkey FOREIGN KEY (centropoblado_id) REFERENCES public.msip_centropoblado(id);
 
 
 --
@@ -7149,6 +7149,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20230927001422'),
 ('20231007095930'),
 ('20231120094041'),
-('20231120175125');
+('20231120175125'),
+('20231121203443');
 
 
