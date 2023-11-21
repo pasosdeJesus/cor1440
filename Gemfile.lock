@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 6001429802b00827432814e7cb50d678cb60a988
+  revision: 160ca8a13316ff1bd466e2b230004343623bf29b
   branch: renclase
   specs:
     cor1440_gen (2.2.0.beta4)
