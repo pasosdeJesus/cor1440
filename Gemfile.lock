@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 160ca8a13316ff1bd466e2b230004343623bf29b
-  branch: renclase
+  revision: 7f1a427cbfadd652daf613ce04e180bd32b3031a
+  branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
       devise
@@ -31,8 +31,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: a044ff731677281d6c5f85d2d1e5a812fe330e28
-  branch: renclase
+  revision: d16368180b147c367b273cfe39aa14135c79caee
+  branch: main
   specs:
     heb412_gen (2.2.0.beta4)
       mr519_gen
@@ -42,8 +42,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 2ba047bdc09de9e808cc66f1f77e4f7add3c6b08
-  branch: renclase
+  revision: 83d881fe06ce88ff6dd8454346659d7a4baab651
+  branch: main
   specs:
     mr519_gen (2.2.0.beta4)
       msip
@@ -51,8 +51,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 49840ef8e91936b18f8842ec47c374e7a18d8563
-  branch: renclase
+  revision: b6b6b67bbad7571843b1f5d9838e4a3cfadd176a
+  branch: main
   specs:
     msip (2.2.0.beta4)
       cancancan (~> 3)
@@ -210,7 +210,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.9.1)
+    irb (1.10.1)
       rdoc
       reline (>= 0.3.8)
     jbuilder (2.11.5)
@@ -233,12 +233,12 @@ GEM
     method_source (1.0.0)
     mime-types (3.5.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2023.1003)
+    mime-types-data (3.2023.1205)
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
     minitest (5.20.0)
     msgpack (1.7.2)
-    net-imap (0.4.5)
+    net-imap (0.4.7)
       date
       net-protocol
     net-pop (0.1.2)
@@ -247,7 +247,7 @@ GEM
       timeout
     net-smtp (0.4.0)
       net-protocol
-    nio4r (2.6.1)
+    nio4r (2.7.0)
     nokogiri (1.15.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -314,11 +314,11 @@ GEM
       zeitwerk (~> 2.5)
     raindrops (0.20.1)
     rake (13.1.0)
-    rdoc (6.6.0)
+    rdoc (6.6.1)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
-    regexp_parser (2.8.2)
-    reline (0.4.0)
+    regexp_parser (2.8.3)
+    reline (0.4.1)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
@@ -356,7 +356,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.3.0)
       railties (>= 6.0.0)
-    stringio (3.0.9)
+    stringio (3.1.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
     thor (1.3.0)
