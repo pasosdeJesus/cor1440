@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 7f1a427cbfadd652daf613ce04e180bd32b3031a
+  revision: bf82d5a401b62ccdc8cc8ce23db7960073f47bd6
   branch: main
   specs:
     cor1440_gen (2.2.0.beta4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: d16368180b147c367b273cfe39aa14135c79caee
+  revision: 41e1a1d290cf0b7fe85f107121524d6ca628d2d8
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 83d881fe06ce88ff6dd8454346659d7a4baab651
+  revision: a6f79b4748e6a6f0322b5fbf58ddf156f4a19bb3
   branch: main
   specs:
     mr519_gen (2.2.0.beta4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b6b6b67bbad7571843b1f5d9838e4a3cfadd176a
+  revision: e54ff9f4a722a4a056e78c8b1414e1ec1de02263
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -137,7 +137,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    addressable (2.8.5)
+    addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     andand (1.3.3)
     apexcharts (0.2.0)

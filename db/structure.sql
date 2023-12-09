@@ -5618,6 +5618,76 @@ CREATE INDEX msip_persona_sexo_ind ON public.msip_persona USING btree (sexo);
 
 
 --
+-- Name: msip_ubicacionpre_centropoblado_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_centropoblado_id_idx ON public.msip_ubicacionpre USING btree (centropoblado_id);
+
+
+--
+-- Name: msip_ubicacionpre_departamento_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_departamento_id_idx ON public.msip_ubicacionpre USING btree (departamento_id);
+
+
+--
+-- Name: msip_ubicacionpre_departamento_id_municipio_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_departamento_id_municipio_id_idx ON public.msip_ubicacionpre USING btree (departamento_id, municipio_id);
+
+
+--
+-- Name: msip_ubicacionpre_municipio_id_centropoblado_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_municipio_id_centropoblado_id_idx ON public.msip_ubicacionpre USING btree (municipio_id, centropoblado_id);
+
+
+--
+-- Name: msip_ubicacionpre_municipio_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_municipio_id_idx ON public.msip_ubicacionpre USING btree (municipio_id);
+
+
+--
+-- Name: msip_ubicacionpre_municipio_id_vereda_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_municipio_id_vereda_id_idx ON public.msip_ubicacionpre USING btree (municipio_id, vereda_id);
+
+
+--
+-- Name: msip_ubicacionpre_pais_id_departamento_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_pais_id_departamento_id_idx ON public.msip_ubicacionpre USING btree (pais_id, departamento_id);
+
+
+--
+-- Name: msip_ubicacionpre_pais_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_pais_id_idx ON public.msip_ubicacionpre USING btree (pais_id);
+
+
+--
+-- Name: msip_ubicacionpre_tsitio_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_tsitio_id_idx ON public.msip_ubicacionpre USING btree (vereda_id);
+
+
+--
+-- Name: msip_ubicacionpre_vereda_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX msip_ubicacionpre_vereda_id_idx ON public.msip_ubicacionpre USING btree (vereda_id);
+
+
+--
 -- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -7328,6 +7398,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20231125230000'),
 ('20231205202418'),
 ('20231205205549'),
-('20231205205600');
+('20231205205600'),
+('20231208162022');
 
 
