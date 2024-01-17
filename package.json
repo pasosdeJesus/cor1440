@@ -4,24 +4,24 @@
   "version": "0.1.0",
   "scripts": {
     "build": "esbuild app/javascript/*.* --preserve-symlinks --bundle --sourcemap --outdir=app/assets/builds",
-    "start": "node esbuild-des.config.js"
+    "start": "node esbuild-des.config.mjs"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
-    "@hotwired/stimulus": "^3.0.1",
-    "@hotwired/turbo-rails": "^7.1.0",
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^7.3.0",
     "@pasosdejesus/autocompleta_ajax": "https://gitlab.com/pasosdeJesus/autocompleta_ajax.git",
     "@popperjs/core": "^2.9.3",
-    "@rails/ujs": "^7.0.1",
+    "@rails/ujs": "^7.1.1",
     "apexcharts": "^3.27.2",
-    "bootstrap": "^5.1.0",
-    "bootstrap-datepicker": "^1.9.0",
+    "bootstrap": "^5.3.2",
+    "bootstrap-datepicker": "^1.10.0",
     "chosen-js": "^1.8.7",
     "css-pro-layout": "^1.1.0",
-    "esbuild": "^0.14.8",
+    "esbuild": "^0.19.4",
     "gridstack": "^0.6.0",
     "is-svg": "^4.3.1",
-    "jquery": "^3.6.0",
+    "jquery": "^3.7.1",
     "jquery-ui": "^1.13.2",
     "popper.js": "^2.0.0-next.4",
     "postcss": "^8.2.10"
