@@ -11,7 +11,7 @@
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^7.3.0",
     "@pasosdejesus/autocompleta_ajax": "https://gitlab.com/pasosdeJesus/autocompleta_ajax.git",
-    "@popperjs/core": "^2.9.3",
+    "@popperjs/core": "^2.11.8",
     "@rails/ujs": "^7.1.1",
     "apexcharts": "^3.27.2",
     "bootstrap": "^5.3.2",
