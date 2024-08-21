@@ -75,7 +75,9 @@ document.addEventListener('turbo:load', (e) => {
   
   console.log('Escuchador turbo:load')
 
-  msip_ejecutarAlCargarPagina(window)
+
+  msip_ejecutarAlCargarPagina(window) // Establece root.puntomontaje 
+  Msip__Motor.ejecutarAlCargarPagina()
   window.inicializaProsidebar()
 })
 
