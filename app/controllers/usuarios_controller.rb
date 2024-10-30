@@ -34,8 +34,8 @@ class UsuariosController < Msip::ModelosController
         :tema,
         :msip_grupo,
         :foto,
-        :fechacreacion_localizada,
-        :fechadeshabilitacion_localizada,
+        :fechacreacion,
+        :fechadeshabilitacion,
       ]
     end
     if can?(:manage, ::Usuario)
