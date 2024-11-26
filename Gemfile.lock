@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: 254b5fe1c4e93964265183e554bca57614e51f06
+  revision: f35ca58fad8ae4681b26240adc4eb43d2b0d767f
   specs:
     kt-paperclip (7.2.2)
       activemodel (>= 4.2.0)
@@ -18,10 +18,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: e0c39828449ae81f0f99b374308c6a31b3309392
-  branch: tomselect
+  revision: 4c675ac07097e98419aa6435737040de40a4e540
+  branch: v2.2
   specs:
-    cor1440_gen (2.2.0.beta6)
+    cor1440_gen (2.2.0.beta7)
       devise
       heb412_gen
       kt-paperclip
@@ -31,10 +31,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 60dbf58b5d1646cc32028de3ecf7ac94f7cd96be
-  branch: tomselect
+  revision: 01da1f01b55b289ef3271b205112bb7a4c147f7c
+  branch: v2.2
   specs:
-    heb412_gen (2.2.0.beta6)
+    heb412_gen (2.2.0.beta7)
       mr519_gen
       msip
       redcarpet
@@ -42,19 +42,19 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 5997a881b73529d007ac268bad0c2ef2d4f591d3
-  branch: tomselect
+  revision: e083179313a853bec762bad208276dbc5449ae89
+  branch: v2.2
   specs:
-    mr519_gen (2.2.0.beta6)
+    mr519_gen (2.2.0.beta7)
       msip
       rails
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 4f6be22e535ac5b47caea723b0ee1295793d1bcb
-  branch: tomselect
+  revision: a80677a21b501f510f8f440c0e2e21e2a5a02166
+  branch: v2.2
   specs:
-    msip (2.2.0.beta6)
+    msip (2.2.0.beta7)
       cancancan (~> 3)
       devise (~> 4)
       devise-i18n (~> 1)
@@ -158,7 +158,7 @@ GEM
     bcrypt (3.1.20)
     bigdecimal (3.1.8)
     bindex (0.8.1)
-    bootsnap (1.18.3)
+    bootsnap (1.18.4)
       msgpack (~> 1.2)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -211,7 +211,7 @@ GEM
       nokogiri
       ruby-graphviz
     erubi (1.12.0)
-    execjs (2.9.1)
+    execjs (2.10.0)
     ferrum (0.14)
       addressable (~> 2.5)
       concurrent-ruby (~> 1.1)
@@ -226,10 +226,10 @@ GEM
     irb (1.13.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    jbuilder (2.12.0)
+    jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.3.0)
+    jsbundling-rails (1.3.1)
       railties (>= 6.0.0)
     kgio (2.11.4)
     libxml-ruby (5.0.3)
@@ -261,7 +261,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.3)
-    nokogiri (1.16.5)
+    nokogiri (1.16.7)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.8.1)
@@ -271,7 +271,7 @@ GEM
     orm_adapter (0.5.0)
     parslet (2.0.0)
     pdf-core (0.10.0)
-    pg (1.5.6)
+    pg (1.5.9)
     prawn (2.5.0)
       matrix (~> 0.4)
       pdf-core (~> 0.10.0)
@@ -284,10 +284,10 @@ GEM
     psych (5.1.2)
       stringio
     public_suffix (5.0.5)
-    puma (6.4.2)
+    puma (6.5.0)
       nio4r (~> 2.0)
     racc (1.8.0)
-    rack (2.2.9)
+    rack (2.2.10)
     rack-session (1.0.2)
       rack (< 3)
     rack-test (2.1.0)
@@ -321,7 +321,7 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails-i18n (7.0.9)
+    rails-i18n (7.0.10)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
     railties (7.1.3.3)
@@ -371,11 +371,11 @@ GEM
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
-    sprockets-rails (3.4.2)
-      actionpack (>= 5.2)
-      activesupport (>= 5.2)
+    sprockets-rails (3.5.2)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.3.3)
+    stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.0)
     strscan (3.1.0)
@@ -474,4 +474,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.5.11
+   2.5.23
