@@ -12,7 +12,6 @@ import {Turbo} from "@hotwired/turbo-rails";
 // operaciones con turbo como añadir familiar
 
 import './jquery'
-import '../../vendor/assets/javascripts/jquery-ui'
 
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
 import * as bootstrap from 'bootstrap'              // Maquetacion y elementos de diseño
@@ -80,10 +79,6 @@ promesaRecursosSprocketsYDocumento.then((mensaje) => {
   console.log(mensaje)
   var root = window 
   root.cor1440_gen_activa_autocompleta_mismotipo = true
-  msip_prepara_eventos_comunes(root);
-  heb412_gen_prepara_eventos_comunes(root);
-  mr519_gen_prepara_eventos_comunes(root);
-  cor1440_gen_prepara_eventos_comunes(root);
 
   Msip__Motor.ejecutarAlCargarDocumentoYRecursos()
   Mr519Gen__Motor.ejecutarAlCargarDocumentoYRecursos()
@@ -102,7 +97,6 @@ document.addEventListener('turbo:load', (e) => {
   console.log('Escuchador turbo:load')
 
 
-  msip_ejecutarAlCargarPagina(window) // Establece root.puntomontaje
   Msip__Motor.ejecutarAlCargarPagina()
   Mr519Gen__Motor.ejecutarAlCargarPagina()
   Heb412Gen__Motor.ejecutarAlCargarPagina()
