@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: f35ca58fad8ae4681b26240adc4eb43d2b0d767f
+  revision: 26139d89d34bcfefae0e9c724c4573a8fae089ab
   specs:
     kt-paperclip (7.2.2)
       activemodel (>= 4.2.0)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: f6be934a4d36c5a69b055f60f95cb5d41515a686
+  revision: a1192a7b9c8e390e7cd1cf56bd060dca4fa6f053
   branch: v2.2
   specs:
     cor1440_gen (2.2.0.beta7)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 1c418ecbc2e11bb045cf7b7eb46ff10e33ba6560
+  revision: 19d6a98b05858d6de5add5eb7be42bf5b3dc478d
   branch: v2.2
   specs:
     heb412_gen (2.2.0.beta7)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 20c7d02a833f22c77ae1822bf1fc4c3b7b8728c2
+  revision: 0f9dce1fa5d576234c515bd33c7aa8a077a03d59
   branch: v2.2
   specs:
     mr519_gen (2.2.0.beta7)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 93c15c200761dadda1f80666fe07031e77e65a32
+  revision: d15114bf3a5f8d9826f9765c375fa0f524934368
   branch: v2.2
   specs:
     msip (2.2.0.beta7)
@@ -261,7 +261,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.3)
-    nokogiri (1.16.8)
+    nokogiri (1.17.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.8.1)
@@ -474,4 +474,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.5.23
+   2.6.1
