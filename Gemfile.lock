@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 762b5a22e397db98d2044959bf30c9752ed58499
+  revision: 28db4314af4b6e1017f7d40886b9fc06d29bf3aa
   branch: v2.2
   specs:
     cor1440_gen (2.2.0.beta7)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: b1d2f246f03f5bf6f743ac4e11899d8cc9aeae75
+  revision: da1340e054d49d1c0ca2df0ca238be029857163c
   branch: v2.2
   specs:
     heb412_gen (2.2.0.beta7)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 92f0c915fb60421a343bd3b50761d21f374af21e
+  revision: dadbe717ccecb196cba584e9ac47be199ff22830
   branch: v2.2
   specs:
     mr519_gen (2.2.0.beta7)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: db59b30004ae8ec6688f744cf7cdd011223ed1fb
+  revision: 4ac4e16b93cf76f7355087627e1bfdc65823f787
   branch: v2.2
   specs:
     msip (2.2.0.beta7)
@@ -261,7 +261,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.3)
-    nokogiri (1.17.2)
+    nokogiri (1.18.1)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.8.1)
@@ -474,4 +474,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.6.1
+   2.6.2
