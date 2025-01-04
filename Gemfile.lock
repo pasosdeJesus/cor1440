@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: f35ca58fad8ae4681b26240adc4eb43d2b0d767f
+  revision: 26139d89d34bcfefae0e9c724c4573a8fae089ab
   specs:
     kt-paperclip (7.2.2)
       activemodel (>= 4.2.0)
@@ -18,10 +18,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: ddfc18abd683873896252330e3c839ef1cf955c5
+  revision: 981925e009125d32d91520f9ea46c7db87bd0562
   branch: main
   specs:
-    cor1440_gen (2.2.0.beta6)
+    cor1440_gen (2.3.0.alfa3)
       devise
       heb412_gen
       kt-paperclip
@@ -31,10 +31,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 597d8d560bdaf73bfc5aa2a3a0bad9403755530f
+  revision: 748946825441b99c9fe934f6131fd1f381fcd813
   branch: main
   specs:
-    heb412_gen (2.3.0.alfa2)
+    heb412_gen (2.3.0.alfa3)
       mr519_gen
       msip
       redcarpet
@@ -42,19 +42,19 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 104141b8ef222fbd64d270a1a7d0469554f84816
+  revision: 32883e2d347e37b5496422353ee78fa6de13803f
   branch: main
   specs:
-    mr519_gen (2.3.0.alfa2)
+    mr519_gen (2.3.0.alfa3)
       msip
       rails
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 1988385b522e329552aee0035df1e20fc9b22a34
+  revision: d2e9f711f4b4bf8b8a7f33a14d3045d8e0bd18fc
   branch: main
   specs:
-    msip (2.3.0.alfa2)
+    msip (2.3.0.alfa3)
       cancancan (~> 3)
       devise (~> 4)
       devise-i18n (~> 1)
@@ -186,7 +186,7 @@ GEM
       capybara (~> 3.0)
       ferrum (~> 0.15.0)
     date (3.3.4)
-    debug (1.9.2)
+    debug (1.10.0)
       irb (~> 1.10)
       reline (>= 0.3.8)
     devise (4.9.4)
@@ -258,7 +258,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.16.7)
+    nokogiri (1.18.1)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.8.1)
@@ -281,7 +281,7 @@ GEM
     psych (5.1.2)
       stringio
     public_suffix (6.0.1)
-    puma (6.4.3)
+    puma (6.5.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (2.2.10)
@@ -471,4 +471,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.5.22
+   2.6.2
