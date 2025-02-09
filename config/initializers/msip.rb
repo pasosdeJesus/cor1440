@@ -5,10 +5,6 @@ Msip.setup do |config|
                                  "#{Rails.root}/archivos/anexos")
   config.ruta_volcados = ENV.fetch('MSIP_RUTA_VOLCADOS',
                                    "#{Rails.root}/archivos/bd")
-  # En heroku los anexos son super-temporales
-  if ENV["HEROKU_POSTGRESQL_MAUVE_URL"]
-    config.ruta_anexos = "#{Rails.root}/tmp/"
-  end
   config.titulo = "Cor1440 #{Cor1440Gen::VERSION}"
 
   config.descripcion = "Aplicación genérica para proyectos y actividades con metodología de marco lógico"
