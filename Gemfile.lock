@@ -18,10 +18,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 7fdcf582d75c634cdab6c65f259844b3adaed553
+  revision: 6ffb6c9211867c9d3d0612988ffec0a49807ea01
   branch: main
   specs:
-    cor1440_gen (2.3.0.alfa3)
+    cor1440_gen (2.3.0.alfa4)
       devise
       heb412_gen
       kt-paperclip
