@@ -103,19 +103,30 @@ group :development do
 
   gem "puma"
 
-  gem "rails-erd"
-
   gem "web-console"
 end
 
 
 group :development, :test do
+  gem "brakeman"
+
+  gem "bundler-audit"
+
+  gem "code-scanning-rubocop"
+
+  gem "colorize"
 
   gem "debug"
 
-  gem "colorize" # Color en terminal
-
   gem "dotenv-rails"
+
+  gem "rails-erd"
+
+  gem "rubocop-minitest"
+
+  gem "rubocop-rails"
+
+  gem "rubocop-shopify"
 end
 
 group :test do

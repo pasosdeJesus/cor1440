@@ -1,0 +1,28 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "File Access",
+      "warning_code": 16,
+      "fingerprint": "ef96d09e97a57ae1e1752e1c4c6a03dd957f0687beba54f85cde98f6b8a3e6c5",
+      "check_name": "SendFile",
+      "message": "Model attribute used in file name",
+      "file": "app/controllers/usuarios_controller.rb",
+      "line": 104,
+      "link": "https://brakemanscanner.org/docs/warning_types/file_access/",
+      "code": "send_file(((Msip.ruta_anexos.to_s + \"/fotos/predeterminada.png\") or sprintf((Msip.ruta_anexos.to_s + \"/fotos/%d_%s\"), Usuario.find(params[:id].to_i).id.to_i, File.basename(Usuario.find(params[:id].to_i).foto_file_name))), :x_sendfile => true)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "UsuariosController",
+        "method": "foto"
+      },
+      "user_input": "Usuario.find(params[:id].to_i).foto_file_name",
+      "confidence": "Weak",
+      "cwe_id": [
+        22
+      ],
+      "note": ""
+    }
+  ],
+  "brakeman_version": "7.0.0"
+}
