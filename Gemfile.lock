@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: 26139d89d34bcfefae0e9c724c4573a8fae089ab
+  revision: 83dc8d92e63e4c360bb9f45af1cf3b63d99bed54
   specs:
     kt-paperclip (7.2.2)
       activemodel (>= 4.2.0)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 28db4314af4b6e1017f7d40886b9fc06d29bf3aa
+  revision: eaa60a4993ffa122b886f31db9d6db5e7eca7ee1
   branch: v2.2
   specs:
     cor1440_gen (2.2.0.beta7)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: da1340e054d49d1c0ca2df0ca238be029857163c
+  revision: de13a27a593fd27bfcbb38c59805e3f6ca6e94ea
   branch: v2.2
   specs:
     heb412_gen (2.2.0.beta7)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: dadbe717ccecb196cba584e9ac47be199ff22830
+  revision: 7321b5007c2e197282ca391293f8c453020421af
   branch: v2.2
   specs:
     mr519_gen (2.2.0.beta7)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 4ac4e16b93cf76f7355087627e1bfdc65823f787
+  revision: ecc390f04eabe69c80120dca1d6e09c91a6c06dc
   branch: v2.2
   specs:
     msip (2.2.0.beta7)
@@ -186,9 +186,9 @@ GEM
     concurrent-ruby (1.3.1)
     connection_pool (2.4.1)
     crass (1.0.6)
-    cuprite (0.15)
+    cuprite (0.15.1)
       capybara (~> 3.0)
-      ferrum (~> 0.14.0)
+      ferrum (~> 0.15.0)
     date (3.3.4)
     debug (1.10.0)
       irb (~> 1.10)
@@ -202,9 +202,9 @@ GEM
     devise-i18n (1.12.1)
       devise (>= 4.9.0)
     docile (1.4.0)
-    dotenv (3.1.2)
-    dotenv-rails (3.1.2)
-      dotenv (= 3.1.2)
+    dotenv (3.1.7)
+    dotenv-rails (3.1.7)
+      dotenv (= 3.1.7)
       railties (>= 6.1)
     drb (2.2.1)
     erd (0.8.2)
@@ -212,11 +212,11 @@ GEM
       ruby-graphviz
     erubi (1.12.0)
     execjs (2.10.0)
-    ferrum (0.14)
+    ferrum (0.15)
       addressable (~> 2.5)
       concurrent-ruby (~> 1.1)
       webrick (~> 1.7)
-      websocket-driver (>= 0.6, < 0.8)
+      websocket-driver (~> 0.7)
     ffi (1.17.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -261,7 +261,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.3)
-    nokogiri (1.18.1)
+    nokogiri (1.18.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.8.1)
@@ -284,10 +284,10 @@ GEM
     psych (5.1.2)
       stringio
     public_suffix (5.0.5)
-    puma (6.5.0)
+    puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.0)
-    rack (2.2.10)
+    rack (2.2.11)
     rack-session (1.0.2)
       rack (< 3)
     rack-test (2.1.0)
@@ -350,7 +350,7 @@ GEM
       rubyzip (>= 1.3)
     ruby-graphviz (1.2.5)
       rexml
-    rubyzip (2.3.2)
+    rubyzip (2.4.1)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -390,7 +390,8 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    twitter_cldr (6.12.1)
+    twitter_cldr (6.13.0)
+      base64
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
