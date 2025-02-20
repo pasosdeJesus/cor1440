@@ -1,12 +1,15 @@
-require 'cor1440_gen/concerns/controllers/usuarios_controller'
+# frozen_string_literal: true
+
+require "cor1440_gen/concerns/controllers/usuarios_controller"
 
 class UsuariosController < Msip::ModelosController
   include Cor1440Gen::Concerns::Controllers::UsuariosController
 
   # Sin definicion de autoridad por ser requerido por no autenticados
-  
+
   def atributos_index
-    [ :id,
+    [
+      :id,
       :nusuario,
       :nombre,
       :email,
@@ -19,10 +22,10 @@ class UsuariosController < Msip::ModelosController
   def atributos_form
     r = []
     if can?(:create, ::Usuario)
-      r += [ 
+      r += [
         :nusuario,
         :nombre,
-        :descripcion
+        :descripcion,
       ]
     end
     if can?(:manage, ::Usuario)
@@ -44,16 +47,16 @@ class UsuariosController < Msip::ModelosController
         :encrypted_password,
         :failed_attempts,
         :unlock_token,
-        :locked_at
+        :locked_at,
       ]
     end
-    return r
+    r
   end
 
   def atributos_show
     r = []
     if can?(:read, ::Usuario)
-      r += [ 
+      r += [
         :nusuario,
         :id,
         :nombre,
@@ -74,11 +77,11 @@ class UsuariosController < Msip::ModelosController
         :locked_at,
       ]
     end
-    return r
+    r
   end
- 
+
   def atributos_show_json
-    atributos_show 
+    atributos_show
   end
 
   def index_reordenar(c)
@@ -86,29 +89,29 @@ class UsuariosController < Msip::ModelosController
       c = c.where("usuario.fechadeshabilitacion IS NULL")
     end
     c = c.reorder([:nombre])
-    return c
+    c
   end
 
-
   def foto
-    if !params[:id].nil?
+    unless params[:id].nil?
       @usuario = Usuario.find(params[:id].to_i)
       ruta = @usuario.foto_file_name
-      if !ruta.nil?
-        n=sprintf(Msip.ruta_anexos.to_s + "/fotos/%d_%s", @usuario.id.to_i, 
-                  File.basename(ruta))
+      n = if !ruta.nil?
+        format(
+          Msip.ruta_anexos.to_s + "/fotos/%d_%s",
+          @usuario.id.to_i,
+          File.basename(ruta),
+        )
       else
-        n = Msip.ruta_anexos.to_s + "/fotos/predeterminada.png"
+        Msip.ruta_anexos.to_s + "/fotos/predeterminada.png"
       end
-      logger.debug "Descargando #{n}"
-      send_file n, x_sendfile: true
+      logger.debug("Descargando #{n}")
+      send_file(n, x_sendfile: true)
     end
   end
 
-
   def lista_params
     p = lista_params_cor1440_gen + [:foto]
-    return p
+    p
   end
 end
-

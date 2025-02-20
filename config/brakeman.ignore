@@ -3,13 +3,13 @@
     {
       "warning_type": "File Access",
       "warning_code": 16,
-      "fingerprint": "ef96d09e97a57ae1e1752e1c4c6a03dd957f0687beba54f85cde98f6b8a3e6c5",
+      "fingerprint": "93ffa6a5b49b261510512017fb5dd137f1c15b1ee80c92c150eb81bb4b45d7c4",
       "check_name": "SendFile",
       "message": "Model attribute used in file name",
       "file": "app/controllers/usuarios_controller.rb",
-      "line": 104,
+      "line": 109,
       "link": "https://brakemanscanner.org/docs/warning_types/file_access/",
-      "code": "send_file(((Msip.ruta_anexos.to_s + \"/fotos/predeterminada.png\") or sprintf((Msip.ruta_anexos.to_s + \"/fotos/%d_%s\"), Usuario.find(params[:id].to_i).id.to_i, File.basename(Usuario.find(params[:id].to_i).foto_file_name))), :x_sendfile => true)",
+      "code": "send_file(((Msip.ruta_anexos.to_s + \"/fotos/predeterminada.png\") or format((Msip.ruta_anexos.to_s + \"/fotos/%d_%s\"), Usuario.find(params[:id].to_i).id.to_i, File.basename(Usuario.find(params[:id].to_i).foto_file_name))), :x_sendfile => true)",
       "render_path": null,
       "location": {
         "type": "method",

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_dependency "cor1440_gen/concerns/controllers/proyectosfinancieros_controller"
 
 module Cor1440Gen
@@ -8,33 +10,41 @@ module Cor1440Gen
       only: [:show, :edit, :update, :destroy]
     skip_before_action :set_proyectofinanciero, only: [:validar]
 
-    load_and_authorize_resource  class: Cor1440Gen::Proyectofinanciero,
-      only: [:new, :create, :destroy, :edit, :update, :index, :show,
-             :objetivospf]
+    load_and_authorize_resource class: Cor1440Gen::Proyectofinanciero,
+      only: [
+        :new,
+        :create,
+        :destroy,
+        :edit,
+        :update,
+        :index,
+        :show,
+        :objetivospf,
+      ]
 
     def atributos_index
-      [ 
-        :id, 
-        :nombre 
+      [
+        :id,
+        :nombre,
       ] +
-      [ :financiador_ids =>  [] ] +
-      [ 
-        :fechainicio_localizada,
-        :fechacierre_localizada,
-        :responsable,
-        :proyectofinanciero_usuario,
-      ] +
-      [ :compromisos, 
-        :monto, 
-        :observaciones, 
-        :objetivopf,
-        :indicadorobjetivo,
-        :resultadopf,
-        :indicadorpf,
-        :actividadpf
-      ]
+        [financiador_ids: []] +
+        [
+          :fechainicio_localizada,
+          :fechacierre_localizada,
+          :responsable,
+          :proyectofinanciero_usuario,
+        ] +
+        [
+          :compromisos,
+          :monto,
+          :observaciones,
+          :objetivopf,
+          :indicadorobjetivo,
+          :resultadopf,
+          :indicadorpf,
+          :actividadpf,
+        ]
     end
-
 
     def atributos_show
       atributos_index - [
@@ -42,16 +52,14 @@ module Cor1440Gen
         :indicadorobjetivo,
         :resultadopf,
         :indicadorpf,
-        :actividadpf
-      ] + [ 
+        :actividadpf,
+      ] + [
         :marcologico,
-        :caracterizacion, 
+        :caracterizacion,
         :beneficiario,
         :plantillahcm,
-        :anexo_proyectofinanciero
+        :anexo_proyectofinanciero,
       ]
     end
-
-
-  end 
+  end
 end
