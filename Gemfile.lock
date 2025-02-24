@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 46f8224659628910a0717954ae7c03c4adf25c0c
+  revision: 6be714dfa827a556ffcd2242be572ca5db01bca7
   branch: main
   specs:
     cor1440_gen (2.3.0.alfa4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: d8300f47c7132af22cc704b049d130e0e7c08311
+  revision: 909fc0a7018da36c7edf3f1e433f75e49d529417
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 7f86a9dab909fa9aeb8677fe49ce712d9c671cdd
+  revision: bbbd165f9cd5fca9c17656695c9e32d47b47c7fb
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 294fbfdbe826628f45a17a1caadd3033c5a7f30b
+  revision: 87affe27de0eae4f8c0c3221f300007fe3850060
   branch: main
   specs:
     msip (2.3.0.alfa4)
@@ -384,7 +384,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-rails (2.30.1)
+    rubocop-rails (2.30.2)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
@@ -435,7 +435,7 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    twitter_cldr (6.13.0)
+    twitter_cldr (6.14.0)
       base64
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
@@ -531,4 +531,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.6.4
+   2.6.5
