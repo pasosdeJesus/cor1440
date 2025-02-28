@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: c08abb9782a47b2351338c22334bfed91b65a9a8
+  revision: e994f618ef19bc385f5e76cc12c5cd5e55c91d0b
   branch: main
   specs:
     cor1440_gen (2.3.0.alfa4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 909fc0a7018da36c7edf3f1e433f75e49d529417
+  revision: acacda1ef1f112df134fdb7aa78ee4cc835c7a0c
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: bbbd165f9cd5fca9c17656695c9e32d47b47c7fb
+  revision: dd74ed6c1b28f3296703615715513304362fbbe2
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 87affe27de0eae4f8c0c3221f300007fe3850060
+  revision: ab4f1a4276a649f97b8f107b5b7003fba3514e8e
   branch: main
   specs:
     msip (2.3.0.alfa4)
@@ -356,7 +356,7 @@ GEM
     rake (13.2.1)
     rdoc (6.12.0)
       psych (>= 4.0.0)
-    redcarpet (3.6.0)
+    redcarpet (3.6.1)
     regexp_parser (2.10.0)
     reline (0.6.0)
       io-console (~> 0.5)
