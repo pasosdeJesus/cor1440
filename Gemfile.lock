@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: e994f618ef19bc385f5e76cc12c5cd5e55c91d0b
+  revision: bb3e585b5eb992978bd6a8c37fc7917bee6964aa
   branch: main
   specs:
     cor1440_gen (2.3.0.alfa4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: acacda1ef1f112df134fdb7aa78ee4cc835c7a0c
+  revision: 048507c62150d643fa9c668d942bca0548cacbf3
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: dd74ed6c1b28f3296703615715513304362fbbe2
+  revision: 7b409706816a5f9d838bbd29bbe8fc1e432ae7b6
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: ab4f1a4276a649f97b8f107b5b7003fba3514e8e
+  revision: 9168e4cd45479cfc61737e3ec4ce143bc169e81c
   branch: main
   specs:
     msip (2.3.0.alfa4)
@@ -306,7 +306,7 @@ GEM
     puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (2.2.11)
+    rack (2.2.12)
     rack-session (1.0.2)
       rack (< 3)
     rack-test (2.2.0)
@@ -384,7 +384,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-rails (2.30.2)
+    rubocop-rails (2.30.3)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
