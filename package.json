@@ -1,39 +1,39 @@
 {
   "name": "cor1440",
   "private": true,
-  "version": "0.1.0",
+  "version": "2.3.0.alfa4",
   "scripts": {
     "build": "esbuild app/javascript/*.* --preserve-symlinks --bundle --sourcemap --outdir=app/assets/builds",
-    "start": "node esbuild-des.config.mjs"
+    "start": "node esbuild-des.config.mjs",
+    "build:css": "postcss ./app/assets/stylesheets/application.postcss.css -o ./app/assets/builds/application.css"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "@hotwired/stimulus": "^3.2.2",
-    "@hotwired/turbo-rails": "^8.0.10",
+    "@hotwired/turbo-rails": "^8.0.13",
     "@pasosdejesus/autocompleta_ajax": "https://gitlab.com/pasosdeJesus/autocompleta_ajax.git",
     "@popperjs/core": "^2.11.8",
     "@rails/ujs": "^7.1.3-4",
     "apexcharts": "^3.27.2",
+    "autoprefixer": "^10.4.21",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "css-pro-layout": "^1.1.0",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.25.0",
     "gridstack": "^0.6.0",
     "is-svg": "^5.1.0",
-    "jquery": "^3.7.1",
     "popper.js": "^2.0.0-next.4",
-    "postcss": "^8.2.10",
-    "tom-select": "^2.3.1"
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^13.0.1",
+    "tom-select": "^2.4.3"
   },
   "devDependencies": {
-    "babel-plugin-macros": "^3.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.11.0",
     "glob-parent": "^6.0.1",
     "normalize-url": "^4.5.1",
-    "postcss": "^8.2.10"
-  },
-  "babel": {
-    "presets": []
+    "postcss": "^8.5.3"
   },
   "browserslist": [
     "defaults"

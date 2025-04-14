@@ -4,27 +4,21 @@ source "https://rubygems.org"
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby ">=2.4"
+ruby ">=3.4"
 
 gem "apexcharts"
 
-gem "babel-transpiler"
-
 gem "bcrypt"
 
-gem "bootsnap", ">=1.1.0", require: false
+gem "bootsnap"
 
 gem "cancancan"
 
-gem "cocoon", git: "https://github.com/vtamara/cocoon.git", branch: "new_id_with_ajax" # Formularios anidados (algunos con ajax)
-
-gem "coffee-rails" # CoffeeScript para recuersos .js.coffee y vistas
+gem "cssbundling-rails"
 
 gem "devise" # Autenticación
 
 gem "devise-i18n"
-
-gem "execjs"
 
 gem "jbuilder" # API JSON facil. Ver: https://github.com/rails/jbuilder
 
@@ -35,7 +29,7 @@ gem "kt-paperclip", # Anexos
 
 gem "libxml-ruby"
 
-gem "nokogiri", ">=1.11.1"
+gem "nokogiri"
 
 gem "odf-report" # Genera ODT
 
@@ -49,9 +43,11 @@ gem "prawnto_2", require: "prawnto"
 
 gem "prawn-table"
 
+gem "propshaft"
+
 gem "rack", "~> 2"
 
-gem "rails", "~> 7.2"
+gem "rails", "~> 8.0"
 # git: "https://github.com/rails/rails.git", branch: "6-1-stable"
 
 gem "rails-i18n"
@@ -60,17 +56,13 @@ gem "redcarpet"
 
 gem "rspreadsheet"
 
-gem "rubyzip", ">= 2.0.0"
-
-gem "sassc-rails" # CSS
+gem "rubyzip"
 
 gem "simple_form" # Formularios simples
 
-gem "sprockets-rails"
-
 gem "stimulus-rails"
 
-gem "turbo-rails", "~> 1.0"
+gem "turbo-rails"
 
 gem "twitter_cldr" # ICU con CLDR
 

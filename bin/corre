@@ -13,14 +13,14 @@
 #   Y si el valor es f o si no hay Procfile no intenta correr con foreman
 
 require "fileutils"
-# require 'byebug'
 
-# ENV.each {|l,v| puts "#{l}=#{v}" } # Depuración
+ENV.each { |l, v| puts "#{l}=#{v}" } # Depuración
 
 # Ruta a directorio raíz de aplicación
 RAIZ_AP = File.expand_path("..", __dir__)
 
 def system!(*args)
+  puts "args=", args
   system(*args) || abort("\n== Falló la orden #{args} ==")
 end
 
@@ -33,13 +33,13 @@ FileUtils.chdir(RAIZ_AP) do
   if !ENV["RC"] || ENV["RC"] == ""
     nap = %x(git remote -v | grep "(fetch)" | sed -e "s/.*\\/\\(.*\\) (fetch)/\\1/g")
     if !nap || nap == ""
-      nap = "apconsip"
+      nap = "apconmsip"
     end
     ENV["RC"] = nap.strip
   end
   puts "\n== Ejecutando aplicacion #{ENV["RC"]} =="
 
-  unless File.exist?("/tmp/node")
+  if File.exist?("/usr/local/bin/node") && !File.exist?("/tmp/node")
     puts "\n== Enlace a /usr/local/bin/node desde /tmp =="
     system! "doas ln -s /usr/local/bin/node /tmp"
   end
@@ -63,7 +63,7 @@ FileUtils.chdir(RAIZ_AP) do
     system! "CXX=c++ bin/yarn"
 
     puts "\n== Preparando base de datos =="
-    system! "RAILS_ENV=#{ENV["RAILS_ENV"]} bin/rails db:prepare"
+    system! "RAILS_ENV=#{ENV["RAILS_ENV"]} bin/rails db:migrate"
 
     puts "\n== Actualizando índices =="
     system!("RAILS_ENV=#{ENV["RAILS_ENV"]} bin/rails msip:indices")
@@ -79,13 +79,14 @@ FileUtils.chdir(RAIZ_AP) do
     system! "rm -rf app/assets/builds/*"
 
     puts "\n== Enlaza controladores stimulus de motores =="
-    system! "bin/rails msip:stimulus_motores"
+    system! "bin/rails msip:enlaces_motores"
 
     puts "\n== Crea recursos CSS y Javascript =="
     system! "RAILS_ENV=#{ENV["RAILS_ENV"]} bin/rails assets:precompile --trace"
   end
 
-  if ENV["RAILS_ENV"] == "development"
+  puts "OJO antes dev"
+  if ENV["RAILS_ENV"] == "development" || ENV["RAILS_ENV"] == "test"
     puts "\n== Ejecutando en modo desarrollo  =="
 
     if File.exist?("Procfile") && ENV["R"] != "f"
@@ -102,7 +103,7 @@ FileUtils.chdir(RAIZ_AP) do
       end
       ord += "-b '#{ENV["IPDES"]}' "
     end
-    puts "#{ord}"
+    puts ord
   elsif ENV["RAILS_ENV"] == "production"
     if File.exist?("bin/corre-local")
       system!("bin/corre-local")

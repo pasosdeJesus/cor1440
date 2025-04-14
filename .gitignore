@@ -59,3 +59,11 @@ app/javascript/controllers/sal7711_gen
 app/javascript/controllers/sivel2_gen
 cobertura-sistema/
 cobertura-unitarias/
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
+app/assets/stylesheets/actiontext
+app/assets/stylesheets/cor1440_gen
+app/assets/stylesheets/heb412_gen
+app/assets/stylesheets/mr519_gen
+app/assets/stylesheets/msip
