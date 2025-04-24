@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 43200efe70b8c174b359351cb6a0adb4fdac74f9
+  revision: a2d3be7122f92ca07bb2e70c86804c4ff88528f3
   branch: main
   specs:
     cor1440_gen (2.3.0.alfa4)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 9c555e143a96dbbef8aa9e0f8f5913f78983dd60
+  revision: 403f9716aaa9e5cd31bfce8f9e68b0be11a7553e
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 3ad27067bf7c2c541de8fe04f03033a3e0b6a3ea
+  revision: b349fcdf77af47dca69c00b677ebe20d5ceba42a
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 7c7a785c45d29281cd5c740aa5db8827330d1af2
+  revision: b249b4b886d65a0b75d3b08d28c108f73acc72bb
   branch: main
   specs:
     msip (2.3.0.alfa4)
@@ -253,7 +253,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.7)
+    nokogiri (1.18.8)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.8.1)
@@ -378,7 +378,7 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-shopify (2.16.0)
+    rubocop-shopify (2.17.0)
       rubocop (~> 1.62)
     ruby-graphviz (1.2.5)
       rexml
