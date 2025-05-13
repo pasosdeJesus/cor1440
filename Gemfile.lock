@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 1e86d0a1a15dada945957d6e4bb11ae015877289
+  revision: b707b824c46fc8555a7551cf0120ca6b96789021
   branch: main
   specs:
     cor1440_gen (2.3.0.alfa4)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 403f9716aaa9e5cd31bfce8f9e68b0be11a7553e
+  revision: 9f23ead94e2f1332e84fb3d2a297baf6841c372a
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: b349fcdf77af47dca69c00b677ebe20d5ceba42a
+  revision: 22ff0387d1ac5199f57b651025e99bd9bfff9593
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b249b4b886d65a0b75d3b08d28c108f73acc72bb
+  revision: 3357473bf2ca29eb0093549fce64fa591759eb5b
   branch: main
   specs:
     msip (2.3.0.alfa4)
@@ -174,9 +174,9 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.4.3)
       railties (>= 6.0.0)
-    cuprite (0.15.1)
+    cuprite (0.17)
       capybara (~> 3.0)
-      ferrum (~> 0.15.0)
+      ferrum (~> 0.17.0)
     date (3.4.1)
     debug (1.10.0)
       irb (~> 1.10)
@@ -200,8 +200,9 @@ GEM
       nokogiri
       ruby-graphviz
     erubi (1.13.1)
-    ferrum (0.15)
+    ferrum (0.17.1)
       addressable (~> 2.5)
+      base64 (~> 0.2)
       concurrent-ruby (~> 1.1)
       webrick (~> 1.7)
       websocket-driver (~> 0.7)
@@ -222,7 +223,7 @@ GEM
     json (2.10.2)
     kgio (2.11.4)
     language_server-protocol (3.17.0.4)
-    libxml-ruby (5.0.3)
+    libxml-ruby (5.0.4)
     lint_roller (1.1.0)
     logger (1.7.0)
     loofah (2.24.0)
