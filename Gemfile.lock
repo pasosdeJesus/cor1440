@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: e4b4a2c4dc041ca1787f46c261414676e7857f85
+  revision: 58906b34cbfcb6fa6278f3692532a449128cf6c5
   branch: main
   specs:
     cor1440_gen (2.3.0.alfa4)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 253e1cf5c35ff18e74db0ab3daa5f5e6d486b776
+  revision: 52a10f35503bb129525ab27157fac01a5395b577
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: c29f16708028101f3c605e431b8d1ebcb9f2c8e3
+  revision: a059f7b90b4aa1f8e4c7c8368a4d15d2172882ae
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b23831eceb7942873a341a1b76ce02256f7cd272
+  revision: 4478d7d5208c83fff10ace14b38140eddcf2112b
   branch: main
   specs:
     msip (2.3.0.alfa4)
@@ -294,7 +294,7 @@ GEM
     puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (2.2.16)
+    rack (2.2.17)
     rack-session (1.0.2)
       rack (< 3)
     rack-test (2.2.0)
@@ -369,7 +369,7 @@ GEM
     rubocop-ast (1.44.1)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
-    rubocop-minitest (0.38.0)
+    rubocop-minitest (0.38.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
@@ -379,7 +379,7 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.44.0, < 2.0)
-    rubocop-shopify (2.17.0)
+    rubocop-shopify (2.17.1)
       rubocop (~> 1.62)
     ruby-graphviz (1.2.5)
       rexml
@@ -404,7 +404,7 @@ GEM
     timeout (0.4.3)
     ttfunk (1.8.0)
       bigdecimal (~> 3.1)
-    turbo-rails (2.0.13)
+    turbo-rails (2.0.16)
       actionpack (>= 7.1.0)
       railties (>= 7.1.0)
     twitter_cldr (6.14.0)
