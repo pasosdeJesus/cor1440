@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 8669ee39828eb71670aec45129da476db1915c2c
+  revision: 58f5994749469f9e4a76c627b3f2ccc85d07858b
   branch: main
   specs:
     cor1440_gen (2.3.0.alfa4)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: c8fa45cad06ad00b687c8642a0d12435f0f19212
+  revision: 4460724cd7fe8deab33db7e546b007b392fecdc6
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 7b3d65ec2cf9aad1e8f543c450432555464b1efc
+  revision: 959e7f1ea73ff6a0687a834f71169c0b3fbc7a86
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 34f6317e35ef454385a0bed55ec1d9cc09b2e6e4
+  revision: 2ade044a34a14eeaa46fd67a3f57cd967f701f07
   branch: main
   specs:
     msip (2.3.0.alfa4)
@@ -146,7 +146,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.18.6)
       msgpack (~> 1.2)
-    brakeman (7.0.2)
+    brakeman (7.1.0)
       racc
     builder (3.3.0)
     bundler-audit (0.9.2)
@@ -172,8 +172,6 @@ GEM
     concurrent-ruby (1.3.5)
     connection_pool (2.5.0)
     crass (1.0.6)
-    cssbundling-rails (1.4.3)
-      railties (>= 6.0.0)
     cuprite (0.17)
       capybara (~> 3.0)
       ferrum (~> 0.17.0)
@@ -218,8 +216,6 @@ GEM
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.3.1)
-      railties (>= 6.0.0)
     json (2.10.2)
     kgio (2.11.4)
     language_server-protocol (3.17.0.4)
@@ -254,7 +250,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.8)
+    nokogiri (1.18.9)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     odf-report (0.8.1)
@@ -282,11 +278,6 @@ GEM
       rails (>= 3.2)
     prettyprint (0.2.0)
     prism (1.4.0)
-    propshaft (1.1.0)
-      actionpack (>= 7.0.0)
-      activesupport (>= 7.0.0)
-      rack
-      railties (>= 7.0.0)
     psych (5.2.3)
       date
       stringio
@@ -395,6 +386,14 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.13.1)
     simplecov_json_formatter (0.1.4)
+    sprockets (4.2.2)
+      concurrent-ruby (~> 1.0)
+      logger
+      rack (>= 2.2.4, < 4)
+    sprockets-rails (3.5.2)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      sprockets (>= 3.0.0)
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.6)
@@ -453,7 +452,6 @@ DEPENDENCIES
   code-scanning-rubocop
   colorize
   cor1440_gen!
-  cssbundling-rails
   cuprite
   debug
   devise
@@ -462,7 +460,6 @@ DEPENDENCIES
   erd
   heb412_gen!
   jbuilder
-  jsbundling-rails
   kt-paperclip!
   libxml-ruby
   mr519_gen!
@@ -474,7 +471,6 @@ DEPENDENCIES
   prawn
   prawn-table
   prawnto_2
-  propshaft
   puma
   rack (~> 2)
   rails (~> 8.0)
@@ -488,6 +484,7 @@ DEPENDENCIES
   rubyzip
   simple_form
   simplecov
+  sprockets-rails
   stimulus-rails
   turbo-rails
   twitter_cldr
@@ -500,4 +497,4 @@ RUBY VERSION
    ruby 3.4.1p0
 
 BUNDLED WITH
-   2.6.9
+   2.7.1
