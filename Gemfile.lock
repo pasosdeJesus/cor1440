@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/cor1440_gen.git
-  revision: 594b980d2cec4f2688798286ac9829aad3a1c990
+  revision: 69b9bfd11c2b04e881ca62cadd733db45301a6dd
   branch: main
   specs:
     cor1440_gen (2.3.0.alfa4)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 80618a69617947ab7fe5742c421ec1ce41eebe75
+  revision: d9516da2585cf1e3973fcc145089f87e8e615ceb
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 015e31bd6aca97491b657b327d00d8d275daa74e
+  revision: 14ac9be365c847852261843d7393602c886f4439
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -148,13 +148,13 @@ GEM
     bcrypt (3.1.20)
     bigdecimal (3.1.9)
     bindex (0.8.1)
-    bootsnap (1.19.0)
+    bootsnap (1.20.0)
       msgpack (~> 1.2)
     brakeman (7.1.1)
       racc
     builder (3.3.0)
-    bundler-audit (0.9.2)
-      bundler (>= 1.2.0, < 3)
+    bundler-audit (0.9.3)
+      bundler (>= 1.2.0)
       thor (~> 1.0)
     camertron-eprun (1.1.1)
     cancancan (3.6.1)
@@ -180,7 +180,7 @@ GEM
       capybara (~> 3.0)
       ferrum (~> 0.17.0)
     date (3.4.1)
-    debug (1.11.0)
+    debug (1.11.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
     devise (4.9.4)
@@ -193,9 +193,9 @@ GEM
       devise (>= 4.9.0)
       rails-i18n
     docile (1.4.1)
-    dotenv (3.1.8)
-    dotenv-rails (3.1.8)
-      dotenv (= 3.1.8)
+    dotenv (3.2.0)
+    dotenv-rails (3.2.0)
+      dotenv (= 3.2.0)
       railties (>= 6.1)
     drb (2.2.1)
     erd (0.8.2)
@@ -370,7 +370,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-rails (2.34.1)
+    rubocop-rails (2.34.2)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
